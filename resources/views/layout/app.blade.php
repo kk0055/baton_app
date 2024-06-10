@@ -25,32 +25,6 @@
         margin: auto;
         padding: 0 20px;
     }
-
-    header {
-        background-color: #5e35b1;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    nav {
-        background-color: #7e57c2;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #fff;
-        padding: 10px 20px;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-    }
-
-    nav a:hover {
-        background-color: #673ab7;
-    }
-
     section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -63,13 +37,10 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         padding: 20px;
-        transition: transform 0.3s ease;
+
     }
 
-    .product:hover {
-        transform: translateY(-5px);
-    }
-
+ 
     .product img {
         width: 100%;
         border-radius: 5px;
@@ -114,30 +85,12 @@
         }
     }
 </style>
+<title>
+  @yield('title')
+</title>
 </head>
 <body>
-  <div class="container mx-auto text-center px-8 py-24">
-    <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">Pricing</h2>
-    <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Check out our affordable pricing options for delicious meals.</p>
-  </div>
-<container>
-    <section>
-        <div class="product">
-            <img  src="{{ asset('messageImage_1717830807757.jpg') }}" alt="Product Image">
-            <h2>Product Name 1</h2>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $50</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Product Image">
-            <h2>Product Name 2</h2>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $60</p>
-            <button>Add to Cart</button>
-        </div>
-        <!-- Add more products here -->
-    </section>
-</container>
+  @include('components.nav')
+  @yield('content')
 </body>
 </html>
