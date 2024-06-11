@@ -24,24 +24,23 @@
                     </button>
                 </div>
                 <!--body-->
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
                 <div class="relative p-6 flex-auto">
+                    @if ($errors->any())
+                        <div class="mb-4">
+                            <ul class="list-disc list-inside text-red-500">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <div class="mb-4">
                         <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden items-center">
                             <div class="px-4 py-6">
                                 {{-- Image --}}
+                                <input id="upload-{{ $property->id }}" type="file" name="image" accept="image/*" />
                                 <div id="image-preview-{{ $property->id }}"
                                     class="max-w-sm p-6 mb-4 bg-gray-100 border-dashed border-2 border-gray-400 rounded-lg items-center mx-auto text-center cursor-pointer">
-                                    <input id="upload-{{ $property->id }}" type="file" class="hidden" name="image"
-                                        accept="image/*" />
                                     <label for="upload-{{ $property->id }}" class="cursor-pointer">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor"
@@ -68,15 +67,15 @@
                                 </div>
                             </div>
                         </div>
-                        @error('image')
-                            <p class="text-red-500 text-xs italic">{{ $message }}</p>
-                        @enderror
                         <label class="block text-gray-700 text-sm font-bold mb-4" for="order">
                             表示順(降順)
                         </label>
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="order" name="order" type="number" value="{{ $property->order }}">
+                        @error('order')
+                            <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        @enderror
                     </div>
                 </div>
                 <!--footer-->
@@ -100,14 +99,11 @@
 
 <script>
     document.querySelectorAll('input[type="file"]').forEach(uploadInput => {
-   
+
         const propertyId = uploadInput.id.split('-')[1];
         const filenameLabel = document.getElementById(`filename-${propertyId}`);
         const imagePreview = document.getElementById(`image-preview-${propertyId}`);
-       
-       
         let isEventListenerAdded = false;
-
         uploadInput.addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (file) {

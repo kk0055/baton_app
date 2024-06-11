@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Property;
+use Illuminate\Support\Facades\Storage;
 
 class PropertyController extends Controller
 {
@@ -50,7 +51,26 @@ class PropertyController extends Controller
 
     public function update(Request $request, $id)
     {
-
+        // バリデーション
+        $request->validate([
+            'image' => 'required|file|image',
+            'order' => 'required|integer',
+        ]);
+        
+        // 対象のプロパティを検索
+        $property = Property::findOrFail($id);
+        // 画像のアップロード
+        if ($request->hasFile('image')) {
+            if ($property->image_path) {
+                Storage::disk('public')->delete($property->image_path);
+            }
+    
+            $image_path = $request->file('image')->store('images', 'public');
+            $property->image_path = $image_path;
+        }
+        $property->order = $request->input('order');
+        $property->save();
+        return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');
     }
 
     public function destroy($id)

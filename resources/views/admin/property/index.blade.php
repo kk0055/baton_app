@@ -47,21 +47,28 @@
             class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-10">
             広告管理</h2>
         {{-- <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">新規追加</p> --}}
-        <form action="{{ route('admin.property.store') }}" method="POST" enctype="multipart/form-data">
+        {{-- <form action="{{ route('admin.property.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="file" name="image">
-            {{-- <input type="number" name="type" placeholder="type"> --}}
+            <input type="number" name="type" placeholder="type">
             <input type="number" name="order" placeholder="order">
             <button
                 class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                 type="submit">新規追加</button>
-        </form>
+        </form> --}}
     </div>
     <container>
         <section>
             @foreach ($properties as $property)
-               @include('admin.property.components.card',['property' => $property])
-               @include('admin.property.components.editModal',['property' => $property])
+            <div class="product">
+            <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
+                <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image">
+            </a>
+            <h2>表示順(降順): {{ $property->order }}</h2>
+            {{-- <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+            <button  class="edit-btn" onclick="toggleModal({{ $property->id }})">編集</button>
+          </div>
+            @include('admin.property.components.editModal',['property' => $property])
             @endforeach
             <!-- 画像をクリックしたときに表示されるモーダル -->
             <div class="modal">
@@ -95,12 +102,14 @@
                 modal.style.display = 'none';
             }
         });
-
+    //編集用のモーダル
     function toggleModal(modalID){
     document.getElementById(modalID).classList.toggle("hidden");
     document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
     document.getElementById(modalID).classList.toggle("flex");
     document.getElementById(modalID + "-backdrop").classList.toggle("flex");
   }
+
+  
     </script>
 @endsection
