@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\PropertyController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');;
 Route::get('welcome', function () {
     return view('welcome');
 });

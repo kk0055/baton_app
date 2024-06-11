@@ -21,6 +21,10 @@ class PropertyController extends Controller
 
     public function store(Request $request)
     {
+
+    $request->validate([
+        'image' => 'required',
+    ]);
     // 画像のアップロード
     if ($request->hasFile('image')) {
         $image_path = $request->file('image')->store('images', 'public');
