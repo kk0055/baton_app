@@ -30,10 +30,10 @@ class PropertyController extends Controller
         $image_path = $request->file('image')->store('images', 'public');
     }
 
-    $property = Property::create([
+    Property::create([
         'order' => $request->input('order'),
         // 'type' => $request->input('type'),
-        'image_url' => $image_path ?? null, // 画像パスを保存
+        'image_path' => $image_path ?? null, // 画像パスを保存
     ]);
     return redirect()->route('admin.property.index')->with('info', '完了!');
     }

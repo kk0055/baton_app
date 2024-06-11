@@ -60,23 +60,14 @@
     <container>
         <section>
             @foreach ($properties as $property)
-                <div class="product">
-
-                    <a class="image-link" href="{{ asset('messageImage_1717830807757.jpg') }}">
-                        <img class="property-image" src="{{ asset('messageImage_1717830807757.jpg') }}"
-                            alt="Property Image">
-                    </a>
-                    <h2>順番: {{ $property->order }}</h2>
-                    {{-- <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
-                    <button class="edit-btn" data-id="{{ $property->id }}">編集</button>
-                </div>
+               @include('admin.property.components.card',['property' => $property])
+               @include('admin.property.components.editModal',['property' => $property])
             @endforeach
             <!-- 画像をクリックしたときに表示されるモーダル -->
             <div class="modal">
                 <span class="close">&times;</span>
                 <img class="modal-content">
             </div>
-            
         </section>
     </container>
     <script>
@@ -104,5 +95,12 @@
                 modal.style.display = 'none';
             }
         });
+
+    function toggleModal(modalID){
+    document.getElementById(modalID).classList.toggle("hidden");
+    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+    document.getElementById(modalID).classList.toggle("flex");
+    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+  }
     </script>
 @endsection

@@ -18,11 +18,11 @@
                         <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <label class="block text-gray-700 text-sm font-bold mb-4" for="order">
-                        順番
+                        表示順(降順)
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="order" type="number">
+                        id="order" name="order" type="number">
                 </div>
                 {{-- <div class="mb-6">
                   <label class="block text-gray-700 text-sm font-bold mb-2" for="type">
@@ -43,4 +43,5 @@
             </form>
         </div>
     </div>
+    
 @endsection

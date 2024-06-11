@@ -15,7 +15,7 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $table->text('image_url')->nullable();
+            $table->text('image_path')->nullable();
             $table->integer('order')->nullable();
             $table->boolean('is_used')->nullable();
             $table->string('type')->nullable();
