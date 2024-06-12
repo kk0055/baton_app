@@ -2061,6 +2061,45 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+document.querySelectorAll('.edit-image').forEach(function (uploadInput) {
+  var propertyId = uploadInput.id.split('-')[1];
+  var filenameLabel = document.getElementById("filename-".concat(propertyId));
+  var imagePreview = document.getElementById("image-preview-".concat(propertyId));
+  var isEventListenerAdded = false;
+  uploadInput.addEventListener('change', function (event) {
+    var file = event.target.files[0];
+    if (file) {
+      filenameLabel.textContent = file.name;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        imagePreview.innerHTML = "<img src=\"".concat(e.target.result, "\" class=\"max-h-48 rounded-lg mx-auto\" alt=\"Image preview\"/>");
+        imagePreview.classList.remove('border-dashed', 'border-2', 'border-gray-400');
+
+        // Add event listener for image preview only once
+        if (!isEventListenerAdded) {
+          imagePreview.addEventListener('click', function () {
+            uploadInput.click();
+          });
+          isEventListenerAdded = true;
+        }
+      };
+      reader.readAsDataURL(file);
+    } else {
+      filenameLabel.textContent = '';
+      imagePreview.innerHTML = "<div class=\"bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500\">No image preview</div>";
+      imagePreview.classList.add('border-dashed', 'border-2', 'border-gray-400');
+
+      // Remove the event listener when there's no image
+      imagePreview.removeEventListener('click', function () {
+        uploadInput.click();
+      });
+      isEventListenerAdded = false;
+    }
+  });
+  uploadInput.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+});
 
 /***/ }),
 

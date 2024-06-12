@@ -79,10 +79,10 @@
     </container>
     <script>
         // 画像リンクをクリックしたときにモーダルを表示
-        var imageLinks = document.querySelectorAll('.image-link');
-        var modal = document.querySelector('.modal');
-        var modalContent = modal.querySelector('.modal-content');
-        var closeModal = modal.querySelector('.close');
+        const imageLinks = document.querySelectorAll('.image-link');
+        const modal = document.querySelector('.modal');
+        const modalContent = modal.querySelector('.modal-content');
+        const closeModal = modal.querySelector('.close');
 
         imageLinks.forEach(function(link) {
             link.addEventListener('click', function(event) {
@@ -109,7 +109,6 @@
     document.getElementById(modalID).classList.toggle("flex");
     document.getElementById(modalID + "-backdrop").classList.toggle("flex");
   }
-
   
     </script>
 @endsection

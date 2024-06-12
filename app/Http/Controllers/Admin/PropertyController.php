@@ -11,7 +11,7 @@ class PropertyController extends Controller
 {
     public function index()
     {
-        $properties = Property::all();
+        $properties = Property::orderByOrder()->get();
         return view('admin.property.index', compact('properties'));
     }
 
@@ -25,6 +25,7 @@ class PropertyController extends Controller
 
     $request->validate([
         'image' => 'required',
+        'order' => 'required',
     ]);
     // 画像のアップロード
     if ($request->hasFile('image')) {
@@ -51,12 +52,7 @@ class PropertyController extends Controller
 
     public function update(Request $request, $id)
     {
-        // バリデーション
-        $request->validate([
-            'image' => 'required|file|image',
-            'order' => 'required|integer',
-        ]);
-        
+     
         // 対象のプロパティを検索
         $property = Property::findOrFail($id);
         // 画像のアップロード

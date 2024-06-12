@@ -17,7 +17,7 @@ class CreatePropertiesTable extends Migration
             $table->id();
             $table->text('image_path')->nullable();
             $table->integer('order')->nullable();
-            $table->boolean('is_used')->nullable();
+            $table->boolean('is_display')->default(true);
             $table->string('type')->nullable();
             $table->timestamps();
         });
