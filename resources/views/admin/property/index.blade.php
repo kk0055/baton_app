@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.admin.admin')
 
 @section('title', '管理')
 @include('components.nav')
@@ -64,9 +64,20 @@
             <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
                 <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image">
             </a>
-            <h2>表示順(降順): {{ $property->order }}</h2>
-            {{-- <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
-            <button  class="edit-btn" onclick="toggleModal({{ $property->id }})">編集</button>
+            <h4 class="mb-2">表示順(降順): {{ $property->order }}</h4>
+            <h4 class="mb-2">表示: {{ $property->is_display ? '表示中': '非表示' }}</h4>
+            <div class="flex">
+            <button  class="edit-btn" onclick="toggleModal({{ $property->id }})">
+                <i class="fa fa-pencil mr-2" aria-hidden="true"></i>編集
+            </button>
+            <form action="{{ route('admin.property.destroy', ['property' => $property->id]) }}" method="POST" id="deleteForm-{{ $property->id }}">
+                @csrf
+                @method('DELETE')
+            <button class="delete-btn" onclick="confirmDelete({{ $property->id }})">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </form>
+          </div>
           </div>
             @include('admin.property.components.editModal',['property' => $property])
             @endforeach
@@ -109,6 +120,10 @@
     document.getElementById(modalID).classList.toggle("flex");
     document.getElementById(modalID + "-backdrop").classList.toggle("flex");
   }
-  
+  function confirmDelete(propertyId) {
+        if (confirm('本当に削除しますか？')) {
+            document.getElementById('deleteForm-' + propertyId).submit();
+        }
+    }
     </script>
 @endsection

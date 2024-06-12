@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        require("tailwindcss"),
-    ]);
+mix.js("resources/js/app.js", "public/js")
+    .js("resources/js/admin/admin.js", "public/js/admin")
+    .js("resources/js/landing/landing.js", "public/js/landing")
+    .postCss("resources/css/app.css", "public/css", [require("tailwindcss")])
+    .postCss("resources/css/admin/admin.css", "public/css/admin", [require("tailwindcss")])
+    .postCss("resources/css/landing/landing.css", "public/css/landing", [require("tailwindcss")]);

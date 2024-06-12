@@ -65,12 +65,21 @@ class PropertyController extends Controller
             $property->image_path = $image_path;
         }
         $property->order = $request->input('order');
+        $property->is_display = $request->input('is_display');
         $property->save();
         return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');
     }
 
     public function destroy($id)
     {
-
+        $property = Property::find($id);
+        if ($property) {
+            if ($property->image_path) {
+                Storage::disk('public')->delete($property->image_path);
+            }
+            $property->delete();
+            return redirect()->route('admin.property.index')->with('success', '削除');
+        }
+        return redirect()->route('admin.property.index')->with('error', '見つかりませんでした。');
     }
 }

@@ -12,15 +12,9 @@ class Property extends Model
     protected $attributes = [
         'is_display' => true,
     ];
-    
+
     /**
      * Scope a query to order results by the 'order' column in descending order.
-     *
-     * This scope can be used to easily retrieve records sorted by the 'order' column
-     * in descending order, which is useful when displaying items in a specific sequence.
-     *
-     * Usage:
-     * $properties = Property::orderByOrder()->get();
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
@@ -28,5 +22,16 @@ class Property extends Model
     public function scopeOrderByOrder($query)
     {
         return $query->orderBy('order', 'desc');
+    }
+
+    /**
+     * スコープ：is_display が true のものだけを取得し、order 順に並べ替える
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeDisplayedAndOrdered($query)
+    {
+        return $query->where('is_display', true)->orderBy('order', 'desc');
     }
 }

@@ -56,6 +56,19 @@
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="order" name="order" type="number" value="{{ $property->order }}">
+                            <label class="block text-gray-700 text-sm font-bold mb-2 mt-4">表示設定</label>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" class="form-radio" name="is_display" value="1" 
+                                        {{ old('is_display', $property->is_display) == '1' ? 'checked' : '' }}>
+                                    <span class="ml-2">表示</span>
+                                </label>
+                                <label class="inline-flex items-center ml-6">
+                                    <input type="radio" class="form-radio" name="is_display" value="0" 
+                                        {{ old('is_display', $property->is_display) == '0' ? 'checked' : '' }}>
+                                    <span class="ml-2">非表示</span>
+                                </label>
+                            </div>
                     </div>
                 </div>
                 <!--footer-->

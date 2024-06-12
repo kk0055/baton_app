@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.admin.admin')
 
 @section('title', '管理')
 
