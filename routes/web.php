@@ -2,15 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PropertyController;
+use App\Http\Controllers\LandingPageController;
 
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');;
-Route::get('welcome', function () {
-    return view('welcome');
-});
-
+Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
+Route::get('/about', [LandingPageController::class, 'about'])->name('landing.about');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('property', PropertyController::class);

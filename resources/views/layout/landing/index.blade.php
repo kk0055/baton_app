@@ -38,7 +38,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-{{-- <link rel='stylesheet' id='child-style-css' href='https://demo.tcd-theme.com/tcd103/wp-content/themes/GENESIS-child/style.css?ver=6.5.4' type='text/css' media='all' /> --}}
+<link rel='stylesheet' id='child-style-css' href='https://demo.tcd-theme.com/tcd103/wp-content/themes/GENESIS-child/style.css?ver=6.5.4' type='text/css' media='all' />
 <link rel='stylesheet' id='hcb-style-css' href='https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1' type='text/css' media='all' />
 <style id='hcb-style-inline-css' type='text/css'>
 :root{--hcb--fz--base: 14px}:root{--hcb--fz--mobile: 13px}:root{--hcb--ff:Menlo, Consolas, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;}
@@ -387,13 +387,13 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
 
 <header id="header" class="first_animate">
  <h1 id="header_logo">
- <a href="/">
-    <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON"  width="146" height="20" />
-    <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" width="100" height="14" />
+ <a href="https://demo.tcd-theme.com/tcd103/" title="WordPressテーマ「GENESIS」">
+    <img class="logo_image pc" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo-new.png?1717932945" alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="146" height="20" />
+    <img class="logo_image mobile" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo_mb.png?1717932945" alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="100" height="14" />
      </a>
 </h1>
 
- <a id="drawer_menu_button" href="#"><span></span><span></span><span></span></a> <nav id="global_menu" class="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-6202" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6202"><a href="{{ route('landing.index') }}">aria-current="page">HOME</a>
+ <a id="drawer_menu_button" href="#"><span></span><span></span><span></span></a> <nav id="global_menu" class="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-6202" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6202"><a href="https://demo.tcd-theme.com/tcd103/" aria-current="page">HOME</a>
 {{-- <ul class="sub-menu">
 	<li id="menu-item-6424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6424"><a href="https://demo.tcd-theme.com/tcd103/top-page-demo1/">トップページ &#8211; サンプル1</a></li>
 	<li id="menu-item-6390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6390"><a href="https://demo.tcd-theme.com/tcd103/top-page-demo2/">トップページ &#8211; サンプル2</a></li>
@@ -408,16 +408,10 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
 	<li id="menu-item-5967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5967"><a href="https://demo.tcd-theme.com/tcd103/lp3/">LPサンプル3</a></li>
 </ul> --}}
 </li>
-<li id="menu-item-5884" class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-has-children menu-item-5884"><a href="#job_details" class="megamenu_button megamenu_type2" data-megamenu="js-megamenu5884">SERVICE</a>
+<li id="menu-item-5884" class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-has-children menu-item-5884"><a href="https://demo.tcd-theme.com/tcd103/service/" class="megamenu_button megamenu_type2" data-megamenu="js-megamenu5884">SERVICE</a>
 </li>
 <li id="menu-item-5948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5948"><a href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934"><a href="https://demo.tcd-theme.com/tcd103/about/">PROPERTY</a>
-  <ul class="sub-menu">
-    <li id="menu-item-5982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a href="#">賃貸</a></li>
-    <li id="menu-item-5953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5953"><a href="#">売買</a></li>
-  </ul>
-{{-- <li id="menu-item-5562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5562"><a href="https://demo.tcd-theme.com/tcd103/blog/" class="megamenu_button megamenu_type1" data-megamenu="js-megamenu5562">PROPERTY</a></li> --}}
-
+<li id="menu-item-5562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5562"><a href="https://demo.tcd-theme.com/tcd103/blog/" class="megamenu_button megamenu_type1" data-megamenu="js-megamenu5562">PROPERTY</a></li>
 </ul></nav>  <div id="header_search">
   <form role="search" method="get" id="header_searchform" action="https://demo.tcd-theme.com/tcd103">
    <div class="input_area"><input type="text" value="" id="header_search_input" name="s" autocomplete="off"></div>
@@ -425,7 +419,6 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
   </form>
  </div>
  
- {{-- megamenu  --}}
  <div class="megamenu megamenu_b no_category_page" id="js-megamenu5884">
 
   <div class="header">
@@ -483,6 +476,108 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
  
  
 </div><!-- END .megamenu_b -->
+<div class="megamenu megamenu_a" id="js-megamenu5562">
+
+  <div class="megamenu_post_carousel swiper">
+  <div class="post_list swiper-wrapper">
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/new-slider-options/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news24-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>【機能追加】ヘッダースライダーのオプション（タイプ/エフェクト）が追加されました。</span></p>
+            <time class="date entry-date published" datetime="2023-09-28T23:29:45+09:00">2023.09.28</time>
+           </div>
+    </a>
+   </div>
+  
+   @foreach ($properties as $property)
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/new-service-page/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="{{ asset('storage/' . $property->image_path) }}" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>【機能追加】サービスページの横幅を選択できるようになりました。</span></p>
+            <time class="date entry-date published" datetime="2023-09-28T23:21:04+09:00">2023.09.28</time>
+           </div>
+    </a>
+   </div>
+   @endforeach
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/genesis-theme/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news12-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>先進的な企業サイトをデザインするWordPressテーマ「GENESIS」</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:45:11+09:00">2023.09.12</time>
+           </div>
+    </a>
+   </div>
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/genesis-functions/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news8-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>WordPressテーマ「GENESIS」の機能概要</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:56:56+09:00">2023.09.10</time>
+           </div>
+    </a>
+   </div>
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/quicktags/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news43-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>簡単に装飾できるクイックタグと汎用クラス</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:57:02+09:00">2023.09.08</time>
+           </div>
+    </a>
+   </div>
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/header-message/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news9-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>サイト最上部で告知できるヘッダーメッセージ</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:57:09+09:00">2023.08.30</time>
+           </div>
+    </a>
+   </div>
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/top-header-slider/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news13-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>3タイプのかっこいいヘッダースライダー</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:59:03+09:00">2023.08.22</time>
+           </div>
+    </a>
+   </div>
+      <div class="item swiper-slide">
+    <a class="animate_background" href="https://demo.tcd-theme.com/tcd103/mega-menu/">
+     <div class="image_wrap">
+      <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/blog_news7-770x520.jpg" width="770" height="520" />
+     </div>
+     <div class="content">
+      <p class="title"><span>2タイプのメガメニュー（事業内容/ブログ）</span></p>
+            <time class="date entry-date published" datetime="2023-09-20T11:57:18+09:00">2023.08.18</time>
+           </div>
+    </a>
+   </div>
+     </div>
+ </div>
+ <div class="genesis_carousel_scrollbar">
+  <div class="post_carousel_scrollbar swiper-scrollbar"></div>
+ </div>
+ 
+</div><!-- END .megamenu_a -->
 
 </header>
 
@@ -574,7 +669,7 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
 </div>
 <div class="post_row inview slide_up_animation">
 <div class="post_col post_col-2 rich_font">
-<h3 class="catch rich_font" id="job_details">業務内容
+<h3 class="catch rich_font">業務内容
 </h3>
 </div>
 <div class="post_col post_col-2">
@@ -720,7 +815,7 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
 
  <div class="design_header cb_design_header inview">
   <div class="title_area">
-      <h3 class="large_headline"><span>経堂地区の魅力</span></h3>
+      <h3 class="large_headline"><span>COMPANY</span></h3>
          <p class="sub_title colored"><span>わたしたちの会社について</span></p>
      </div>
     <p class="desc  post_content">自然とどのように共存するか。このシンプルかつ巨大なテーマに向き合い、持続可能な未来社会を実現するのが私たちチームの使命であり、本望です。</p>
@@ -729,28 +824,20 @@ body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.5s ease
  <div class="item_list shutter_image inview col2 link_ver vertical">
 
     <div class="item">
+      <h4 class="headline">地球が豊かになる循環型社会へ</h4>
       <div class="overlay" style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);"></div>
             <div class="post_list">
+    <a href="https://demo.tcd-theme.com/tcd103/company/#company_message"><span class="label">CEOメッセージ</span><span class="arrow_button_small"><span></span></span></a>
    </div>
-         <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
+         <img loading="lazy" class="image" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top-company1.jpg" width="750" height="540" />
      </div>
     <div class="item">
+      <h4 class="headline">限りある資源を次世代へ繋げる</h4>
       <div class="overlay" style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);"></div>
             <div class="post_list">
-      </div>
-   <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
-     </div>
-    <div class="item">
-      <div class="overlay" style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);"></div>
-            <div class="post_list">
-      </div>
-   <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
-     </div>
-    <div class="item">
-      <div class="overlay" style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);"></div>
-            <div class="post_list">
-      </div>
-   <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
+    <a href="https://demo.tcd-theme.com/tcd103/company/#profile"><span class="label">会社情報</span><span class="arrow_button_small"><span></span></span></a>
+   </div>
+         <img loading="lazy" class="image" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top-company2.jpg" width="750" height="540" />
      </div>
   
  </div>
