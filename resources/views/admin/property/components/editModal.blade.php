@@ -29,8 +29,8 @@
                         <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden items-center">
                             <div class="px-4 py-6">
                                 {{-- Image --}}
-                                <input id="upload-{{ $property->id }}" type="file" class='hidden edit-image' name="image"
-                                    accept="image/*" />
+                                <input id="upload-{{ $property->id }}" type="file" class='hidden edit-image'
+                                    name="image" accept="image/*" />
                                 <div id="image-preview-{{ $property->id }}"
                                     class="max-w-sm p-6 mb-4 bg-gray-100 border-dashed border-2 border-gray-400 rounded-lg items-center mx-auto text-center cursor-pointer">
                                     <label for="upload-{{ $property->id }}" class="cursor-pointer">
@@ -56,19 +56,32 @@
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="order" name="order" type="number" value="{{ $property->order }}">
-                            <label class="block text-gray-700 text-sm font-bold mb-2 mt-4">表示設定</label>
-                            <div>
-                                <label class="inline-flex items-center">
-                                    <input type="radio" class="form-radio" name="is_display" value="1" 
-                                        {{ old('is_display', $property->is_display) == '1' ? 'checked' : '' }}>
-                                    <span class="ml-2">表示</span>
-                                </label>
-                                <label class="inline-flex items-center ml-6">
-                                    <input type="radio" class="form-radio" name="is_display" value="0" 
-                                        {{ old('is_display', $property->is_display) == '0' ? 'checked' : '' }}>
-                                    <span class="ml-2">非表示</span>
-                                </label>
-                            </div>
+                        <label class="block text-gray-700 text-sm font-bold mb-1 mt-4">表示設定</label>
+                        <div>
+                            <label class="inline-flex items-center">
+                                <input type="radio" class="form-radio" name="is_display" value="1"
+                                    {{ old('is_display', $property->is_display) == '1' ? 'checked' : '' }}>
+                                <span class="ml-2">表示</span>
+                            </label>
+                            <label class="inline-flex items-center ml-6">
+                                <input type="radio" class="form-radio" name="is_display" value="0"
+                                    {{ old('is_display', $property->is_display) == '0' ? 'checked' : '' }}>
+                                <span class="ml-2">非表示</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-1 mt-4">タイプ</label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" class="form-radio" name="type" value="賃貸"
+                                    {{ old('type', $property->type) == '賃貸' ? 'checked' : '' }}>
+                                <span class="ml-2">賃貸</span>
+                            </label>
+                            <label class="inline-flex items-center ml-6">
+                                <input type="radio" class="form-radio" name="type" value="売買"
+                                    {{ old('type', $property->type) == '売買' ? 'checked' : '' }}>
+                                <span class="ml-2">売買</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <!--footer-->
@@ -78,9 +91,8 @@
                         type="submit">
                         変更
                     </button>
-                    <button
-                        class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        type="button" onclick="toggleModal( {{ $property->id }})">
+                    <button class="bg-gray-400 text-black py-2 px-4 rounded  focus:shadow-outline" type="button"
+                        onclick="toggleModal( {{ $property->id }})">
                         Close
                     </button>
                 </div>

@@ -34,4 +34,15 @@ class Property extends Model
     {
         return $query->where('is_display', true)->orderBy('order', 'desc');
     }
+   
+    
+    public static function propertyTypes()
+    {
+        $propertyTypes = [
+            '賃貸',
+            '売買',
+       ];
+
+       return $propertyTypes;
+    }
 }

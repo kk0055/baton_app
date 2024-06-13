@@ -17,7 +17,8 @@ class PropertyController extends Controller
 
     public function create()
     {
-        return view('admin.property.create');
+        $propertyTypes = Property::propertyTypes();
+        return view('admin.property.create', compact('propertyTypes'));
     }
 
     public function store(Request $request)
@@ -26,6 +27,7 @@ class PropertyController extends Controller
     $request->validate([
         'image' => 'required',
         'order' => 'required',
+        'type' => 'required',
     ]);
     // 画像のアップロード
     if ($request->hasFile('image')) {
@@ -34,6 +36,7 @@ class PropertyController extends Controller
 
     Property::create([
         'order' => $request->input('order'),
+        'type' => $request->input('type'),
         // 'type' => $request->input('type'),
         'image_path' => $image_path ?? null, // 画像パスを保存
     ]);
@@ -66,12 +69,14 @@ class PropertyController extends Controller
         }
         $property->order = $request->input('order');
         $property->is_display = $request->input('is_display');
+        $property->type = $request->input('type');
+        
         $property->save();
         return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');
     }
 
     public function destroy($id)
-    {
+    { 
         $property = Property::find($id);
         if ($property) {
             if ($property->image_path) {

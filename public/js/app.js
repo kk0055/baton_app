@@ -2061,45 +2061,6 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-document.querySelectorAll('.edit-image').forEach(function (uploadInput) {
-  var propertyId = uploadInput.id.split('-')[1];
-  var filenameLabel = document.getElementById("filename-".concat(propertyId));
-  var imagePreview = document.getElementById("image-preview-".concat(propertyId));
-  var isEventListenerAdded = false;
-  uploadInput.addEventListener('change', function (event) {
-    var file = event.target.files[0];
-    if (file) {
-      filenameLabel.textContent = file.name;
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        imagePreview.innerHTML = "<img src=\"".concat(e.target.result, "\" class=\"max-h-48 rounded-lg mx-auto\" alt=\"Image preview\"/>");
-        imagePreview.classList.remove('border-dashed', 'border-2', 'border-gray-400');
-
-        // Add event listener for image preview only once
-        if (!isEventListenerAdded) {
-          imagePreview.addEventListener('click', function () {
-            uploadInput.click();
-          });
-          isEventListenerAdded = true;
-        }
-      };
-      reader.readAsDataURL(file);
-    } else {
-      filenameLabel.textContent = '';
-      imagePreview.innerHTML = "<div class=\"bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500\">No image preview</div>";
-      imagePreview.classList.add('border-dashed', 'border-2', 'border-gray-400');
-
-      // Remove the event listener when there's no image
-      imagePreview.removeEventListener('click', function () {
-        uploadInput.click();
-      });
-      isEventListenerAdded = false;
-    }
-  });
-  uploadInput.addEventListener('click', function (event) {
-    event.stopPropagation();
-  });
-});
 
 /***/ }),
 
@@ -19707,8 +19668,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/admin/admin": 0,
-/******/ 			"css/app": 0,
-/******/ 			"css/landing/landing": 0
+/******/ 			"css/landing/landing": 0,
+/******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19758,10 +19719,10 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/app","css/landing/landing"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/app","css/landing/landing"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/app","css/landing/landing"], () => (__webpack_require__("./resources/css/admin/admin.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/admin/admin","css/app","css/landing/landing"], () => (__webpack_require__("./resources/css/landing/landing.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/admin/admin.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/landing/landing.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

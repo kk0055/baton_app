@@ -3,6 +3,6 @@
     "/js/admin/admin.js": "/js/admin/admin.js",
     "/js/landing/landing.js": "/js/landing/landing.js",
     "/css/admin/admin.css": "/css/admin/admin.css",
-    "/css/app.css": "/css/app.css",
-    "/css/landing/landing.css": "/css/landing/landing.css"
+    "/css/landing/landing.css": "/css/landing/landing.css",
+    "/css/app.css": "/css/app.css"
 }

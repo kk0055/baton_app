@@ -46,6 +46,16 @@
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="order" name="order" type="number">
+
+                    <label for="type" class="block text-gray-700 text-sm font-bold mb-2 mt-4">タイプ</label>
+                    <select name="type" id="type"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        @foreach ($propertyTypes as $type)
+                            <option value="{{ $type }}">
+                                {{ $type }}
+                            </option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="flex items-center justify-between">
@@ -54,12 +64,12 @@
                         type="submit">
                         追加
                     </button>
-                    <button class="bg-gray-400 text-black py-2 px-4 rounded  focus:shadow-outline">
-                        <a href="{{ route('admin.property.index') }}">キャンセル</a>
-                    </button>
-                </div>
             </form>
+            <button class="bg-gray-400 text-black py-2 px-4 rounded  focus:shadow-outline" type="button">
+                <a href="{{ route('admin.property.index') }}">キャンセル</a>
+            </button>
         </div>
+    </div>
     </div>
     <script>
         const uploadInput = document.getElementById('upload');
