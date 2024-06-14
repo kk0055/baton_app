@@ -595,7 +595,7 @@
         </div>
     </div>
 
-  @include('landing.components.header')
+  @include('landing.components.landing_page_header')
 
     <div id="container">
         <div id="header_slider_wrap" class="layout_type1">
@@ -604,7 +604,7 @@
                     <h2 class="catch rich_font_type2"><span class="line"><span
                                 class="line_inner">株式会社BATON</span></span></h2>     
                     <div class="desc_area">
-                        <!-- <p class="desc"><span class="line"><span class="line_inner">人と自然が共生できる新しい世界をつくる</span></span></p> -->
+                        {{-- <p class="desc"><span class="line"><span class="line_inner">物件選びはエンターテイメントである</span></span></p>  --}}
                     </div>
                 </div>
             </div>
@@ -629,11 +629,41 @@
                 <div class="post_content clearfix">
                     <div class="design_header inview">
                         <div class="title_area">
+                          {{-- <h3 class="large_headline"><span>不動産仲介業の使命</span></h3> --}}
+
                         </div>
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font" id="job_details">業務内容
+                            <h3 class="catch rich_font">不動産仲介業の使命
+                            </h3>
+                            <p class="sub_title colored" ><span>物件選びはエンターテイメントである</span></p>
+                        </div>
+                        <div class="post_col post_col-2">
+                            <p>私の考える不動産仲介業の使命とは、
+                              「物件選びをお客様の人生の一つのイベント＝エンターテイメントとして捉え、先ずは楽しんでいただくこと。そしてお客様ご自身が主役となり、有意義な時間として過ごせるよう、専門的な知識と見解で最大のサポートをさせていただくこと。」であると考えております。
+                              
+                              物件選びは私たちの人生において、それほど多く経験する部分ではないと思っております。
+                              だからこそ、どの物件を選択する場合もとにかく楽しんでほしい。その結果がお客様にとって最良の選択に繋がるものと認識しております。
+                              楽しみながら思い出に残る物件選びをサポートさせて頂ければ幸いでございます。
+                              今後ともよろしくお願い申し上げます。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
+                </div>
+
+            </section>
+            <section class="cb_free_space num1 " id="cb_content_1">
+
+                <div class="post_content clearfix" id="job_details">
+                    <div class="design_header inview">
+                        <div class="title_area">
+                        </div>
+                    </div>
+                    <div class="post_row inview slide_up_animation">
+                        <div class="post_col post_col-2 rich_font">
+                            <h3 class="catch rich_font" >事業内容
                             </h3>
                         </div>
                         <div class="post_col post_col-2">
@@ -652,7 +682,7 @@
             </section>
             <section class="cb_free_space num1 " id="cb_content_1">
 
-                <div class="post_content clearfix">
+                <div class="post_content clearfix" id="about_us" >
                     <div class="design_header inview">
                         <div class="title_area">
                             <!-- <h3 class="large_headline"><span>株式会社BATON</span></h3>
@@ -822,12 +852,10 @@
  
 </section> -->
 
-
             <section class="cb_design_content num4" id="cb_content_4">
-
                 <div class="design_header cb_design_header inview">
                     <div class="title_area">
-                        <h3 class="large_headline"><span>経堂地区の魅力</span></h3>
+                        <h3 class="catch rich_font"><span>経堂地区の魅力</span></h3>
                         {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
                     </div>
                     <p class="desc  post_content"><strong>交通の高い利便性</strong> <br>
@@ -839,8 +867,6 @@
 
                         自然あふれる街並み<br>
                         道路、烏山川緑道、砧公園<br>
-
-
                     </p>
                 </div>
 
@@ -902,8 +928,8 @@
                                 </div> --}}
                                 </div>
                             @endforeach
-                        </div><!-- END .blog_list_carousel -->
-                    </div><!-- END .blog_list_carousel_wrap -->
+                        </div>
+                    </div>
                     <!-- 画像をクリックしたときに表示されるモーダル -->
                     {{-- <div class="modal">
                         <span class="close">&times;</span>

@@ -15,15 +15,15 @@
                 <a href="{{ route('landing.index') }}">HOME</a>
 
             </li>
-            {{-- <li id="menu-item-5934"
+            <li id="menu-item-5934"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
                 <a href="#about_us">ABOUT</a>
-            </li> --}}
-            {{-- <li id="menu-item-5884"
+            </li>
+            <li id="menu-item-5884"
                 class="menu-item menu-item-type-post_type_archive menu-item-object-service  menu-item-5884">
                 <a href="#job_details" class="megamenu_button megamenu_type2"
                     data-megamenu="js-megamenu5884">SERVICE</a>
-            </li> --}}
+            </li>
             <li id="menu-item-5948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948"><a
               href="{{ route('landing.company') }}">COMPANY</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">

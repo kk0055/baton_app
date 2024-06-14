@@ -21,8 +21,12 @@ class LandingPageController extends Controller
     }
     public function rent()
     {
-        $sales = Property::rentOnly()->get();
+        $rents = Property::rentOnly()->get();
         return view('rent', compact('rents'));
+    }
+    public function company()
+    {
+        return view('company');
     }
 
 }

@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="WordPressテンプレート「GENESIS （TCD103）」のデモサイト">
+    <meta name="description"
+        content="MESSAGECEOメッセージ地球が豊かになる循環型社会ヘ現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。">
     <link rel="pingback" href="https://demo.tcd-theme.com/tcd103/xmlrpc.php">
-    <title>ブログ | WordPressテーマ「GENESIS」</title>
+    <title>COMPANY | WordPressテーマ「GENESIS」</title>
     <meta name='robots' content='max-image-preview:large' />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://demo.tcd-theme.com/tcd103/blog/">
-    <meta property="og:title" content="ブログ | WordPressテーマ「GENESIS」">
-    <meta property="og:description" content="WordPressテンプレート「GENESIS （TCD103）」のデモサイト">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://demo.tcd-theme.com/tcd103/company/">
+    <meta property="og:title" content="COMPANY | WordPressテーマ「GENESIS」">
+    <meta property="og:description"
+        content="MESSAGECEOメッセージ地球が豊かになる循環型社会ヘ現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。">
     <meta property="og:site_name" content="WordPressテーマ「GENESIS」">
     <meta property="og:image" content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
     <meta property="og:image:secure_url"
@@ -406,76 +408,428 @@
         src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
         id="jquery-migrate-js"></script>
     <link rel="https://api.w.org/" href="https://demo.tcd-theme.com/tcd103/wp-json/" />
-
+    <link rel="alternate" type="application/json" href="https://demo.tcd-theme.com/tcd103/wp-json/wp/v2/pages/5942" />
+    <link rel="canonical" href="https://demo.tcd-theme.com/tcd103/company/" />
+    <link rel='shortlink' href='https://demo.tcd-theme.com/tcd103/?p=5942' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F&#038;format=xml" />
+  
     <style id="current-page-style" type="text/css">
+        #page_header .overlay {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        @media only screen and (min-width: 801px) {
+            .design_header .large_headline {
+                margin-top: -20px;
+            }
+
+            .title {
+                margin-top: -12px !important;
+            }
+
+            .title2 {
+                margin-top: 2px !important;
+            }
+
+            .title3 {
+                margin-top: 2px !important;
+            }
+
+            #page_header .desc_area {
+                margin: -97px auto 140px;
+            }
+
+            #page_header .desc {
+                margin-bottom: -3px;
+            }
+
+            .post_content:empty+.gallery_content {
+                margin-top: -161px;
+            }
+
+            .gallery_content_header .desc {
+                margin-bottom: -42px;
+            }
+
+            .design_header {
+                margin-top: 13px !important;
+                margin-bottom: 58px;
+            }
+
+            .post_content p {
+                margin: 0 0 41px 0;
+            }
+
+            #page_header .design_header {
+                margin: -10px auto 147px;
+            }
+
+            #company_message .catch {
+                margin: -15px 0 34px 0;
+            }
+
+            .gray_bg {
+                padding: 134px 0;
+            }
+
+            #company_data_list h4 {
+                margin: 0px 0 37px 0;
+            }
+
+            #company_data_list {
+                margin: 55px 0 139px;
+            }
+
+            #company_access {
+                margin-top: 141px;
+            }
+
+            #page_contents {
+                padding-bottom: 147px;
+            }
+
+            #company_data_list td {
+                padding: 0 0 0px 0;
+                line-height: 45px;
+            }
+
+            .title2 {
+                margin-top: -14px;
+            }
+
+            .sub_title.colored {
+                margin-bottom: -5px !important;
+            }
+
+            .company_info {
+                margin-top: -3px !important;
+                margin-bottom: -3px !important;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .design_header .large_headline {
+                margin-top: -3px;
+                !important
+            }
+
+            body:not(.show_sidebar) #page_header.large_height .design_header {
+                margin: -44px 0 10px 0;
+            }
+
+            .sub_title.colored {
+                margin-top: 8px;
+                margin-bottom: 20px;
+            }
+
+            .gray_bg {
+                padding: 37px 0;
+            }
+
+            #company_message .catch {
+                margin: -12px 0 22px 0;
+            }
+
+            .design_header {
+                margin-top: 37px;
+                margin-bottom: 38px;
+            }
+
+            #company_data_list .s_table {
+                margin-top: 27px;
+                font-size: 14px;
+            }
+
+            #company_access {
+                margin-top: -13px !important;
+            }
+
+            #company_access .qt_google_map {
+                margin-top: -5px !important;
+                margin-bottom: 32px;
+            }
+
+            #page_contents {
+                padding-bottom: 39px;
+            }
+
+            .company_info {
+                font-size: 14px;
+                padding-bottom: 2px;
+            }
+
+            .title2 {
+                margin-top: -20px !important;
+            }
+
+            .title3 {
+                margin-top: -1px !important;
+            }
+
+            .title4 {
+                margin-top: -80px !important;
+            }
+
+            .post_content p {
+                margin: 0 0 37px 0;
+            }
+
+            #company_message .post_col img {
+                margin: 32px auto 3px !important;
+            }
+
+            .name {
+                margin-bottom: -2px !important;
+            }
+
+            body:not(.show_sidebar) #page_header.large_height {
+                height: 250px;
+            }
+
+            .design_header .title_area.no_desc {
+                margin-top: 28px;
+            }
+
+            .shutter_image {
+                margin-top: -3px;
+            }
+
+            .post_content .s_table table {
+                margin-bottom: 25px;
+            }
+
+            .info2 {
+                margin-bottom: 22px !important;
+            }
+        }
     </style>
 
 
     <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-32x32.png"
         sizes="32x32" />
-    <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-192x192.png"
+    <link rel="icon"
+        href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-192x192.png"
         sizes="192x192" />
     <link rel="apple-touch-icon"
         href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage"
         content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
 
-<body data-rsssl=1 id="body" class="blog wp-embed-responsive megamenu_dark_color">
+<body data-rsssl=1 id="body"
+    class="page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar normal_content_width">
     <div id="js-body-start"></div>
 
     @include('landing.components.header')
-  
+
     <div id="container">
 
         <div id="bread_crumb" class="inview">
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="home"><a
+                        itemprop="item" href="https://demo.tcd-theme.com/tcd103/"><span
+                            itemprop="name">ホーム</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li class="last" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span
+                        itemprop="name">COMPANY</span>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ul>
         </div>
-        <div id="archive_header" class="inview">
-            <div class="title_area">
-                <h2 class="large_headline"><span>売買物件</span></h2>
-                {{-- <p class="sub_title colored"><span>ブログ</span></p> --}}
+
+        <div id="page_header" class="large_height">
+            <div class="design_header inview">
+                <div class="title_area no_desc">
+                    <h1 class="large_headline"><span>COMPANY</span></h1>
+                    <p class="sub_title colored"><span>わたしたちの会社について</span></p>
+                </div>
             </div>
-            <p class="desc post_content">今週のおススメ物件</p>
         </div>
 
-        <section id="archive_blog" class="inview slide_up_animation">
-            <div class="blog_list">
-                @foreach ($sales as $property)
-                    <div class="item">
-                        <a class="image_link image-link animate_background"
-                            href="{{ asset('storage/' . $property->image_path) }}">
-                            <div class="image_wrap">
-                                <img loading="lazy" class="image"
-                                    src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
-                                    width="770" height="520" />
-                            </div>
 
-                        </a>
-                        {{-- <div class="content">
-                      <time class="date entry-date published" datetime="2023-09-28T23:21:04+09:00">2023.09.28</time>
-                  </div> --}}
+        <article id="page_contents">
+
+            <div class="post_content">
+                <div class="gray_bg" id="company_message">
+                    <div class="design_header inview">
+                        <div class="title_area">
+                            <h3 class="large_headline title"><span>MESSAGE</span></h3>
+                            <p class="sub_title colored"><span>CEOメッセージ</span></p>
+                        </div>
                     </div>
-                @endforeach
-            </div><!-- END .blog_list -->
+                    <h3 class="catch rich_font inview slide_up_animation">地球が豊かになる循環型社会ヘ</h3>
+                    <div class="post_row">
+                        <div class="post_col post_col-2 inview slide_up_animation">
+                            <p>現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。こうした問題に対処するために、持続可能なライフスタイルへの回帰が必要です。
+                            </p>
+                            <p>再生可能エネルギーの普及による環境保護など、自然と調和する縄文時代のような価値観を取り入れた新たな社会モデルが現代には必要なのです。<br />
+                                メディアではSDGsが大きく取り上げられ、企業はSDGsを自社のビジネス戦略の一部として取り入れています。しかし、単なる表面的なプロパガンダとして取り扱われ、その本質的な目的が埋もれてしまっています。
+                            </p>
+                            <p>SDGsは素晴らしい目標ですが、表面的な言葉やロゴだけでなく、真の変革を実現するための行動とコミットメントが求められています。</p>
+                            <p class="name">代表取締役社長 　橘 雄二郎</p>
+                        </div>
+                        <div class="post_col post_col-2">
+                            <div class="shutter_image inview col1">
+                                <div class="item"><img fetchpriority="high" decoding="async"
+                                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company1.jpg"
+                                        alt="" width="580" height="580"
+                                        class="alignnone size-full wp-image-5943" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design_header inview" id="profile">
+                    <div class="title_area">
+                        <h3 class="large_headline title3"><span>PROFILE</span></h3>
+                        <p class="sub_title colored"><span>会社情報</span></p>
+                    </div>
+                </div>
+                <div class="shutter_image inview col3 vertical">
+                    <div class="item"><img decoding="async"
+                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company2.jpg"
+                            alt="" width="415" height="450"
+                            class="alignnone size-full wp-image-5944" /></div>
+                    <div class="item"><img decoding="async"
+                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company3.jpg"
+                            alt="" width="411" height="450"
+                            class="alignnone size-full wp-image-5945" /></div>
+                    <div class="item"><img decoding="async"
+                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company4.jpg"
+                            alt="" width="414" height="450"
+                            class="alignnone size-full wp-image-5946" /></div>
+                </div>
+                <div class="post_row" id="company_data_list">
+                    <div class="post_col post_col-2 inview slide_up_animation">
+                        <h4>会社概要</h4>
+                        <div class="s_table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>会社名</th>
+                                        <td>株式会社ゲネシス</td>
+                                    </tr>
+                                    <tr>
+                                        <th>所在地</th>
+                                        <td>〒530-0000 大阪市なにわ町1-2-3 GENESISビルディング30F</td>
+                                    </tr>
+                                    <tr>
+                                        <th>TEL</th>
+                                        <td>06-1234-5678</td>
+                                    </tr>
+                                    <tr>
+                                        <th>資本金</th>
+                                        <td>5,000万円</td>
+                                    </tr>
+                                    <tr>
+                                        <th>設立</th>
+                                        <td>2011年10月</td>
+                                    </tr>
+                                    <tr>
+                                        <th>従業員</th>
+                                        <td>300人</td>
+                                    </tr>
+                                    <tr>
+                                        <th>事業内容</th>
+                                        <td>再生可能エネルギー事業<br />
+                                            循環型社会事業<br />
+                                            ライフサイエンス事業</td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="post_col post_col-2 inview slide_up_animation">
+                        <h4>会社沿革</h4>
+                        <div class="s_table">
+                            <table class="right">
+                                <tbody>
+                                    <tr>
+                                        <th>2011年（平成23年)</th>
+                                        <td>大阪市東淀川区にて株式会社ゲネシス設立</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2012年（平成24年)</th>
+                                        <td>最初のプロジェクトとして太陽光発電事業を開始</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2014年（平成26年)</th>
+                                        <td>再生可能エネルギー部門での実績が認められ、国内外で多くの太陽光発電所建設プロジェクトを獲得</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2015年（平成27年)</th>
+                                        <td>北米・アジアの企業とパートナーシップを締結</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2016年（平成28年)</th>
+                                        <td>循環型社会事業に参入し廃棄物リサイクルプラントの運営を開始</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2018年（平成30年)</th>
+                                        <td>新しいリサイクル技術により廃棄物削減に貢献したことが認められ「ECO AWARD 2018」を受賞</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2020年（令和2年)</th>
+                                        <td>本社を大阪市なにわ町に移転</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2023年（令和5年)</th>
+                                        <td>ライフサイエンス事業開始</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="company_access">
+                    <div class="design_header inview">
+                        <div class="title_area">
+                            <h3 class="large_headline title4"><span>ACCESS</span></h3>
+                            <p class="sub_title colored"><span>アクセス</span></p>
+                        </div>
+                    </div>
+                    <div class="sc">
+                        <div class='qt_google_map'>
+                            <div class='qt_googlemap clearfix'>
+                                <div id='qt_google_map1889926261' class='qt_googlemap_embed'></div>
+                            </div>
+                            <script>
+                                jQuery(window).on('load', function() {
+                                    initMap('qt_google_map1889926261', '新大阪', -100, 1,
+                                        'https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/08/header_logo_white.png', '');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="post_row inview slide_up_animation">
+                        <div class="post_col post_col-2">
+                            <p class="company_info info2">株式会社ゲネシス<br />
+                                〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング30F</span></p>
+                        </div>
+                        <div class="post_col post_col-2">
+                            <p class="company_info">・北方面から阪神高速に入り、下車後直進<br />
+                                ・なにわ1交差点を左折し直進後すぐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            {{-- <div class="page_navi clearfix">
-                <ul class='page-numbers'>
-                    <li><span aria-current="page" class="page-numbers current">1</span></li>
-                    <li><a class="page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/2/">2</a></li>
-                    <li><a class="page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/3/">3</a></li>
-                    <li><a class="next page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/2/"><span
-                                class="arrow_button_small"></span></a></li>
-                </ul>
-            </div> --}}
-        </section><!-- END #archive_blog -->
-        <!-- 画像をクリックしたときに表示されるモーダル -->
-        <div class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content">
-        </div>
-        {{-- <div id="footer_banner" class="banner_num2">
+        </article><!-- END #page_contents -->
+
+
+
+
+        <div id="footer_banner" class="banner_num2">
             <a class="item animate_background" href="https://tcd-theme.com/tcd103/" target="_blank"
                 rel="nofollow noopener">
                 <div class="content">
@@ -489,23 +843,40 @@
                         height="300" />
                 </div>
             </a>
-        </div> --}}
+            <a class="item animate_background" href="https://demo.tcd-theme.com/tcd103/lp1/">
+                <div class="content">
+                    <p class="title large_headline"><span class="label">RECRUIT</span><span
+                            class="arrow_button"></span></p>
+                    <p class="sub_title colored">求人採用情報</p>
+                </div>
+                <div class="image_wrap">
+                    <img loading="lazy" class="image"
+                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer2.jpg" width="870"
+                        height="300" />
+                </div>
+            </a>
+        </div>
 
 
         <footer id="footer">
+
+
             <div id="footer_inner">
+
                 <p id="footer_logo">
                     <a href="https://demo.tcd-theme.com/tcd103/" title="WordPressテーマ「GENESIS」">
                         <img class="logo_image pc"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo-new.png?1718336845"
+                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo-new.png?1718371674"
                             alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="146"
                             height="20" />
                         <img class="logo_image mobile"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo_mb.png?1718336845"
+                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo_mb.png?1718371674"
                             alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="100"
                             height="14" />
                     </a>
                 </p>
+
+
                 <div id="footer_address" class="post_content clearfix">
                     <p>株式会社ゲネシス　<span class="a_break">〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング
                                 30F</span></p>
@@ -532,19 +903,16 @@
                             href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a></li>
                     <li id="menu-item-5941"
                         class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5941 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a>
-                    </li>
+                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a></li>
                     <li id="menu-item-5937"
                         class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-5937 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
-                    </li>
+                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a></li>
                     <li id="menu-item-5947"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5947 swiper-slide"><a
-                            href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5942 current_page_item menu-item-5947 swiper-slide">
+                        <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a></li>
                     <li id="menu-item-5940"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2838 current_page_item current_page_parent menu-item-5940 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/blog/" aria-current="page">BLOG</a>
-                    </li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5940 swiper-slide"><a
+                            href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a></li>
                     <li id="menu-item-6061"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061 swiper-slide"><a
                             href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
@@ -626,11 +994,11 @@
                     </ul>
                 </li>
                 <li id="menu-item-6433"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
-                        href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
+                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5942 current_page_item menu-item-6433">
+                    <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a></li>
                 <li id="menu-item-6440"
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6440"><a
-                        href="https://demo.tcd-theme.com/tcd103/blog/" aria-current="page">BLOG</a></li>
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6440"><a
+                        href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a></li>
                 <li id="menu-item-6441"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6441"><a target="_blank"
                         rel="noopener" href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
@@ -686,6 +1054,12 @@
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDal5sz2w_v49S9z13bYhLrEfVmLqV_p8M&amp;ver=1.0"
+        id="qt_google_map_api-js"></script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/googlemap.js?ver=1.0"
+        id="qt_google_map-js"></script>
     <script>
         (function($) {
 
@@ -729,6 +1103,35 @@
         })(jQuery);
 
 
+        (function($) {
+
+            if ($('.banner_widget').length) {
+                let banner_inner = new Swiper(".banner_widget", {
+                    loop: true,
+                    effect: "fade",
+                    speed: 1000,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                });
+            }
+
+        })(jQuery);
+        (function($) {
+
+            if ($('.gallery_content_carousel_wrap').length) {
+                var slider = $('.gallery_content_carousel');
+                var item_num = $('.gallery_content_carousel .item').length;
+                var animation_time = 15 * item_num;
+                slider.clone().insertBefore(slider);
+                slider.clone().insertAfter(slider);
+                $('.gallery_content_carousel').css('animation-duration', animation_time + 's');
+                $('.gallery_content_carousel:nth-child(2)').css('animation-delay', -animation_time / 1.5 + 's');
+                $('.gallery_content_carousel:last-child').css('animation-delay', -animation_time / 3 + 's');
+            };
+
+        })(jQuery);
 
         (function($) {
 
@@ -778,6 +1181,9 @@
                         }
                     });
                 }
+
+
+
             })(jQuery);
 
             // #header_messageが存在する場合のみ処理を実行
@@ -804,35 +1210,9 @@
                 $('#header').removeClass('first_animate');
             }, 300);
 
+
+
         })(jQuery);
-        // 画像リンクをクリックしたときにモーダルを表示
-        const imageLinks = document.querySelectorAll('.image-link');
-        const modal = document.querySelector('.modal');
-        const header = document.querySelector('#header');
-        const modalContent = modal.querySelector('.modal-content');
-        const closeModal = modal.querySelector('.close');
-
-        imageLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                modalContent.src = this.href;
-                modal.style.display = 'block';
-                header.style.display = 'none';
-            });
-        });
-
-        // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
-        closeModal.addEventListener('click', function() {
-            modal.style.display = 'none';
-            header.style.display = 'block';
-        });
-        // モーダルの背景がクリックされたとき、モーダルを非表示にする
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-                header.style.display = 'block';
-            }
-        });
     </script>
 </body>
 
