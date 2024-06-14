@@ -9,17 +9,20 @@ class LandingPageController extends Controller
 {
     public function index()
     {
-        $properties = Property::displayedAndOrdered()->get();
-        return view('index', compact('properties'));
+        $rents = Property::rentOnly()->take(10)->get();
+        $sales = Property::saleOnly()->take(10)->get();
+        return view('index', compact('rents', 'sales'));
     }
 
-    public function property()
+    public function sale()
     {
-        return view('property');
+        $sales = Property::saleOnly()->get();
+        return view('sale', compact('sales'));
     }
-    public function about()
+    public function rent()
     {
-        // Logic for displaying the about page
-        return view('landing.about');
+        $sales = Property::rentOnly()->get();
+        return view('rent', compact('rents'));
     }
+
 }

@@ -21,28 +21,42 @@ class Property extends Model
      */
     public function scopeOrderByOrder($query)
     {
-        return $query->orderBy('order', 'desc');
+        return $query->orderBy('order');
     }
 
     /**
-     * スコープ：is_display が true のものだけを取得し、order 順に並べ替える
+     * 賃貸
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeDisplayedAndOrdered($query)
+    public function scopeRentOnly($query)
     {
-        return $query->where('is_display', true)->orderBy('order', 'desc');
+        return $query->where('is_display', true)
+                     ->where('type', '賃貸')
+                     ->orderBy('order');
     }
-   
-    
+
+    /**
+     * 売買
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSaleOnly($query)
+    {
+        return $query->where('is_display', true)
+                      ->where('type', '売買')
+                      ->orderBy('order', 'desc');
+    }
+
     public static function propertyTypes()
     {
         $propertyTypes = [
             '賃貸',
             '売買',
-       ];
+        ];
 
-       return $propertyTypes;
+        return $propertyTypes;
     }
 }

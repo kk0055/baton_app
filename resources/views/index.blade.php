@@ -20,10 +20,6 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-    <link rel="alternate" type="application/rss+xml" title="WordPressテーマ「GENESIS」 &raquo; フィード"
-        href="https://demo.tcd-theme.com/tcd103/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="WordPressテーマ「GENESIS」 &raquo; コメントフィード"
-        href="https://demo.tcd-theme.com/tcd103/comments/feed/" />
     <link rel='stylesheet' id='swiper-css'
         href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
     <link rel='stylesheet' id='main-style-css'
@@ -381,7 +377,6 @@
             line-height: 1.6;
         }
     </style>
-    {{-- <link rel='stylesheet' id='child-style-css' href='https://demo.tcd-theme.com/tcd103/wp-content/themes/GENESIS-child/style.css?ver=6.5.4' type='text/css' media='all' /> --}}
     <link rel='stylesheet' id='hcb-style-css'
         href='https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1'
         type='text/css' media='all' />
@@ -411,602 +406,7 @@
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F" />
     <link rel="alternate" type="text/xml+oembed"
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F&#038;format=xml" />
-    <style type="text/css">
-        :root {
-            --vw: 1vw;
-            --single_post_title_font_size: 34px;
-            --single_post_title_font_size_tb: 30px;
-            --single_post_title_font_size_sp: 20px;
-            --font_family_type1: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-            --font_family_type2: Arial, "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
-            --font_family_type3: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-        }
-
-        body {
-            font-size: 16px;
-        }
-
-        .large_headline {
-            font-size: 70px !important;
-        }
-
-        .rich_font {
-            font-size: 34px !important;
-        }
-
-        @media screen and (max-width:1100px) {
-            .large_headline {
-                font-size: 55px !important;
-            }
-
-            .rich_font {
-                font-size: 31px !important;
-            }
-        }
-
-        @media screen and (max-width:800px) {
-            body {
-                font-size: 16px;
-            }
-
-            .large_headline {
-                font-size: 30px !important;
-            }
-
-            .rich_font {
-                font-size: 22px !important;
-            }
-        }
-
-        body,
-        input,
-        textarea {
-            font-weight: 500;
-            font-family: var(--font_family_type2);
-        }
-
-        .rich_font,
-        .p-vertical {
-            font-family: var(--font_family_type2);
-            font-weight: 600;
-        }
-
-        .large_headline {
-            font-family: var(--font_family_type2);
-            font-weight: 600;
-        }
-
-        #single_post_header .title {
-            font-family: var(--font_family_type2);
-            font-weight: 600;
-        }
-
-        .rich_font_type1 {
-            font-family: var(--font_family_type1);
-            font-weight: 600;
-        }
-
-        .rich_font_type2 {
-            font-family: var(--font_family_type2);
-            font-weight: 600;
-        }
-
-        .rich_font_type3 {
-            font-family: var(--font_family_type3);
-            font-weight: 600;
-        }
-
-
-        .logo_text {
-            font-size: 26px;
-        }
-
-        @media screen and (max-width:1201px) {
-            .logo_text {
-                font-size: 20px;
-            }
-        }
-
-        #footer_banner .title {
-            font-size: 50px !important;
-        }
-
-        @media screen and (max-width:1100px) {
-            #footer_banner .title {
-                font-size: 44px !important;
-            }
-        }
-
-        @media screen and (max-width:800px) {
-            #footer_banner .title {
-                font-size: 30px !important;
-            }
-        }
-
-        @media(hover: hover) {
-            .animate_background .image_wrap img {
-                width: 100%;
-                height: 100%;
-                will-change: transform;
-                transition: transform 0.5s ease;
-            }
-
-            .animate_background:hover .image_wrap img {
-                transform: scale(1.1);
-            }
-        }
-
-        a {
-            color: #000;
-        }
-
-        a:hover,
-        .category_button,
-        .sub_title.colored,
-        #global_menu>ul>li>a:hover,
-        .faq_list .headline,
-        #bread_crumb,
-        #bread_crumb li.last,
-        .faq_list .title.active,
-        .widget_categories li a:hover,
-        .widget_archive li a:hover,
-        .widget_pages li a:hover,
-        .widget_nav_menu li a:hover,
-        .design_button,
-        .service_category_content .post_list .title,
-        .service_header .archive_link .label,
-        .megamenu_b .arrow:after,
-        .megamenu_b .sub_title.arrow,
-        .news_category_button a:hover,
-        #footer_banner a:hover .arrow_button:before,
-        #footer_banner a:hover .arrow_button:after,
-        .service_category_post_list .title,
-        #post_pagination a:hover,
-        .page_navi a:hover,
-        #return_top a:hover .arrow:before,
-        #return_top a:hover .arrow:after,
-        #service_link_list .link_label,
-        body.megamenu_dark_color .megamenu_a a:hover,
-        .arrow_link_button a,
-        .megamenu_b .arrow_link,
-        .megamenu_b .post_list .arrow_link .arrow_button_small,
-        #header_slider_wrap.layout_type3 .desc_area a:hover,
-        #company_data_list h4,
-        .lp3_bottom_content .item_list a,
-        #service_link_list .post_list.type1 .catch,
-        #service_link_list .post_list.type2 .catch {
-            color: #ff4000;
-        }
-
-        .cardlink .title a,
-        #global_menu>ul>li.active>a,
-        #global_menu>ul>li.current-menu-item>a,
-        .design_arrow_button a,
-        .swiper-nav-button:hover .arrow_button_small:before,
-        .swiper-nav-button:hover .arrow_button_small:after {
-            color: #ff4000 !important;
-        }
-
-        .page_navi span.current,
-        #global_menu ul ul a:hover,
-        .arrow_button,
-        #submit_comment,
-        #post_pagination p,
-        #comment_tab li.active a,
-        .widget_tab_post_list_button div.active,
-        .widget_categories a:before,
-        .q_styled_ol li:before,
-        #copyright,
-        .tcdw_tag_list_widget ol a:hover,
-        .widget_tag_cloud .tagcloud a:hover,
-        #wp-calendar tbody a:hover,
-        #post_tag_list a:hover,
-        #wp-calendar #prev a:hover,
-        #wp-calendar #next a:hover,
-        #wp-calendar td a:hover,
-        .news_category_button li.current a,
-        .swiper-scrollbar-drag,
-        .cb_service_category_list .post_list a:after,
-        .shutter_image.link_ver .post_list a:after,
-        .design_button:hover,
-        #mobile_menu li li a {
-            background-color: #ff4000;
-        }
-
-        .category_button,
-        .page_navi span.current,
-        #post_pagination p,
-        #comment_textarea textarea:focus,
-        #guest_info input:focus,
-        .c-pw__box-input:focus,
-        .news_category_button li.current a,
-        .news_category_button a:hover,
-        #post_pagination a:hover,
-        .page_navi a:hover,
-        .design_button {
-            border-color: #ff4000;
-        }
-
-        .category_button:hover,
-        .single_post_nav:hover span:after,
-        .faq_list .title:hover,
-        #single_author_title_area .author_link li a:hover:before,
-        .author_profile a:hover,
-        #post_meta_bottom a:hover,
-        .cardlink_title a:hover,
-        .comment a:hover,
-        .comment_form_wrapper a:hover,
-        .megamenu_b .sub_title.arrow:hover,
-        .megamenu_b .arrow_link:hover,
-        body.megamenu_dark_color .megamenu_b a:hover {
-            color: #e12200;
-        }
-
-        .design_arrow_button a:hover {
-            color: #e12200 !important;
-        }
-
-        .c-pw__btn:hover,
-        #comment_tab li a:hover,
-        #submit_comment:hover,
-        #cancel_comment_reply a:hover,
-        #comment_tab li a:hover,
-        .cb_service_category_list .post_list a:hover:after,
-        .shutter_image.link_ver .post_list a:hover:after {
-            background-color: #e12200;
-        }
-
-        .category_button:hover,
-        .tcdw_tag_list_widget ol a:hover,
-        .widget_tag_cloud .tagcloud a:hover {
-            border-color: #e12200;
-        }
-
-
-        .post_content a,
-        .widget_block a,
-        .textwidget a,
-        #no_post a,
-        #page_404_header .desc a,
-        #no_search_result a {
-            color: #ff4000;
-        }
-
-        #page_404_header .desc a:hover {
-            color: #ff4000;
-        }
-
-        .widget_block a:hover,
-        .textwidget a:hover,
-        #no_post a:hover {
-            color: rgba(255, 64, 0, 0.6);
-        }
-
-        .post_content a:hover {
-            color: #ff4000;
-        }
-
-        .styled_h2 {
-            font-size: 28px !important;
-            text-align: center !important;
-            font-weight: 600 !important;
-            color: #000000;
-            border-color: #000000;
-            border-width: 1px;
-            border-style: solid;
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            border-bottom: none;
-            background-color: transparent;
-        }
-
-        @media screen and (max-width:800px) {
-            .styled_h2 {
-                font-size: 22px !important;
-            }
-        }
-
-        .styled_h3 {
-            font-size: 23px !important;
-            text-align: left !important;
-            font-weight: 600 !important;
-            color: #000000;
-            border-color: #ff4000;
-            border-width: 4px;
-            border-style: solid;
-            padding-left: 1em !important;
-            padding-top: 0.5em !important;
-            padding-bottom: 0.5em !important;
-            border-right: none;
-            border-top: none;
-            border-bottom: none;
-            background-color: transparent;
-        }
-
-        @media screen and (max-width:800px) {
-            .styled_h3 {
-                font-size: 20px !important;
-            }
-        }
-
-        .styled_h4 {
-            font-size: 22px !important;
-            text-align: left !important;
-            font-weight: 500 !important;
-            color: #000000;
-            border-color: #dddddd;
-            border-width: 1px;
-            border-style: dotted;
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            padding-bottom: 0.8em !important;
-            background-color: transparent;
-        }
-
-        @media screen and (max-width:800px) {
-            .styled_h4 {
-                font-size: 18px !important;
-            }
-        }
-
-        .styled_h5 {
-            font-size: 20px !important;
-            text-align: left !important;
-            font-weight: 500 !important;
-            color: #000000;
-            border-color: #000000;
-            border-width: 3px;
-            border-style: double;
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            border-bottom: none;
-            background-color: #f2f2f2;
-            padding: 0.8em 1em !important;
-        }
-
-        @media screen and (max-width:800px) {
-            .styled_h5 {
-                font-size: 16px !important;
-            }
-        }
-
-        .post_content a.q_custom_button1 {
-            width: 280px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 70px;
-            color: #ffffff;
-            background-color: #ff4000;
-            border: none;
-        }
-
-        .post_content a.q_custom_button1:before {
-            color: #ffffff;
-            background-color: #ff8259;
-            opacity: 0;
-        }
-
-        .post_content a.q_custom_button1:hover {}
-
-        .post_content a.q_custom_button1:hover:before {
-            opacity: 1;
-        }
-
-        @media (max-width: 1200px) {
-            .post_content a.q_custom_button1 {
-                width: 260px;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .post_content a.q_custom_button1 {
-                width: 240px;
-                height: 50px;
-                line-height: 50px;
-            }
-        }
-
-        .post_content a.q_custom_button2 {
-            width: 280px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 6px;
-            color: #428dbf;
-            border-color: #428dbf;
-        }
-
-        .post_content a.q_custom_button2:before {
-            background-color: #428dbf;
-            left: calc(-100% - 110px);
-            transform: skewX(45deg);
-            width: calc(100% + 70px);
-        }
-
-        .post_content a.q_custom_button2:hover {
-            color: #ffffff;
-            border-color: #428dbf;
-        }
-
-        .post_content a.q_custom_button2:hover:before {
-            left: -35px;
-        }
-
-        @media (max-width: 1200px) {
-            .post_content a.q_custom_button2 {
-                width: 260px;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .post_content a.q_custom_button2 {
-                width: 240px;
-                height: 50px;
-                line-height: 50px;
-            }
-        }
-
-        .post_content a.q_custom_button3 {
-            width: 280px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 0px;
-            color: #ffffff;
-            background-color: #375c60;
-            border: none;
-        }
-
-        .post_content a.q_custom_button3:before {
-            color: #ffffff;
-            background-color: #5a898e;
-            left: -100%;
-        }
-
-        .post_content a.q_custom_button3:hover {}
-
-        .post_content a.q_custom_button3:hover:before {
-            left: 0;
-        }
-
-        @media (max-width: 1200px) {
-            .post_content a.q_custom_button3 {
-                width: 260px;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .post_content a.q_custom_button3 {
-                width: 240px;
-                height: 50px;
-                line-height: 50px;
-            }
-        }
-
-        .q_frame1 {
-            background: #ffffff;
-            border-radius: 0px;
-            border-width: 1px;
-            border-color: #dddddd;
-            border-style: solid;
-        }
-
-        .q_frame1 .q_frame_label {
-            color: #000000;
-        }
-
-        .q_frame2 {
-            background: #ffffff;
-            border-radius: 0px;
-            border-width: 1px;
-            border-color: #009aff;
-            border-style: solid;
-        }
-
-        .q_frame2 .q_frame_label {
-            color: #009aff;
-        }
-
-        .q_frame3 {
-            background: #ffffff;
-            border-radius: 10px;
-            border-width: 1px;
-            border-color: #f9b42d;
-            border-style: solid;
-        }
-
-        .q_frame3 .q_frame_label {
-            color: #f9b42d;
-        }
-
-        .q_underline1 {
-            font-weight: 600;
-            background-image: -webkit-linear-gradient(left, transparent 50%, #ff845b 50%);
-            background-image: -moz-linear-gradient(left, transparent 50%, #ff845b 50%);
-            background-image: linear-gradient(to right, transparent 50%, #ff845b 50%);
-        }
-
-        .q_underline2 {
-            font-weight: 600;
-            background-image: -webkit-linear-gradient(left, transparent 50%, #99f9ff 50%);
-            background-image: -moz-linear-gradient(left, transparent 50%, #99f9ff 50%);
-            background-image: linear-gradient(to right, transparent 50%, #99f9ff 50%);
-        }
-
-        .q_underline3 {
-            font-weight: 600;
-            background-image: -webkit-linear-gradient(left, transparent 50%, #ff99b8 50%);
-            background-image: -moz-linear-gradient(left, transparent 50%, #ff99b8 50%);
-            background-image: linear-gradient(to right, transparent 50%, #ff99b8 50%);
-        }
-
-        .speech_balloon1 .speech_balloon_text_inner {
-            color: #000000;
-            background-color: #ffffff;
-            border-color: #ff4000;
-        }
-
-        .speech_balloon1 .before {
-            border-left-color: #ff4000;
-        }
-
-        .speech_balloon1 .after {
-            border-right-color: #ffffff;
-        }
-
-        .speech_balloon2 .speech_balloon_text_inner {
-            color: #000000;
-            background-color: #ffffff;
-            border-color: #ff5353;
-        }
-
-        .speech_balloon2 .before {
-            border-left-color: #ff5353;
-        }
-
-        .speech_balloon2 .after {
-            border-right-color: #ffffff;
-        }
-
-        .speech_balloon3 .speech_balloon_text_inner {
-            color: #000000;
-            background-color: #ffffff;
-            border-color: #1578d6;
-        }
-
-        .speech_balloon3 .before {
-            border-left-color: #1578d6;
-        }
-
-        .speech_balloon3 .after {
-            border-right-color: #ffffff;
-        }
-
-        .speech_balloon4 .speech_balloon_text_inner {
-            color: #000000;
-            background-color: #ffffff;
-            border-color: #0789b5;
-        }
-
-        .speech_balloon4 .before {
-            border-left-color: #0789b5;
-        }
-
-        .speech_balloon4 .after {
-            border-right-color: #ffffff;
-        }
-
-        .qt_google_map .pb_googlemap_custom-overlay-inner {
-            background: #000000;
-            color: #ffffff;
-        }
-
-        .qt_google_map .pb_googlemap_custom-overlay-inner::after {
-            border-color: #000000 transparent transparent transparent;
-        }
-    </style>
-
+   
     <style id="current-page-style" type="text/css">
         #header_slider_content .catch {
             font-size: 76px;
@@ -1165,6 +565,7 @@
         }
     </style>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 
     <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-32x32.png"
         sizes="32x32" />
@@ -1181,10 +582,10 @@
     class="home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color header_slider_layout_type1 use_loading_screen loading_animation_type1 hide_sidebar normal_content_width">
     <div id="js-body-start"></div>
 
-    <!-- <div id="site_loader_overlay_for_catchphrase">
+    {{-- <div id="site_loader_overlay_for_catchphrase">
   <p id="loader_catch" class="rich_font_type2">人と自然が共生できる<br />
 未来の循環型社会をつくる</p>
- </div> -->
+ </div>  --}}
     <div id="site_loader_overlay">
         <div id="loader_logo_image">
             {{-- <h1 class="pc" width="196" height="26" >株式会社BATON</h1> --}}
@@ -1194,130 +595,14 @@
         </div>
     </div>
 
-    <header id="header" class="first_animate">
-        <h1 id="header_logo">
-            <a href="/">
-                <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" width="146"
-                    height="20" />
-                <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" width="100"
-                    height="14" />
-            </a>
-        </h1>
-
-        <a id="drawer_menu_button" href="#"><span></span><span></span><span></span></a>
-        <nav id="global_menu"
-            class="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container">
-            <ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
-                <li id="menu-item-6202"
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6202">
-                    <a href="{{ route('landing.index') }}">HOME</a>
-
-                </li>
-                <li id="menu-item-5934"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
-                    <a href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a>
-
-                </li>
-                <li id="menu-item-5884"
-                    class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-has-children menu-item-5884">
-                    <a href="#job_details" class="megamenu_button megamenu_type2"
-                        data-megamenu="js-megamenu5884">SERVICE</a>
-                </li>
-                <li id="menu-item-5948"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5948"><a
-                        href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
-                <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
-                    <a href="https://demo.tcd-theme.com/tcd103/about/">PROPERTY</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-5982"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a
-                                href="#">賃貸</a></li>
-                        <li id="menu-item-5953"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5953"><a
-                                href="#">売買</a></li>
-                    </ul>
-                    {{-- <li id="menu-item-5562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5562"><a href="https://demo.tcd-theme.com/tcd103/blog/" class="megamenu_button megamenu_type1" data-megamenu="js-megamenu5562">PROPERTY</a></li> --}}
-
-            </ul>
-        </nav>
-        <div id="header_search">
-            <form role="search" method="get" id="header_searchform" action="https://demo.tcd-theme.com/tcd103">
-                <div class="input_area"><input type="text" value="" id="header_search_input"
-                        name="s" autocomplete="off"></div>
-                <div class="search_button"><input type="submit" id="header_search_button" value=""></div>
-            </form>
-        </div>
-
-        {{-- megamenu  --}}
-        <div class="megamenu megamenu_b no_category_page" id="js-megamenu5884">
-
-            {{-- <div class="header">
-  <div class="title_area">
-   <p class="title">SERVICE</p>
-      <a class="sub_title arrow_link" href="https://demo.tcd-theme.com/tcd103/service/"><span class="label">わたしたちの事業について</span><span class="arrow_button_small"></span></a>
-     </div>
- </div>
-
- 
-  <div class="item category">
-  <a class="image_link animate_background" href="https://demo.tcd-theme.com/tcd103/service_category/society/">
-   <div class="image_wrap">
-    <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/mega-menu1.jpg" width="440" height="170" />
-   </div>
-  </a>
-  <div class="title_area">
-   <p class="title">SOCIETY</p>
-      <a class="sub_title arrow_link" href="https://demo.tcd-theme.com/tcd103/service_category/society/"><span class="label">循環型社会事業</span><span class="arrow_button_small"></span></a>
-     </div>
-    <div class="post_list">
-      <a class="arrow_link" href="https://demo.tcd-theme.com/tcd103/service/solar/"><span class="label">宇宙太陽光発電システム</span><span class="arrow_button_small"></span></a>
-      <a class="arrow_link" href="https://demo.tcd-theme.com/tcd103/service/biogass/"><span class="label">バイオガス発電プラント</span><span class="arrow_button_small"></span></a>
-     </div>
-   </div>
-  <div class="item category">
-  <a class="image_link animate_background" href="https://demo.tcd-theme.com/tcd103/service_category/energy/">
-   <div class="image_wrap">
-    <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/mega-menu2.jpg" width="440" height="170" />
-   </div>
-  </a>
-  <div class="title_area">
-   <p class="title">ENERGY</p>
-      <a class="sub_title arrow_link" href="https://demo.tcd-theme.com/tcd103/service_category/energy/"><span class="label">再生可能エネルギー事業</span><span class="arrow_button_small"></span></a>
-     </div>
-    <div class="post_list">
-      <a class="arrow_link" href="https://demo.tcd-theme.com/tcd103/service/wind-power/"><span class="label">還元型風力発電システム</span><span class="arrow_button_small"></span></a>
-     </div>
-   </div>
-  <div class="item category">
-  <a class="image_link animate_background" href="https://demo.tcd-theme.com/tcd103/service_category/science/">
-   <div class="image_wrap">
-    <img class="image" loading="lazy" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/mega-menu3.jpg" width="440" height="170" />
-   </div>
-  </a>
-  <div class="title_area">
-   <p class="title">SCIENCE</p>
-      <a class="sub_title arrow_link" href="https://demo.tcd-theme.com/tcd103/service_category/science/"><span class="label">ライフサイエンス事業</span><span class="arrow_button_small"></span></a>
-     </div>
-    <div class="post_list">
-      <a class="arrow_link" href="https://demo.tcd-theme.com/tcd103/service/biotechnology/"><span class="label">持続可能型フードサプライ</span><span class="arrow_button_small"></span></a>
-      <a class="arrow_link" href="https://demo.tcd-theme.com/tcd103/service/biopharma/"><span class="label">バイオ医療プロジェクト</span><span class="arrow_button_small"></span></a>
-     </div>
-   </div>
-  --}}
-
-        </div><!-- END .megamenu_b -->
-
-    </header>
+  @include('landing.components.header')
 
     <div id="container">
-
         <div id="header_slider_wrap" class="layout_type1">
-
             <div id="header_slider_content">
                 <div class="content">
                     <h2 class="catch rich_font_type2"><span class="line"><span
-                                class="line_inner">株式会社BATON</span></span></h2>
+                                class="line_inner">株式会社BATON</span></span></h2>     
                     <div class="desc_area">
                         <!-- <p class="desc"><span class="line"><span class="line_inner">人と自然が共生できる新しい世界をつくる</span></span></p> -->
                     </div>
@@ -1596,7 +881,7 @@
                 <div class="main_content inview">
                     <div class="blog_carousel_wrap swiper">
                         <div class="blog_carousel swiper-wrapper">
-                            @foreach ($properties as $property)
+                            @foreach ($rents as $property)
                                 <div class="item swiper-slide">
                                     {{-- <a class="image_link image animate_background"
                                         href="{{ asset('storage/' . $property->image_path) }}"> --}}
@@ -1631,7 +916,7 @@
                 </div>
 
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.property') }}"><span class="label">賃貸物件一覧</span><span
+                    <a href="{{ route('landing.rent') }}"><span class="label">賃貸物件一覧</span><span
                             class="arrow_button"></span></a>
                 </div>
 
@@ -1647,7 +932,7 @@
                 <div class="main_content inview">
                     <div class="blog_carousel_wrap blog2_carousel_wrap swiper">
                         <div class="blog2_carousel blog_carousel swiper-wrapper">
-                            @foreach ($properties as $property)
+                            @foreach ($sales as $property)
                                 <div class="item swiper-slide">
                                     {{-- <a class="image_link image animate_background"
                                       href="{{ asset('storage/' . $property->image_path) }}"> --}}
@@ -1682,13 +967,11 @@
                 </div>
 
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.property') }}"><span class="label">賃貸物件一覧</span><span
+                    <a href="{{ route('landing.sale') }}"><span class="label">売買物件一覧</span><span
                             class="arrow_button"></span></a>
                 </div>
             </section><!-- END 売買物件 -->
-        </div><!-- END #content_builder -->
-
-
+        </div>
 
         <div id="footer_banner" class="banner_num2">
             <a class="item animate_background" href="https://tcd-theme.com/tcd103/" target="_blank"
@@ -1704,18 +987,6 @@
                         height="300" />
                 </div>
             </a>
-            <a class="item animate_background" href="https://demo.tcd-theme.com/tcd103/lp1/">
-                <div class="content">
-                    <p class="title large_headline"><span class="label">RECRUIT</span><span
-                            class="arrow_button"></span></p>
-                    <p class="sub_title colored">求人採用情報</p>
-                </div>
-                <div class="image_wrap">
-                    <img loading="lazy" class="image"
-                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer2.jpg" width="870"
-                        height="300" />
-                </div>
-            </a>
         </div>
 
 
@@ -1725,33 +996,28 @@
             <div id="footer_inner">
 
                 <p id="footer_logo">
-                    <a href="https://demo.tcd-theme.com/tcd103/" title="WordPressテーマ「GENESIS」">
-                        <img class="logo_image pc"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo-new.png?1717932945"
-                            alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="146"
-                            height="20" />
-                        <img class="logo_image mobile"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo_mb.png?1717932945"
-                            alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="100"
-                            height="14" />
-                    </a>
+                    <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON"
+                        width="196" />
+                    <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON"
+                        width="155" height="120" />
+
                 </p>
 
 
                 <div id="footer_address" class="post_content clearfix">
-                    <p>株式会社ゲネシス　<span class="a_break">〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング
+                    <p>株式会社BATON　<span class="a_break">〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング
                                 30F</span></p>
                 </div>
 
                 <ul id="footer_sns" class="sns_button_list clearfix color_type1">
-                    <li class="insta"><a href="https://www.instagram.com/tcd_dp/" rel="nofollow noopener"
+                    <li class="insta"><a href="https://www.instagram.com/baton_2024/" rel="nofollow noopener"
                             target="_blank" title="Instagram"><span>Instagram</span></a></li>
-                    <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
+                    {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
                             title="X"><span>X</span></a></li>
                     <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener"
                             target="_blank" title="Facebook"><span>Facebook</span></a></li>
                     <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                            rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li>
+                            rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li> --}}
                 </ul>
 
             </div>
@@ -1779,22 +1045,23 @@
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5940 swiper-slide">
                         <a href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a>
                     </li>
-                    <li id="menu-item-6061"
+                    {{-- <li id="menu-item-6061"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061 swiper-slide"><a
-                            href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
+                            href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li> --}}
                 </ul>
             </div>
 
 
-            <p id="copyright"><span>© 2023 TCD WordPress Theme</span></p>
+            <p id="copyright"><span>© BATON inc.</span></p>
 
         </footer>
 
     </div><!-- #container -->
 
-    <div id="return_top">
-        <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
-    </div>
+    {{-- <div id="return_top">
+        <a class="no_auto_scroll" href="#body">
+         </a>
+    </div> --}}
 
     <div id="drawer_menu">
 
@@ -1807,8 +1074,8 @@
             <ul id="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
                 <li id="menu-item-6425"
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6425">
-                    <a href="https://demo.tcd-theme.com/tcd103/" aria-current="page">HOME</a>
-                    <ul class="sub-menu">
+                    <a href="/" aria-current="page">HOME</a>
+                    {{-- <ul class="sub-menu">
                         <li id="menu-item-6428"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6428"><a
                                 href="https://demo.tcd-theme.com/tcd103/top-page-demo1/">トップページ &#8211; サンプル1</a></li>
@@ -1818,7 +1085,7 @@
                         <li id="menu-item-6426"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6426"><a
                                 href="https://demo.tcd-theme.com/tcd103/top-page-demo3/">トップページ &#8211; サンプル3</a></li>
-                    </ul>
+                    </ul> --}}
                 </li>
                 <li id="menu-item-6434"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6434">
@@ -1884,8 +1151,8 @@
                     title="Instagram"><span>Instagram</span></a></li>
             <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
                     title="X"><span>X</span></a></li>
-            <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener"
-                    target="_blank" title="Facebook"><span>Facebook</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener" target="_blank"
+                    title="Facebook"><span>Facebook</span></a></li>
             <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
                     rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li>
         </ul>

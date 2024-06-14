@@ -19691,8 +19691,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/admin/admin": 0,
 /******/ 			"css/landing/landing": 0,
+/******/ 			"css/admin/admin": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -19743,10 +19743,10 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/admin/admin.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/admin/admin","css/landing/landing","css/app"], () => (__webpack_require__("./resources/css/landing/landing.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/admin/admin.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/landing/landing.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

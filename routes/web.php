@@ -6,7 +6,8 @@ use App\Http\Controllers\LandingPageController;
 
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
-Route::get('/property', [LandingPageController::class, 'property'])->name('landing.property');
+Route::get('/rent', [LandingPageController::class, 'rent'])->name('landing.rent');
+Route::get('/sale', [LandingPageController::class, 'sale'])->name('landing.sale');
 Route::get('/about', [LandingPageController::class, 'about'])->name('landing.about');
 
 Route::prefix('admin')->name('admin.')->group(function () {
