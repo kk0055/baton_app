@@ -2062,6 +2062,30 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+// 画像リンクをクリックしたときにモーダルを表示
+var imageLinks = document.querySelectorAll('.image-link');
+var modal = document.querySelector('.modal');
+var modalContent = modal.querySelector('.modal-content');
+var closeModal = modal.querySelector('.close');
+imageLinks.forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    modalContent.src = this.href;
+    modal.style.display = 'block';
+  });
+});
+
+// モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
+closeModal.addEventListener('click', function () {
+  modal.style.display = 'none';
+});
+// モーダルの背景がクリックされたとき、モーダルを非表示にする
+window.addEventListener('click', function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

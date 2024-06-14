@@ -34,7 +34,7 @@
                     </a>
                     <h4 class="mb-2">表示順(降順): {{ $property->order }}</h4>
                     <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
-                    <h4 class="mb-2">タイプ: {{ $property->type}}</h4>
+                    <h4 class="mb-2">タイプ: {{ $property->type }}</h4>
                     <div class="flex">
                         <button class="edit-btn" onclick="toggleModal({{ $property->id }})">
                             <i class="fa fa-pencil mr-2" aria-hidden="true"></i>編集

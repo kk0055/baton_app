@@ -13,6 +13,10 @@ class LandingPageController extends Controller
         return view('index', compact('properties'));
     }
 
+    public function property()
+    {
+        return view('property');
+    }
     public function about()
     {
         // Logic for displaying the about page
