@@ -11,7 +11,7 @@
         </div>
         <h2
             class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-10">
-            こーきの広告管理
+            こーきの物件管理
         </h2>
         {{-- <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">新規追加</p> --}}
         {{-- <form action="{{ route('admin.property.store') }}" method="POST" enctype="multipart/form-data">

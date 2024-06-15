@@ -605,14 +605,14 @@
                 </div>
             </div>
 
-            <div id="header_slider" class="swiper slide_type_slide_up effect_type_zoom_out" data-fade_speed="1000">
+            <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000" height="600">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide item item first_item" data-item-type="type2">
-                        <div class="item-inner">
+                        <div class="item-inner" >
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"
-                                src="main_video.mp4" playsinline
-                                muted height="600"></video>
+                                src="main_video2.mp4" playsinline
+                                muted ></video>
                         </div>
                     </div><!-- END .item -->
                 </div>
@@ -1311,10 +1311,10 @@
             setTimeout(function() {
                 $('#site_loader_overlay_for_catchphrase').addClass('active');
                 $('#site_loader_overlay').addClass('active');
-            }, 2000);
+            }, 500);
             setTimeout(function() {
                 after_load();
-            }, 5000);
+            }, 2500);
 
 
         })(jQuery);

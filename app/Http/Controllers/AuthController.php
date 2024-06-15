@@ -51,7 +51,7 @@ class AuthController extends Controller
             return redirect()->route('admin.property.index')->with('properties', $properties);
         }
         
-        return redirect()->route('admin.property.index')->with('properties', $properties)->withErrors(['email' => 'The provided credentials do not match our records.']);
+        return redirect()->back()->withErrors(['message' => 'メールアドレスかパスワードが違うよ']);
     }
 
     public function logout()
