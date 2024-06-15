@@ -430,14 +430,14 @@
   
     <div id="container">
 
-        <div id="bread_crumb" class="inview">
-        </div>
-        <div id="archive_header" class="inview">
+        {{-- <div id="bread_crumb" class="inview">
+        </div> --}}
+        <div id="archive_header" class="inview" style="margin-top: 50px;">
             <div class="title_area">
                 <h2 class="large_headline"><span>売買物件</span></h2>
                 {{-- <p class="sub_title colored"><span>ブログ</span></p> --}}
             </div>
-            <p class="desc post_content">今週のおススメ物件</p>
+            {{-- <p class="desc post_content">今週のおススメ物件</p> --}}
         </div>
 
         <section id="archive_blog" class="inview slide_up_animation">
@@ -475,188 +475,16 @@
             <span class="close">&times;</span>
             <img class="modal-content">
         </div>
-        {{-- <div id="footer_banner" class="banner_num2">
-            <a class="item animate_background" href="https://tcd-theme.com/tcd103/" target="_blank"
-                rel="nofollow noopener">
-                <div class="content">
-                    <p class="title large_headline"><span class="label">CONTACT</span><span
-                            class="arrow_button"></span></p>
-                    <p class="sub_title colored">各種お問い合わせ</p>
-                </div>
-                <div class="image_wrap">
-                    <img loading="lazy" class="image"
-                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer1.jpg" width="870"
-                        height="300" />
-                </div>
-            </a>
-        </div> --}}
-
-
-        <footer id="footer">
-            <div id="footer_inner">
-                <p id="footer_logo">
-                    <a href="https://demo.tcd-theme.com/tcd103/" title="WordPressテーマ「GENESIS」">
-                        <img class="logo_image pc"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo-new.png?1718336845"
-                            alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="146"
-                            height="20" />
-                        <img class="logo_image mobile"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/logo_mb.png?1718336845"
-                            alt="WordPressテーマ「GENESIS」" title="WordPressテーマ「GENESIS」" width="100"
-                            height="14" />
-                    </a>
-                </p>
-                <div id="footer_address" class="post_content clearfix">
-                    <p>株式会社ゲネシス　<span class="a_break">〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング
-                                30F</span></p>
-                </div>
-
-                <ul id="footer_sns" class="sns_button_list clearfix color_type1">
-                    <li class="insta"><a href="https://www.instagram.com/tcd_dp/" rel="nofollow noopener"
-                            target="_blank" title="Instagram"><span>Instagram</span></a></li>
-                    <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
-                            title="X"><span>X</span></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener"
-                            target="_blank" title="Facebook"><span>Facebook</span></a></li>
-                    <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                            rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li>
-                </ul>
-
-            </div>
-
-            <div id="footer_nav" class="swiper">
-                <ul id="menu-%e3%83%95%e3%83%83%e3%82%bf%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc"
-                    class="swiper-wrapper">
-                    <li id="menu-item-5938"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5938 swiper-slide"><a
-                            href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a></li>
-                    <li id="menu-item-5941"
-                        class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5941 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a>
-                    </li>
-                    <li id="menu-item-5937"
-                        class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-5937 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
-                    </li>
-                    <li id="menu-item-5947"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5947 swiper-slide"><a
-                            href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
-                    <li id="menu-item-5940"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2838 current_page_item current_page_parent menu-item-5940 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/blog/" aria-current="page">BLOG</a>
-                    </li>
-                    <li id="menu-item-6061"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061 swiper-slide"><a
-                            href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
-                </ul>
-            </div>
-
-
-            <p id="copyright"><span>© 2023 TCD WordPress Theme</span></p>
-
-        </footer>
+   
+        @include('landing.components.footer')
 
     </div><!-- #container -->
 
-    <div id="return_top">
+    {{-- <div id="return_top">
         <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
-    </div>
+    </div> --}}
 
-    <div id="drawer_menu">
-
-        <div class="header">
-            <div id="drawer_mneu_close_button"></div>
-        </div>
-
-        <div id="mobile_menu"
-            class="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container">
-            <ul id="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
-                <li id="menu-item-6425"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-6425">
-                    <a href="https://demo.tcd-theme.com/tcd103/">HOME</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-6428"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6428"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo1/">トップページ &#8211; サンプル1</a></li>
-                        <li id="menu-item-6427"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo2/">トップページ &#8211; サンプル2</a></li>
-                        <li id="menu-item-6426"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6426"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo3/">トップページ &#8211; サンプル3</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-6434"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6434">
-                    <a href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-6429"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a
-                                href="https://demo.tcd-theme.com/tcd103/sample-page/">通常の固定ページ</a></li>
-                        <li id="menu-item-6432"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp1/">LPサンプル1</a></li>
-                        <li id="menu-item-6431"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6431"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp2/">LPサンプル2</a></li>
-                        <li id="menu-item-6430"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp3/">LPサンプル3</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-6435"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6435"><a
-                        href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a></li>
-                <li id="menu-item-6436"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
-                    <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-6437"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6437"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content439">SOCIETY</a>
-                        </li>
-                        <li id="menu-item-6438"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6438"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content440">ENERGY</a>
-                        </li>
-                        <li id="menu-item-6439"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6439"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content441">SCIENCE</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-6433"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
-                        href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
-                <li id="menu-item-6440"
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6440"><a
-                        href="https://demo.tcd-theme.com/tcd103/blog/" aria-current="page">BLOG</a></li>
-                <li id="menu-item-6441"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6441"><a target="_blank"
-                        rel="noopener" href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
-            </ul>
-        </div>
-        <div id="drawer_menu_search">
-            <form role="search" method="get" action="https://demo.tcd-theme.com/tcd103">
-                <div class="input_area"><input type="text" value="" name="s" autocomplete="off">
-                </div>
-                <div class="button_area"><label for="drawer_menu_search_button"></label><input
-                        id="drawer_menu_search_button" type="submit" value=""></div>
-            </form>
-        </div>
-
-        <ul id="mobile_sns" class="sns_button_list clearfix color_type1">
-            <li class="insta"><a href="https://www.instagram.com/tcd_dp/" rel="nofollow noopener" target="_blank"
-                    title="Instagram"><span>Instagram</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
-                    title="X"><span>X</span></a></li>
-            <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener" target="_blank"
-                    title="Facebook"><span>Facebook</span></a></li>
-            <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                    rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li>
-        </ul>
-
-    </div>
+    @include('landing.components.mobile_header')
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
@@ -687,49 +515,7 @@
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
     <script>
-        (function($) {
-
-            if ($('.megamenu_post_carousel').length) {
-                let megamenu_post_carousel = new Swiper(".megamenu_post_carousel", {
-                    loop: false,
-                    centeredSlides: false,
-                    slidesPerView: "auto",
-                    scrollbar: {
-                        el: ".post_carousel_scrollbar",
-                        hide: false,
-                        draggable: true,
-                        dragSize: 275,
-                    },
-                    freeMode: {
-                        enabled: true,
-                        sticky: false,
-                        momentumBounce: false,
-                    },
-                });
-            };
-
-            if ($('.megamenu_b .item_list').length) {
-                let megamenu_post_carousel2 = new Swiper(".megamenu_b .item_list", {
-                    loop: false,
-                    centeredSlides: false,
-                    slidesPerView: "auto",
-                    resistanceRatio: 0,
-                    freeMode: {
-                        enabled: true,
-                        sticky: false,
-                        momentumBounce: false,
-                    },
-                    navigation: {
-                        nextEl: ".megamenu_carousel_button_next",
-                        prevEl: ".megamenu_carousel_button_prev",
-                    },
-                });
-            };
-
-        })(jQuery);
-
-
-
+  
         (function($) {
 
             if ($('#footer_nav').length) {
