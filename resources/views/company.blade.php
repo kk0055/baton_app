@@ -415,7 +415,7 @@
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F" />
     <link rel="alternate" type="text/xml+oembed"
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F&#038;format=xml" />
-  
+
     <style id="current-page-style" type="text/css">
         #page_header .overlay {
             background-color: rgba(0, 0, 0, 0.3);
@@ -617,8 +617,8 @@
         href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage"
         content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
 
 <body data-rsssl=1 id="body"
@@ -630,7 +630,7 @@
     <div id="container">
 
         <div id="bread_crumb" class="inview">
-            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+            {{-- <ul itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="home"><a
                         itemprop="item" href="https://demo.tcd-theme.com/tcd103/"><span
                             itemprop="name">ホーム</span></a>
@@ -640,14 +640,14 @@
                         itemprop="name">COMPANY</span>
                     <meta itemprop="position" content="2">
                 </li>
-            </ul>
+            </ul> --}}
         </div>
 
         <div id="page_header" class="large_height">
             <div class="design_header inview">
                 <div class="title_area no_desc">
                     <h1 class="large_headline"><span>COMPANY</span></h1>
-                    <p class="sub_title colored"><span>わたしたちの会社について</span></p>
+                    {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
                 </div>
             </div>
         </div>
@@ -659,38 +659,41 @@
                 <div class="gray_bg" id="company_message">
                     <div class="design_header inview">
                         <div class="title_area">
-                            <h3 class="large_headline title"><span>MESSAGE</span></h3>
-                            <p class="sub_title colored"><span>CEOメッセージ</span></p>
+                            <h4 class="large_headline title"><span>企業理念・経営理念
+                                </span></h4>
+                            {{-- <p class="sub_title colored"><span>CEOメッセージ</span></p> --}}
                         </div>
                     </div>
-                    <h3 class="catch rich_font inview slide_up_animation">地球が豊かになる循環型社会ヘ</h3>
+                    <h3 class="catch rich_font inview slide_up_animation">企業理念
+                    </h3>
                     <div class="post_row">
+
                         <div class="post_col post_col-2 inview slide_up_animation">
-                            <p>現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。こうした問題に対処するために、持続可能なライフスタイルへの回帰が必要です。
+                            <p>50年後の笑顔を創る
                             </p>
-                            <p>再生可能エネルギーの普及による環境保護など、自然と調和する縄文時代のような価値観を取り入れた新たな社会モデルが現代には必要なのです。<br />
-                                メディアではSDGsが大きく取り上げられ、企業はSDGsを自社のビジネス戦略の一部として取り入れています。しかし、単なる表面的なプロパガンダとして取り扱われ、その本質的な目的が埋もれてしまっています。
+                            <h3>経営理念
+                            </h3>
+                            <p>「三方よし」<br />従業員の笑顔、お客様の笑顔、社会を笑顔へ
+
                             </p>
-                            <p>SDGsは素晴らしい目標ですが、表面的な言葉やロゴだけでなく、真の変革を実現するための行動とコミットメントが求められています。</p>
-                            <p class="name">代表取締役社長 　橘 雄二郎</p>
                         </div>
                         <div class="post_col post_col-2">
                             <div class="shutter_image inview col1">
-                                <div class="item"><img fetchpriority="high" decoding="async"
-                                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company1.jpg"
+                                <div class="item"><img fetchpriority="high" decoding="async" src="27838_0.jpg"
                                         alt="" width="580" height="580"
                                         class="alignnone size-full wp-image-5943" /></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="design_header inview" id="profile">
                     <div class="title_area">
                         <h3 class="large_headline title3"><span>PROFILE</span></h3>
-                        <p class="sub_title colored"><span>会社情報</span></p>
+                        {{-- <p class="sub_title colored"><span>会社情報</span></p> --}}
                     </div>
                 </div>
-                <div class="shutter_image inview col3 vertical">
+                {{-- <div class="shutter_image inview col3 vertical">
                     <div class="item"><img decoding="async"
                             src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company2.jpg"
                             alt="" width="415" height="450"
@@ -703,7 +706,7 @@
                             src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company4.jpg"
                             alt="" width="414" height="450"
                             class="alignnone size-full wp-image-5946" /></div>
-                </div>
+                </div> --}}
                 <div class="post_row" id="company_data_list">
                     <div class="post_col post_col-2 inview slide_up_animation">
                         <h4>会社概要</h4>
@@ -712,155 +715,47 @@
                                 <tbody>
                                     <tr>
                                         <th>会社名</th>
-                                        <td>株式会社ゲネシス</td>
+                                        <td>株式会社BATON</td>
                                     </tr>
                                     <tr>
                                         <th>所在地</th>
-                                        <td>〒530-0000 大阪市なにわ町1-2-3 GENESISビルディング30F</td>
+                                        <td>〒107-0062 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
                                     </tr>
                                     <tr>
                                         <th>TEL</th>
-                                        <td>06-1234-5678</td>
+                                        <td>080-1035-6047</td>
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
+                                        <th>問い合わせ</th>
+                                        <td><a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true" target="_blank"></a></td>
+                                    </tr> --}}
+                                    {{-- <tr>
                                         <th>資本金</th>
                                         <td>5,000万円</td>
-                                    </tr>
+                                    </tr> --}}
                                     <tr>
                                         <th>設立</th>
-                                        <td>2011年10月</td>
+                                        <td>2024年7月</td>
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
                                         <th>従業員</th>
                                         <td>300人</td>
-                                    </tr>
+                                    </tr> --}}
                                     <tr>
                                         <th>事業内容</th>
-                                        <td>再生可能エネルギー事業<br />
-                                            循環型社会事業<br />
-                                            ライフサイエンス事業</td>
+                                        <td>賃貸物件の仲介業</td>
                                     </tr>
                                     <tr></tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="post_col post_col-2 inview slide_up_animation">
-                        <h4>会社沿革</h4>
-                        <div class="s_table">
-                            <table class="right">
-                                <tbody>
-                                    <tr>
-                                        <th>2011年（平成23年)</th>
-                                        <td>大阪市東淀川区にて株式会社ゲネシス設立</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012年（平成24年)</th>
-                                        <td>最初のプロジェクトとして太陽光発電事業を開始</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014年（平成26年)</th>
-                                        <td>再生可能エネルギー部門での実績が認められ、国内外で多くの太陽光発電所建設プロジェクトを獲得</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2015年（平成27年)</th>
-                                        <td>北米・アジアの企業とパートナーシップを締結</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2016年（平成28年)</th>
-                                        <td>循環型社会事業に参入し廃棄物リサイクルプラントの運営を開始</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2018年（平成30年)</th>
-                                        <td>新しいリサイクル技術により廃棄物削減に貢献したことが認められ「ECO AWARD 2018」を受賞</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2020年（令和2年)</th>
-                                        <td>本社を大阪市なにわ町に移転</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2023年（令和5年)</th>
-                                        <td>ライフサイエンス事業開始</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div id="company_access">
-                    <div class="design_header inview">
-                        <div class="title_area">
-                            <h3 class="large_headline title4"><span>ACCESS</span></h3>
-                            <p class="sub_title colored"><span>アクセス</span></p>
-                        </div>
-                    </div>
-                    <div class="sc">
-                        <div class='qt_google_map'>
-                            <div class='qt_googlemap clearfix'>
-                                <div id='qt_google_map1889926261' class='qt_googlemap_embed'></div>
-                            </div>
-                            <script>
-                                jQuery(window).on('load', function() {
-                                    initMap('qt_google_map1889926261', '新大阪', -100, 1,
-                                        'https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/08/header_logo_white.png', '');
-                                });
-                            </script>
-                        </div>
-                    </div>
-                    <div class="post_row inview slide_up_animation">
-                        <div class="post_col post_col-2">
-                            <p class="company_info info2">株式会社ゲネシス<br />
-                                〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング30F</span></p>
-                        </div>
-                        <div class="post_col post_col-2">
-                            <p class="company_info">・北方面から阪神高速に入り、下車後直進<br />
-                                ・なにわ1交差点を左折し直進後すぐ</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
         </article><!-- END #page_contents -->
-
-
-
-
-        <div id="footer_banner" class="banner_num2">
-            <a class="item animate_background" href="https://tcd-theme.com/tcd103/" target="_blank"
-                rel="nofollow noopener">
-                <div class="content">
-                    <p class="title large_headline"><span class="label">CONTACT</span><span
-                            class="arrow_button"></span></p>
-                    <p class="sub_title colored">各種お問い合わせ</p>
-                </div>
-                <div class="image_wrap">
-                    <img loading="lazy" class="image"
-                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer1.jpg" width="870"
-                        height="300" />
-                </div>
-            </a>
-            <a class="item animate_background" href="https://demo.tcd-theme.com/tcd103/lp1/">
-                <div class="content">
-                    <p class="title large_headline"><span class="label">RECRUIT</span><span
-                            class="arrow_button"></span></p>
-                    <p class="sub_title colored">求人採用情報</p>
-                </div>
-                <div class="image_wrap">
-                    <img loading="lazy" class="image"
-                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer2.jpg" width="870"
-                        height="300" />
-                </div>
-            </a>
-        </div>
-
-
         <footer id="footer">
-
-
             <div id="footer_inner">
 
                 <p id="footer_logo">
@@ -903,13 +798,16 @@
                             href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a></li>
                     <li id="menu-item-5941"
                         class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5941 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a></li>
+                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a>
+                    </li>
                     <li id="menu-item-5937"
                         class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-5937 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a></li>
+                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
+                    </li>
                     <li id="menu-item-5947"
                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5942 current_page_item menu-item-5947 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a></li>
+                        <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a>
+                    </li>
                     <li id="menu-item-5940"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5940 swiper-slide"><a
                             href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a></li>
@@ -995,7 +893,8 @@
                 </li>
                 <li id="menu-item-6433"
                     class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5942 current_page_item menu-item-6433">
-                    <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a></li>
+                    <a href="https://demo.tcd-theme.com/tcd103/company/" aria-current="page">COMPANY</a>
+                </li>
                 <li id="menu-item-6440"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6440"><a
                         href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a></li>

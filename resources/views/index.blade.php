@@ -564,9 +564,6 @@
             color: red;
         }
     </style>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
-
     <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-32x32.png"
         sizes="32x32" />
     <link rel="icon"
@@ -576,6 +573,8 @@
         href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage"
         content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
 
 <body data-rsssl=1 id="body"
@@ -685,8 +684,6 @@
                 <div class="post_content clearfix" id="about_us" >
                     <div class="design_header inview">
                         <div class="title_area">
-                            <!-- <h3 class="large_headline"><span>株式会社BATON</span></h3>
-<p class="sub_title colored"><span>私たちについて</span></p> -->
                         </div>
                     </div>
                     <div class="post_row inview slide_up_animation">
@@ -700,17 +697,14 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
                 </div>
 
             </section>
-            <section class="cb_free_space num1 " id="cb_content_1">
+            {{-- <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix">
                     <div class="design_header inview">
                         <div class="title_area">
-                            <!-- <h3 class="large_headline"><span>株式会社BATON</span></h3>
-<p class="sub_title colored"><span>私たちについて</span></p> -->
                         </div>
                     </div>
                     <div class="post_row inview slide_up_animation">
@@ -727,18 +721,15 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
                 </div>
 
-            </section>
+            </section> --}}
 
             <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix">
                     <div class="design_header inview">
                         <div class="title_area">
-                            <!-- <h3 class="large_headline"><span>株式会社BATON</span></h3>
-<p class="sub_title colored"><span>私たちについて</span></p> -->
                         </div>
                     </div>
                     <div class="post_row inview slide_up_animation">
@@ -762,96 +753,7 @@
                 </div>
 
             </section>
-            {{-- <section class="cb_free_space num1 " id="cb_content_1">
-
-  <div class="post_content clearfix">
-  <div class="design_header inview">
-<div class="title_area">
-</div>
-</div>
-<div class="post_row inview slide_up_animation">
-<div class="post_col post_col-2 rich_font">
-<h3 class="catch rich_font">経堂地区の魅力
-</h3>
-</div>
-<div class="post_col post_col-2">
-<p><strong>交通の高い利便性</strong> <br>
-経堂～新宿間 12分<br>
-経堂～渋谷間 16分<br><br>
-
-商店街が多い<br>
-農大通り商店街、すずらん通り商店街、本町中通り商店街<br>
-
-自然あふれる街並み<br>
-道路、烏山川緑道、砧公園<br>
-
-  
-   </p>
-</div>
-</div>
- </div>
-</section> --}}
-            <!-- <section class="cb_service_list num2" id="cb_content_2">
-
- <div class="design_header cb_design_header inview">
-  <div class="title_area">
-      <h3 class="large_headline"><span>SERVICE</span></h3>
-         <p class="sub_title colored"><span>私たちが取り組む事業</span></p>
-     </div>
-    <p class="desc  post_content">地球環境の保全と社会の持続的な発展を両立していくための取り組みです。複数のパートナー企業と協力し、新たな社会システムを作り上げています。</p>
-     </div>
-
  
-  <div class="cb_service_category_list type2 inview">
-       <div class="item">
-     <div class="title_area">
-    <h3 class="headline">ENERGY</h3>
-        <p class="sub_title">再生可能エネルギー事業</p>
-       </div>
-   <div class="overlay" style="background: linear-gradient(to bottom, rgba(178,0,0,1) 0%,rgba(178,0,0,0) 100%);"></div>
-      <div class="post_list">
-        <a href="https://demo.tcd-theme.com/tcd103/service/wind-power/"><span class="label">還元型風力発電システム</span><span class="arrow_button_small"><span></span></span></a>
-       </div>
-         <div class="image_wrap">
-    <img loading="lazy" class="image" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top-service2.jpg" width="500" height="700" />
-       </div>
-       </div>
-        <div class="item">
-     <div class="title_area">
-    <h3 class="headline">SCIENCE</h3>
-        <p class="sub_title">ライフサイエンス事業</p>
-       </div>
-   <div class="overlay" style="background: linear-gradient(to bottom, rgba(26,102,0,1) 0%,rgba(26,102,0,0) 100%);"></div>
-      <div class="post_list">
-        <a href="https://demo.tcd-theme.com/tcd103/service/biotechnology/"><span class="label">持続可能型フードサプライ</span><span class="arrow_button_small"><span></span></span></a>
-        <a href="https://demo.tcd-theme.com/tcd103/service/biopharma/"><span class="label">バイオ医療プロジェクト</span><span class="arrow_button_small"><span></span></span></a>
-       </div>
-         <div class="image_wrap">
-    <img loading="lazy" class="image" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top-service3.jpg" width="500" height="700" />
-       </div>
-       </div>
-        <div class="item">
-     <div class="title_area">
-    <h3 class="headline">SOCIETY</h3>
-        <p class="sub_title">循環型社会事業</p>
-       </div>
-   <div class="overlay" style="background: linear-gradient(to bottom, rgba(0,76,102,1) 0%,rgba(0,76,102,0) 100%);"></div>
-      <div class="post_list">
-        <a href="https://demo.tcd-theme.com/tcd103/service/solar/"><span class="label">宇宙太陽光発電システム</span><span class="arrow_button_small"><span></span></span></a>
-        <a href="https://demo.tcd-theme.com/tcd103/service/biogass/"><span class="label">バイオガス発電プラント</span><span class="arrow_button_small"><span></span></span></a>
-       </div>
-         <div class="image_wrap">
-    <img loading="lazy" class="image" src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top-service1.jpg" width="500" height="700" />
-       </div>
-       </div>
-      </div>
-  
-  <div class="design_arrow_button cb_design_arrow_button">
-  <a href="https://demo.tcd-theme.com/tcd103/service/"><span class="label">私たちの事業内容について</span><span class="arrow_button"></span></a>
- </div>
- 
-</section> -->
-
             <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area">
@@ -871,7 +773,6 @@
                 </div>
 
                 <div class="item_list shutter_image inview col2 link_ver vertical">
-
                     <div class="item">
                         <div class="overlay"
                             style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
@@ -891,11 +792,9 @@
                 </div>
 
                 <div class="design_arrow_button cb_design_arrow_button">
-                    {{-- <a href="https://demo.tcd-theme.com/tcd103/company/"><span
-                            class="label">持続可能な未来社会を考える</span><span class="arrow_button"></span></a> --}}
                 </div>
 
-            </section><!-- END .cb_design_content -->
+            </section>
 
             <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview">
@@ -909,14 +808,14 @@
                         <div class="blog_carousel swiper-wrapper">
                             @foreach ($rents as $property)
                                 <div class="item swiper-slide">
-                                    {{-- <a class="image_link image animate_background"
-                                        href="{{ asset('storage/' . $property->image_path) }}"> --}}
-                                    <div class="image_wrap image_link image animate_background">
+                                    <a class="image_link image-link animate_background"
+                                        href="{{ asset('storage/' . $property->image_path) }}">
+                                    <div class="image_wrap animate_background">
                                         <img class="property-image"
                                             src="{{ asset('storage/' . $property->image_path) }}"
                                             alt="Property Image">
                                     </div>
-                                    {{-- </a> --}}
+                                    </a>
                                     {{-- <div class="content">
                                     <a class="category_button"
                                         href="https://demo.tcd-theme.com/tcd103/category/protect-earth/">環境保全</a>
@@ -930,11 +829,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <!-- 画像をクリックしたときに表示されるモーダル -->
-                    {{-- <div class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content">
-                    </div> --}}
+                  
                     <div class="genesis_carousel_scrollbar">
                         <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
                     </div>
@@ -947,6 +842,11 @@
                 </div>
 
             </section>
+              <!-- 画像をクリックしたときに表示されるモーダル -->
+              <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+            </div>
             <!-- 売買物件 -->
             <section class="cb_blog_list num5" id="cb_content_2">
                 <div class="design_header cb_design_header inview">
@@ -999,88 +899,8 @@
             </section><!-- END 売買物件 -->
         </div>
 
-        <div id="footer_banner" class="banner_num2">
-            <a class="item animate_background" href="https://tcd-theme.com/tcd103/" target="_blank"
-                rel="nofollow noopener">
-                <div class="content">
-                    <p class="title large_headline"><span class="label">CONTACT</span><span
-                            class="arrow_button"></span></p>
-                    <p class="sub_title colored">各種お問い合わせ</p>
-                </div>
-                <div class="image_wrap">
-                    <img loading="lazy" class="image"
-                        src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/footer1.jpg" width="870"
-                        height="300" />
-                </div>
-            </a>
-        </div>
-
-
-        <footer id="footer">
-
-
-            <div id="footer_inner">
-
-                <p id="footer_logo">
-                    <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON"
-                        width="196" />
-                    <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON"
-                        width="155" height="120" />
-
-                </p>
-
-
-                <div id="footer_address" class="post_content clearfix">
-                    <p>株式会社BATON　<span class="a_break">〒530-0000 大阪府大阪市なにわ町1-2-3 <span class="a_break">GENESISビルディング
-                                30F</span></p>
-                </div>
-
-                <ul id="footer_sns" class="sns_button_list clearfix color_type1">
-                    <li class="insta"><a href="https://www.instagram.com/baton_2024/" rel="nofollow noopener"
-                            target="_blank" title="Instagram"><span>Instagram</span></a></li>
-                    {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
-                            title="X"><span>X</span></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener"
-                            target="_blank" title="Facebook"><span>Facebook</span></a></li>
-                    <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                            rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li> --}}
-                </ul>
-
-            </div>
-
-            <div id="footer_nav" class="swiper">
-                <ul id="menu-%e3%83%95%e3%83%83%e3%82%bf%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc"
-                    class="swiper-wrapper">
-                    <li id="menu-item-5938"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5938 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a>
-                    </li>
-                    <li id="menu-item-5941"
-                        class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5941 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a>
-                    </li>
-                    <li id="menu-item-5937"
-                        class="menu-item menu-item-type-post_type_archive menu-item-object-service menu-item-5937 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
-                    </li>
-                    <li id="menu-item-5947"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5947 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a>
-                    </li>
-                    <li id="menu-item-5940"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5940 swiper-slide">
-                        <a href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a>
-                    </li>
-                    {{-- <li id="menu-item-6061"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061 swiper-slide"><a
-                            href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li> --}}
-                </ul>
-            </div>
-
-
-            <p id="copyright"><span>© BATON inc.</span></p>
-
-        </footer>
+   @include('landing.components.footer')
+    
 
     </div><!-- #container -->
 
@@ -1089,101 +909,7 @@
          </a>
     </div> --}}
 
-    <div id="drawer_menu">
-
-        <div class="header">
-            <div id="drawer_mneu_close_button"></div>
-        </div>
-
-        <div id="mobile_menu"
-            class="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container">
-            <ul id="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
-                <li id="menu-item-6425"
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6425">
-                    <a href="/" aria-current="page">HOME</a>
-                    {{-- <ul class="sub-menu">
-                        <li id="menu-item-6428"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6428"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo1/">トップページ &#8211; サンプル1</a></li>
-                        <li id="menu-item-6427"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo2/">トップページ &#8211; サンプル2</a></li>
-                        <li id="menu-item-6426"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6426"><a
-                                href="https://demo.tcd-theme.com/tcd103/top-page-demo3/">トップページ &#8211; サンプル3</a></li>
-                    </ul> --}}
-                </li>
-                <li id="menu-item-6434"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6434">
-                    <a href="https://demo.tcd-theme.com/tcd103/about/">ABOUT</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-6429"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a
-                                href="https://demo.tcd-theme.com/tcd103/sample-page/">通常の固定ページ</a></li>
-                        <li id="menu-item-6432"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp1/">LPサンプル1</a></li>
-                        <li id="menu-item-6431"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6431"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp2/">LPサンプル2</a></li>
-                        <li id="menu-item-6430"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a
-                                href="https://demo.tcd-theme.com/tcd103/lp3/">LPサンプル3</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-6435"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6435"><a
-                        href="https://demo.tcd-theme.com/tcd103/news/">NEWS</a></li>
-                <li id="menu-item-6436"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
-                    <a href="https://demo.tcd-theme.com/tcd103/service/">SERVICE</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-6437"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6437"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content439">SOCIETY</a>
-                        </li>
-                        <li id="menu-item-6438"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6438"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content440">ENERGY</a>
-                        </li>
-                        <li id="menu-item-6439"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6439"><a
-                                href="https://demo.tcd-theme.com/tcd103/service/#service_category_content441">SCIENCE</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-6433"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
-                        href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
-                <li id="menu-item-6440"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6440"><a
-                        href="https://demo.tcd-theme.com/tcd103/blog/">BLOG</a></li>
-                <li id="menu-item-6441"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6441"><a target="_blank"
-                        rel="noopener" href="https://tcd-theme.com/tcd103">DOWNLOAD</a></li>
-            </ul>
-        </div>
-        <div id="drawer_menu_search">
-            <form role="search" method="get" action="https://demo.tcd-theme.com/tcd103">
-                <div class="input_area"><input type="text" value="" name="s" autocomplete="off">
-                </div>
-                <div class="button_area"><label for="drawer_menu_search_button"></label><input
-                        id="drawer_menu_search_button" type="submit" value=""></div>
-            </form>
-        </div>
-
-        <ul id="mobile_sns" class="sns_button_list clearfix color_type1">
-            <li class="insta"><a href="https://www.instagram.com/tcd_dp/" rel="nofollow noopener" target="_blank"
-                    title="Instagram"><span>Instagram</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
-                    title="X"><span>X</span></a></li>
-            <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener" target="_blank"
-                    title="Facebook"><span>Facebook</span></a></li>
-            <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                    rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li>
-        </ul>
-
-    </div>
+    @include('landing.components.landing_page_mobile_header')
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
@@ -1601,33 +1327,39 @@
 
 
         })(jQuery);
+
         // 画像リンクをクリックしたときにモーダルを表示
-        // const imageLinks = document.querySelectorAll('.image');
-        // const modal = document.querySelector('.modal');
-        // const modalContent = modal.querySelector('.modal-content');
-        // const closeModal = modal.querySelector('.close');
-        // const scrollBar = modal.querySelector('.genesis_carousel_scrollbar');
+        const imageLinks = document.querySelectorAll('.image-link');
+        const modal = document.querySelector('.modal');
+        const modalContent = modal.querySelector('.modal-content');
+        const closeModal = modal.querySelector('.close');
+        const scrollBar = document.querySelector('.genesis_carousel_scrollbar');
+        const header = document.querySelector('#header');
 
-        // imageLinks.forEach(function(link) {
-        //     link.addEventListener('click', function(event) {
-        //         event.preventDefault();
-        //         modalContent.src = this.href;
-        //         modal.style.display = 'block';
-        //         scrollBar.style.display = 'none';
-        //         swipScrollBar.style.display = 'none';
-        //     });
-        // });
+        imageLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                modalContent.src = this.href;
+                modal.style.display = 'block';
+                scrollBar.style.display = 'none';
+                header.style.display = 'none';
+            });
+        });
 
-        // // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
-        // closeModal.addEventListener('click', function() {
-        //     modal.style.display = 'none';
-        // });
-        // // モーダルの背景がクリックされたとき、モーダルを非表示にする
-        // window.addEventListener('click', function(event) {
-        //     if (event.target === modal) {
-        //         modal.style.display = 'none';
-        //     }
-        // });
+        // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+            header.style.display = 'block';
+            scrollBar.style.display = 'block';
+        });
+        // モーダルの背景がクリックされたとき、モーダルを非表示にする
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                header.style.display = 'block';
+                scrollBar.style.display = 'block';
+            }
+        });
     </script>
 </body>
 
