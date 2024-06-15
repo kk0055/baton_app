@@ -37,7 +37,7 @@
 }
 
 #drawer_mneu_close_button:before {
-    content: "X" !important;
+    content: "×" !important;
 }
 
 /* Responsive Design */

@@ -829,18 +829,13 @@
                             @endforeach
                         </div>
                     </div>
-                  
                     <div class="genesis_carousel_scrollbar">
                         <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
                     </div>
-
                 </div>
-
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.rent') }}"><span class="label">賃貸物件一覧</span><span
-                            class="arrow_button"></span></a>
+                    <a href="{{ route('landing.rent') }}"><span class="label">賃貸物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-
             </section>
               <!-- 画像をクリックしたときに表示されるモーダル -->
               <div class="modal">
@@ -893,8 +888,7 @@
                 </div>
 
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.sale') }}"><span class="label">売買物件一覧</span><span
-                            class="arrow_button"></span></a>
+                    <a href="{{ route('landing.sale') }}"><span class="label">売買物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section><!-- END 売買物件 -->
         </div>
