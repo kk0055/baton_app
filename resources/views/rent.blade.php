@@ -1,10 +1,10 @@
 @extends('layout.landing.property')
-@section('title', '売買物件')
+@section('title', '賃貸物件')
 
 @section('content')
     <div id="archive_header" class="inview" style="margin-top: 50px;">
         <div class="title_area">
-            <h2 class="large_headline"><span>売買物件</span></h2>
+            <h2 class="large_headline"><span>賃貸物件</span></h2>
             {{-- <p class="sub_title colored"><span></span></p> --}}
         </div>
         {{-- <p class="desc post_content">今週のおススメ物件</p> --}}
@@ -12,7 +12,7 @@
 
     <section id="archive_blog" class="inview slide_up_animation">
         <div class="blog_list">
-            @foreach ($sales as $property)
+            @foreach ($rents as $property)
                 <div class="item">
                     <a class="image_link image-link animate_background"
                         href="{{ asset('storage/' . $property->image_path) }}">

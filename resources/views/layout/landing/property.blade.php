@@ -3,27 +3,20 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="UTF-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="WordPressテンプレート「GENESIS （TCD103）」のデモサイト">
-    <link rel="pingback" href="https://demo.tcd-theme.com/tcd103/xmlrpc.php">
-    <title>ブログ | WordPressテーマ「GENESIS」</title>
+    <meta name="description" content="株式会社BATON">
+    <title>株式会社BATON</title>
     <meta name='robots' content='max-image-preview:large' />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://demo.tcd-theme.com/tcd103/blog/">
-    <meta property="og:title" content="ブログ | WordPressテーマ「GENESIS」">
-    <meta property="og:description" content="WordPressテンプレート「GENESIS （TCD103）」のデモサイト">
-    <meta property="og:site_name" content="WordPressテーマ「GENESIS」">
-    <meta property="og:image" content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
+    <meta property="og:url" content="https://xbatonx.com">
+    <meta property="og:title" content="株式会社BATON">
+    <meta property="og:description" content="株式会社BATON">
+    <meta property="og:site_name" content="株式会社BATON">
     <meta property="og:image:secure_url"
-        content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
+        content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-    <link rel="alternate" type="application/rss+xml" title="WordPressテーマ「GENESIS」 &raquo; フィード"
-        href="https://demo.tcd-theme.com/tcd103/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="WordPressテーマ「GENESIS」 &raquo; コメントフィード"
-        href="https://demo.tcd-theme.com/tcd103/comments/feed/" />
     <link rel='stylesheet' id='swiper-css'
         href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
     <link rel='stylesheet' id='main-style-css'
@@ -421,6 +414,9 @@
         content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+    <title>
+        @yield('title')
+    </title>
 </head>
 
 <body data-rsssl=1 id="body" class="blog wp-embed-responsive megamenu_dark_color">
@@ -430,62 +426,15 @@
   
     <div id="container">
         @yield('content')
-        {{-- <div id="bread_crumb" class="inview">
-        </div> --}}
-        <div id="archive_header" class="inview" style="margin-top: 50px;">
-            <div class="title_area">
-                <h2 class="large_headline"><span>売買物件</span></h2>
-                {{-- <p class="sub_title colored"><span>ブログ</span></p> --}}
-            </div>
-            {{-- <p class="desc post_content">今週のおススメ物件</p> --}}
-        </div>
-
-        <section id="archive_blog" class="inview slide_up_animation">
-            <div class="blog_list">
-                @foreach ($sales as $property)
-                    <div class="item">
-                        <a class="image_link image-link animate_background"
-                            href="{{ asset('storage/' . $property->image_path) }}">
-                            <div class="image_wrap">
-                                <img loading="lazy" class="image"
-                                    src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
-                                    width="770" height="520" />
-                            </div>
-
-                        </a>
-                        {{-- <div class="content">
-                      <time class="date entry-date published" datetime="2023-09-28T23:21:04+09:00">2023.09.28</time>
-                  </div> --}}
-                    </div>
-                @endforeach
-            </div><!-- END .blog_list -->
-
-            {{-- <div class="page_navi clearfix">
-                <ul class='page-numbers'>
-                    <li><span aria-current="page" class="page-numbers current">1</span></li>
-                    <li><a class="page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/2/">2</a></li>
-                    <li><a class="page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/3/">3</a></li>
-                    <li><a class="next page-numbers" href="https://demo.tcd-theme.com/tcd103/blog/page/2/"><span
-                                class="arrow_button_small"></span></a></li>
-                </ul>
-            </div> --}}
-        </section><!-- END #archive_blog -->
-        <!-- 画像をクリックしたときに表示されるモーダル -->
-        <div class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content">
-        </div>
-   
         @include('landing.components.footer')
 
-    </div><!-- #container -->
+    </div>
 
     {{-- <div id="return_top">
         <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
     </div> --}}
 
     @include('landing.components.mobile_header')
-
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
         id="swiper-js"></script>
@@ -517,7 +466,6 @@
     <script>
   
         (function($) {
-
             if ($('#footer_nav').length) {
                 let footer_nav = new Swiper("#footer_nav", {
                     loop: false,
@@ -531,14 +479,11 @@
                     },
                 });
             };
-
         })(jQuery);
 
 
         (function($) {
-
             (function($) {
-
                 const targets = document.querySelectorAll('.inview');
                 const options = {
                     root: null,

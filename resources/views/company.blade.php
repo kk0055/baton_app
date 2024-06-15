@@ -2,25 +2,20 @@
 <html class="pc" lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    <meta charset="UTF-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-    <meta name="viewport" content="width=device-width">
-    <meta name="description"
-        content="MESSAGECEOメッセージ地球が豊かになる循環型社会ヘ現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。">
-    <link rel="pingback" href="https://demo.tcd-theme.com/tcd103/xmlrpc.php">
-    <title>COMPANY | WordPressテーマ「GENESIS」</title>
-    <meta name='robots' content='max-image-preview:large' />
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://demo.tcd-theme.com/tcd103/company/">
-    <meta property="og:title" content="COMPANY | WordPressテーマ「GENESIS」">
-    <meta property="og:description"
-        content="MESSAGECEOメッセージ地球が豊かになる循環型社会ヘ現代社会は産業化と消費主義により、環境への負荷が増大しています。気候変動、資源枯渇等、多くの課題に直面しているのです。">
-    <meta property="og:site_name" content="WordPressテーマ「GENESIS」">
-    <meta property="og:image" content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
-    <meta property="og:image:secure_url"
-        content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="株式会社BATON">
+  <title>株式会社BATON</title>
+  <meta name='robots' content='max-image-preview:large' />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xbatonx.com">
+  <meta property="og:title" content="株式会社BATON">
+  <meta property="og:description" content="株式会社BATON">
+  <meta property="og:site_name" content="株式会社BATON">
+  <meta property="og:image:secure_url"
+      content="https://xbatonx.com">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
     <link rel='stylesheet' id='swiper-css'
         href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />

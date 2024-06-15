@@ -3,20 +3,17 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="UTF-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="株式会社BATON">
-    <link rel="pingback" href="https://demo.tcd-theme.com/tcd103/xmlrpc.php">
     <title>株式会社BATON</title>
     <meta name='robots' content='max-image-preview:large' />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://demo.tcd-theme.com/tcd103/">
+    <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
     <meta property="og:description" content="株式会社BATON">
     <meta property="og:site_name" content="株式会社BATON">
-    <meta property="og:image" content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
     <meta property="og:image:secure_url"
-        content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/genesis_ogp.jpg">
+        content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />

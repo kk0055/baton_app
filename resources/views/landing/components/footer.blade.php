@@ -7,7 +7,7 @@
 
         </p>
         <div id="footer_address" class="post_content clearfix">
-            <p>株式会社BATON<span class="a_break">〒107-0062 東京都港区南青山一丁目1番1号 <span class="a_break">新青山ビル東館
+            <p>株式会社BATON<br> <span class="a_break">〒107-0062 東京都港区南青山一丁目1番1号 <span class="a_break">新青山ビル東館
                         7F</span></p>
         </div>
         <div id="footer_address" class="post_content clearfix">
