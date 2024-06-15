@@ -611,8 +611,8 @@
                         <div class="item-inner">
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"
-                                src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/top.mp4" playsinline
-                                muted></video>
+                                src="main_video.mp4" playsinline
+                                muted height="600"></video>
                         </div>
                     </div><!-- END .item -->
                 </div>

@@ -33,6 +33,10 @@
                     </li>
                 </ul>
             </li>
+             @auth
+            <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+              href="{{ route('admin.property.index') }}">管理画面</a></li>
+             @endauth
         </ul>
     </div>
 
