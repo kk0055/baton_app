@@ -1,0 +1,183 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    color: #444;
+}
+
+container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* .product .edit-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+/* .product .edit-btn:hover {
+    background-image: linear-gradient(135deg, #4a4a4a 0%, #000000 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+  } */
+.product .edit-btn {
+    color: #b1921b;
+    padding: 8px 15px;
+    border-right: 4px solid #cea82c;
+    border-bottom: 10px solid #987c1e;
+    border-left: 4px solid #ffed8b;
+    border-radius: 0;
+    background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
+    background: -webkit-linear-gradient(right, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+    background: linear-gradient(-90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+    text-shadow: -1px -1px 1px #ffffd9;
+  }
+
+
+.product .edit-btn:hover {
+    margin-top: 3px;
+    color: #b1921b;
+    border-right: 4px solid #cea82c;
+    border-bottom: 7px solid #987c1e;
+    border-left: 4px solid #ffed8b;
+  }
+
+/* .product .delete-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 10px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+/* .product .delete-btn:hover {
+    background-image: linear-gradient(135deg, #ff4d4d 0%, #000000 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+  } */
+.product .delete-btn {
+    color: #000;
+    padding: 8px 15px;
+    margin-left: 10px;
+    margin-top: 7px;
+    border-top: 4px solid #d8dcdc;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #333;
+    border-left: 4px solid #868888;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(135deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    background-image: linear-gradient(-45deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+
+.product .delete-btn:hover {
+    transform: translateY(-2px);
+  
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .product {
+        padding: 15px;
+    }
+}
+
