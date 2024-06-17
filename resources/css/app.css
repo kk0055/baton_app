@@ -53,13 +53,14 @@
     .product {
         padding: 15px;
     }
-    .modal {
-        align-items: center; /* 縦方向の中央に配置 */
-        justify-content: center; /* 横方向の中央に配置 */
-    }
+    /* .modal {
+        position: relative;
+        align-items: center; 
+        justify-content: center; 
+    } */
 
-    .modal-content {
-        width: 90%; /* モーダルの幅を調整 */
-        max-width: 500px; /* モーダルの最大幅を設定 */
-    }
+    /* .modal-content {
+        width: 90%;
+        max-width: 500px; 
+    } */
 }

@@ -561,15 +561,15 @@
             color: red;
         }
     </style>
-    <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-32x32.png"
+    <link rel="icon" href="baton_big_logo.jpg"
         sizes="32x32" />
     <link rel="icon"
-        href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-192x192.png"
+        href="baton_big_logo.jpg"
         sizes="192x192" />
     <link rel="apple-touch-icon"
-        href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-180x180.png" />
+        href="baton_big_logo.jpg" />
     <meta name="msapplication-TileImage"
-        content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
+        content="baton_big_logo.jpg" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
@@ -611,7 +611,7 @@
                         <div class="item-inner" >
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"
-                                src="main_video2.mp4" playsinline
+                                src="main_video3.mp4" playsinline
                                 muted ></video>
                         </div>
                     </div><!-- END .item -->
@@ -804,15 +804,15 @@
                     <div class="blog_carousel_wrap swiper">
                         <div class="blog_carousel swiper-wrapper">
                             @foreach ($rents as $property)
-                                <div class="item swiper-slide">
-                                    <a class="image_link image-link animate_background"
-                                        href="{{ asset('storage/' . $property->image_path) }}">
-                                    <div class="image_wrap animate_background">
-                                        <img class="property-image"
+                                {{-- <div class="item swiper-slide">
+                                    <a class="animate_background"
+                                        href="{{ asset('storage/' . $property->image_path) }}"> --}}
+                                    <div class="image_wrap image_link image-link animate_background">
+                                        <img class=" property-image"
                                             src="{{ asset('storage/' . $property->image_path) }}"
                                             alt="Property Image">
                                     </div>
-                                    </a>
+                                    {{-- </a> --}}
                                     {{-- <div class="content">
                                     <a class="category_button"
                                         href="https://demo.tcd-theme.com/tcd103/category/protect-earth/">環境保全</a>
@@ -1320,37 +1320,37 @@
         })(jQuery);
 
         // 画像リンクをクリックしたときにモーダルを表示
-        const imageLinks = document.querySelectorAll('.image-link');
-        const modal = document.querySelector('.modal');
-        const modalContent = modal.querySelector('.modal-content');
-        const closeModal = modal.querySelector('.close');
-        const scrollBar = document.querySelector('.genesis_carousel_scrollbar');
-        const header = document.querySelector('#header');
+        // const imageLinks = document.querySelectorAll('.image-link');
+        // const modal = document.querySelector('.modal');
+        // const modalContent = modal.querySelector('.modal-content');
+        // const closeModal = modal.querySelector('.close');
+        // const scrollBar = document.querySelector('.genesis_carousel_scrollbar');
+        // const header = document.querySelector('#header');
 
-        imageLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                modalContent.src = this.href;
-                modal.style.display = 'block';
-                scrollBar.style.display = 'none';
-                header.style.display = 'none';
-            });
-        });
+        // imageLinks.forEach(function(link) {
+        //     link.addEventListener('click', function(event) {
+        //         event.preventDefault();
+        //         modalContent.src = this.href;
+        //         modal.style.display = 'block';
+        //         scrollBar.style.display = 'none';
+        //         header.style.display = 'none';
+        //     });
+        // });
 
-        // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
-        closeModal.addEventListener('click', function() {
-            modal.style.display = 'none';
-            header.style.display = 'block';
-            scrollBar.style.display = 'block';
-        });
-        // モーダルの背景がクリックされたとき、モーダルを非表示にする
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-                header.style.display = 'block';
-                scrollBar.style.display = 'block';
-            }
-        });
+        // // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
+        // closeModal.addEventListener('click', function() {
+        //     modal.style.display = 'none';
+        //     header.style.display = 'block';
+        //     scrollBar.style.display = 'block';
+        // });
+        // // モーダルの背景がクリックされたとき、モーダルを非表示にする
+        // window.addEventListener('click', function(event) {
+        //     if (event.target === modal) {
+        //         modal.style.display = 'none';
+        //         header.style.display = 'block';
+        //         scrollBar.style.display = 'block';
+        //     }
+        // });
     </script>
 </body>
 

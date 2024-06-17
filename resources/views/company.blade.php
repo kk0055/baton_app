@@ -599,15 +599,15 @@
     </style>
 
 
-    <link rel="icon" href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-32x32.png"
+    <link rel="icon" href="baton_big_logo.jpg"
         sizes="32x32" />
     <link rel="icon"
-        href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-192x192.png"
+        href="baton_big_logo.jpg"
         sizes="192x192" />
     <link rel="apple-touch-icon"
-        href="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-180x180.png" />
+        href="baton_big_logo.jpg" />
     <meta name="msapplication-TileImage"
-        content="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/cropped-favicon-270x270.png" />
+        content="baton_big_logo.jpg" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
