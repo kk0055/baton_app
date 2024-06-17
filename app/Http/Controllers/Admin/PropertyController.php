@@ -31,7 +31,7 @@ class PropertyController extends Controller
 
     $request->validate([
         'image' => 'required',
-        'order' => 'required',
+        // 'order' => 'required',
         'type' => 'required',
     ]);
     // 画像のアップロード

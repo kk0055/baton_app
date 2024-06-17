@@ -87,11 +87,11 @@
                 <!--footer-->
                 <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                     <button
-                        class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+                        class="mr-2 px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                         type="submit">
                         変更
                     </button>
-                    <button class="bg-gray-400 text-black py-2 px-4 rounded  focus:shadow-outline" type="button"
+                    <button class="ml-2 bg-gray-400 text-black py-2 px-4 rounded  focus:shadow-outline" type="button"
                         onclick="toggleModal( {{ $property->id }})">
                         Close
                     </button>
