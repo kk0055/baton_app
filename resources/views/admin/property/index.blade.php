@@ -4,6 +4,21 @@
 @include('components.nav')
 
 @section('content')
+    <style>
+        .property-image {
+            width: 100%;
+            max-width: 770px;
+            height: 300px;
+            /* object-fit: cover; */
+        }
+
+        .image-link {
+            display: block;
+            width: 100%;
+            max-width: 770px;
+            height: auto;
+        }
+    </style>
     <div class="container mx-auto text-center px-8 py-14">
         <div class="text-center my-4">
             <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4" src="/126532.jpg"
@@ -97,4 +112,3 @@
             }
         }
     </script>
-
