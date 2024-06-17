@@ -804,8 +804,8 @@
                     <div class="blog_carousel_wrap swiper">
                         <div class="blog_carousel swiper-wrapper">
                             @foreach ($rents as $property)
-                                {{-- <div class="item swiper-slide">
-                                    <a class="animate_background"
+                                <div class="item swiper-slide">
+                                 {{--    <a class="animate_background"
                                         href="{{ asset('storage/' . $property->image_path) }}"> --}}
                                     <div class="image_wrap image_link image-link animate_background">
                                         <img class=" property-image"
