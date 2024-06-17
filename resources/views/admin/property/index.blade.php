@@ -5,19 +5,18 @@
 
 @section('content')
     <style>
-        .property-image {
-            width: 100%;
-            max-width: 770px;
-            height: 300px;
-            /* object-fit: cover; */
-        }
-
-        .image-link {
+        /* .image-link {
             display: block;
             width: 100%;
             max-width: 770px;
             height: auto;
         }
+        .property-image {
+            width: 100%;
+            max-width: 770px;
+            height: auto;
+            object-fit: cover;
+        } */
     </style>
     <div class="container mx-auto text-center px-8 py-14">
         <div class="text-center my-4">
