@@ -424,11 +424,10 @@
 
     @include('landing.components.header')
   
-    <div id="container">
+    {{-- <div id="container"> --}}
         @yield('content')
         @include('landing.components.footer')
-
-    </div>
+    {{-- </div> --}}
 
     {{-- <div id="return_top">
         <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
