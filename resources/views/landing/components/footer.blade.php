@@ -1,11 +1,10 @@
 <footer id="footer">
     <div id="footer_inner">
-        <p id="footer_logo">
+        {{-- <p id="footer_logo">
             <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON" width="196" />
             <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON" width="155"
                 height="70" />
-
-        </p>
+        </p> --}}
         <div id="footer_address" class="post_content clearfix">
             <p>株式会社BATON<br> <span class="a_break">〒107-0062 東京都港区南青山一丁目1番1号 <span class="a_break">新青山ビル東館
                         7F</span></p>
