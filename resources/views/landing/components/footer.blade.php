@@ -19,7 +19,7 @@
               <img src="Instagram_icon.png" alt="Instagram Icon" style="width: 40px; height: 40px;">
           </a></li> --}}
             <a href="https://www.instagram.com/baton_2024/" target="_blank">
-                <img src="inst_banner.png" alt="" height="50"></a>
+                <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px; margin-left:10px" ></a>
             {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
                   title="X"><span>X</span></a></li>
           <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
