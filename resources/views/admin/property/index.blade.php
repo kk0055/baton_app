@@ -5,18 +5,33 @@
 
 @section('content')
     <style>
-        /* .image-link {
-            display: block;
+        .product {
+            max-width: 400px;
             width: 100%;
-            max-width: 770px;
-            height: auto;
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
-        .property-image {
+
+        .image_wrap {
+            position: relative;
             width: 100%;
-            max-width: 770px;
-            height: auto;
+            padding-top: 67.5%;
+            /* Aspect ratio 16:9 (height / width = 9 / 16 * 100%) */
+            overflow: hidden;
+        }
+
+        .property-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-        } */
+        }
     </style>
     <div class="container mx-auto text-center px-8 py-14">
         <div class="text-center my-4">
@@ -43,8 +58,10 @@
             @foreach ($properties as $property)
                 <div class="product">
                     <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
-                        <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}"
-                            alt="Property Image">
+                        <div class="image_wrap">
+                            <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}"
+                                alt="Property Image" width="770" height="520">
+                        </div>
                     </a>
                     <h4 class="mb-2">表示順: {{ $property->order }}</h4>
                     <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
