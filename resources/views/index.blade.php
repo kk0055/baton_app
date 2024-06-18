@@ -600,7 +600,7 @@
                     <h2 class="catch rich_font_type2"><span class="line"><span
                                 class="line_inner">株式会社BATON</span></span></h2>     
                     <div class="desc_area">
-                        <p class="desc"><span class="line"><span class="line_inner">経堂不動産</span></span></p> 
+                        <p class="desc"><span class="line"><span class="line_inner">&nbsp;&nbsp;経堂不動産</span></span></p> 
                     </div>
                 </div>
             </div>
