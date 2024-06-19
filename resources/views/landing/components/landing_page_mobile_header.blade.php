@@ -18,7 +18,7 @@
             <li id="menu-item-6440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6440"><a
                     href="#job_details">SERVICE</a></li>
             <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
-                    href="https://demo.tcd-theme.com/tcd103/company/">COMPANY</a></li>
+                href="{{ route('landing.company') }}">COMPANY</a></li>
 
             <li id="menu-item-6436"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
@@ -43,7 +43,7 @@
 
     <ul id="mobile_sns" class="sns_button_list clearfix color_type1">
         <a href="https://www.instagram.com/baton_2024/" target="_blank">
-            <img src="inst_banner.png" alt="" height="50"></a>
+            <img src="Instagram_icon.png" alt=""  style="width: 30px; height: 30px"></a>
         {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
               title="X"><span>X</span></a></li>
       <li class="facebook"><a href="https://www.facebook.com/wptcd" rel="nofollow noopener" target="_blank"
