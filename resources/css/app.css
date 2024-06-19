@@ -40,6 +40,9 @@
     content: "×" !important;
 }
 
+#mobile_menu li li a:after {
+    content: " " !important;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
