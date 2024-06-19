@@ -706,9 +706,9 @@
                                         <th>会社名</th>
                                         <td>株式会社BATON</td>
                                     </tr>
-                                    <tr>
+                                    <tr style="word-wrap: break-word;white-space: normal;">
                                         <th>所在地</th>
-                                        <td>〒107-0062 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
+                                        <td>〒107-0062 <br/> 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
                                     </tr>
                                     <tr>
                                         <th>TEL</th>
