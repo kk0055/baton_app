@@ -456,7 +456,9 @@
             height: 100dvh;
             z-index: 99999999999;
             opacity: 1;
-            background: #EF3D08;
+            background-color: #EF3D08;
+            background: url('/overlay.jpg') no-repeat center center; /* Set your image path */
+            background-size: cover; 
         }
 
         /* body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.7s ease 0.7s; } */
@@ -585,9 +587,9 @@
     <div id="site_loader_overlay">
         <div id="loader_logo_image">
             {{-- <h1 class="pc" width="196" height="26" >株式会社BATON</h1> --}}
-            <img class="pc" src="baton_big_logo.jpg" alt="" title="" width="196" />
+            {{-- <img class="pc" src="baton_big_logo.jpg" alt="" title="" width="196" />
             <img class="mobile" src="baton_big_logo.jpg" alt="" title="" width="155"
-                height="120" />
+                height="120" /> --}}
         </div>
     </div>
 
