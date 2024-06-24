@@ -622,6 +622,7 @@
 
         </div><!-- END #header_slider_wrap -->
         <div id="content_builder">
+          @if ($latestPost)
           <section class="cb_free_space num1 " id="cb_content_1">
 
             <div class="post_content clearfix" id="job_details">
@@ -643,6 +644,7 @@
             </div>
 
         </section>
+        @endif
           <section class="cb_free_space num1 " id="cb_content_1">
 
             <div class="post_content clearfix" id="job_details">
