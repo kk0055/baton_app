@@ -613,7 +613,7 @@
                         <div class="item-inner" >
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"
-                                src="main_video4.mp4" playsinline
+                                src="main_video5.mp4" playsinline
                                 muted ></video>
                         </div>
                     </div><!-- END .item -->
@@ -669,17 +669,17 @@
 
           <div class="item_list shutter_image inview col2 link_ver vertical">
               <div class="item">
-                  <div class="overlay"
+                  {{-- <div class="overlay"
                       style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
-                  </div>
+                  </div> --}}
                   <div class="post_list">
                   </div>
                   <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
               </div>
               <div class="item">
-                  <div class="overlay"
+                  {{-- <div class="overlay"
                       style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
-                  </div>
+                  </div> --}}
                   <div class="post_list">
                   </div>
                   <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
