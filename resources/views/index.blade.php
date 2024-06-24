@@ -613,7 +613,7 @@
                         <div class="item-inner" >
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"
-                                src="main_video3.mp4" playsinline
+                                src="main_video4.mp4" playsinline
                                 muted ></video>
                         </div>
                     </div><!-- END .item -->
@@ -622,6 +622,74 @@
 
         </div><!-- END #header_slider_wrap -->
         <div id="content_builder">
+          <section class="cb_free_space num1 " id="cb_content_1">
+
+            <div class="post_content clearfix" id="job_details">
+                <div class="design_header inview">
+                    <div class="title_area">
+                    </div>
+                </div>
+                <div class="post_row inview slide_up_animation">
+                    <div class="post_col post_col-2 rich_font">
+                        <h3 class="catch rich_font" >業務内容
+                        </h3>
+                    </div>
+                    <div class="post_col post_col-2">
+                        <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心として賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
+                       
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
+            </div>
+
+        </section>
+        <section class="cb_design_content num4" id="cb_content_4">
+          <div class="design_header cb_design_header inview">
+              <div class="title_area">
+                  <h3 class="catch rich_font"><span>経堂の良さ５選</span></h3>
+                  {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
+              </div>
+              <p class="desc  post_content"><strong>1.治安が良い</strong> <br>
+                &nbsp; 経堂地区は治安が非常に良く、女性の一人暮らしでも安心して暮らせる街です。<br>
+               
+
+                  <strong>2.交通アクセスが良い</strong><br>
+                  &nbsp;  新宿まで12分、渋谷まで16分の利便性の高さ。<br>
+                  <strong>3.商店街が多い</strong><br>
+                  &nbsp;農大通り商店街、すずらん通り商店街、本町通り商店街と3つの商店街が隣接しております。<br>
+                  <strong>4.大学など教育環境が充実している</strong><br>
+                  &nbsp;東京農業大学、日本大学文理学部など、多くの大学生にも愛されております。<br>
+                  <strong>5.自然が豊か</strong><br>
+                  &nbsp;多くの公園、緑道が設置されており、いつも豊な緑を感じることができます。<br><br>
+
+                  他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
+              </p>
+          </div>
+
+          <div class="item_list shutter_image inview col2 link_ver vertical">
+              <div class="item">
+                  <div class="overlay"
+                      style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
+                  </div>
+                  <div class="post_list">
+                  </div>
+                  <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
+              </div>
+              <div class="item">
+                  <div class="overlay"
+                      style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
+                  </div>
+                  <div class="post_list">
+                  </div>
+                  <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
+              </div>
+          </div>
+
+          <div class="design_arrow_button cb_design_arrow_button">
+          </div>
+
+      </section>
             <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix">
@@ -633,18 +701,15 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">不動産仲介業の使命
+                            <h3 class="catch rich_font">不動産仲介業の使命とは
                             </h3>
                             <p class="sub_title colored" ><span>物件選びはエンターテイメントである</span></p>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>私の考える不動産仲介業の使命とは、<br>
-                              「物件選びをお客様の人生の一つのイベント＝エンターテイメントとして捉え、先ずは楽しんでいただくこと。そしてお客様ご自身が主役となり、有意義な時間として過ごせるよう、専門的な知識と見解で最大のサポートをさせていただくこと。」であると考えております。
+                            <p>株式会社BATONは、物件選びもエンターテイメントのように楽しんでいただきたいと考えております。
                               <br>
-                              物件選びは私たちの人生において、それほど多く経験する部分ではないと思っております。<br>
-                              だからこそ、どの物件を選択する場合もとにかく楽しんでほしい。その結果がお客様にとって最良の選択に繋がるものと認識しております。<br>
-                              楽しみながら思い出に残る物件選びをサポートさせて頂ければ幸いでございます。<br>
-                              今後ともよろしくお願い申し上げます。
+                              楽しんでいただく為、大切なのは「環境づくり」です。不動産業界は未だに「恐そう」とか「騙されそう」とういうイメージをお持ちの方も多いかと思います。<br>ここを払拭すべくコミュニケーションの取りやすい環境づくり、「笑顔」で「クリーン」な会社をモットーとして、お客様からの要望が出やすい環境づくりを徹底しております。<br>期待や不安・・・様々な想いを馳せつつも、とにかく物件選びを楽しむこと。それこそが、皆様が理想の物件に巡り合う一番の近道となります。<br>ご自身が主役となり楽しく物件を選んでいただくことを使命とし、株式会社BATONは皆様をしっかりとサポートさせていただきます!<br>
+                              
                             </p>
                         </div>
                     </div>
@@ -652,32 +717,7 @@
                 </div>
 
             </section>
-            <section class="cb_free_space num1 " id="cb_content_1">
-
-                <div class="post_content clearfix" id="job_details">
-                    <div class="design_header inview">
-                        <div class="title_area">
-                        </div>
-                    </div>
-                    <div class="post_row inview slide_up_animation">
-                        <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font" >事業内容
-                            </h3>
-                        </div>
-                        <div class="post_col post_col-2">
-                            <p>弊社は賃貸物件の仲介業をメインとしております。<br>
-                                ご希望の地域、ご予算に基づいた物件のご提案は勿論のこと、お客様との会話の中で家族構成や背景、通勤、通学などあらゆる視点より、近隣施設の利便性なども検討し、専門的見解も含めた上で最良の物件をご提案、お客様と協議しながら、最終的にはご満足の頂ける最良の物件を選択して頂くことを生業としております。<br>
-                                また、私自身が上京経験あり、現在では２人の子どもを持つ親であるため、自身の経験した苦労や不安、親として子どもの一人立ちを見送る不安と寂しさ、そのような状況を共有させていただきながら、新たな生活のスタートのフォローをさせて頂ければ幸いでございます。<br>
-                                何事も丁寧さにはこだわっていきたいと思います。<br>
-
-                                今後とも、何卒よろしくお願いもうしあげます。
-                            </p>
-                        </div>
-                    </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
-                </div>
-
-            </section>
+       
             <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix" id="about_us" >
@@ -687,12 +727,12 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">創業の目的 </h3>
+                            <h3 class="catch rich_font">設立の目的 </h3>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>株式会社BATONは2024年7月に創業したばかりの、スタートアップ企業です。
-                                私がこの会社を設立した目的は企業理念の通り「100年後の笑顔を創る」です。<br>
-                                昨今の社会情勢は「地球温暖化」「世界情勢」「超高齢化社会」など将来へ多くの懸念事項が存在しております。不動産業界を通じて私自身がやれること、今できることに尽力したい、少しでも将来の懸念を払拭したいと、この度株式会社BATONの創設を決意させて頂きました。
+                            <p>株式会社BATONを設立した目的は企業理念の通り「100年後の笑顔を創る」ことです。<br>
+                              昨今の社会情勢は「地球温暖化」「社会情勢の変化」「超高齢化社会」など将来へ向け多くの懸念材料が存在しております。<br>そのような現状を踏まえ大切なことは、次世代が希望を持てる将来へ向け、私たち一人一人にできること、やるべきことを常に考え、そして一つずつでも行動することだと考えております。<br>
+                              社名の由来は希望に満ちた輝かしい未来へ繋ぐ「BATON」となること。出来ることには限りがあるかもしれませんが、この想いを胸に日々の業務に全力で取り組んで参ります。
                             </p>
                         </div>
                     </div>
@@ -724,7 +764,7 @@
 
             </section> --}}
 
-            <section class="cb_free_space num1 " id="cb_content_1">
+            {{-- <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix">
                     <div class="design_header inview">
@@ -751,49 +791,7 @@
                     <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
                 </div>
 
-            </section>
- 
-            <section class="cb_design_content num4" id="cb_content_4">
-                <div class="design_header cb_design_header inview">
-                    <div class="title_area">
-                        <h3 class="catch rich_font"><span>経堂地区の魅力</span></h3>
-                        {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
-                    </div>
-                    <p class="desc  post_content"><strong>・交通の高い利便性</strong> <br>
-                      &nbsp;&nbsp; 経堂～新宿間 12分<br>
-                      &nbsp;&nbsp;  経堂～渋谷間 16分<br>
-
-                        <strong>・賑わいのある商店街が集う街</strong><br>
-                        &nbsp;&nbsp;  農大通り商店街、すずらん通り商店街、本町中通り商店街<br>
-
-                        <strong>・自然あふれる街並み</strong><br>
-                        &nbsp;&nbsp; 道路、烏山川緑道、砧公園<br>
-                    </p>
-                </div>
-
-                <div class="item_list shutter_image inview col2 link_ver vertical">
-                    <div class="item">
-                        <div class="overlay"
-                            style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
-                        </div>
-                        <div class="post_list">
-                        </div>
-                        <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
-                    </div>
-                    <div class="item">
-                        <div class="overlay"
-                            style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
-                        </div>
-                        <div class="post_list">
-                        </div>
-                        <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
-                    </div>
-                </div>
-
-                <div class="design_arrow_button cb_design_arrow_button">
-                </div>
-
-            </section>
+            </section> --}}
 
             <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview">
