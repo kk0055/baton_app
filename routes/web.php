@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PropertyController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\AuthController;
 
@@ -14,6 +15,7 @@ Route::get('/about', [LandingPageController::class, 'about'])->name('landing.abo
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('property', PropertyController::class);
+    Route::resource('post', PostController::class);
 });
 
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');

@@ -35,8 +35,10 @@
     </style>
     <div class="container mx-auto text-center px-8 py-14">
         <div class="text-center my-4">
+            <a href="{{ route('admin.post.create') }}">
             <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4" src="/126532.jpg"
                 alt="">
+            </a>
         </div>
         <h2
             class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-10">

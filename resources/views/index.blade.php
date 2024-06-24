@@ -631,6 +631,27 @@
                 </div>
                 <div class="post_row inview slide_up_animation">
                     <div class="post_col post_col-2 rich_font">
+                        <h3 class="catch rich_font" >{{ $latestPost->title }}
+                        </h3>
+                    </div>
+                    <div class="post_col post_col-2">
+                        <p>{!! $latestPost->content !!}
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
+            </div>
+
+        </section>
+          <section class="cb_free_space num1 " id="cb_content_1">
+
+            <div class="post_content clearfix" id="job_details">
+                <div class="design_header inview">
+                    <div class="title_area">
+                    </div>
+                </div>
+                <div class="post_row inview slide_up_animation">
+                    <div class="post_col post_col-2 rich_font">
                         <h3 class="catch rich_font" >業務内容
                         </h3>
                     </div>

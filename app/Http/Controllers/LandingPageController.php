@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Property;
+use App\Models\Post;
 
 class LandingPageController extends Controller
 {
@@ -11,7 +12,9 @@ class LandingPageController extends Controller
     {
         $rents = Property::rentOnly()->take(10)->get();
         $sales = Property::saleOnly()->take(10)->get();
-        return view('index', compact('rents', 'sales'));
+        // 最新の1件だけを取得
+        $latestPost = Post::latest()->first();
+        return view('index', compact('rents', 'sales','latestPost'));
     }
 
     public function sale()
