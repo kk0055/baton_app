@@ -650,7 +650,7 @@
                 </h3>
                 <div class="post_row">
 
-                    <div class="post_col post_col-2 inview slide_up_animation">
+                    <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
                         <p>100年後の笑顔を創る
                         </p>
                     </div>
@@ -660,8 +660,9 @@
                 <h3 class="catch rich_font inview slide_up_animation">経営理念
                 </h3>
                 <div class="post_row">
-                    <div class="post_col post_col-2 inview slide_up_animation">
-                        <p>「三方よし」<br />従業員の笑顔、お客様の笑顔、社会を笑顔へ
+                    <div class="post_col post_col-2 inview slide_up_animation"
+                    style="margin-top:10px;">
+                        <p> 三方よし＝「従業員の笑顔、お客様の笑顔、社会を笑顔へ」
                         </p>
                     </div>
                 </div>
