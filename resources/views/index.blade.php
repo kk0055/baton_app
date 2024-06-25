@@ -457,7 +457,7 @@
             z-index: 99999999999;
             opacity: 1;
             background-color: #EF3D08;
-            background: url('/overlay.jpg') no-repeat center center; /* Set your image path */
+            background: url('/overlay2.jpg') no-repeat center center; /* Set your image path */
             background-size: cover; 
         }
 
@@ -624,7 +624,6 @@
         <div id="content_builder">
           @if ($latestPost)
           <section class="cb_free_space num1 " id="cb_content_1">
-
             <div class="post_content clearfix" id="job_details">
                 <div class="design_header inview">
                     <div class="title_area">
@@ -640,9 +639,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
             </div>
-
         </section>
         @endif
           <section class="cb_free_space num1 " id="cb_content_1">
