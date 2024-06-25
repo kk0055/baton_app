@@ -658,7 +658,7 @@
                     <div class="post_row">
 
                         <div class="post_col post_col-2 inview slide_up_animation">
-                            <p>50年後の笑顔を創る
+                            <p>100年後の笑顔を創る
                             </p>
                             <h3>経営理念
                             </h3>

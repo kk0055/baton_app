@@ -622,9 +622,10 @@
 
         </div><!-- END #header_slider_wrap -->
         <div id="content_builder">
+          {{-- ブログ --}}
           @if ($latestPost)
           <section class="cb_free_space num1 " id="cb_content_1">
-            <div class="post_content clearfix" id="job_details">
+            <div class="post_content clearfix">
                 <div class="design_header inview">
                     <div class="title_area">
                     </div>
@@ -642,8 +643,33 @@
             </div>
         </section>
         @endif
-          <section class="cb_free_space num1 " id="cb_content_1">
+        <section class="cb_design_content num4" id="cb_content_4">
+          <div class="design_header cb_design_header inview">
+              <div class="title_area">
+                <h3 class="catch rich_font inview slide_up_animation">企業理念
+                </h3>
+                <div class="post_row">
 
+                    <div class="post_col post_col-2 inview slide_up_animation">
+                        <p>100年後の笑顔を創る
+                        </p>
+                    </div>
+                </div>
+          </div>
+              <div class="title_area">
+                <h3 class="catch rich_font inview slide_up_animation">経営理念
+                </h3>
+                <div class="post_row">
+                    <div class="post_col post_col-2 inview slide_up_animation">
+                        <p>「三方よし」<br />従業員の笑顔、お客様の笑顔、社会を笑顔へ
+                        </p>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+      </section>
+          <section class="cb_free_space num1 " id="cb_content_1">
             <div class="post_content clearfix" id="job_details">
                 <div class="design_header inview">
                     <div class="title_area">
@@ -739,7 +765,6 @@
             </section>
        
             <section class="cb_free_space num1 " id="cb_content_1">
-
                 <div class="post_content clearfix" id="about_us" >
                     <div class="design_header inview">
                         <div class="title_area">
