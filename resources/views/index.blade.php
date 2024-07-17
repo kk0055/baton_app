@@ -577,31 +577,60 @@
             /* 親要素の高さを設定 */
         }
 
+        /* スマホ用スタイル */
+        @media (max-width: 768px) {
+            .philosophy_container {
+                flex-direction: column;
+            }
+
+            .title_area {
+                width: 100%;
+                text-align: center;
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+                margin: 20px 0;
+                background-color: grey;
+                display: none;
+            }
+
+            .good_point{
+                text-align: left;
+            }
+        }
+
         @media screen and (min-width:1024px) {
             .divider {
                 width: 1px;
                 height: 330px;
                 background-color: grey;
                 margin: 0 20px;
-                display: none; 
+                display: none;
             }
+
             .philosophy_container {
-                display: flex; 
-                justify-content:center;
-                align-items: center;  
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            .philosophy1{
-                flex:1;
+
+            .philosophy1 {
+                flex: 1;
             }
-            .philosophy2{
-                margin-left:60px; 
-                flex:1;
+
+            .philosophy2 {
+                margin-left: 60px;
+                flex: 1;
             }
-            .philosophy2_message{
-                font-size:22px; 
+
+            .philosophy2_message {
+                font-size: 22px;
             }
-            .philosophy_submessage{
-                font-size:44px; 
+
+            .philosophy_submessage {
+                font-size: 44px;
             }
         }
     </style>
@@ -696,10 +725,10 @@
             <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area">
-                        <h3 class="catch rich_font"><span>経堂の良さ５選</span></h3>
+                        <h3 class="catch rich_font good_point">経堂の良さ５選</h3>
                         {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
                     </div>
-                    <div class="desc  post_content">
+                    <div class="desc post_content">
                         <strong style="font-size: 22px">1.治安が良い</strong> <br>
                         &nbsp; 経堂地区は治安が非常に良く、女性の一人暮らしでも安心して暮らせる街です。<br>
 
@@ -790,7 +819,8 @@
                         </h3>
                         <div class="post_row">
                             <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
-                                <p class="philosophy2_message"> 三方よし＝ <span class="philosophy_submessage">「従業員の笑顔、お客様の笑顔、社会を笑顔へ」</span>
+                                <p class="philosophy2_message"> 三方よし＝ <span
+                                        class="philosophy_submessage">「従業員の笑顔、お客様の笑顔、社会を笑顔へ」</span>
                                 </p>
                             </div>
                         </div>
