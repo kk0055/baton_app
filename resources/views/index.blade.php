@@ -12,8 +12,7 @@
     <meta property="og:title" content="株式会社BATON">
     <meta property="og:description" content="株式会社BATON">
     <meta property="og:site_name" content="株式会社BATON">
-    <meta property="og:image:secure_url"
-        content="https://xbatonx.com">
+    <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
@@ -403,18 +402,18 @@
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F" />
     <link rel="alternate" type="text/xml+oembed"
         href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F&#038;format=xml" />
-   
-    <style id="current-page-style" type="text/css">
 
-    .highlight-box {
-      background-color: #507878;
-      color: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      width: 600px;
-      max-width: 100%;
-    }
+    <style id="current-page-style" type="text/css">
+        .highlight-box {
+            background-color: #507878;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 600px;
+            max-width: 100%;
+        }
+
         #header_slider_content .catch {
             font-size: 76px;
         }
@@ -467,8 +466,9 @@
             z-index: 99999999999;
             opacity: 1;
             background-color: #EF3D08;
-            background: url('/overlay2.jpg') no-repeat center center; /* Set your image path */
-            background-size: cover; 
+            background: url('/overlay2.jpg') no-repeat center center;
+            /* Set your image path */
+            background-size: cover;
         }
 
         /* body.end_loading #site_loader_overlay { opacity:0; transition: opacity 0.7s ease 0.7s; } */
@@ -568,25 +568,49 @@
                 display: block;
             }
         }
+
         .main_logo_image_content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* 親要素の高さを設定 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* 親要素の高さを設定 */
         }
 
+        @media screen and (min-width:1024px) {
+            .divider {
+                width: 1px;
+                height: 330px;
+                background-color: #000;
+                margin: 0 20px;
+                display: none; 
+            }
+            .philosophy_container {
+                display: flex; 
+                justify-content:center;
+                align-items: center;  
+            }
+            .philosophy1{
+                flex:1;
+            }
+            .philosophy2{
+                margin-left:60px; 
+                flex:1;
+            }
+            .philosophy2_message{
+                font-size:22px; 
+            }
+            .philosophy_submessage{
+                font-size:44px; 
+            }
+        }
     </style>
-    <link rel="icon" href="baton_big_logo.jpg"
-        sizes="32x32" />
-    <link rel="icon"
-        href="baton_big_logo.jpg"
-        sizes="192x192" />
-    <link rel="apple-touch-icon"
-        href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage"
-        content="baton_big_logo.jpg" />
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
+    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
+    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
 
 <body data-rsssl=1 id="body"
@@ -602,144 +626,66 @@
         </div>
     </div>
 
-  @include('landing.components.landing_page_header')
+    @include('landing.components.landing_page_header')
 
     <div id="container">
         <div id="header_slider_wrap" class="layout_type1">
             <div id="header_slider_content">
                 <div class="content main_logo_image_content">
-                    <img class="image" src="logo1.svg" width="50%" height="80%" style="display:none;" />  
+                    <img class="image" src="logo1.svg" width="50%" height="80%" style="display:none;" />
                 </div>
             </div>
 
-            <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000" height="600">
+            <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000"
+                height="600">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide item item first_item" data-item-type="type2">
-                        <div class="item-inner" >
+                        <div class="item-inner">
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
-                            <video class="bg_video"
-                                src="main_video5.mp4" playsinline
-                                muted ></video>
+                            <video class="bg_video" src="main_video5.mp4" playsinline muted></video>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="content_builder">
-          {{-- ブログ --}}
-          @if ($latestPost)
-          <section class="cb_free_space num1 " id="cb_content_1">
-            <div class="post_content clearfix">
-                <div class="design_header inview">
-                    <div class="title_area">
+            {{-- ブログ --}}
+            @if ($latestPost)
+                <section class="cb_free_space num1 " id="cb_content_1">
+                    <div class="post_content clearfix">
+                        <div class="design_header inview">
+                            <div class="title_area">
+                            </div>
+                        </div>
+                        <div class="post_row inview slide_up_animation">
+                            <div class="post_col post_col-2 rich_font">
+                                <h3 class="catch rich_font">| {{ $latestPost->title }}
+                                </h3>
+                            </div>
+                            <div class="post_col post_col-2">
+                                <p>{!! $latestPost->content !!}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="post_row inview slide_up_animation">
-                    <div class="post_col post_col-2 rich_font">
-                        <h3 class="catch rich_font" >| {{ $latestPost->title }}
-                        </h3>
-                    </div>
-                    <div class="post_col post_col-2">
-                        <p>{!! $latestPost->content !!}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        @endif
-     
-      {{-- 業務内容 --}}
-          <section class="cb_free_space num1 " id="cb_content_1">
-            <div class="post_content clearfix" id="job_details">
-                <div class="design_header inview">
-                    <div class="title_area">
-                    </div>
-                </div>
-                <div class="post_row inview slide_up_animation">
-                    <div class="post_col post_col-2 rich_font">
-                        <h3 class="catch rich_font" >業務内容
-                        </h3>
-                    </div>
-                    <div class="post_col post_col-2">
-                        <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心として賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
-                       
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
-            </div>
+                </section>
+            @endif
 
-        </section>
-        <section class="cb_design_content num4" id="cb_content_4">
-          <div class="design_header cb_design_header inview">
-              <div class="title_area">
-                  <h3 class="catch rich_font"><span>経堂の良さ５選</span></h3>
-                  {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
-              </div>
-              <div  class="desc  post_content">
-                <strong style="font-size: 22px">1.治安が良い</strong> <br>
-                &nbsp; 経堂地区は治安が非常に良く、女性の一人暮らしでも安心して暮らせる街です。<br>
-               
-
-                  <strong style="font-size: 22px" >2.交通アクセスが良い</strong><br>
-                  &nbsp;  新宿まで12分、渋谷まで16分の利便性の高さ。<br>
-                  <strong style="font-size: 22px">3.商店街が多い</strong><br>
-                  &nbsp;農大通り商店街、すずらん通り商店街、本町通り商店街と3つの商店街が隣接しております。<br>
-                  <strong style="font-size: 22px">4.大学など教育環境が充実している</strong><br>
-                  &nbsp;東京農業大学、日本大学文理学部など、多くの大学生にも愛されております。<br>
-                  <strong style="font-size: 22px">5.自然が豊か</strong><br>
-                  &nbsp;多くの公園、緑道が設置されており、いつも豊な緑を感じることができます。<br><br>
-
-                  <div class="highlight-box" style="">
-                    他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
-                 </div>
-              </div>
-              
-          </div>
-
-          <div class="item_list shutter_image inview col2 link_ver vertical">
-              <div class="item">
-                  {{-- <div class="overlay"
-                      style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
-                  </div> --}}
-                  <div class="post_list">
-                  </div>
-                  <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
-              </div>
-              <div class="item">
-                  {{-- <div class="overlay"
-                      style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
-                  </div> --}}
-                  <div class="post_list">
-                  </div>
-                  <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
-              </div>
-          </div>
-
-          <div class="design_arrow_button cb_design_arrow_button">
-          </div>
-
-      </section>
+            {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">
-
-                <div class="post_content clearfix">
+                <div class="post_content clearfix" id="job_details">
                     <div class="design_header inview">
                         <div class="title_area">
-                          {{-- <h3 class="large_headline"><span>不動産仲介業の使命</span></h3> --}}
-
                         </div>
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">不動産仲介業の使命とは
+                            <h3 class="catch rich_font">業務内容
                             </h3>
-                            <p style="font-size: 22px; color:#000000" ><span>物件選びはエンターテイメントである</span></p>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>株式会社BATONは、物件選びもエンターテイメントのように楽しんでいただきたいと考えております。
-                              <br>
-                              楽しんでいただく為、大切なのは「環境づくり」です。不動産業界は未だに「恐そう」とか「騙されそう」とういうイメージをお持ちの方も多いかと思います。<br>ここを払拭すべくコミュニケーションの取りやすい環境づくり、「笑顔」で「クリーン」な会社をモットーとして、お客様からの要望が出やすい環境づくりを徹底しております。<br>期待や不安・・・様々な想いを馳せつつも、とにかく物件選びを楽しむこと。それこそが、皆様が理想の物件に巡り合う一番の近道となります。<br>ご自身が主役となり楽しく物件を選んでいただくことを使命とし、株式会社BATONは皆様をしっかりとサポートさせていただきます!<br>
-                              
+                            <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心として賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
+
                             </p>
                         </div>
                     </div>
@@ -747,35 +693,112 @@
                 </div>
 
             </section>
-          {{-- 企業理念 --}}
-          <section class="cb_design_content num4" id="cb_content_4">
-            <div class="design_header cb_design_header inview">
-                <div class="title_area">
-                  <h3 class="catch rich_font inview slide_up_animation" style="font-size: 22px;">企業理念
-                  </h3>
-                  <div class="post_row">
-  
-                      <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px; font-size: 44px; color:#000000">
-                          <p>100年後の笑顔を創る
-                          </p>
-                      </div>
-                  </div>
-            </div>
-                <div class="title_area">
-                  <h3 class="catch rich_font inview slide_up_animation">経営理念
-                  </h3>
-                  <div class="post_row">
-                      <div class="post_col post_col-2 inview slide_up_animation"
-                      style="margin-top:10px;">
-                          <p> 三方よし＝「従業員の笑顔、お客様の笑顔、社会を笑顔へ」
-                          </p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </section>
+            <section class="cb_design_content num4" id="cb_content_4">
+                <div class="design_header cb_design_header inview">
+                    <div class="title_area">
+                        <h3 class="catch rich_font"><span>経堂の良さ５選</span></h3>
+                        {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
+                    </div>
+                    <div class="desc  post_content">
+                        <strong style="font-size: 22px">1.治安が良い</strong> <br>
+                        &nbsp; 経堂地区は治安が非常に良く、女性の一人暮らしでも安心して暮らせる街です。<br>
+
+
+                        <strong style="font-size: 22px">2.交通アクセスが良い</strong><br>
+                        &nbsp; 新宿まで12分、渋谷まで16分の利便性の高さ。<br>
+                        <strong style="font-size: 22px">3.商店街が多い</strong><br>
+                        &nbsp;農大通り商店街、すずらん通り商店街、本町通り商店街と3つの商店街が隣接しております。<br>
+                        <strong style="font-size: 22px">4.大学など教育環境が充実している</strong><br>
+                        &nbsp;東京農業大学、日本大学文理学部など、多くの大学生にも愛されております。<br>
+                        <strong style="font-size: 22px">5.自然が豊か</strong><br>
+                        &nbsp;多くの公園、緑道が設置されており、いつも豊な緑を感じることができます。<br><br>
+
+                        <div class="highlight-box" style="">
+                            他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item_list shutter_image inview col2 link_ver vertical">
+                    <div class="item">
+                        {{-- <div class="overlay"
+                      style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
+                  </div> --}}
+                        <div class="post_list">
+                        </div>
+                        <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
+                    </div>
+                    <div class="item">
+                        {{-- <div class="overlay"
+                      style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
+                  </div> --}}
+                        <div class="post_list">
+                        </div>
+                        <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
+                    </div>
+                </div>
+
+                <div class="design_arrow_button cb_design_arrow_button">
+                </div>
+
+            </section>
             <section class="cb_free_space num1 " id="cb_content_1">
-                <div class="post_content clearfix" id="about_us" >
+
+                <div class="post_content clearfix">
+                    <div class="design_header inview">
+                        <div class="title_area">
+                            {{-- <h3 class="large_headline"><span>不動産仲介業の使命</span></h3> --}}
+
+                        </div>
+                    </div>
+                    <div class="post_row inview slide_up_animation">
+                        <div class="post_col post_col-2 rich_font">
+                            <h3 class="catch rich_font">不動産仲介業の使命とは
+                            </h3>
+                            <p style="font-size: 22px; color:#000000"><span>物件選びはエンターテイメントである</span></p>
+                        </div>
+                        <div class="post_col post_col-2">
+                            <p>株式会社BATONは、物件選びもエンターテイメントのように楽しんでいただきたいと考えております。
+                                <br>
+                                楽しんでいただく為、大切なのは「環境づくり」です。不動産業界は未だに「恐そう」とか「騙されそう」とういうイメージをお持ちの方も多いかと思います。<br>ここを払拭すべくコミュニケーションの取りやすい環境づくり、「笑顔」で「クリーン」な会社をモットーとして、お客様からの要望が出やすい環境づくりを徹底しております。<br>期待や不安・・・様々な想いを馳せつつも、とにかく物件選びを楽しむこと。それこそが、皆様が理想の物件に巡り合う一番の近道となります。<br>ご自身が主役となり楽しく物件を選んでいただくことを使命とし、株式会社BATONは皆様をしっかりとサポートさせていただきます!<br>
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
+                </div>
+
+            </section>
+            {{-- 企業理念 --}}
+            <section class="cb_design_content num4" id="cb_content_4">
+                <div class="design_header cb_design_header inview philosophy_container">
+                    <div class="title_area philosophy1">
+                        <h3 class="catch rich_font inview slide_up_animation">企業理念
+                        </h3>
+                        <div class="post_row">
+
+                            <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
+                                <p class="philosophy_submessage">100年後の笑顔を創る
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="title_area philosophy2">
+                        <h3 class="catch rich_font inview slide_up_animation">経営理念
+                        </h3>
+                        <div class="post_row">
+                            <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
+                                <p class="philosophy2_message"> 三方よし＝ <span class="philosophy_submessage">「従業員の笑顔、お客様の笑顔、社会を笑顔へ」</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cb_free_space num1 " id="cb_content_1">
+                <div class="post_content clearfix" id="about_us">
                     <div class="design_header inview">
                         <div class="title_area">
                         </div>
@@ -786,68 +809,14 @@
                         </div>
                         <div class="post_col post_col-2">
                             <p>株式会社BATONを設立した目的は企業理念の通り「100年後の笑顔を創る」ことです。<br>
-                              昨今の社会情勢は「地球温暖化」「社会情勢の変化」「超高齢化社会」など将来へ向け多くの懸念材料が存在しております。<br>そのような現状を踏まえ大切なことは、次世代が希望を持てる将来へ向け、私たち一人一人にできること、やるべきことを常に考え、そして一つずつでも行動することだと考えております。<br>
-                              社名の由来は希望に満ちた輝かしい未来へ繋ぐ「BATON」となること。出来ることには限りがあるかもしれませんが、この想いを胸に日々の業務に全力で取り組んで参ります。
+                                昨今の社会情勢は「地球温暖化」「社会情勢の変化」「超高齢化社会」など将来へ向け多くの懸念材料が存在しております。<br>そのような現状を踏まえ大切なことは、次世代が希望を持てる将来へ向け、私たち一人一人にできること、やるべきことを常に考え、そして一つずつでも行動することだと考えております。<br>
+                                社名の由来は希望に満ちた輝かしい未来へ繋ぐ「BATON」となること。出来ることには限りがあるかもしれませんが、この想いを胸に日々の業務に全力で取り組んで参ります。
                             </p>
                         </div>
                     </div>
                 </div>
 
             </section>
-            {{-- <section class="cb_free_space num1 " id="cb_content_1">
-
-                <div class="post_content clearfix">
-                    <div class="design_header inview">
-                        <div class="title_area">
-                        </div>
-                    </div>
-                    <div class="post_row inview slide_up_animation">
-                        <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">企業理念・経営理念
-                            </h3>
-                        </div>
-                        <div class="post_col post_col-2">
-                            <p><strong>企業理念</strong> <br>
-                                50年後の笑顔を創る<br> <br>
-                                <strong> 経営理念</strong> <br>
-                                「三方よし」<br>
-                                従業員の笑顔、お客様の笑顔、社会を笑顔へ<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </section> --}}
-
-            {{-- <section class="cb_free_space num1 " id="cb_content_1">
-
-                <div class="post_content clearfix">
-                    <div class="design_header inview">
-                        <div class="title_area">
-                        </div>
-                    </div>
-                    <div class="post_row inview slide_up_animation">
-                        <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">活動メイン地域
-                            </h3>
-                        </div>
-                        <div class="post_col post_col-2">
-                            <p><strong>東京都世田谷区経堂地区</strong> <br>
-
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12968.33082140916!2d139.62189851043343!3d35.65033391155212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f3957ebdf4a3%3A0x1f93fe97b71ed6a9!2sKyodo%2C%20Setagaya%20City%2C%20Tokyo%20156-0052!5e0!3m2!1sen!2sjp!4v1718420380143!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                                沿線<br>
-                                小田急線　経堂駅（急行停車）、豪徳寺駅、千歳船橋駅
-                                東急田園都市線　宮の坂、上町
-
-                            </p>
-                        </div>
-                    </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
-                </div>
-
-            </section> --}}
-
             <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area no_desc">
@@ -860,23 +829,11 @@
                         <div class="blog_carousel swiper-wrapper">
                             @foreach ($rents as $property)
                                 <div class="item swiper-slide">
-                                 {{--    <a class="animate_background"
-                                        href="{{ asset('storage/' . $property->image_path) }}"> --}}
                                     <div class="image_wrap image_link image-link animate_background">
                                         <img class=" property-image"
                                             src="{{ asset('storage/' . $property->image_path) }}"
                                             alt="Property Image">
                                     </div>
-                                    {{-- </a> --}}
-                                    {{-- <div class="content">
-                                    <a class="category_button"
-                                        href="https://demo.tcd-theme.com/tcd103/category/protect-earth/">環境保全</a>
-                                    <h4 class="title"><a
-                                            href="https://demo.tcd-theme.com/tcd103/new-slider-options/"><span>【機能追加】ヘッダースライダーのオプション（タイプ/エフェクト）が追加されました。</span></a>
-                                    </h4>
-                                    <time class="date entry-date published"
-                                        datetime="2023-09-28T23:29:45+09:00">2023.09.28</time>
-                                </div> --}}
                                 </div>
                             @endforeach
                         </div>
@@ -886,11 +843,13 @@
                     </div>
                 </div>
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.rent') }}"><span class="label" style="font-size: 16px; color:#000000">賃貸物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('landing.rent') }}"><span class="label"
+                            style="font-size: 16px; color:#000000">賃貸物件一覧</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section>
-              <!-- 画像をクリックしたときに表示されるモーダル -->
-              <div class="modal">
+            <!-- 画像をクリックしたときに表示されるモーダル -->
+            <div class="modal">
                 <span class="close">&times;</span>
                 <img class="modal-content">
             </div>
@@ -940,13 +899,15 @@
                 </div>
 
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.sale') }}"><span class="label" style="font-size: 16px; color:#000000">売買物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('landing.sale') }}"><span class="label"
+                            style="font-size: 16px; color:#000000">売買物件一覧</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section><!-- END 売買物件 -->
         </div>
 
-   @include('landing.components.footer')
-    
+        @include('landing.components.footer')
+
 
     </div><!-- #container -->
 
@@ -1289,7 +1250,7 @@
             (function($) {
 
                 $('body').addClass('end_loading');
-                
+
                 setTimeout(function() {
                     $('html').addClass('end_loading_show_scroll_bar');
                 }, 100);
@@ -1358,6 +1319,7 @@
                 window.dispatchEvent(new Event('initHeaderSlider'));
                 // 画像の表示を設定
                 $('.image').css('display', 'block');
+                $('.divider').css('display', 'block');
             })(jQuery);
         }
 
