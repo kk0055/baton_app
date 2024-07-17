@@ -660,7 +660,7 @@
                         <div class="post_col post_col-2 inview slide_up_animation">
                             <p>100年後の笑顔を創る
                             </p>
-                            <h3>経営理念
+                            <h3 class="catch rich_font inview slide_up_animation">経営理念
                             </h3>
                             <p>三方よし＝「従業員の笑顔、お客様の笑顔、社会を笑顔へ」
 

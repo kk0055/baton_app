@@ -581,7 +581,7 @@
             .divider {
                 width: 1px;
                 height: 330px;
-                background-color: #000;
+                background-color: grey;
                 margin: 0 20px;
                 display: none; 
             }
