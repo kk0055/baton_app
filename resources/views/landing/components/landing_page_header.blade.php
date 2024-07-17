@@ -1,8 +1,8 @@
 <header id="header" class="first_animate">
     <h1 id="header_logo">
         <a href="/">
-            <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" width="146" height="20" />
-            <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" width="100" height="14" />
+            <img class="logo_image pc" src="logo2.svg" alt="株式会社BATON" width="146" height="20" />
+            <img class="logo_image mobile" src="logo2.svg" alt="株式会社BATON" width="100" height="14" />
         </a>
     </h1>
 

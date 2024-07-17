@@ -8027,7 +8027,7 @@ body.megamenu_dark_color .megamenu_a a:hover,
 .lp3_bottom_content .item_list a,
 #service_link_list .post_list.type1 .catch,
 #service_link_list .post_list.type2 .catch {
-    color: #ff4000;
+    color: #507878;
 }
 
 .cardlink .title a,
@@ -8036,7 +8036,7 @@ body.megamenu_dark_color .megamenu_a a:hover,
 .design_arrow_button a,
 .swiper-nav-button:hover .arrow_button_small:before,
 .swiper-nav-button:hover .arrow_button_small:after {
-    color: #ff4000 !important;
+    color: #507878 !important;
 }
 
 .page_navi span.current,
@@ -8062,7 +8062,7 @@ body.megamenu_dark_color .megamenu_a a:hover,
 .shutter_image.link_ver .post_list a:after,
 .design_button:hover,
 #mobile_menu li li a {
-    background-color: #ff4000;
+    background-color: #507878;
 }
 
 .category_button,
@@ -8076,7 +8076,7 @@ body.megamenu_dark_color .megamenu_a a:hover,
 #post_pagination a:hover,
 .page_navi a:hover,
 .design_button {
-    border-color: #ff4000;
+    border-color: #507878;
 }
 
 .category_button:hover,
@@ -8120,11 +8120,11 @@ body.megamenu_dark_color .megamenu_b a:hover {
 #no_post a,
 #page_404_header .desc a,
 #no_search_result a {
-    color: #ff4000;
+    color: #507878;
 }
 
 #page_404_header .desc a:hover {
-    color: #ff4000;
+    color: #507878;
 }
 
 .widget_block a:hover,
@@ -8134,7 +8134,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
 }
 
 .post_content a:hover {
-    color: #ff4000;
+    color: #507878;
 }
 
 .styled_h2 {
@@ -8163,7 +8163,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
     text-align: left !important;
     font-weight: 600 !important;
     color: #000000;
-    border-color: #ff4000;
+    border-color: #507878;
     border-width: 4px;
     border-style: solid;
     padding-left: 1em !important;
@@ -8230,7 +8230,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
     line-height: 60px;
     border-radius: 70px;
     color: #ffffff;
-    background-color: #ff4000;
+    background-color: #507878;
     border: none;
 }
 
@@ -8391,11 +8391,11 @@ body.megamenu_dark_color .megamenu_b a:hover {
 .speech_balloon1 .speech_balloon_text_inner {
     color: #000000;
     background-color: #ffffff;
-    border-color: #ff4000;
+    border-color: #507878;
 }
 
 .speech_balloon1 .before {
-    border-left-color: #ff4000;
+    border-left-color: #507878;
 }
 
 .speech_balloon1 .after {
@@ -8453,3 +8453,6 @@ body.megamenu_dark_color .megamenu_b a:hover {
     border-color: #000000 transparent transparent transparent;
 }
 
+.catch {
+    color: #507878 !important;
+}

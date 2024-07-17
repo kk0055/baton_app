@@ -4,7 +4,7 @@
 @section('content')
     <div id="archive_header" class="inview" style="margin-top: 50px;">
         <div class="title_area">
-            <h2 class="large_headline"><span>売買物件</span></h2>
+            <h2 class="catch large_headline"><span>売買物件</span></h2>
             {{-- <p class="sub_title colored"><span></span></p> --}}
         </div>
         {{-- <p class="desc post_content">今週のおススメ物件</p> --}}
