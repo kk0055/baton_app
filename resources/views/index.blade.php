@@ -577,17 +577,24 @@
             /* 親要素の高さを設定 */
         }
 
+
+        .philosophy2_message {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .philosophy_submessage {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
         /* スマホ用スタイル */
         @media (max-width: 768px) {
-            .philosophy_container {
-                flex-direction: column;
-            }
-
+          
             .title_area {
                 width: 100%;
                 text-align: center;
             }
-
             .divider {
                 width: 100%;
                 height: 1px;
@@ -595,13 +602,55 @@
                 background-color: grey;
                 display: none;
             }
-
-            .good_point{
+            .philosophy_container {
+                flex-direction: column;
+            }
+            .good_point {
                 text-align: left;
+            }
+
+            .philosophy1 {
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .philosophy2 {
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .property {
+                text-align: left;
+            }
+
+            .property_sub_titile {
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            .property_sub_titile::after {
+                content: '';
+                flex-grow: 1;
+                height: 1px;
+                background-color: grey;
+                margin-left: 10px;
+                /* テキストと横棒の間のスペース */
+            }
+
+            .break::before {
+                content: "\A";
+                /* 改行を挿入 */
+                white-space: pre;
+                /* 改行を有効にする */
+            }
+
+            .philosophy_for_pc {
+                display: none
             }
         }
 
-        @media screen and (min-width:1024px) {
+        @media screen and (min-width:770px) {
             .divider {
                 width: 1px;
                 height: 330px;
@@ -613,7 +662,7 @@
             .philosophy_container {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items:flex-start
             }
 
             .philosophy1 {
@@ -624,13 +673,8 @@
                 margin-left: 60px;
                 flex: 1;
             }
-
-            .philosophy2_message {
-                font-size: 22px;
-            }
-
-            .philosophy_submessage {
-                font-size: 44px;
+            .philosophy_for_sp {
+                display: none
             }
         }
     </style>
@@ -795,7 +839,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
                 </div>
 
             </section>
@@ -808,7 +851,9 @@
                         <div class="post_row">
 
                             <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
-                                <p class="philosophy_submessage">100年後の笑顔を創る
+                                <p class="philosophy_submessage philosophy_for_pc">100年後の笑顔を創る
+                                </p>
+                                <p class="philosophy_submessage philosophy_for_sp" style="font-size: 50px;">100年後の笑顔を創る
                                 </p>
                             </div>
                         </div>
@@ -818,10 +863,21 @@
                         <h3 class="catch rich_font inview slide_up_animation">経営理念
                         </h3>
                         <div class="post_row">
-                            <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
+                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_pc"
+                                style="margin-top:10px;">
                                 <p class="philosophy2_message"> 三方よし＝ <span
-                                        class="philosophy_submessage">「従業員の笑顔、お客様の笑顔、社会を笑顔へ」</span>
+                                        class="philosophy_submessage break">従業員の笑顔、お客様の笑顔、社会を笑顔へ</span>
                                 </p>
+                            </div>
+                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_sp"
+                                style="margin-top:10px;">
+                                <div class="philosophy2_message">
+                                    <p class="philosophy_submessage">三方よし＝</br></p>
+                                    <p style="font-size: 50px;">従業員の笑顔</br></p>
+                                    <p style="font-size: 50px;">お客様の笑顔</br></p>
+                                    <p style="font-size: 50px;">社会を笑顔へ </br></p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -848,10 +904,13 @@
 
             </section>
             <section class="cb_blog_list num5" id="cb_content_5">
-                <div class="design_header cb_design_header inview">
+                <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
-                        <h3 class="catch" style="font-size: 34px;">賃貸物件</h3>
-                        <p class="sub_title colored" style="font-size: 22px; color:#000000"><span>今週のオススメ♪</span></p>
+                        <h3 class="catch rich_font inview slide_up_animation property">賃貸物件</h3>
+                        <p class="sub_title colored property property_sub_titile"
+                            style="font-size: 22px; color:#000000">
+                            <span>今週のオススメ♪</span>
+                        </p>
                     </div>
                 </div>
                 <div class="main_content inview">
@@ -878,17 +937,13 @@
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section>
-            <!-- 画像をクリックしたときに表示されるモーダル -->
-            <div class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content">
-            </div>
             <!-- 売買物件 -->
             <section class="cb_blog_list num5" id="cb_content_2">
                 <div class="design_header cb_design_header inview">
-                    <div class="title_area no_desc">
-                        <h3 class="catch" style="font-size: 34px;">売買物件</h3>
-                        <p class="sub_title colored" style="font-size: 22px; color:#000000"><span>今週のオススメ♪</span></p>
+                    <div class="title_area no_desc property">
+                        <h3 class="catch rich_font inview slide_up_animation property">売買物件</h3>
+                        <p class="sub_title colored property property_sub_titile"
+                            style="font-size: 22px; color:#000000;"><span>今週のオススメ♪</span> </p>
                     </div>
                 </div>
                 <div class="main_content inview">
@@ -904,19 +959,11 @@
                                             alt="Property Image">
                                     </div>
                                     {{-- </a> --}}
-                                    {{-- <div class="content">
-                                  <a class="category_button"
-                                      href="https://demo.tcd-theme.com/tcd103/category/protect-earth/">環境保全</a>
-                                  <h4 class="title"><a
-                                          href="https://demo.tcd-theme.com/tcd103/new-slider-options/"><span>【機能追加】ヘッダースライダーのオプション（タイプ/エフェクト）が追加されました。</span></a>
-                                  </h4>
-                                  <time class="date entry-date published"
-                                      datetime="2023-09-28T23:29:45+09:00">2023.09.28</time>
-                              </div> --}}
+
                                 </div>
                             @endforeach
-                        </div><!-- END .blog_list_carousel -->
-                    </div><!-- END .blog_list_carousel_wrap -->
+                        </div>
+                    </div>
                     <!-- 画像をクリックしたときに表示されるモーダル -->
                     {{-- <div class="modal">
                       <span class="close">&times;</span>
