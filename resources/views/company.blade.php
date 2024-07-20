@@ -421,10 +421,6 @@
                 margin-top: -12px !important;
             }
 
-            .title2 {
-                margin-top: 2px !important;
-            }
-
             .title3 {
                 margin-top: 2px !important;
             }
@@ -474,10 +470,6 @@
                 margin: 55px 0 139px;
             }
 
-            #company_access {
-                margin-top: 141px;
-            }
-
             #page_contents {
                 padding-bottom: 147px;
             }
@@ -487,17 +479,8 @@
                 line-height: 45px;
             }
 
-            .title2 {
-                margin-top: -14px;
-            }
-
             .sub_title.colored {
                 margin-bottom: -5px !important;
-            }
-
-            .company_info {
-                margin-top: -3px !important;
-                margin-bottom: -3px !important;
             }
         }
 
@@ -534,10 +517,6 @@
                 font-size: 14px;
             }
 
-            #company_access {
-                margin-top: -13px !important;
-            }
-
             #company_access .qt_google_map {
                 margin-top: -5px !important;
                 margin-bottom: 32px;
@@ -547,21 +526,8 @@
                 padding-bottom: 39px;
             }
 
-            .company_info {
-                font-size: 14px;
-                padding-bottom: 2px;
-            }
-
-            .title2 {
-                margin-top: -20px !important;
-            }
-
             .title3 {
                 margin-top: -1px !important;
-            }
-
-            .title4 {
-                margin-top: -80px !important;
             }
 
             .post_content p {
@@ -590,10 +556,6 @@
 
             .post_content .s_table table {
                 margin-bottom: 25px;
-            }
-
-            .info2 {
-                margin-bottom: 22px !important;
             }
         }
     </style>
@@ -668,7 +630,8 @@
                         </div>
                         <div class="post_col post_col-2">
                             <div class="shutter_image inview col1">
-                                <div class="item"><img fetchpriority="high" decoding="async" src="27838_0.jpg"
+                                <div class="item">
+                                    <img fetchpriority="high" decoding="async" src="27838_0.jpg"
                                         alt="" width="580" height="580"
                                         class="alignnone size-full wp-image-5943" /></div>
                             </div>
@@ -682,20 +645,6 @@
                         {{-- <p class="sub_title colored"><span>会社情報</span></p> --}}
                     </div>
                 </div>
-                {{-- <div class="shutter_image inview col3 vertical">
-                    <div class="item"><img decoding="async"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company2.jpg"
-                            alt="" width="415" height="450"
-                            class="alignnone size-full wp-image-5944" /></div>
-                    <div class="item"><img decoding="async"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company3.jpg"
-                            alt="" width="411" height="450"
-                            class="alignnone size-full wp-image-5945" /></div>
-                    <div class="item"><img decoding="async"
-                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company4.jpg"
-                            alt="" width="414" height="450"
-                            class="alignnone size-full wp-image-5946" /></div>
-                </div> --}}
                 <div class="post_row" id="company_data_list">
                     <div class="post_col post_col-2 inview slide_up_animation">
                         <h4>会社概要</h4>

@@ -635,21 +635,20 @@
                 height: 1px;
                 background-color: grey;
                 margin-left: 10px;
-                /* テキストと横棒の間のスペース */
+                
             }
 
             .break::before {
                 content: "\A";
-                /* 改行を挿入 */
                 white-space: pre;
-                /* 改行を有効にする */
+                
             }
 
             .philosophy_for_pc {
                 display: none
             }
         }
-
+        /* Laptop用スタイル */
         @media screen and (min-width:770px) {
             .divider {
                 width: 1px;
@@ -753,7 +752,7 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">業務内容
+                            <h3 class="catch rich_font">| 業務内容
                             </h3>
                         </div>
                         <div class="post_col post_col-2">
@@ -762,15 +761,13 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="design_arrow_button"><a href="https://demo.tcd-theme.com/tcd103/about/"><span class="label">私たちの目指す世界</span><span class="arrow_button"></span></a></div> -->
                 </div>
 
             </section>
             <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area">
-                        <h3 class="catch rich_font good_point">経堂の良さ５選</h3>
-                        {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
+                        <h3 class="catch rich_font good_point">| 経堂の良さ５選</h3>
                     </div>
                     <div class="desc post_content">
                         <strong style="font-size: 22px">1.治安が良い</strong> <br>
@@ -827,7 +824,7 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">不動産仲介業の使命とは
+                            <h3 class="catch rich_font">| 不動産仲介業の使命とは
                             </h3>
                             <p style="font-size: 22px; color:#000000"><span>物件選びはエンターテイメントである</span></p>
                         </div>
@@ -846,10 +843,9 @@
             <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview philosophy_container">
                     <div class="title_area philosophy1">
-                        <h3 class="catch rich_font inview slide_up_animation">企業理念
+                        <h3 class="catch rich_font inview slide_up_animation">| 企業理念
                         </h3>
                         <div class="post_row">
-
                             <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
                                 <p class="philosophy_submessage philosophy_for_pc">100年後の笑顔を創る
                                 </p>
@@ -860,7 +856,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="title_area philosophy2">
-                        <h3 class="catch rich_font inview slide_up_animation">経営理念
+                        <h3 class="catch rich_font inview slide_up_animation">| 経営理念
                         </h3>
                         <div class="post_row">
                             <div class="post_col post_col-2 inview slide_up_animation philosophy_for_pc"
@@ -891,7 +887,7 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">設立の目的 </h3>
+                            <h3 class="catch rich_font">| 設立の目的 </h3>
                         </div>
                         <div class="post_col post_col-2">
                             <p>株式会社BATONを設立した目的は企業理念の通り「100年後の笑顔を創る」ことです。<br>
@@ -906,7 +902,7 @@
             <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
-                        <h3 class="catch rich_font inview slide_up_animation property">賃貸物件</h3>
+                        <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
                         <p class="sub_title colored property property_sub_titile"
                             style="font-size: 22px; color:#000000">
                             <span>今週のオススメ♪</span>
@@ -941,7 +937,7 @@
             <section class="cb_blog_list num5" id="cb_content_2">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area no_desc property">
-                        <h3 class="catch rich_font inview slide_up_animation property">売買物件</h3>
+                        <h3 class="catch rich_font inview slide_up_animation property">| 売買物件</h3>
                         <p class="sub_title colored property property_sub_titile"
                             style="font-size: 22px; color:#000000;"><span>今週のオススメ♪</span> </p>
                     </div>
@@ -1016,12 +1012,6 @@
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
         id="clipboard-js"></script>
     <script type="text/javascript" id="hcb-script-js-extra">
-        /* <![CDATA[ */
-        var hcbVars = {
-            "showCopyBtn": "1",
-            "copyBtnLabel": "\u30b3\u30fc\u30c9\u3092\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u306b\u30b3\u30d4\u30fc\u3059\u308b"
-        };
-        /* ]]> */
     </script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
@@ -1108,9 +1098,6 @@
             });
 
             let news_carousel_cat_all;
-            let news_carousel_cat_352;
-            let news_carousel_cat_353;
-            let news_carousel_cat_354;
 
             function init_news_carousel() {
 
@@ -1125,99 +1112,6 @@
                         grabCursor: true,
                         scrollbar: {
                             el: "#news_carousel_scrollbar",
-                            hide: false,
-                            draggable: true,
-                            dragSize: 120,
-                        },
-                        freeMode: {
-                            enabled: true,
-                            sticky: false,
-                            momentumBounce: false,
-                        },
-                        observer: true,
-                        observeParents: true,
-                        breakpoints: {
-                            800: {
-                                scrollbar: {
-                                    dragSize: 200,
-                                },
-                            }
-                        }
-                    });
-                };
-                if ($('#news_carousel_cat_352').length) {
-                    if (news_carousel_cat_352 != undefined) {
-                        news_carousel_cat_352.destroy();
-                    }
-                    news_carousel_cat_352 = new Swiper("#news_carousel_cat_352", {
-                        loop: false,
-                        centeredSlides: false,
-                        slidesPerView: "auto",
-                        grabCursor: true,
-                        scrollbar: {
-                            el: "#news_carousel_scrollbar_cat_352",
-                            hide: false,
-                            draggable: true,
-                            dragSize: 120,
-                        },
-                        freeMode: {
-                            enabled: true,
-                            sticky: false,
-                            momentumBounce: false,
-                        },
-                        observer: true,
-                        observeParents: true,
-                        breakpoints: {
-                            800: {
-                                scrollbar: {
-                                    dragSize: 200,
-                                },
-                            }
-                        }
-                    });
-                };
-                if ($('#news_carousel_cat_353').length) {
-                    if (news_carousel_cat_353 != undefined) {
-                        news_carousel_cat_353.destroy();
-                    }
-                    news_carousel_cat_353 = new Swiper("#news_carousel_cat_353", {
-                        loop: false,
-                        centeredSlides: false,
-                        slidesPerView: "auto",
-                        grabCursor: true,
-                        scrollbar: {
-                            el: "#news_carousel_scrollbar_cat_353",
-                            hide: false,
-                            draggable: true,
-                            dragSize: 120,
-                        },
-                        freeMode: {
-                            enabled: true,
-                            sticky: false,
-                            momentumBounce: false,
-                        },
-                        observer: true,
-                        observeParents: true,
-                        breakpoints: {
-                            800: {
-                                scrollbar: {
-                                    dragSize: 200,
-                                },
-                            }
-                        }
-                    });
-                };
-                if ($('#news_carousel_cat_354').length) {
-                    if (news_carousel_cat_354 != undefined) {
-                        news_carousel_cat_354.destroy();
-                    }
-                    news_carousel_cat_354 = new Swiper("#news_carousel_cat_354", {
-                        loop: false,
-                        centeredSlides: false,
-                        slidesPerView: "auto",
-                        grabCursor: true,
-                        scrollbar: {
-                            el: "#news_carousel_scrollbar_cat_354",
                             hide: false,
                             draggable: true,
                             dragSize: 120,
@@ -1360,9 +1254,6 @@
                                 }
                             });
                         }
-
-
-
                     })(jQuery);
 
                     // #header_messageが存在する場合のみ処理を実行
@@ -1399,7 +1290,6 @@
                 $('.divider').css('display', 'block');
             })(jQuery);
         }
-
         (function($) {
             $('#site_loader_overlay').addClass('start_loading');
             $('#site_loader_overlay_for_catchphrase').addClass('start_loading');
@@ -1411,8 +1301,6 @@
             setTimeout(function() {
                 after_load();
             }, 2500);
-
-
         })(jQuery);
 
         // 画像リンクをクリックしたときにモーダルを表示
