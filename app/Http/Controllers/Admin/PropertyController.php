@@ -17,13 +17,15 @@ class PropertyController extends Controller
     public function index()
     {
         $properties = Property::orderByOrder()->get();
-        return view('admin.property.index', compact('properties'));
+        $propertyPrices = Property::propertyPrices();
+        return view('admin.property.index', compact('properties','propertyPrices'));
     }
 
     public function create()
     {
         $propertyTypes = Property::propertyTypes();
-        return view('admin.property.create', compact('propertyTypes'));
+        $propertyPrices = Property::propertyPrices();
+        return view('admin.property.create', compact('propertyTypes','propertyPrices'));
     }
 
     public function store(Request $request)
@@ -44,6 +46,7 @@ class PropertyController extends Controller
         'type' => $request->input('type'),
         // 'type' => $request->input('type'),
         'image_path' => $image_path ?? null, // 画像パスを保存
+        'price' => $request->input('price')
     ]);
     return redirect()->route('admin.property.index')->with('info', '完了!');
     }
@@ -75,6 +78,7 @@ class PropertyController extends Controller
         $property->order = $request->input('order');
         $property->is_display = $request->input('is_display');
         $property->type = $request->input('type');
+        $property->price = $request->input('price');
         
         $property->save();
         return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');

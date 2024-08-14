@@ -47,12 +47,24 @@
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="order" name="order" type="number">
 
-                    <label for="type" class="block text-gray-700 text-sm font-bold mb-2 mt-4">タイプ</label>
+                    <label for="type" class="block text-gray-700 text-sm font-bold mb-2 mt-4">タイプ
+                    </label>
                     <select name="type" id="type"
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                         @foreach ($propertyTypes as $type)
                             <option value="{{ $type }}">
                                 {{ $type }}
+                            </option>
+                        @endforeach
+                    </select>
+
+                    <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯
+                    </label>
+                    <select name="price" id="price"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        @foreach ($propertyPrices as $price)
+                            <option value="{{ $price }}">
+                                {{ number_format($price)}}円~
                             </option>
                         @endforeach
                     </select>
