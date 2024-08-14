@@ -676,6 +676,7 @@
                 display: none
             }
         }
+       
     </style>
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
@@ -711,10 +712,13 @@
             <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000"
                 height="600">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide item item first_item" data-item-type="type2">
-                        <div class="item-inner">
+                    <div class="swiper-slide item item first_item " data-item-type="type2">
+                        <div class="item-inner video_container">
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
-                            <video class="bg_video" src="large_video2.mp4" playsinline muted></video>
+                            <video class="bg_video"  playsinline muted>
+                                <source media="(max-width: 991px)" src="large_video2.mp4" alt="説明"  type="video/mp4">
+                                <source src="large_video_for_pc.mp4" alt="説明"  type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </div>
