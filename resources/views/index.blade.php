@@ -714,7 +714,7 @@
                     <div class="swiper-slide item item first_item" data-item-type="type2">
                         <div class="item-inner">
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
-                            <video class="bg_video" src="main_video5.mp4" playsinline muted></video>
+                            <video class="bg_video" src="large_video2.mp4" playsinline muted></video>
                         </div>
                     </div>
                 </div>
@@ -797,7 +797,7 @@
                   </div> --}}
                         <div class="post_list">
                         </div>
-                        <img loading="lazy" class="image" src="27835_0.jpg" width="750" height="540" />
+                        <img loading="lazy" class="image" src="kyodo1.jpg" width="750" height="540" />
                     </div>
                     <div class="item">
                         {{-- <div class="overlay"
@@ -805,7 +805,7 @@
                   </div> --}}
                         <div class="post_list">
                         </div>
-                        <img loading="lazy" class="image" src="27836_0.jpg" width="750" height="540" />
+                        <img loading="lazy" class="image" src="kyodo2.jpg" width="750" height="540" />
                     </div>
                 </div>
 
