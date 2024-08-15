@@ -716,8 +716,8 @@
                         <div class="item-inner video_container">
                             <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
                             <video class="bg_video"  playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video2.mp4" alt="説明"  type="video/mp4">
-                                <source src="large_video_for_pc.mp4" alt="説明"  type="video/mp4">
+                                <source media="(max-width: 991px)" src="large_video3.mov" alt="説明"  type="video/mp4">
+                                <source src="NoSky1.mp4" alt="説明"  type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -760,7 +760,7 @@
                             </h3>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心として賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
+                            <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心に賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
 
                             </p>
                         </div>
