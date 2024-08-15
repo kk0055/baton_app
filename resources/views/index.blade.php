@@ -907,10 +907,31 @@
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
                         <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
+                        <div class="sub_title colored property property_sub_titile"
+                        style="font-size: 22px; color:#000000">
+                        <span>ご希望の価格帯</span>
+                    </div>
+                        <form action="{{ route('landing.rent') }}" method="GET">
+                            {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
+                            <select name="price" id="price"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                @foreach ($propertyPrices as $price)
+                                    <option value="{{ $price }}">
+                                        {{ number_format($price) }}円~
+                                    </option>
+                                @endforeach
+                            </select>
+                                <button type="submit" class="catch flex items-center  bg-blue-500 hover:bg-blue-700 text-white font-bold  px-4 py-2 rounded shadow-md transition duration-300 ease-in-out" style="padding:5px">
+                                    <span class="label" style="font-size: 16px;">検索</span>
+                                    {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
+                                </button>
+                        </form>
+                    
                         <p class="sub_title colored property property_sub_titile"
                             style="font-size: 22px; color:#000000">
                             <span>今週のオススメ♪</span>
                         </p>
+                    
                     </div>
                 </div>
                 <div class="main_content inview">
