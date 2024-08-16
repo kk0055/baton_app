@@ -14,7 +14,7 @@ class AddPriceToPropertiesTable extends Migration
     public function up()
     {
         Schema::table('properties', function (Blueprint $table) {
-            $table->integer('price')->nullable()->after('type');
+            $table->string('price')->nullable()->after('type');
         });
     }
 

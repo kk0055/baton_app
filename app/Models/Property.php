@@ -63,17 +63,11 @@ class Property extends Model
     public static function propertyPrices()
     {
         $propertyPrices = [
-            '50000',
-            '60000',
-            '70000',
-            '80000',
-            '90000',
-            '100000',
-            '110000',
-            '120000',
-            '130000',
-            '140000',
-            '150000',
+            '6万円未満',
+            '6万円 ~ 8万円未満',
+            '8万円 ~ 10万円未満',
+            '10万円以上',
+            'ファミリー物件',
         ];
 
         return $propertyPrices;
