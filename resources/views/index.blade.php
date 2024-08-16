@@ -421,7 +421,20 @@
         #header_slider_content .desc {
             font-size: 20px;
         }
+.property_search {
 
+    background-color: white; 
+    color: #507878;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.property_search:hover {
+    background-color: #406060; /* ホバー時に少し濃い色に変更 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
         @media screen and (max-width:1100px) {
             #header_slider_content .catch {
                 font-size: 53px;
@@ -907,10 +920,10 @@
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
                         <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
-                        <div class="sub_title colored property property_sub_titile"
-                        style="font-size: 22px; color:#000000">
+                        <div class="sub_title colored property "
+                        style="font-size: 22px; color:#000000; padding:10px 0">
                         <span>ご希望の価格帯</span>
-                    </div>
+                    
                         <form action="{{ route('landing.rent') }}" method="GET">
                             {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
                             <select name="price" id="price"
@@ -921,12 +934,13 @@
                                     </option>
                                 @endforeach
                             </select>
-                                <button type="submit" class="catch flex items-center  bg-blue-500 hover:bg-blue-700 text-white font-bold  px-4 py-2 rounded shadow-md transition duration-300 ease-in-out" style="padding:5px">
-                                    <span class="label" style="font-size: 16px;">検索</span>
+                                <button type="submit" class="catch property_search" style="padding:5px">
+                                    <span class="label" style="font-size: 16px;"><i class="fa fa-search"
+                                        style="margin-right:4px;" aria-hidden="true"></i>検索</span>
                                     {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
                                 </button>
                         </form>
-                    
+                    </div>
                         <p class="sub_title colored property property_sub_titile"
                             style="font-size: 22px; color:#000000">
                             <span>今週のオススメ♪</span>
