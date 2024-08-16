@@ -82,6 +82,18 @@
                                 <span class="ml-2">売買</span>
                             </label>
                         </div>
+                        <div>
+                            <label for="type" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯
+                            </label>
+                            <select name="price" id="type"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                @foreach ($propertyPrices as $price)
+                                    <option value="{{ $price }}"  {{ (isset($property->price) && $property->price == $price) ? 'selected' : '' }}>
+                                        {{ number_format($price)}}円~
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <!--footer-->
