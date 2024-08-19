@@ -479,7 +479,7 @@
             z-index: 99999999999;
             opacity: 1;
             background-color: #EF3D08;
-            background: url('/overlay2.jpg') no-repeat center center;
+            background: url('/logo.jpg') no-repeat center center;
             /* Set your image path */
             background-size: cover;
         }
@@ -718,7 +718,7 @@
         <div id="header_slider_wrap" class="layout_type1">
             <div id="header_slider_content">
                 <div class="content main_logo_image_content">
-                    <img class="image" src="logo1.svg" width="50%" height="80%" style="display:none;" />
+                    <img class="image" src="small_logo.jpg" width="50%" height="60%" style="display:none;" />
                 </div>
             </div>
 
@@ -727,7 +727,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide item item first_item " data-item-type="type2">
                         <div class="item-inner video_container">
-                            <div class="overlay" style="background:rgba(0,60,130,0.2);"></div>
+                            {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
                             <video class="bg_video"  playsinline muted>
                                 <source media="(max-width: 991px)" src="large_video3.mov" alt="説明"  type="video/mp4">
                                 <source src="NoSky1.mp4" alt="説明"  type="video/mp4">
