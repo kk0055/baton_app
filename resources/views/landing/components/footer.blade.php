@@ -1,8 +1,8 @@
 <footer id="footer">
     <div id="footer_inner">
         {{-- <p id="footer_logo">
-            <img class="logo_image pc" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON" width="196" />
-            <img class="logo_image mobile" src="baton_small_logo.jpg" alt="株式会社BATON" title="株式会社BATON" width="155"
+            <img class="logo_image pc" src="baton_baton_logo240819.png" alt="株式会社BATON" title="株式会社BATON" width="196" />
+            <img class="logo_image mobile" src="baton_baton_logo240819.png" alt="株式会社BATON" title="株式会社BATON" width="155"
                 height="70" />
         </p> --}}
         <div id="footer_address" class="post_content clearfix">

@@ -1,8 +1,8 @@
 <header id="header" class="first_animate">
     <h1 id="header_logo">
         <a href="/">
-            <img class="logo_image pc" src="small_logo.jpg" alt="株式会社BATON" width="146" height="20" />
-            <img class="logo_image mobile" src="small_logo.jpg" alt="株式会社BATON" width="100" height="14" />
+            <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="20" />
+            <img class="logo_image mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" />
         </a>
     </h1>
 
@@ -26,9 +26,10 @@
             </li>
             <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
-                <a href="{{ route('landing.company') }}">COMPANY</a></li>
+                <a href="{{ route('landing.company') }}">COMPANY</a>
+            </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
-                <a  href="{{ route('landing.rent') }}">PROPERTY</a>
+                <a href="{{ route('landing.rent') }}">PROPERTY</a>
                 <ul class="sub-menu">
                     <li id="menu-item-5982"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a
@@ -36,11 +37,12 @@
                     <li id="menu-item-5953"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5953"><a
                             href="{{ route('landing.sale') }}">売買</a></li>
-                </ul></li>
-                @auth
+                </ul>
+            </li>
+            @auth
                 <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
                         href="{{ route('admin.property.index') }}">管理画面</a></li>
-                @endauth
+            @endauth
             {{-- <li id="menu-item-5562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5562"><a href="https://demo.tcd-theme.com/tcd103/blog/" class="megamenu_button megamenu_type1" data-megamenu="js-megamenu5562">PROPERTY</a></li> --}}
         </ul>
     </nav>

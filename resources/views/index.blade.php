@@ -421,20 +421,24 @@
         #header_slider_content .desc {
             font-size: 20px;
         }
-.property_search {
 
-    background-color: white; 
-    color: #507878;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.property_search:hover {
-    background-color: #406060; /* ホバー時に少し濃い色に変更 */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+        .property_search {
+
+            background-color: white;
+            color: #507878;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .property_search:hover {
+            background-color: #406060;
+            /* ホバー時に少し濃い色に変更 */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
         @media screen and (max-width:1100px) {
             #header_slider_content .catch {
                 font-size: 53px;
@@ -603,11 +607,12 @@
 
         /* スマホ用スタイル */
         @media (max-width: 768px) {
-          
+
             .title_area {
                 width: 100%;
                 text-align: center;
             }
+
             .divider {
                 width: 100%;
                 height: 1px;
@@ -615,9 +620,11 @@
                 background-color: grey;
                 display: none;
             }
+
             .philosophy_container {
                 flex-direction: column;
             }
+
             .good_point {
                 text-align: left;
             }
@@ -648,19 +655,20 @@
                 height: 1px;
                 background-color: grey;
                 margin-left: 10px;
-                
+
             }
 
             .break::before {
                 content: "\A";
                 white-space: pre;
-                
+
             }
 
             .philosophy_for_pc {
                 display: none
             }
         }
+
         /* Laptop用スタイル */
         @media screen and (min-width:770px) {
             .divider {
@@ -674,7 +682,7 @@
             .philosophy_container {
                 display: flex;
                 justify-content: center;
-                align-items:flex-start
+                align-items: flex-start
             }
 
             .philosophy1 {
@@ -685,11 +693,11 @@
                 margin-left: 60px;
                 flex: 1;
             }
+
             .philosophy_for_sp {
                 display: none
             }
         }
-       
     </style>
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
@@ -718,7 +726,8 @@
         <div id="header_slider_wrap" class="layout_type1">
             <div id="header_slider_content">
                 <div class="content main_logo_image_content">
-                    <img class="image" src="small_logo.jpg" width="50%" height="60%" style="display:none;" />
+                    <img class="image" src="baton_logo240819.svg" width="80%" height="80%"
+                        style="display:none;" />
                 </div>
             </div>
 
@@ -728,9 +737,10 @@
                     <div class="swiper-slide item item first_item " data-item-type="type2">
                         <div class="item-inner video_container">
                             {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
-                            <video class="bg_video"  playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video3.mov" alt="説明"  type="video/mp4">
-                                <source src="NoSky1.mp4" alt="説明"  type="video/mp4">
+                            <video class="bg_video" playsinline muted>
+                                <source media="(max-width: 991px)" src="large_video3.mov" alt="説明"
+                                    type="video/mp4">
+                                <source src="NoSky1.mp4" alt="説明" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -866,7 +876,8 @@
                             <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
                                 <p class="philosophy_submessage philosophy_for_pc">100年後の笑顔を創る
                                 </p>
-                                <p class="philosophy_submessage philosophy_for_sp" style="font-size: 50px;">100年後の笑顔を創る
+                                <p class="philosophy_submessage philosophy_for_sp" style="font-size: 50px;">
+                                    100年後の笑顔を創る
                                 </p>
                             </div>
                         </div>
@@ -921,31 +932,31 @@
                     <div class="title_area no_desc">
                         <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
                         <div class="sub_title colored property "
-                        style="font-size: 22px; color:#000000; padding:10px 0">
-                        <span>ご希望の価格帯</span>
-                    
-                        <form action="{{ route('landing.rent') }}" method="GET">
-                            {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
-                            <select name="price" id="price"
+                            style="font-size: 22px; color:#000000; padding:10px 0">
+                            <span>ご希望の価格帯</span>
+
+                            <form action="{{ route('landing.rent') }}" method="GET">
+                                {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
+                                <select name="price" id="price"
                                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                @foreach ($propertyPrices as $price)
-                                    <option value="{{ $price }}">
-                                        {{ $price }}
-                                    </option>
-                                @endforeach
-                            </select>
+                                    @foreach ($propertyPrices as $price)
+                                        <option value="{{ $price }}">
+                                            {{ $price }}
+                                        </option>
+                                    @endforeach
+                                </select>
                                 <button type="submit" class="catch property_search" style="padding:5px">
                                     <span class="label" style="font-size: 16px;"><i class="fa fa-search"
-                                        style="margin-right:4px;" aria-hidden="true"></i>検索</span>
+                                            style="margin-right:4px;" aria-hidden="true"></i>検索</span>
                                     {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
                                 </button>
-                        </form>
-                    </div>
+                            </form>
+                        </div>
                         <p class="sub_title colored property property_sub_titile"
                             style="font-size: 22px; color:#000000">
                             <span>今週のオススメ♪</span>
                         </p>
-                    
+
                     </div>
                 </div>
                 <div class="main_content inview">
@@ -1050,8 +1061,7 @@
         id="hcb-prism-js"></script>
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
         id="clipboard-js"></script>
-    <script type="text/javascript" id="hcb-script-js-extra">
-    </script>
+    <script type="text/javascript" id="hcb-script-js-extra"></script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
