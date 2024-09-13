@@ -667,6 +667,9 @@
             .philosophy_for_pc {
                 display: none
             }
+            .header-container {
+                display: none
+            }
         }
 
         /* Laptop用スタイル */
@@ -697,7 +700,64 @@
             .philosophy_for_sp {
                 display: none
             }
+            .header_for_pc {
+            background-color: #ffffff;
+            border-bottom: 2px solid #eaeaea;
+            padding: 10px 20px;
+            margin:20px 
         }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header_logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header_logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d4f91;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .phone {
+            font-size: 25px;
+            font-weight: bold;
+            color: #000;
+            margin-right: 20px;
+        }
+
+        .phone a {
+            text-decoration: none;
+            color: #000;
+        }
+        .email a {
+            background-color: #ff6600;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .email a:hover {
+            background-color: #e65c00;
+        }
+        }
+
+
     </style>
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
