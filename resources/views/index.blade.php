@@ -667,8 +667,17 @@
             .philosophy_for_pc {
                 display: none
             }
+
             .header-container {
                 display: none
+            }
+
+            .property-text {
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 12px;
+                text-align: left;
+                word-break: break-word;
             }
         }
 
@@ -700,64 +709,72 @@
             .philosophy_for_sp {
                 display: none
             }
+
             .header_for_pc {
-            background-color: #ffffff;
-            border-bottom: 2px solid #eaeaea;
-            padding: 10px 20px;
-            margin:20px 
+                background-color: #ffffff;
+                border-bottom: 2px solid #eaeaea;
+                padding: 10px 20px;
+                margin: 20px
+            }
+
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .header_logo {
+                display: flex;
+                align-items: center;
+            }
+
+            .header_logo span {
+                font-size: 24px;
+                font-weight: bold;
+                color: #1d4f91;
+            }
+
+            .contact-info {
+                text-align: right;
+                font-size: 14px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .phone {
+                font-size: 25px;
+                font-weight: bold;
+                color: #000;
+                margin-right: 20px;
+            }
+
+            .phone a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .email a {
+                background-color: #ff6600;
+                color: white;
+                padding: 8px 12px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .email a:hover {
+                background-color: #e65c00;
+            }
         }
 
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .property-text {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 9px;
 
-        .header_logo {
-            display: flex;
-            align-items: center;
         }
-
-        .header_logo span {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1d4f91;
-        }
-
-        .contact-info {
-            text-align: right;
-            font-size: 14px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .phone {
-            font-size: 25px;
-            font-weight: bold;
-            color: #000;
-            margin-right: 20px;
-        }
-
-        .phone a {
-            text-decoration: none;
-            color: #000;
-        }
-        .email a {
-            background-color: #ff6600;
-            color: white;
-            padding: 8px 12px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .email a:hover {
-            background-color: #e65c00;
-        }
-        }
-
-
     </style>
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
@@ -808,8 +825,116 @@
             </div>
         </div>
         <div id="content_builder">
+            <section class="cb_blog_list num5" id="cb_content_5">
+                <div class="design_header cb_design_header inview ">
+                    <div class="title_area no_desc">
+                        <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
+
+                        <p class="sub_title colored property property_sub_titile"
+                            style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
+                            今週のオススメ物件
+                        </p>
+                        <p class="property-text" style="margin-bottom: 9px;">
+                            その他、WEBに掲載されている全国ほぼ全ての物件の紹介が可能です。
+                        </p>
+                        <p class="property-text">
+                            相見積りのみでもお気軽にお問合せ下さい！
+                        </p>
+                        <div class="sub_title colored property "
+                            style="font-size: 20px; color:#000000; padding:10px 0">
+                            {{-- <span>ご希望の価格帯</span> --}}
+                            <form action="{{ route('landing.rent') }}" method="GET">
+                                {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
+                                <select name="price" id="price"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    @foreach ($propertyPrices as $price)
+                                        <option value="{{ $price }}">
+                                            {{ $price }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <button type="submit" class="catch property_search"
+                                    style="padding:5px; margin-left:4px; ">
+                                    <span class="label" style="font-size: 16px;"><i class="fa fa-search"
+                                            style="margin-right:4px;" aria-hidden="true"></i>検索</span>
+                                    {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content inview">
+                    <div class="blog_carousel_wrap swiper">
+                        <div class="blog_carousel swiper-wrapper">
+                            @foreach ($rents as $property)
+                                <div class="item swiper-slide">
+                                    <div class="image_wrap image_link image-link animate_background">
+                                        <img class=" property-image"
+                                            src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="genesis_carousel_scrollbar">
+                        <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="design_arrow_button cb_design_arrow_button">
+                    <a href="{{ route('landing.rent') }}"><span class="label"
+                            style="font-size: 16px; color:#000000">賃貸物件一覧</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+            <!-- 売買物件 -->
+            <section class="cb_blog_list num5" id="cb_content_2">
+                <div class="design_header cb_design_header inview">
+                    <div class="title_area no_desc property">
+                        <h3 class="catch rich_font inview slide_up_animation property">| 売買物件</h3>
+                        <p class="sub_title colored property property_sub_titile"
+                            style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
+                            今週のオススメ物件
+                        </p>
+                    </div>
+                </div>
+                <div class="main_content inview">
+                    <div class="blog_carousel_wrap blog2_carousel_wrap swiper">
+                        <div class="blog2_carousel blog_carousel swiper-wrapper">
+                            @foreach ($sales as $property)
+                                <div class="item swiper-slide">
+                                    {{-- <a class="image_link image animate_background"
+                                      href="{{ asset('storage/' . $property->image_path) }}"> --}}
+                                    <div class="image_wrap image_link image animate_background">
+                                        <img class="property-image"
+                                            src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+                                    {{-- </a> --}}
+
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <!-- 画像をクリックしたときに表示されるモーダル -->
+                    {{-- <div class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content">
+                  </div> --}}
+                    <div class="genesis_carousel_scrollbar">
+                        <div class="blog2_carousel_scrollbar swiper-scrollbar"></div>
+                    </div>
+
+                </div>
+
+                <div class="design_arrow_button cb_design_arrow_button">
+                    <a href="{{ route('landing.sale') }}"><span class="label"
+                            style="font-size: 16px; color:#000000">売買物件一覧</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section><!-- END 売買物件 -->
             {{-- ブログ --}}
-            @if ($latestPost)
+            {{-- @if ($latestPost)
                 <section class="cb_free_space num1 " id="cb_content_1">
                     <div class="post_content clearfix">
                         <div class="design_header inview">
@@ -828,7 +953,7 @@
                         </div>
                     </div>
                 </section>
-            @endif
+            @endif --}}
 
             {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">
@@ -987,106 +1112,7 @@
                 </div>
 
             </section>
-            <section class="cb_blog_list num5" id="cb_content_5">
-                <div class="design_header cb_design_header inview ">
-                    <div class="title_area no_desc">
-                        <h3 class="catch rich_font inview slide_up_animation property">| 賃貸物件</h3>
-                        <div class="sub_title colored property "
-                            style="font-size: 22px; color:#000000; padding:10px 0">
-                            <span>ご希望の価格帯</span>
 
-                            <form action="{{ route('landing.rent') }}" method="GET">
-                                {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
-                                <select name="price" id="price"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                    @foreach ($propertyPrices as $price)
-                                        <option value="{{ $price }}">
-                                            {{ $price }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                <button type="submit" class="catch property_search" style="padding:5px">
-                                    <span class="label" style="font-size: 16px;"><i class="fa fa-search"
-                                            style="margin-right:4px;" aria-hidden="true"></i>検索</span>
-                                    {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
-                                </button>
-                            </form>
-                        </div>
-                        <p class="sub_title colored property property_sub_titile"
-                            style="font-size: 22px; color:#000000">
-                            <span>今週のオススメ♪</span>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="main_content inview">
-                    <div class="blog_carousel_wrap swiper">
-                        <div class="blog_carousel swiper-wrapper">
-                            @foreach ($rents as $property)
-                                <div class="item swiper-slide">
-                                    <div class="image_wrap image_link image-link animate_background">
-                                        <img class=" property-image"
-                                            src="{{ asset('storage/' . $property->image_path) }}"
-                                            alt="Property Image">
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    <div class="genesis_carousel_scrollbar">
-                        <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
-                    </div>
-                </div>
-                <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.rent') }}"><span class="label"
-                            style="font-size: 16px; color:#000000">賃貸物件一覧</span><i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </section>
-            <!-- 売買物件 -->
-            <section class="cb_blog_list num5" id="cb_content_2">
-                <div class="design_header cb_design_header inview">
-                    <div class="title_area no_desc property">
-                        <h3 class="catch rich_font inview slide_up_animation property">| 売買物件</h3>
-                        <p class="sub_title colored property property_sub_titile"
-                            style="font-size: 22px; color:#000000;"><span>今週のオススメ♪</span> </p>
-                    </div>
-                </div>
-                <div class="main_content inview">
-                    <div class="blog_carousel_wrap blog2_carousel_wrap swiper">
-                        <div class="blog2_carousel blog_carousel swiper-wrapper">
-                            @foreach ($sales as $property)
-                                <div class="item swiper-slide">
-                                    {{-- <a class="image_link image animate_background"
-                                      href="{{ asset('storage/' . $property->image_path) }}"> --}}
-                                    <div class="image_wrap image_link image animate_background">
-                                        <img class="property-image"
-                                            src="{{ asset('storage/' . $property->image_path) }}"
-                                            alt="Property Image">
-                                    </div>
-                                    {{-- </a> --}}
-
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    <!-- 画像をクリックしたときに表示されるモーダル -->
-                    {{-- <div class="modal">
-                      <span class="close">&times;</span>
-                      <img class="modal-content">
-                  </div> --}}
-                    <div class="genesis_carousel_scrollbar">
-                        <div class="blog2_carousel_scrollbar swiper-scrollbar"></div>
-                    </div>
-
-                </div>
-
-                <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.sale') }}"><span class="label"
-                            style="font-size: 16px; color:#000000">売買物件一覧</span><i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </section><!-- END 売買物件 -->
         </div>
 
         @include('landing.components.footer')

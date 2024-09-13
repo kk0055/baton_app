@@ -68,7 +68,6 @@
                 <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
                         href="{{ route('admin.property.index') }}">管理画面</a></li>
             @endauth
-            {{-- <li id="menu-item-5562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5562"><a href="https://demo.tcd-theme.com/tcd103/blog/" class="megamenu_button megamenu_type1" data-megamenu="js-megamenu5562">PROPERTY</a></li> --}}
         </ul>
     </nav>
 

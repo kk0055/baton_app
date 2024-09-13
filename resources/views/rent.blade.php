@@ -18,7 +18,7 @@
                         href="{{ asset('storage/' . $property->image_path) }}">
                         <div class="image_wrap">
                             <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                alt="Property Image" width="770" height="520" />
+                                alt="Property Image" width="770" height="520" style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
                     {{-- <div class="content">
