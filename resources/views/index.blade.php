@@ -709,64 +709,6 @@
             .philosophy_for_sp {
                 display: none
             }
-
-            .header_for_pc {
-                background-color: #ffffff;
-                border-bottom: 2px solid #eaeaea;
-                padding: 10px 20px;
-                margin: 20px
-            }
-
-            .header-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .header_logo {
-                display: flex;
-                align-items: center;
-            }
-
-            .header_logo span {
-                font-size: 24px;
-                font-weight: bold;
-                color: #1d4f91;
-            }
-
-            .contact-info {
-                text-align: right;
-                font-size: 14px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
-
-            .phone {
-                font-size: 25px;
-                font-weight: bold;
-                color: #000;
-                margin-right: 20px;
-            }
-
-            .phone a {
-                text-decoration: none;
-                color: #000;
-            }
-
-            .email a {
-                background-color: #ff6600;
-                color: white;
-                padding: 8px 12px;
-                text-decoration: none;
-                border-radius: 5px;
-            }
-
-            .email a:hover {
-                background-color: #e65c00;
-            }
         }
 
         .property-text {
@@ -955,6 +897,50 @@
                 </section>
             @endif --}}
 
+            {{-- 企業理念 --}}
+            <section class="cb_design_content num4" id="cb_content_4">
+                <div class="design_header cb_design_header inview philosophy_container">
+                    <div class="title_area philosophy1">
+                        <h3 class="catch rich_font inview slide_up_animation">| 企業理念
+                        </h3>
+                        <div class="post_row">
+                            <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
+                                <p class="philosophy_submessage philosophy_for_pc">100年後の笑顔を創る
+                                </p>
+                                <p class="philosophy_submessage philosophy_for_sp" style="font-size: 50px;">
+                                    100年後の笑顔を創る
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="title_area philosophy2">
+                        <h3 class="catch rich_font inview slide_up_animation">| 経営理念
+                        </h3>
+                        <div class="post_row">
+                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_pc"
+                                style="margin-top:10px;">
+                                <p>誠実にあり続けることへの努力を怠らず、
+                                    多くの社会問題に対して、今やるべきことを考え行動し、
+                                    100年後の笑顔を創る会社となる。</p>
+                                {{-- <p class="philosophy2_message"> 三方よし＝ <span
+                                        class="philosophy_submessage break">従業員の笑顔、お客様の笑顔、社会を笑顔へ</span>
+                                </p> --}}
+                            </div>
+                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_sp"
+                                style="margin-top:10px;">
+                                <div class="philosophy2_message">
+                                    <p class="philosophy_submessage">三方よし＝</br></p>
+                                    <p style="font-size: 50px;">従業員の笑顔</br></p>
+                                    <p style="font-size: 50px;">お客様の笑顔</br></p>
+                                    <p style="font-size: 50px;">社会を笑顔へ </br></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">
                 <div class="post_content clearfix" id="job_details">
@@ -968,8 +954,7 @@
                             </h3>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>株式会社BATONは世田谷区経堂（キョウドウ）地区を中心に賃貸物件の仲介業をメインとして活動しております。<br>進学や就職を機に引っ越しをされる方は多いと思います。せっかく住むなら、治安や買い物環境が良く長く住み続けられる街が良いですよね。<br>経堂地区は住みよい街ランキングでも常に上位に位置しています。物件をお探しの皆様に是非おすすめしたい街が経堂です！<br>
-
+                            <p>株式会社ＢＡＴＯＮは世田谷区の物件をメインとした不動産売買、賃貸の仲介業者です。<br>是非皆様にもオススメしたい世田谷区の魅力を少しご紹介させて頂きます。<br>
                             </p>
                         </div>
                     </div>
@@ -979,21 +964,23 @@
             <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview">
                     <div class="title_area">
-                        <h3 class="catch rich_font good_point">| 経堂の良さ５選</h3>
+                        <h3 class="catch rich_font good_point">| 世田谷の魅力</h3>
                     </div>
                     <div class="desc post_content">
-                        <strong style="font-size: 22px">1.治安が良い</strong> <br>
-                        &nbsp; 経堂地区は治安が非常に良く、女性の一人暮らしでも安心して暮らせる街です。<br>
+                        <strong style="font-size: 22px">1.交通アクセス</strong> <br>
+                        &nbsp; 小田急線、京王線、田園都市線など都心へのアクセスが非常に便利です。<br>
 
 
-                        <strong style="font-size: 22px">2.交通アクセスが良い</strong><br>
-                        &nbsp; 新宿まで12分、渋谷まで16分の利便性の高さ。<br>
-                        <strong style="font-size: 22px">3.商店街が多い</strong><br>
-                        &nbsp;農大通り商店街、すずらん通り商店街、本町通り商店街と3つの商店街が隣接しております。<br>
-                        <strong style="font-size: 22px">4.大学など教育環境が充実している</strong><br>
-                        &nbsp;東京農業大学、日本大学文理学部など、多くの大学生にも愛されております。<br>
-                        <strong style="font-size: 22px">5.自然が豊か</strong><br>
-                        &nbsp;多くの公園、緑道が設置されており、いつも豊な緑を感じることができます。<br><br>
+                        <strong style="font-size: 22px">2.生活環境が充実</strong><br>
+                        &nbsp; 各駅に商店街が備わっているイメージです（笑）<br>
+                        私は世田谷の経堂（キョウドウ）に在住しておりますが、経堂駅の周辺で3つの商店街があります。そしてどの商店街も活動が活発で非常に魅力的です。<br>
+
+                        <strong style="font-size: 22px">3.小中高、大学など教育環境が整っている</strong><br>
+                        &nbsp;世田谷区にキャンパスを設置している大学は下記の通りです。<br>
+                        東京農業大学、日本大学、国士舘大学、駒沢大学、産業能率大学、昭和女子大学、成城大学、多摩美術大学、東京医療保健大学、東京都市大学、日本体育大学、日本女子体育大学<br>
+
+                        <strong style="font-size: 22px">4.自然が豊か</strong><br>
+                        &nbsp;砧公園、駒沢オリンピック公園、世田谷公園など都心とは思えない自然環境が整っております。<br><br>
 
                         <div class="highlight-box" style="">
                             他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
@@ -1051,47 +1038,7 @@
                 </div>
 
             </section>
-            {{-- 企業理念 --}}
-            <section class="cb_design_content num4" id="cb_content_4">
-                <div class="design_header cb_design_header inview philosophy_container">
-                    <div class="title_area philosophy1">
-                        <h3 class="catch rich_font inview slide_up_animation">| 企業理念
-                        </h3>
-                        <div class="post_row">
-                            <div class="post_col post_col-2 inview slide_up_animation" style="margin-top:10px;">
-                                <p class="philosophy_submessage philosophy_for_pc">100年後の笑顔を創る
-                                </p>
-                                <p class="philosophy_submessage philosophy_for_sp" style="font-size: 50px;">
-                                    100年後の笑顔を創る
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="title_area philosophy2">
-                        <h3 class="catch rich_font inview slide_up_animation">| 経営理念
-                        </h3>
-                        <div class="post_row">
-                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_pc"
-                                style="margin-top:10px;">
-                                <p class="philosophy2_message"> 三方よし＝ <span
-                                        class="philosophy_submessage break">従業員の笑顔、お客様の笑顔、社会を笑顔へ</span>
-                                </p>
-                            </div>
-                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_sp"
-                                style="margin-top:10px;">
-                                <div class="philosophy2_message">
-                                    <p class="philosophy_submessage">三方よし＝</br></p>
-                                    <p style="font-size: 50px;">従業員の笑顔</br></p>
-                                    <p style="font-size: 50px;">お客様の笑顔</br></p>
-                                    <p style="font-size: 50px;">社会を笑顔へ </br></p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section class="cb_free_space num1 " id="cb_content_1">
                 <div class="post_content clearfix" id="about_us">
                     <div class="design_header inview">

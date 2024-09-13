@@ -12,8 +12,7 @@
     <meta property="og:title" content="株式会社BATON">
     <meta property="og:description" content="株式会社BATON">
     <meta property="og:site_name" content="株式会社BATON">
-    <meta property="og:image:secure_url"
-        content="https://xbatonx.com">
+    <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
@@ -404,14 +403,10 @@
     </style>
 
 
-    <link rel="icon" href="baton_big_logo.jpg"
-        sizes="32x32" />
-    <link rel="icon" href="baton_big_logo.jpg"
-        sizes="192x192" />
-    <link rel="apple-touch-icon"
-        href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage"
-        content="baton_big_logo.jpg" />
+    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
+    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
+    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
     <title>
@@ -422,11 +417,11 @@
 <body data-rsssl=1 id="body" class="blog wp-embed-responsive megamenu_dark_color">
     <div id="js-body-start"></div>
 
-    @include('landing.components.header')
-  
+    @include('landing.components.landing_page_header')
+
     {{-- <div id="container"> --}}
-        @yield('content')
-        @include('landing.components.footer')
+    @yield('content')
+    @include('landing.components.footer')
     {{-- </div> --}}
 
     {{-- <div id="return_top">
@@ -463,7 +458,6 @@
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
     <script>
-  
         (function($) {
             if ($('#footer_nav').length) {
                 let footer_nav = new Swiper("#footer_nav", {
