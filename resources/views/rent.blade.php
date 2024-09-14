@@ -12,7 +12,7 @@
 
     <section id="archive_blog" class="inview slide_up_animation">
         {{-- 検索 --}}
-        <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0">
+        <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
             <form action="{{ route('landing.rent') }}" method="GET" style="">
                 <select name="price" id="price"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
@@ -56,6 +56,9 @@
                                 style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
+                    <p style="margin-bottom:10px">価格帯: {{ $property->price }}</p>
+                    <p style="margin-bottom:10px">新築: {{ $property->is_new_building ? '✅' : '❌' }} </p>
+                    <p style="margin-bottom:10px">仲介手数料無料:   {{ $property->is_brokerage_free ? '✅' : '❌' }} </p>
                     {{-- <div class="content">
                     <time class="date entry-date published" datetime="2023-09-28T23:21:04+09:00">2023.09.28</time>
                 </div> --}}
