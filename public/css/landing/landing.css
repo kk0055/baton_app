@@ -8553,3 +8553,19 @@ body.megamenu_dark_color .megamenu_b a:hover {
     }
 }
 
+.property_search {
+
+    background-color: white;
+    color: #507878;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property_search:hover {
+    background-color: #406060;
+    /* ホバー時に少し濃い色に変更 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

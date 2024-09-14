@@ -11,6 +11,40 @@
     </div>
 
     <section id="archive_blog" class="inview slide_up_animation">
+        {{-- 検索 --}}
+        <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0">
+            <form action="{{ route('landing.rent') }}" method="GET" style="">
+                <select name="price" id="price"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    @foreach ($propertyPrices as $price)
+                        <option value="{{ $price }}">
+                            {{ $price }}
+                        </option>
+                    @endforeach
+                </select>
+                <div style="margin-top: 10px; display: flex; align-items: center;">
+                    <div style="display:flex; align-items: center; margin-right:4px;">
+                        <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
+                            style="margin-right:5px;" {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
+                        <label for="is_new_building" class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築</label>
+                    </div>
+
+                    <div style="display:flex; align-items: center; margin-right:4px;">
+                        <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free" value="1"
+                            style="margin-right:5px;" {{ request()->get('is_brokerage_free') == '1' ? 'checked' : '' }}>
+                        <label for="is_brokerage_free"
+                            class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
+                    </div>
+
+
+                    <button type="submit" class="catch property_search" style="padding:3px; margin-left:4px; ">
+                        <span class="label" style="font-size: 16px;"><i class="fa fa-search" style="margin-right:4px;"
+                                aria-hidden="true"></i>検索</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        {{-- 検索 --}}
         <div class="blog_list">
             @foreach ($rents as $property)
                 <div class="item">
@@ -18,7 +52,8 @@
                         href="{{ asset('storage/' . $property->image_path) }}">
                         <div class="image_wrap">
                             <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                alt="Property Image" width="770" height="520" style="width: 100%; height: 100%; object-fit: contain;" />
+                                alt="Property Image" width="770" height="520"
+                                style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
                     {{-- <div class="content">

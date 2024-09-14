@@ -29,11 +29,11 @@ class LandingPageController extends Controller
         $price = $request->input('price');
         $is_new_building = $request->get('is_new_building');
         $is_brokerage_free = $request->get('is_brokerage_free');
-
+        $propertyPrices = Property::propertyPrices();
         $query = Property::rentOnly();
 
         // 価格帯が指定されている場合の処理
-        if ($price && $price != '-----') {
+        if ($price && $price != '指定無し') {
             $query->where('price', '=', $price);
         }
 
@@ -49,7 +49,7 @@ class LandingPageController extends Controller
 
         // フィルタリング結果を取得
         $rents = $query->get();
-        return view('rent', compact('rents'));
+        return view('rent', compact('rents','propertyPrices'));
     }
 
     public function company()

@@ -422,23 +422,6 @@
             font-size: 20px;
         }
 
-        .property_search {
-
-            background-color: white;
-            color: #507878;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .property_search:hover {
-            background-color: #406060;
-            /* ホバー時に少し濃い色に変更 */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
         @media screen and (max-width:1100px) {
             #header_slider_content .catch {
                 font-size: 53px;
@@ -795,14 +778,12 @@
                                 </select>
                                 <div style="margin-top: 10px; display: flex; align-items: center;">
                                     <div style="display:flex; align-items: center; margin-right:4px;">
-                                        <input type="hidden" name="is_new_building" value="0">
                                         <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
                                             style="margin-right:5px;" {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
                                         <label for="is_new_building" class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築</label>
                                     </div>
                             
                                     <div style="display:flex; align-items: center; margin-right:4px;">
-                                        <input type="hidden" name="is_brokerage_free" value="0">
                                         <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free" value="1"
                                             style="margin-right:5px;" {{ request()->get('is_brokerage_free') == '1' ? 'checked' : '' }}>
                                         <label for="is_brokerage_free" class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
