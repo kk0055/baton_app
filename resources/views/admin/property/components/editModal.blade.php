@@ -94,6 +94,20 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div style="display:flex;">
+                            <input type="hidden" name="is_new_building" value="0">
+                            <input type="checkbox" name="is_new_building" id="is_new_building-{{ $property->id }}" value="1"
+                            style="margin-right:5px;" {{ old('is_new_building', $property->is_new_building) == '1' ? 'checked' : '' }}>
+                            <label for="is_new_building-{{ $property->id }}" class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築
+                            </label>
+                        </div>
+                        <div style="display:flex;">
+                            <input type="hidden" name="is_brokerage_free" value="0">
+                            <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free-{{ $property->id }}" value="1"
+                            style="margin-right:5px;" {{ old('is_brokerage_free', $property->is_brokerage_free) == '1' ? 'checked' : '' }}>
+                            <label for="is_brokerage_free-{{ $property->id }}" class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <!--footer-->

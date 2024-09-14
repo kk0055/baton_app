@@ -46,7 +46,9 @@ class PropertyController extends Controller
         'type' => $request->input('type'),
         // 'type' => $request->input('type'),
         'image_path' => $image_path ?? null, // 画像パスを保存
-        'price' => $request->input('price')
+        'price' => $request->input('price'),
+        'is_new_building' => $request->input('is_new_building'),
+        'is_brokerage_free' => $request->input('is_brokerage_free')
     ]);
     return redirect()->route('admin.property.index')->with('info', '完了!');
     }
@@ -79,6 +81,8 @@ class PropertyController extends Controller
         $property->is_display = $request->input('is_display');
         $property->type = $request->input('type');
         $property->price = $request->input('price');
+        $property->is_new_building = $request->input('is_new_building');
+        $property->is_brokerage_free = $request->input('is_brokerage_free');
         
         $property->save();
         return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');

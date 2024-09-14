@@ -36,8 +36,8 @@
     <div class="container mx-auto text-center px-8 py-14">
         <div class="text-center my-4">
             <a href="{{ route('admin.post.create') }}">
-            <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4" src="/126532.jpg"
-                alt="">
+                <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4" src="/126532.jpg"
+                    alt="">
             </a>
         </div>
         <h2
@@ -68,7 +68,9 @@
                     <h4 class="mb-2">表示順: {{ $property->order }}</h4>
                     <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
                     <h4 class="mb-2">タイプ: {{ $property->type }}</h4>
-                    <h4 class="mb-2">価格帯:  {{ $property->price}}</h4>
+                    <h4 class="mb-2">価格帯: {{ $property->price }}</h4>
+                    <h4 class="mb-2">新築: {{ $property->is_new_building ? '✅' : '❌' }} </h4>
+                    <h4 class="mb-2">仲介手数料無料:   {{ $property->is_brokerage_free ? '✅' : '❌' }} </h4>
                     <div class="flex">
                         <button class="edit-btn" onclick="toggleModal({{ $property->id }})">
                             <i class="fa fa-pencil mr-2" aria-hidden="true"></i>編集
