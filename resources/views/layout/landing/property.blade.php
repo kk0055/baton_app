@@ -428,7 +428,7 @@
         <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
     </div> --}}
 
-    @include('landing.components.mobile_header')
+    @include('landing.components.landing_page_mobile_header')
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
         id="swiper-js"></script>

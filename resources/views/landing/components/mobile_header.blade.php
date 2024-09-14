@@ -1,3 +1,4 @@
+{{-- 仕様変更したので使ってない --}}
 <div id="drawer_menu">
 
     <div class="header">

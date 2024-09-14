@@ -783,10 +783,8 @@
                             相見積りのみでもお気軽にお問合せ下さい！
                         </p>
                         <div class="sub_title colored property "
-                            style="font-size: 20px; color:#000000; padding:10px 0">
-                            {{-- <span>ご希望の価格帯</span> --}}
+                            style="font-size: 95%; color:#000000; padding:10px 0">
                             <form action="{{ route('landing.rent') }}" method="GET">
-                                {{-- <label for="price" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯</label> --}}
                                 <select name="price" id="price"
                                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                                     @foreach ($propertyPrices as $price)
@@ -796,10 +794,9 @@
                                     @endforeach
                                 </select>
                                 <button type="submit" class="catch property_search"
-                                    style="padding:5px; margin-left:4px; ">
+                                    style="padding:3px; margin-left:4px; ">
                                     <span class="label" style="font-size: 16px;"><i class="fa fa-search"
                                             style="margin-right:4px;" aria-hidden="true"></i>検索</span>
-                                    {{-- <i class="fa-solid fa-arrow-right ml-2"></i> --}}
                                 </button>
                             </form>
                         </div>
@@ -898,7 +895,7 @@
             @endif --}}
 
             {{-- 企業理念 --}}
-            <section class="cb_design_content num4" id="cb_content_4">
+            {{-- <section class="cb_design_content num4" id="cb_content_4">
                 <div class="design_header cb_design_header inview philosophy_container">
                     <div class="title_area philosophy1">
                         <h3 class="catch rich_font inview slide_up_animation">| 企業理念
@@ -918,14 +915,14 @@
                         <h3 class="catch rich_font inview slide_up_animation">| 経営理念
                         </h3>
                         <div class="post_row">
-                            <div class="post_col post_col-2 inview slide_up_animation philosophy_for_pc"
+                            <div class="post_col post_col-2 inview slide_up_animation"
                                 style="margin-top:10px;">
                                 <p>誠実にあり続けることへの努力を怠らず、
                                     多くの社会問題に対して、今やるべきことを考え行動し、
                                     100年後の笑顔を創る会社となる。</p>
-                                {{-- <p class="philosophy2_message"> 三方よし＝ <span
+                                <p class="philosophy2_message"> 三方よし＝ <span
                                         class="philosophy_submessage break">従業員の笑顔、お客様の笑顔、社会を笑顔へ</span>
-                                </p> --}}
+                                </p>
                             </div>
                             <div class="post_col post_col-2 inview slide_up_animation philosophy_for_sp"
                                 style="margin-top:10px;">
@@ -940,6 +937,28 @@
                         </div>
                     </div>
                 </div>
+            </section> --}}
+
+            <section class="cb_free_space num1 " id="cb_content_1">
+                <div class="post_content clearfix" id="job_details">
+                    <div class="design_header inview">
+                        <div class="title_area">
+                        </div>
+                    </div>
+                    <div class="post_row inview slide_up_animation">
+                        <div class="post_col post_col-2 rich_font">
+                            <h3 class="catch rich_font">| 経営理念
+                            </h3>
+                        </div>
+                        <div class="post_col post_col-2">
+                            <p>誠実にあり続けることへの努力を怠らず、
+                                多くの社会問題に対して、今やるべきことを考え行動し、
+                                100年後の笑顔を創る会社となる。<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
             {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">
@@ -982,9 +1001,9 @@
                         <strong style="font-size: 22px">4.自然が豊か</strong><br>
                         &nbsp;砧公園、駒沢オリンピック公園、世田谷公園など都心とは思えない自然環境が整っております。<br><br>
 
-                        <div class="highlight-box" style="">
+                        {{-- <div class="highlight-box" style="">
                             他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
-                        </div>
+                        </div> --}}
                     </div>
 
                 </div>
@@ -1012,12 +1031,13 @@
                 </div>
 
             </section>
-            <section class="cb_free_space num1 " id="cb_content_1">
+            {{-- 不動産仲介業の使命 --}}
+            {{-- <section class="cb_free_space num1 " id="cb_content_1">
 
                 <div class="post_content clearfix">
                     <div class="design_header inview">
                         <div class="title_area">
-                            {{-- <h3 class="large_headline"><span>不動産仲介業の使命</span></h3> --}}
+                            <h3 class="large_headline"><span>不動産仲介業の使命</span></h3>
 
                         </div>
                     </div>
@@ -1036,10 +1056,10 @@
                         </div>
                     </div>
                 </div>
+            </section> --}}
 
-            </section>
-
-            <section class="cb_free_space num1 " id="cb_content_1">
+            {{-- 設立の目的 --}}
+            {{-- <section class="cb_free_space num1 " id="cb_content_1">
                 <div class="post_content clearfix" id="about_us">
                     <div class="design_header inview">
                         <div class="title_area">
@@ -1057,8 +1077,7 @@
                         </div>
                     </div>
                 </div>
-
-            </section>
+            </section> --}}
 
         </div>
 

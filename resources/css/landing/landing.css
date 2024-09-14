@@ -37,23 +37,6 @@ body {
     }
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        font-size: 16px;
-    }
-
-    .large_headline {
-        font-size: 30px !important;
-    }
-
-    .rich_font {
-        font-size: 22px !important;
-    }
-    .header-container {
-        display: none
-    }
-
-}
 
 body,
 input,
@@ -619,71 +602,111 @@ body.megamenu_dark_color .megamenu_b a:hover {
     color: #507878 !important;
 }
 
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
 
-        /* Laptop用スタイル */
-        @media screen and (min-width:770px) {
-            nav ul {
-                display: flex;
-                justify-content: center;
-                list-style-type: none;
-                margin-top: 10px;
-            }
-            
-            .header_for_pc {
-                background-color: #ffffff;
-                border-bottom: 2px solid #eaeaea;
-                padding: 10px 20px;
-                margin: 10px
-            }
+    .large_headline {
+        font-size: 30px !important;
+    }
 
-            .header-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
+    .rich_font {
+        font-size: 22px !important;
+    }
 
-            .header_logo {
-                display: flex;
-                align-items: center;
-            }
+    .header_for_pc {
+        display: none;    
+    }
 
-            .header_logo span {
-                font-size: 24px;
-                font-weight: bold;
-                color: #1d4f91;
-            }
+    .contact-sns-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-top: 10px;
+    }
+    
+    .contact-info {
+        display: flex; 
+        margin: 10px; 
+    }
+    
+    .contact-info .phone, .contact-info .email {
+        margin-right: 20px; 
+        
+    }
+}
 
-            .contact-info {
-                text-align: right;
-                font-size: 14px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
+/* Laptop用スタイル */
+@media screen and (min-width: 770px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 10px;
+    }
 
-            .phone {
-                font-size: 25px;
-                font-weight: bold;
-                color: #000;
-                margin-right: 20px;
-            }
+    .logo_mobile {
+        display: none;
+    }
+    #header {
+        height: 90px;
+    }
+    .header_for_pc {
+        background-color: #ffffff;
+        border-bottom: 2px solid #eaeaea;
+        padding: 10px 20px;
+        margin: 10px;
+    }
 
-            .phone a {
-                text-decoration: none;
-                color: #000;
-            }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-            .email a {
-                background-color: #ff6600;
-                color: white;
-                padding: 8px 12px;
-                text-decoration: none;
-                border-radius: 5px;
-            }
+    .header_logo {
+        display: flex;
+        align-items: center;
+    }
 
-            .email a:hover {
-                background-color: #e65c00;
-            }
-        }
+    .header_logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1d4f91;
+    }
+
+    .contact-info {
+        text-align: right;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .phone {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000;
+        margin-right: 20px;
+    }
+
+    .phone a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .email a {
+        background-color: #ff6600;
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .email a:hover {
+        background-color: #e65c00;
+    }
+}

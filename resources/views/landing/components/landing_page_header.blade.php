@@ -1,17 +1,18 @@
 
-<header id="header" class="first_animate" style="height: 90px;">
-
+<header id="header" class="first_animate" style="margin-top: -10px;" >
     <div class="header_for_pc" style="" >
         <div class="header-container" >
             <h1 class="header_logo">
                 <a href="/">
                     <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="20" />
-                    {{-- <img class="logo_image mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" /> --}}
+                    {{-- <img class="logo_image mobile logo_mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" /> --}}
                 </a>
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    <span>📞</span>
+                    <i class="fa fa-phone"
+                    style="margin-right:4px;" aria-hidden="true"></i>
+           
                     <a href="tel:0368658533">03-6865-8533</a>
                 </div>
                 <div class="email">
@@ -38,14 +39,14 @@
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
                 <a href="{{ route('landing.rent') }}">オススメ物件</a>
-                <ul class="sub-menu">
+                {{-- <ul class="sub-menu">
                     <li id="menu-item-5982"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a
                             href="{{ route('landing.rent') }}">賃貸</a></li>
                     <li id="menu-item-5953"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5953"><a
                             href="{{ route('landing.sale') }}">売買</a></li>
-                </ul>
+                </ul> --}}
             </li>
             <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
