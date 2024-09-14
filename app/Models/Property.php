@@ -63,6 +63,7 @@ class Property extends Model
     public static function propertyPrices()
     {
         $propertyPrices = [
+            '-----',
             '～8万円',
             '8万～10万円',
             '10万～12万円',

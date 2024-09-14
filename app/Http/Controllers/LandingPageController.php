@@ -23,20 +23,35 @@ class LandingPageController extends Controller
         $sales = Property::saleOnly()->get();
         return view('sale', compact('sales'));
     }
+
     public function rent(Request $request)
     {
-    $price = $request->input('price');
+        $price = $request->input('price');
+        $is_new_building = $request->get('is_new_building');
+        $is_brokerage_free = $request->get('is_brokerage_free');
 
-    // 価格帯が指定されている場合の処理
-    if ($price) {
-        $rents = Property::rentOnly()->where('price', '=', $price)->get();
-    } else {
-        // 価格帯が指定されていない場合のデフォルト処理
-        $rents = Property::rentOnly()->get();
-    }
+        $query = Property::rentOnly();
+
+        // 価格帯が指定されている場合の処理
+        if ($price && $price != '-----') {
+            $query->where('price', '=', $price);
+        }
+
+        // 新築のチェックがある場合の処理
+        if ($is_new_building == '1') {
+            $query->where('is_new_building', true);
+        }
+
+        // 仲介手数料無料のチェックがある場合の処理
+        if ($is_brokerage_free == '1') {
+            $query->where('is_brokerage_free', true);
+        }
+
+        // フィルタリング結果を取得
+        $rents = $query->get();
         return view('rent', compact('rents'));
     }
-    
+
     public function company()
     {
         return view('company');
