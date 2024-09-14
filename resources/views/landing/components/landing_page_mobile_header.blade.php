@@ -44,7 +44,10 @@
             </div>
             <div class="email">
                 <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
-                    class="email-button" style="color:white;" >📧 お問合わせ</a>
+                    class="email-button" style="color:white;" >
+                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i> 
+                     お問合わせ
+                </a>
             </div>
         </div>
         <div id="mobile_sns" class="sns_button_list clearfix color_type1">

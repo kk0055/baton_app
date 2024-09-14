@@ -4,7 +4,7 @@
         <div class="header-container" >
             <h1 class="header_logo">
                 <a href="/">
-                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="20" />
+                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="auto" />
                     {{-- <img class="logo_image mobile logo_mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" /> --}}
                 </a>
             </h1>
@@ -16,7 +16,11 @@
                     <a href="tel:0368658533">03-6865-8533</a>
                 </div>
                 <div class="email">
-                    <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true" class="email-button">📧 お問合わせ</a>
+                    
+                    <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true" class="email-button">
+                        <i class="fa fa-envelope"style="margin-right:4px;" aria-hidden="true"></i> 
+                        お問合わせ
+                    </a>
                 </div>
             </div>
         </div>

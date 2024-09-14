@@ -2,20 +2,19 @@
 <html class="pc" lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="株式会社BATON">
-  <title>株式会社BATON</title>
-  <meta name='robots' content='max-image-preview:large' />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://xbatonx.com">
-  <meta property="og:title" content="株式会社BATON">
-  <meta property="og:description" content="株式会社BATON">
-  <meta property="og:site_name" content="株式会社BATON">
-  <meta property="og:image:secure_url"
-      content="https://xbatonx.com">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="株式会社BATON">
+    <title>株式会社BATON</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xbatonx.com">
+    <meta property="og:title" content="株式会社BATON">
+    <meta property="og:description" content="株式会社BATON">
+    <meta property="og:site_name" content="株式会社BATON">
+    <meta property="og:image:secure_url" content="https://xbatonx.com">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
     <link rel='stylesheet' id='swiper-css'
         href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
@@ -34,24 +33,6 @@
     <link rel='stylesheet' id='wp-block-library-css'
         href='https://demo.tcd-theme.com/tcd103/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4'
         type='text/css' media='all' />
-    <style id='classic-theme-styles-inline-css' type='text/css'>
-        /*! This file is auto-generated */
-        .wp-block-button__link {
-            color: #fff;
-            background-color: #32373c;
-            border-radius: 9999px;
-            box-shadow: none;
-            text-decoration: none;
-            padding: calc(.667em + 2px) calc(1.333em + 2px);
-            font-size: 1.125em
-        }
-
-        .wp-block-file__button {
-            background: #32373c;
-            color: #fff;
-            text-decoration: none
-        }
-    </style>
     <style id='global-styles-inline-css' type='text/css'>
         body {
             --wp--preset--color--black: #000000;
@@ -482,6 +463,10 @@
             .sub_title.colored {
                 margin-bottom: -5px !important;
             }
+
+            #company_data_list th {
+                width: 150px;
+            }
         }
 
         @media screen and (max-width: 800px) {
@@ -561,15 +546,10 @@
     </style>
 
 
-    <link rel="icon" href="baton_big_logo.jpg"
-        sizes="32x32" />
-    <link rel="icon"
-        href="baton_big_logo.jpg"
-        sizes="192x192" />
-    <link rel="apple-touch-icon"
-        href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage"
-        content="baton_big_logo.jpg" />
+    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
+    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
+    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 </head>
@@ -578,107 +558,118 @@
     class="page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar normal_content_width">
     <div id="js-body-start"></div>
 
-    @include('landing.components.header')
+    @include('landing.components.landing_page_header')
 
     <div id="container">
-
-        {{-- <div id="bread_crumb" class="inview">
-            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="home"><a
-                        itemprop="item" href="https://demo.tcd-theme.com/tcd103/"><span
-                            itemprop="name">ホーム</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <li class="last" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span
-                        itemprop="name">COMPANY</span>
-                    <meta itemprop="position" content="2">
-                </li>
-            </ul>
-        </div> --}}
-
-        <div id="page_header" class="large_height" style="margin-top: 50px;">
+        {{-- <div id="page_header" class="large_height" style="margin-top: 50px;">
             <div class="design_header inview">
                 <div class="title_area no_desc">
-                    <h1 class="large_headline"><span>COMPANY</span></h1>
-                    {{-- <p class="sub_title colored"><span>わたしたちの会社について</span></p> --}}
+                    <h1 class="large_headline"><span>会社紹介</span></h1>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <article id="page_contents">
             <div class="post_content">
                 <div class="gray_bg" id="company_message">
                     <div class="design_header inview">
-                        <div class="title_area">
-                            {{-- <h4 class="large_headline title"><span>企業理念・経営理念
-                                </span></h4> --}}
-                            {{-- <p class="sub_title colored"><span>CEOメッセージ</span></p> --}}
-                        </div>
-                    </div>
-                    <h3 class="catch rich_font inview slide_up_animation">企業理念
-                    </h3>
+                        {{-- <div class="title_area">
+                                <h3 class="large_headline title catch"><span>代表挨拶</span></h3>
+                                <p class="sub_title colored"><span>CEOメッセージ</span></p>
+                            </div> --}}
+                    </div>     
+                    <h4 style="font-size: 40px;" class="colored catch ">代表挨拶</h4>
                     <div class="post_row">
-
                         <div class="post_col post_col-2 inview slide_up_animation">
-                            <p>100年後の笑顔を創る
+                            <p>皆様、はじめまして株式会社BATON代表の立川でございます。</br>私より経営の目的と不動産業を選んだキッカケについて、ご説明させて頂きたいと思います。
                             </p>
-                            <h3 class="catch rich_font inview slide_up_animation">経営理念
-                            </h3>
-                            <p>三方よし＝「従業員の笑顔、お客様の笑顔、社会を笑顔へ」
 
+                            <p> <span style="font-size: 25px; font-weight: bold;">経営の目的</span> </br>
+                                事業を始めるにあたり、先ずは前提として誠実さへの努力を掲げております。昨今メディアに流れる不祥事の多くは私欲へ走った結果と推測いたします。私欲を抑えることは非常に難しく、ここに対してはある程度の労力を必要と考えます。だからこそ経営理念の冒頭にて掲げさせていただきました。我々は誠実であり続ける事への努力を怠りません。</br>
+                                さて、株式会社BATONの事業の目的は「100年後の笑顔を創る」ことです。皆様もご存じの通り、昨今は多くの社会問題を抱えており、どれも長期的な視野での改善が必要です。おそらく現役世代で解決することは、ほぼ不可能ではないでしょうか。きっとこの課題は私たちの子ども、孫、それ以上の世代まで続くものとなるでしょう。だからこそ私たちはこの課題と真摯に向き合い、少しずつでも改善を進めていってあげる必要があります。</br>
+                                私自身が今できることは、ものすごく小さなことかもしれません。しかしながら、事業を開始することにより、同じ志の方々と出会う機会が増え、結果として子ども達の明るい未来へ繋げることができればと思っております。
                             </p>
+
+                            <p> <span style="font-size: 25px;  font-weight: bold;">不動産業を選んだ理由</span> </br>
+                                なぜ不動産業だったかというと、先ずは今後を担う若手に対して、最大の生活基盤となる住居より支援したかったからです。特に地方から10代のお子様を一人で上京させる親御さんの心中は多くの不安に駆られることと思います。そんな中、住居を探すにも業者側も繁忙期であること、時間や金銭的な負担が大きいことから限られた時間の中、結果として少ない選択肢しか残されておりません。</br>
+                                私の出身は新潟となるのですが、25年前の上京の際には希望とは異なる物件で決めてしまいました。寧ろ限られた時間の中では選択することはできなかったです。もっと親身に説明してもらえていたら・・・少し違った選択をしていたと思いますが、その時の私は「自分が無知だったのだから仕方ない」と諦めました。</br>
+                                事前に準備を進めることで、上記のような不安の多くは払拭することができます。あとは業者に受け入れの気持ちがあるかどうかだと思っております。私は過去の境遇と子どもに対しての想い、そして会社設立の目的より若手への支援に対しては、より深く注力して取り組んで参りたいと考えております。
+                            </p>
+
+
                         </div>
-                        <div class="post_col post_col-2">
-                            <div class="shutter_image inview col1">
-                                <div class="item">
-                                    <img fetchpriority="high" decoding="async" src="27838_0.jpg"
-                                        alt="" width="580" height="580"
-                                        class="alignnone size-full wp-image-5943" /></div>
-                            </div>
-                        </div>
+                        {{-- <div class="post_col post_col-2">
+                                <div class="shutter_image inview col1">
+                                    <div class="item"><img fetchpriority="high" decoding="async"
+                                            src="https://demo.tcd-theme.com/tcd103/wp-content/uploads/2023/09/company1.jpg"
+                                            alt="" width="580" height="580"
+                                            class="alignnone size-full wp-image-5943" /></div>
+                                </div>
+                            </div> --}}
                     </div>
-
                 </div>
                 <div class="design_header inview" id="profile">
                     <div class="title_area">
-                        <h3 class="large_headline title3"><span>PROFILE</span></h3>
+                        {{-- <h3 class="large_headline title3"><span>PROFILE</span></h3> --}}
                         {{-- <p class="sub_title colored"><span>会社情報</span></p> --}}
                     </div>
                 </div>
                 <div class="post_row" id="company_data_list">
                     <div class="post_col post_col-2 inview slide_up_animation">
-                        <h4>会社概要</h4>
+                        <h4 style="font-size: 40px;">会社概要</h4>
+                        <p style="font-size: 20px; font-weight: bold;">事業を通じて、これからの明るい未来へ繋ぐ「BATON」</p>
+
                         <div class="s_table">
                             <table>
                                 <tbody>
                                     <tr>
                                         <th>会社名</th>
-                                        <td>株式会社BATON</td>
+                                        <td>株式会社BATON(カブシキガイシャバトン)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>代表取締役社長</th>
+                                        <td>立川　宰輝</td>
                                     </tr>
                                     <tr style="word-wrap: break-word;white-space: normal;">
                                         <th>所在地</th>
-                                        <td>〒107-0062 <br/> 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
+                                        <td>〒107-0062 <br /> 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
                                     </tr>
                                     <tr>
                                         <th>TEL</th>
                                         <td>03-6865-8533</td>
                                     </tr>
-                                    {{-- <tr>
-                                        <th>資本金</th>
-                                        <td>5,000万円</td>
-                                    </tr> --}}
                                     <tr>
-                                        <th>設立</th>
-                                        <td>2024年7月</td>
+                                        <th>FAX</th>
+                                        <td>03-6745-8422</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mail</th>
+                                        <td><a href="mailto:company@xbatonx.co.jp">company@xbatonx.co.jp</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>資本金</th>
+                                        <td>300万円</td>
+                                    </tr>
+                                    <tr>
+                                        <th>免許番号</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>保証会社</th>
+                                        <td>公益社団法人全日本不動産協会 </br> 公益社団法人不動産保証協会</td>
+                                    </tr>
+                                    <tr>
+                                        <th>提携金融機関</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>顧問税理士</th>
+                                        <td>鈴木会計事務所</td>
                                     </tr>
                                     {{-- <tr>
-                                        <th>従業員</th>
-                                        <td>300人</td>
-                                    </tr> --}}
-                                    <tr>
                                         <th>事業内容</th>
                                         <td>賃貸物件、売買物件の仲介業</td>
-                                    </tr>
+                                    </tr> --}}
                                     <tr></tr>
                                 </tbody>
                             </table>
@@ -696,7 +687,7 @@
         <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
     </div> --}}
 
-    @include('landing.components.mobile_header')
+    @include('landing.components.landing_page_mobile_header')
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
@@ -726,7 +717,6 @@
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
-   
     <script>
         (function($) {
             if ($('#footer_nav').length) {
