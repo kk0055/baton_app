@@ -37,7 +37,6 @@ body {
     }
 }
 
-
 body,
 input,
 textarea {
@@ -602,6 +601,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
     color: #507878 !important;
 }
 
+/* スマホ */
 @media screen and (max-width: 800px) {
     body {
         font-size: 16px;
@@ -614,26 +614,34 @@ body.megamenu_dark_color .megamenu_b a:hover {
     .rich_font {
         font-size: 22px !important;
     }
+ 
 
     .header_for_pc {
-        display: none;    
+        display: none;
     }
-
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: flex-end;
+        z-index: 300;
+        background: #fff;
+    }
     .contact-sns-container {
         display: flex;
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: flex-start;
         margin-top: 10px;
     }
-    
+
     .contact-info {
-        display: flex; 
-        margin: 10px; 
+        display: flex;
+        margin: 10px;
     }
-    
-    .contact-info .phone, .contact-info .email {
-        margin-right: 20px; 
-        
+
+    .contact-info .phone,
+    .contact-info .email {
+        margin-right: 20px;
     }
 }
 
@@ -647,6 +655,9 @@ body.megamenu_dark_color .megamenu_b a:hover {
     }
 
     .logo_mobile {
+        display: none;
+    }
+    .contact-container {
         display: none;
     }
     #header {
@@ -712,7 +723,6 @@ body.megamenu_dark_color .megamenu_b a:hover {
 }
 
 .property_search {
-
     background-color: white;
     color: #507878;
     font-weight: bold;

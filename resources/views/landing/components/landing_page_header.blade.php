@@ -4,7 +4,7 @@
         <div class="header-container" >
             <h1 class="header_logo">
                 <a href="/">
-                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="auto" />
+                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="auto"/>
                     {{-- <img class="logo_image mobile logo_mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" /> --}}
                 </a>
             </h1>
@@ -68,5 +68,22 @@
         </ul>
     </nav>
     <div class="megamenu megamenu_b no_category_page" id="js-megamenu5884">
+    </div>
+    {{-- スマホ用 --}}
+    <div class="contact-container" style="margin-top:40px;">
+        <div class="contact-info">
+            <div class="phone" style="margin-left:5px;" >
+                <i class="fa fa-phone catch"
+                style="margin-right:2px;"></i>
+                <a href="tel:0368658533" style="" >03-6865-8533</a>
+            </div>
+            <div class="email">
+                <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
+                    class="email-button" style="" >
+                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i> 
+                     お問合わせ
+                </a>
+            </div>
+        </div>
     </div>
 </header>
