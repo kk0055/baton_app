@@ -740,9 +740,9 @@
                         <div class="item-inner video_container">
                             {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
                             <video class="bg_video" playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video3.mov" alt="説明"
+                                <source media="(max-width: 991px)" src="large_video4.mp4" alt="説明"
                                     type="video/mp4">
-                                <source src="NoSky1.mp4" alt="説明" type="video/mp4">
+                                <source src="large_video4.mp4" alt="説明" type="video/mp4">
                             </video>
                         </div>
                     </div>
