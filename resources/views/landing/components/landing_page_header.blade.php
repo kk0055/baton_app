@@ -1,22 +1,33 @@
-
-<header id="header" class="first_animate" style="margin-top: -10px;" >
-    <div class="header_for_pc" style="" >
-        <div class="header-container" >
+<header id="header" class="first_animate" style="margin-top: -10px;">
+    <div class="header_for_pc">
+        <div class="header-container">
             <h1 class="header_logo">
                 <a href="/">
-                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="auto"/>
+                    <img class="logo_image pc" src="baton_logo240819.png" alt="株式会社BATON" width="146" height="auto" />
                     {{-- <img class="logo_image mobile logo_mobile" src="baton_logo240819.png" alt="株式会社BATON" width="100" height="14" /> --}}
                 </a>
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    <i class="fa fa-phone"
-                    style="margin-right:4px;" aria-hidden="true"></i>
+                    <i class="fa fa-phone" style="margin-right:4px;" aria-hidden="true"></i>
                     <a href="tel:0368658533">03-6865-8533</a>
                 </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/baton_2024/" target="_blank">
+                        <img src="Instagram_icon.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:8px">
+                    </a>
+                </div>
+                <div class="line">
+                    <a href="https://lin.ee/r7mvGMy" target="_blank">
+                        <img src="LINE_APP_ios.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:8px;">
+                    </a>
+                </div>
                 <div class="email">
-                    <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true" class="email-button">
-                        <i class="fa fa-envelope"style="margin-right:4px;" aria-hidden="true"></i> 
+                    <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
+                        class="email-button">
+                        <i class="fa fa-envelope"style="margin-right:4px;" aria-hidden="true"></i>
                         お問合わせ
                     </a>
                 </div>
@@ -31,9 +42,10 @@
     </h1>
     <a id="drawer_menu_button" href="#"><span></span><span></span><span></span></a>
     <nav id="global_menu"
-        class="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container" style="margin:15px; padding:5px" >
-        
-        <ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu" >
+        class="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"
+        style="margin:15px; padding:5px">
+
+        <ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
             <li id="menu-item-6202"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-6202">
                 <a href="{{ route('landing.index') }}">トップ</a>
@@ -70,16 +82,15 @@
     {{-- スマホ用 --}}
     <div class="contact-container" style="margin-top:40px;">
         <div class="contact-info">
-            <div class="phone" style="margin-left:5px;" >
-                <i class="fa fa-phone catch"
-                style="margin-right:2px;"></i>
-                <a href="tel:0368658533" style="" >03-6865-8533</a>
+            <div class="phone" style="margin-left:5px;">
+                <i class="fa fa-phone catch" style="margin-right:2px;"></i>
+                <a href="tel:0368658533" style="">03-6865-8533</a>
             </div>
             <div class="email">
                 <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
-                    class="email-button" style="" >
-                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i> 
-                     お問合わせ
+                    class="email-button" style="">
+                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
+                    お問合わせ
                 </a>
             </div>
         </div>

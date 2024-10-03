@@ -21,13 +21,14 @@
                 style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
                 <form action="{{ route('landing.rent') }}" method="GET" style="">
                     <select name="price" id="price"
-                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                        @foreach ($propertyPrices as $price)
-                            <option value="{{ $price }}">
-                                {{ $price }}
-                            </option>
-                        @endforeach
-                    </select>
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
+                    @foreach ($propertyPrices as $price)
+                        <option value="{{ $price }}" style="font-weight: bold;">
+                            {{ $price }}
+                        </option>
+                    @endforeach
+                </select>
                     <div style="margin-top: 10px; display: flex; align-items: center;">
                         <div style="display:flex; align-items: center; margin-right:4px;">
                             <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
