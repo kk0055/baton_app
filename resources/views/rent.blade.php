@@ -7,7 +7,7 @@
             @if (Route::currentRouteName() == 'landing.isBrokerageFree')
                 <h2 class="catch large_headline"><span>仲介手数料無料</span></h2>
             @else
-                <h2 class="catch large_headline"><span>賃貸物件</span></h2>
+                <h2 class="catch large_headline"><span>新着物件</span></h2>
             @endif
             {{-- <p class="sub_title colored"><span></span></p> --}}
         </div>
@@ -21,14 +21,14 @@
                 style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
                 <form action="{{ route('landing.rent') }}" method="GET" style="">
                     <select name="price" id="price"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
-                    @foreach ($propertyPrices as $price)
-                        <option value="{{ $price }}" style="font-weight: bold;">
-                            {{ $price }}
-                        </option>
-                    @endforeach
-                </select>
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
+                        @foreach ($propertyPrices as $price)
+                            <option value="{{ $price }}" style="font-weight: bold;">
+                                {{ $price }}
+                            </option>
+                        @endforeach
+                    </select>
                     <div style="margin-top: 10px; display: flex; align-items: center;">
                         <div style="display:flex; align-items: center; margin-right:4px;">
                             <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
@@ -43,13 +43,11 @@
                                 class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
                         </div>
 
-
                         <button type="submit" class="catch property_search" style="padding:3px; margin-left:4px; ">
                             <span class="label" style="font-size: 16px;"><i class="fa fa-search" style="margin-right:4px;"
                                     aria-hidden="true"></i>検索</span>
                         </button>
                     </div>
-
                 </form>
             </div>
         @endif

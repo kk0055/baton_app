@@ -662,6 +662,9 @@
                 text-align: left;
                 word-break: break-word;
             }
+            .top_message {
+                font-size: 16px
+            }
         }
 
         /* Laptop用スタイル */
@@ -691,6 +694,9 @@
 
             .philosophy_for_sp {
                 display: none
+            }
+            .top_message {
+                font-size: 34px
             }
         }
 
@@ -730,8 +736,8 @@
                 <div class="content main_logo_image_content">
                     {{-- <img class="image" src="baton_logo240819.svg" width="80%" height="80%"
                         style="display:none;" /> --}}
-                    <div
-                        style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; font-size: 34px">
+                    <div class="top_message"
+                        style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                         <h1>誠実であり続けることへの努力を怠らないこと</h1><br>
                         <h1>常に最善を考え、実行すること</h1><br>
                         <h1>１００年後の笑顔を創ること</h1>

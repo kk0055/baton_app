@@ -64,5 +64,10 @@ class LandingPageController extends Controller
     {
         return view('company');
     }
+    
+    public function message()
+    {
+        return view('message');
+    }
 
 }

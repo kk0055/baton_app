@@ -27,6 +27,9 @@
             <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
                     href="{{ route('landing.company') }}">会社紹介</a>
             </li>
+            <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433">
+                <a href="{{ route('landing.message') }}">代表挨拶</a>
+            </li>
 
 
             @auth
@@ -52,7 +55,10 @@
         </div>
         <div id="mobile_sns" class="sns_button_list clearfix color_type1">
             <a href="https://www.instagram.com/baton_2024/" target="_blank">
-                <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px">
+                <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px; margin-right:8px;">
+            </a>
+            <a href="https://lin.ee/r7mvGMy" target="_blank">
+                <img src="LINE_APP_ios.png"  alt="" style="width: 30px; height: 30px">
             </a>
         </div>
     </div>
