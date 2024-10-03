@@ -12,10 +12,11 @@ class LandingPageController extends Controller
     {
         $rents = Property::rentOnly()->take(10)->get();
         $sales = Property::saleOnly()->take(10)->get();
+        $is_brokerage_free = Property::rentOnly()->where('is_brokerage_free', true)->take(10)->get();
         $propertyPrices = Property::propertyPrices();
         // 最新の1件だけを取得
         $latestPost = Post::latest()->first();
-        return view('index', compact('rents', 'sales', 'latestPost', 'propertyPrices'));
+        return view('index', compact('rents', 'sales','is_brokerage_free', 'latestPost', 'propertyPrices'));
     }
 
     public function sale()
@@ -52,6 +53,13 @@ class LandingPageController extends Controller
         return view('rent', compact('rents','propertyPrices'));
     }
 
+    public function isBrokerageFree()
+    {
+        $rents = Property::rentOnly()->where('is_brokerage_free', true)->get();
+        $propertyPrices = Property::propertyPrices();
+        return view('rent', compact('rents','propertyPrices'));
+    }
+    
     public function company()
     {
         return view('company');

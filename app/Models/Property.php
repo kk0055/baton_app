@@ -64,10 +64,11 @@ class Property extends Model
     {
         $propertyPrices = [
             '指定無し',
-            '～8万円',
-            '8万～10万円',
-            '10万～12万円',
-            '12万円以上',
+            '7万円以下',
+            '8万円台',
+            '9万円台',
+            '10万円台',
+            '11万円以上',
         ];
 
         return $propertyPrices;

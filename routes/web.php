@@ -9,6 +9,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
 Route::get('/rent', [LandingPageController::class, 'rent'])->name('landing.rent');
+Route::get('/is_brokerage_free', [LandingPageController::class, 'isBrokerageFree'])->name('landing.isBrokerageFree');
 Route::get('/sale', [LandingPageController::class, 'sale'])->name('landing.sale');
 Route::get('/company', [LandingPageController::class, 'company'])->name('landing.company');
 Route::get('/about', [LandingPageController::class, 'about'])->name('landing.about');
