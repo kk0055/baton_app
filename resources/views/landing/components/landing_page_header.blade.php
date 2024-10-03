@@ -9,8 +9,9 @@
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    <i class="fa fa-phone" style="margin-right:4px;"></i>
-                    <a href="tel:+81368658533">03-6865-8533</a>
+                    
+                    <a href="tel:+81368658533"><i class="fa fa-phone" style="margin-right:4px;"></i>03-6865-8533
+                    </a>
                 </div>
                 <div class="insta">
                     <a href="https://www.instagram.com/baton_2024/" target="_blank">
@@ -86,8 +87,11 @@
     <div class="contact-container" style="margin-top:40px;">
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
-                <i class="fa fa-phone catch" style="margin-right:2px;"></i>
-                <a href="tel:+81368658533" style="">03-6865-8533</a>
+                
+                <a href="tel:+81368658533" style="">
+                    <i class="fa fa-phone catch" style="margin-right:2px;"></i>
+                    03-6865-8533
+                </a>
             </div>
             <div class="email">
                 <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"

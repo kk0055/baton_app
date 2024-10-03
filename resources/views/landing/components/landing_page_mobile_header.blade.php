@@ -41,8 +41,10 @@
     <div class="contact-sns-container">
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
-                <i class="fa fa-phone catch" style="margin-right:2px;"></i>
-                <a href="tel:+81368658533" style="color:white;">03-6865-8533</a>
+                
+                <a href="tel:+81368658533" style="color:white;">
+                    <i class="fa fa-phone catch" style="margin-right:2px;"></i>03-6865-8533
+                </a>
             </div>
             <div class="email">
                 <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
