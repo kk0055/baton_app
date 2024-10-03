@@ -40,16 +40,15 @@
     </div>
     <div class="contact-sns-container">
         <div class="contact-info">
-            <div class="phone" style="margin-left:5px;" >
-                <i class="fa fa-phone catch"
-                style="margin-right:2px;"></i>
-                <a href="tel:0368658533" style="color:white;" >03-6865-8533</a>
+            <div class="phone" style="margin-left:5px;">
+                <i class="fa fa-phone catch" style="margin-right:2px;"></i>
+                <a href="tel:0368658533" style="color:white;">03-6865-8533</a>
             </div>
             <div class="email">
                 <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
-                    class="email-button" style="color:white;" >
-                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i> 
-                     お問合わせ
+                    class="email-button" style="color:white;">
+                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
+                    お問合わせ
                 </a>
             </div>
         </div>
@@ -58,7 +57,7 @@
                 <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px; margin-right:8px;">
             </a>
             <a href="https://lin.ee/r7mvGMy" target="_blank">
-                <img src="LINE_APP_ios.png"  alt="" style="width: 30px; height: 30px">
+                <img src="LINE.png" alt="" style="width: 30px; height: 30px">
             </a>
         </div>
     </div>

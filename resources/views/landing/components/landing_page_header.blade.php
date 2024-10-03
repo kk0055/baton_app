@@ -20,7 +20,7 @@
                 </div>
                 <div class="line">
                     <a href="https://lin.ee/r7mvGMy" target="_blank">
-                        <img src="LINE_APP_ios.png" alt="" style="width: 30px; height: 30px; margin-right:8px;">
+                        <img src="LINE.png" alt="" style="width: 30px; height: 30px; margin-right:8px;">
                     </a>
                 </div>
                 <div class="email">
@@ -98,13 +98,12 @@
             </div>
             <div class="insta">
                 <a href="https://www.instagram.com/baton_2024/" target="_blank">
-                    <img src="Instagram_icon.png" alt=""
-                        style="width: 20px; height: 20px; margin-right:8px">
+                    <img src="Instagram_icon.png" alt="" style="width: 20px; height: 20px; margin-right:8px">
                 </a>
             </div>
             <div class="line">
                 <a href="https://lin.ee/r7mvGMy" target="_blank">
-                    <img src="LINE_APP_ios.png" alt="" style="width: 20px; height: 20px; margin-right:8px;">
+                    <img src="LINE.png" alt="" style="width: 20px; height: 20px; margin-right:8px;">
                 </a>
             </div>
         </div>
