@@ -1109,7 +1109,7 @@
                 </div>
             </section> --}}
 
-            <section class="cb_free_space num1 " id="cb_content_1">
+            {{-- <section class="cb_free_space num1 " id="cb_content_1">
                 <div class="post_content clearfix" id="job_details">
                     <div class="design_header inview">
                         <div class="title_area">
@@ -1128,8 +1128,7 @@
                         </div>
                     </div>
                 </div>
-
-            </section>
+            </section> --}}
 
             {{-- 不動産仲介業の使命 --}}
             {{-- <section class="cb_free_space num1 " id="cb_content_1">
