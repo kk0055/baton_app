@@ -663,7 +663,7 @@
                 word-break: break-word;
             }
             .top_message {
-                font-size: 16px
+                font-size: 22px
             }
         }
 
@@ -706,6 +706,12 @@
             margin-bottom: 9px;
 
         }
+        .top_message {
+            display:none;
+            flex-direction: column; 
+            justify-content: flex-start; 
+            align-items: flex-start;
+        }
     </style>
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
@@ -737,14 +743,13 @@
                     {{-- <img class="image" src="baton_logo240819.svg" width="80%" height="80%"
                         style="display:none;" /> --}}
                     <div class="top_message"
-                        style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
-                        <h1>誠実であり続けることへの努力を怠らないこと</h1><br>
-                        <h1>常に最善を考え、実行すること</h1><br>
-                        <h1>１００年後の笑顔を創ること</h1>
+                        style="">
+                        <h1>誠実であり続ける事へ努力する</h1><br>
+                        <h1>常に最善を考え、そして実行する</h1><br>
+                        <h1>100年後の笑顔を創る</h1>
                     </div>
                 </div>
             </div>
-
             <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000"
                 height="600">
                 <div class="swiper-wrapper">
@@ -771,12 +776,30 @@
                     </div>
                     <div class="post_row inview slide_up_animation">
                         <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">| 業務内容
-                            </h3>
+                            <h3 class="catch rich_font">| 業務内容</h3>
                         </div>
                         <div class="post_col post_col-2">
-                            <p>株式会社BATONは世田谷区の物件をメインとした不動産売買、賃貸の仲介業者です。<br>
+                            <p>株式会社BATONは世田谷区のお部屋のご紹介をメインとして活動しております。小規模な会社だからこそできる自社の強みを最大限に活かし、そしてお客様にしっかりと還元する、カスタマーファーストをモットーとしております。<br>
                             </p>
+                            <h3 class="">BATONの強み</h3>
+                            <div class="t">
+                                <strong style="font-size: 22px">1.圧倒的な初期費用の安さ</strong> <br>
+                                &nbsp; 家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。<br>
+        
+        
+                                <strong style="font-size: 22px">2.豊富な取り扱い物件数</strong><br>
+                                &nbsp; 大手不動産会社と同じ検索サイトを使用しており、全国各地同規模で物件のご紹介が可能です<br>
+        
+                                <strong style="font-size: 22px">3.WEB内覧</strong><br>
+                                &nbsp;お忙しい方や遠隔地のお客様のご要望に応じてWEBでの内覧もご案内させて頂いております。<br>
+        
+                                <strong style="font-size: 22px">4.ライフライン一括申請</strong><br>
+                                &nbsp;電気・ガス・水道などの窓口を一本化、面倒なライフラインの手続きを効率化できます。<br>
+
+                                <strong style="font-size: 22px">4.24時間サポート（有料）</strong><br>
+                                &nbsp;ご希望のお客様へ鍵紛失やライフライン損傷に対応した２４時間サポートをご提供しております。<br><br>
+        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1488,6 +1511,7 @@
                 // 画像の表示を設定
                 $('.image').css('display', 'block');
                 $('.divider').css('display', 'block');
+                $('.top_message').css('display', 'block');
             })(jQuery);
         }
         (function($) {
