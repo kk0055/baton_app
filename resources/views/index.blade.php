@@ -796,7 +796,7 @@
                                 <strong style="font-size: 22px">4.ライフライン一括申請</strong><br>
                                 &nbsp;電気・ガス・水道などの窓口を一本化、面倒なライフラインの手続きを効率化できます。<br>
 
-                                <strong style="font-size: 22px">4.24時間サポート（有料）</strong><br>
+                                <strong style="font-size: 22px">5.24時間サポート（有料）</strong><br>
                                 &nbsp;ご希望のお客様へ鍵紛失やライフライン損傷に対応した２４時間サポートをご提供しております。<br><br>
         
                             </div>
