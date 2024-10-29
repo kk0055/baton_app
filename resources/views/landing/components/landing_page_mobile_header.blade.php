@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="email">
-                <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
+                <a href="mailto:company@xbatonx.com"
                     class="email-button" style="color:white;">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ

@@ -9,7 +9,7 @@
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    
+
                     <a href="tel:+81368658533"><i class="fa fa-phone" style="margin-right:4px;"></i>03-6865-8533
                     </a>
                 </div>
@@ -25,8 +25,7 @@
                     </a>
                 </div>
                 <div class="email">
-                    <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
-                        class="email-button">
+                    <a href="mailto:company@xbatonx.com" class="email-button">
                         <i class="fa fa-envelope"style="margin-right:4px;" aria-hidden="true"></i>
                         お問合わせ
                     </a>
@@ -76,8 +75,9 @@
             </li> --}}
 
             @auth
-                <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                        href="{{ route('admin.property.index') }}">管理画面</a></li>
+                <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item">
+                    <a href="{{ route('admin.property.index') }}" style="line-height: 40px; height: 30px;">管理画面</a>
+                </li>    
             @endauth
         </ul>
     </nav>
@@ -87,15 +87,14 @@
     <div class="contact-container" style="margin-top:40px;">
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
-                
+
                 <a href="tel:+81368658533" style="">
                     <i class="fa fa-phone catch" style="margin-right:2px;"></i>
                     03-6865-8533
                 </a>
             </div>
             <div class="email">
-                <a href="https://docs.google.com/forms/d/1OGoRCunJpDpYy6aYS-DGVoTodgmLvII9Qz4A9ipEYyc/viewform?edit_requested=true"
-                    class="email-button" style="">
+                <a href="mailto:company@xbatonx.com" class="email-button" style="">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ
                 </a>

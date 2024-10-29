@@ -254,10 +254,10 @@
                                 <tbody>
                                     <tr>
                                         <th>会社名</th>
-                                        <td>株式会社BATON(カブシキガイシャバトン)</td>
+                                        <td>株式会社BATON</td>
                                     </tr>
                                     <tr>
-                                        <th>代表取締役社長</th>
+                                        <th>代表取締役</th>
                                         <td>立川　宰輝</td>
                                     </tr>
                                     <tr style="word-wrap: break-word;white-space: normal;">
@@ -278,19 +278,19 @@
                                     </tr>
                                     <tr>
                                         <th>資本金</th>
-                                        <td>300万円</td>
+                                        <td>3,000,000円</td>
                                     </tr>
                                     <tr>
                                         <th>免許番号</th>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <th>保証会社</th>
-                                        <td>公益社団法人全日本不動産協会 </br> 公益社団法人不動産保証協会</td>
+                                        <th>加盟団体</th>
+                                        <td>公益社団法人全日本不動産協会 </br> 公益社団法人不動産保証協会</br> 東京商工会議所</td>
                                     </tr>
                                     <tr>
-                                        <th>提携金融機関</th>
-                                        <td></td>
+                                        <th>金融機関</th>
+                                        <td>昭和信用金庫 </br>GMOあおぞらネット銀行</td>
                                     </tr>
                                     <tr>
                                         <th>顧問税理士</th>
