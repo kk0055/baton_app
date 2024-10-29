@@ -868,7 +868,7 @@
                         <p class="property-text">
                             お見積りのみでもお気軽にお問合せ下さい！
                         </p>
-                        <div class="sub_title colored property "
+                        {{-- <div class="sub_title colored property "
                             style="font-size: 95%; color:#000000; padding:10px 0">
                             <form action="{{ route('landing.rent') }}" method="GET" style="">
                                 <div class="" style="display: flex;">
@@ -888,7 +888,7 @@
                                                 style="margin-right:4px;" aria-hidden="true"></i>検索</span>
                                     </button>
                                 </div>
-                                {{-- <div style="margin-top: 10px; display: flex; align-items: center;">
+                                <div style="margin-top: 10px; display: flex; align-items: center;">
                                     <div style="display:flex; align-items: center; margin-right:4px;">
                                         <input type="checkbox" name="is_new_building" id="is_new_building"
                                             value="1" style="margin-right:5px;"
@@ -909,9 +909,9 @@
                                         <span class="label" style="font-size: 16px;"><i class="fa fa-search"
                                                 style="margin-right:4px;" aria-hidden="true"></i>検索</span>
                                     </button>
-                                </div> --}}
+                                </div>
                             </form>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="main_content inview">
@@ -939,23 +939,12 @@
                 </div>
             </section>
             {{-- 仲介手数料無料 --}}
-            <section class="cb_blog_list num5" id="cb_content_5">
+            {{-- <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
                         <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
                             仲介手数料無料</h3>
-
-                        {{-- <p class="sub_title colored property property_sub_titile"
-                            style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
-                            今週のオススメ物件
-                        </p> --}}
-                        {{-- <p class="property-text" style="margin-bottom: 9px;">
-                            その他、WEBに掲載されている全国ほぼ全ての物件の紹介が可能です。
-                        </p>
-                        <p class="property-text">
-                            相見積りのみでもお気軽にお問合せ下さい！
-                        </p> --}}
-                        {{-- <div class="sub_title colored property "
+                        <div class="sub_title colored property "
                             style="font-size: 95%; color:#000000; padding:10px 0">
                             <form action="{{ route('landing.rent') }}" method="GET" style="">
                                 <select name="price" id="price"
@@ -988,7 +977,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
                 <div class="main_content inview">
@@ -1015,7 +1004,7 @@
                             style="font-size: 16px; color:#000000">仲介手数料無料物件一覧</span><i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </section>
+            </section> --}}
             <!-- 売買物件 -->
             {{-- <section class="cb_blog_list num5" id="cb_content_2">
                 <div class="design_header cb_design_header inview">

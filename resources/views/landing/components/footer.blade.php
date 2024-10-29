@@ -20,7 +20,7 @@
                 <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px; margin-left:10px"></a>
 
             <a href="https://lin.ee/r7mvGMy" target="_blank">
-                <img src="LINE.png" alt="" style="width: 30px; height: 30px;margin-left:10px; ">
+                <img src="LINE.png" alt="" style="width: 30px; height: 30px; margin-left:10px; ">
             </a>
 
             {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"

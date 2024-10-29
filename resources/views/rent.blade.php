@@ -16,7 +16,7 @@
 
     <section id="archive_blog" class="inview slide_up_animation">
         {{-- 検索 --}}
-        @if (Route::currentRouteName() !== 'landing.isBrokerageFree')
+        {{-- @if (Route::currentRouteName() !== 'landing.isBrokerageFree')
             <div class="sub_title colored property "
                 style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
                 <form action="{{ route('landing.rent') }}" method="GET" style="">
@@ -50,7 +50,7 @@
                     </div>
                 </form>
             </div>
-        @endif
+        @endif --}}
         {{-- 検索 --}}
         <div class="blog_list">
             @foreach ($rents as $property)
@@ -63,9 +63,9 @@
                                 style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
-                    <p style="margin-bottom:10px">価格帯: {{ $property->price }}</p>
+                    {{-- <p style="margin-bottom:10px">価格帯: {{ $property->price }}</p>
                     <p style="margin-bottom:10px">新築: {{ $property->is_new_building ? '✅' : '❌' }} </p>
-                    <p style="margin-bottom:10px">仲介手数料無料: {{ $property->is_brokerage_free ? '✅' : '❌' }} </p>
+                    <p style="margin-bottom:10px">仲介手数料無料: {{ $property->is_brokerage_free ? '✅' : '❌' }} </p> --}}
                     {{-- <div class="content">
                     <time class="date entry-date published" datetime="2023-09-28T23:21:04+09:00">2023.09.28</time>
                 </div> --}}
