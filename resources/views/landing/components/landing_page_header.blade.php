@@ -51,7 +51,7 @@
 
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
-                <a href="{{ route('landing.rent') }}" style="line-height: 40px; height: 30px;">オススメ物件</a>
+                <a href="{{ route('landing.rent') }}" style="line-height: 40px; height: 30px;">新着物件</a>
                 {{-- <ul class="sub-menu">
                     <li id="menu-item-5982"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a
