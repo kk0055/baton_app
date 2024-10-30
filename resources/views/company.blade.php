@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="株式会社BATON">
-    <title>株式会社BATON</title>
+    <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆見積もり自信有り</title>
     <meta name='robots' content='max-image-preview:large' />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
-    <meta property="og:description" content="株式会社BATON">
+    <meta name="description" content="世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。見積もりに自信があり、Webに掲載されている物件も紹介可能です。理想の部屋探しをお手伝いします。">
+    <meta name="keywords" content="世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 見積もり, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:site_name" content="株式会社BATON">
     <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
@@ -282,7 +285,7 @@
                                     </tr>
                                     <tr>
                                         <th>免許番号</th>
-                                        <td></td>
+                                        <td>東京都知事(1)第111508号</td>
                                     </tr>
                                     <tr>
                                         <th>加盟団体</th>
