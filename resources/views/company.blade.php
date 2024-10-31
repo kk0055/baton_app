@@ -321,6 +321,17 @@
     </div> --}}
 
     @include('landing.components.landing_page_mobile_header')
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0" id="swiper-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0" id="jquery.easing.1.4-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/tcd_cookie.js?ver=1.0" id="tcd.cookie.min-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1" id="hcb-prism-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11" id="clipboard-js"></script>
+  
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1" id="hcb-script-js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDal5sz2w_v49S9z13bYhLrEfVmLqV_p8M&amp;ver=1.0" id="qt_google_map_api-js"></script>
 
     <script>
         (function($) {
