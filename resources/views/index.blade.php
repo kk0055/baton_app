@@ -14,6 +14,7 @@
     <meta property="og:site_name" content="株式会社BATON">
     <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
+    <meta name="google-site-verification" content="Ea3oV6nXXDt2fhyJBsoyrTR1EdnDAt-ZaNG_KY-85Bk" />
     <meta property="og:image:height" content="630">
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
     <link rel='stylesheet' id='swiper-css'
@@ -757,9 +758,9 @@
                         <div class="item-inner video_container">
                             {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
                             <video class="bg_video" playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video4.mp4" alt="説明"
+                                <source media="(max-width: 991px)" src="large_video4.mp4" alt="video"
                                     type="video/mp4">
-                                <source src="NoSky1.mp4" alt="説明" type="video/mp4">
+                                <source src="NoSky1.mp4" alt="video" type="video/mp4" >
                             </video>
                         </div>
                     </div>

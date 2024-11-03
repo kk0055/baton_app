@@ -18,6 +18,7 @@
     <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta name="google-site-verification" content="Ea3oV6nXXDt2fhyJBsoyrTR1EdnDAt-ZaNG_KY-85Bk" />
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
     <link rel='stylesheet' id='swiper-css'
         href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
@@ -321,7 +322,7 @@
     </div> --}}
 
     @include('landing.components.landing_page_mobile_header')
-    
+
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0" id="swiper-js"></script>
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0" id="jquery.easing.1.4-js"></script>
