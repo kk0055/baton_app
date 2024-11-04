@@ -62,7 +62,8 @@
                     <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
                         <div class="image_wrap">
                             <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}"
-                                alt="Property Image" width="770" height="520">
+                            alt="Property Image" width="770" height="520"
+                            style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
                     <h4 class="mb-2">表示順: {{ $property->order }}</h4>
