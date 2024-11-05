@@ -53,15 +53,7 @@
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
         id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="https://demo.tcd-theme.com/tcd103/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://demo.tcd-theme.com/tcd103/wp-json/wp/v2/pages/5942" />
-    <link rel="canonical" href="https://demo.tcd-theme.com/tcd103/company/" />
-    <link rel='shortlink' href='https://demo.tcd-theme.com/tcd103/?p=5942' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F&#038;format=xml" />
-
+ 
     <style id="current-page-style" type="text/css">
         #page_header .overlay {
             background-color: rgba(0, 0, 0, 0.3);
@@ -360,27 +352,7 @@
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDal5sz2w_v49S9z13bYhLrEfVmLqV_p8M&amp;ver=1.0"
-        id="qt_google_map_api-js"></script>
-
     <script>
-        (function($) {
-            if ($('#footer_nav').length) {
-                let footer_nav = new Swiper("#footer_nav", {
-                    loop: false,
-                    centeredSlides: false,
-                    slidesPerView: "auto",
-                    grabCursor: true,
-                    freeMode: {
-                        enabled: true,
-                        sticky: false,
-                        momentumBounce: false,
-                    },
-                });
-            };
-
-        })(jQuery);
 
         (function($) {
             (function($) {

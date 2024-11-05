@@ -398,14 +398,7 @@
         src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
         id="jquery-migrate-js"></script>
     <link rel="https://api.w.org/" href="https://demo.tcd-theme.com/tcd103/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://demo.tcd-theme.com/tcd103/wp-json/wp/v2/pages/4549" />
-    <link rel="canonical" href="https://demo.tcd-theme.com/tcd103/" />
-    <link rel='shortlink' href='https://demo.tcd-theme.com/tcd103/' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2F&#038;format=xml" />
-
+   
     <style id="current-page-style" type="text/css">
         .highlight-box {
             background-color: #507878;
