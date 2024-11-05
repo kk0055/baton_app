@@ -9,8 +9,23 @@
     <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
     <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
-    <meta name="description" content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
-    <meta name="keywords" content="株式会社BATON, 世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0V4CE08KJL');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <meta name="description"
+        content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
+    <meta name="keywords"
+        content="株式会社BATON, 世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
     <meta property="og:site_name" content="株式会社BATON">
     <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
@@ -663,6 +678,7 @@
                 text-align: left;
                 word-break: break-word;
             }
+
             .top_message {
                 font-size: 22px
             }
@@ -696,6 +712,7 @@
             .philosophy_for_sp {
                 display: none
             }
+
             .top_message {
                 font-size: 34px
             }
@@ -707,10 +724,11 @@
             margin-bottom: 9px;
 
         }
+
         .top_message {
-            display:none;
-            flex-direction: column; 
-            justify-content: flex-start; 
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: flex-start;
         }
     </style>
@@ -743,8 +761,7 @@
                 <div class="content main_logo_image_content">
                     {{-- <img class="image" src="baton_logo240819.svg" width="80%" height="80%"
                         style="display:none;" /> --}}
-                    <div class="top_message"
-                        style="">
+                    <div class="top_message" style="">
                         <h1>誠実であり続けることへ努力する</h1><br>
                         <h1>常に最善を考え、そして実行する</h1><br>
                         <h1>100年後の笑顔を創る</h1>
@@ -760,7 +777,7 @@
                             <video class="bg_video" playsinline muted>
                                 <source media="(max-width: 991px)" src="large_video5.mp4" alt="video"
                                     type="video/mp4">
-                                <source src="NoSky3.mp4" alt="video" type="video/mp4" >
+                                <source src="NoSky3.mp4" alt="video" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -786,20 +803,20 @@
                             <div class="t">
                                 <strong style="font-size: 22px">1.圧倒的な初期費用の安さ</strong> <br>
                                 &nbsp; 家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。<br>
-        
-        
+
+
                                 <strong style="font-size: 22px">2.豊富な取り扱い物件数</strong><br>
                                 &nbsp; 大手不動産会社と同じデータベースを使用しており、全国各地の物件を同規模でご紹介できます。<br>
-        
+
                                 <strong style="font-size: 22px">3.WEB内覧</strong><br>
                                 &nbsp;お忙しい方や遠方のお客様には、ご希望に応じてWEBでの内覧もご案内しております。<br>
-        
+
                                 <strong style="font-size: 22px">4.ライフライン一括申請</strong><br>
                                 &nbsp;電気・ガス・水道などの窓口を一本化し、ライフラインの手続きを効率的にサポートいたします。面倒な手続きをまとめて対応いたしますので、安心してお任せください。<br>
 
                                 <strong style="font-size: 22px">5.24時間サポート</strong><br>
                                 &nbsp;お客様のご要望に応じて、鍵の紛失やライフラインのトラブルにも対応する24時間サポートをご提供しております。※24時間サポートは有料となります。<br><br>
-        
+
                             </div>
                         </div>
                     </div>

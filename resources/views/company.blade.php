@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="株式会社BATON">
     <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0V4CE08KJL');
+    </script>
+    <!-- Google tag (gtag.js) -->
     <meta name='robots' content='max-image-preview:large' />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
-    <meta name="description" content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
-    <meta name="keywords" content="世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
+    <meta name="description"
+        content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
+    <meta name="keywords"
+        content="世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:site_name" content="株式会社BATON">
@@ -324,15 +339,29 @@
     @include('landing.components.landing_page_mobile_header')
 
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0" id="swiper-js"></script>
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0" id="jquery.easing.1.4-js"></script>
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js"></script>
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/tcd_cookie.js?ver=1.0" id="tcd.cookie.min-js"></script>
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1" id="hcb-prism-js"></script>
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11" id="clipboard-js"></script>
-  
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1" id="hcb-script-js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDal5sz2w_v49S9z13bYhLrEfVmLqV_p8M&amp;ver=1.0" id="qt_google_map_api-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
+        id="swiper-js"></script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0"
+        id="jquery.easing.1.4-js"></script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">
+    </script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/tcd_cookie.js?ver=1.0"
+        id="tcd.cookie.min-js"></script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1"
+        id="hcb-prism-js"></script>
+    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
+        id="clipboard-js"></script>
+
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
+        id="hcb-script-js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDal5sz2w_v49S9z13bYhLrEfVmLqV_p8M&amp;ver=1.0"
+        id="qt_google_map_api-js"></script>
 
     <script>
         (function($) {

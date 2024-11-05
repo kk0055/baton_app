@@ -10,8 +10,23 @@
     <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
     <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
-    <meta name="description" content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
-    <meta name="keywords" content="世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0V4CE08KJL');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <meta name="description"
+        content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
+    <meta name="keywords"
+        content="世田谷, 部屋探し, 賃貸, 物件, 人気, おすすめ, 初期費用,仲介手数料無料, Web掲載, 不動産, 賃貸物件, 引越し, 家探し, 世田谷賃貸,小田急線.田園都市線,京王線,世田谷線">
     <meta property="og:site_name" content="株式会社BATON">
     <meta property="og:image:secure_url" content="https://xbatonx.com">
     <meta property="og:image:width" content="1200">
@@ -586,7 +601,8 @@
                             </p>
 
                             {{-- <p> <span style="font-size: 25px; font-weight: bold;">経営の目的</span> </br> --}}
-                            早速ではございますが、社名となる「BATON」の由来は<span style="text-decoration: underline;font-weight: bold;" > 「つないでいく」</span>との想いを込めております。昨今の社会情勢、気候変動より、今後はより厳しい生活環境が想定されます。今、弊社ができることは限られていると思いますが、できることを一つ一つ実現していくことにより、次世代の方々へ少しでも良いカタチでBATONをつないでいきたいと想っております。先ずは不動産業より価格、サービス両面において、業界のイメージを払拭すべく、透明性が高く、質の高いコミュニケーションを心掛け、お客様に理想の物件をお届けできるよう、誠実にしっかりと努めさせていただきます。</br>
+                            早速ではございますが、社名となる「BATON」の由来は<span style="text-decoration: underline;font-weight: bold;">
+                                「つないでいく」</span>との想いを込めております。昨今の社会情勢、気候変動より、今後はより厳しい生活環境が想定されます。今、弊社ができることは限られていると思いますが、できることを一つ一つ実現していくことにより、次世代の方々へ少しでも良いカタチでBATONをつないでいきたいと想っております。先ずは不動産業より価格、サービス両面において、業界のイメージを払拭すべく、透明性が高く、質の高いコミュニケーションを心掛け、お客様に理想の物件をお届けできるよう、誠実にしっかりと努めさせていただきます。</br>
                             また、具体的な支援策としては下記２点を掲げさせていただいております。</br></br>
 
                             1.上京学生への支援</br>
