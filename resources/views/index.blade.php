@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html class="pc" lang="ja">
+@extends('layout.landing.app')
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    
-    @include('partials.meta')
-
-    <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-    <link rel='stylesheet' id='swiper-css'
-        href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='main-style-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/style.css?ver=6.5.4' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='design-plus-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/design-plus.css?ver=1.0'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='sns-botton-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/sns-botton.css?ver=1.0'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='responsive-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/responsive.css?ver=1.0'
-        type='text/css' media='screen and (max-width:1391px)' />
-    <link rel='stylesheet' id='wp-block-library-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4'
-        type='text/css' media='all' />
-
-   
-    <link rel='stylesheet' id='hcb-style-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1'
-        type='text/css' media='all' />
-
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
-        id="jquery-core-js"></script>
-    <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-        id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="https://demo.tcd-theme.com/tcd103/wp-json/" />
-   
+@section('styles')
     <style id="current-page-style" type="text/css">
         .highlight-box {
             background-color: #507878;
@@ -349,29 +314,14 @@
             align-items: flex-start;
         }
     </style>
-    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
-    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
-    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+@endsection
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
 
-        gtag('config', 'G-0V4CE08KJL');
-    </script>
-    <!-- Google tag (gtag.js) -->
-</head>
 
-<body data-rsssl=1 id="body"
-    class="home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color header_slider_layout_type1 use_loading_screen loading_animation_type1 hide_sidebar normal_content_width">
+@section('bodyClass', 'home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color
+    header_slider_layout_type1 use_loading_screen loading_animation_type1 hide_sidebar normal_content_width')
+    
+@section('content')
     <div id="js-body-start"></div>
 
     <div id="site_loader_overlay">
@@ -405,8 +355,7 @@
                         <div class="item-inner video_container">
                             {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
                             <video class="bg_video" playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video5.mp4" alt="video"
-                                    type="video/mp4">
+                                <source media="(max-width: 991px)" src="large_video5.mp4" alt="video" type="video/mp4">
                                 <source src="NoSky3.mp4" alt="video" type="video/mp4">
                             </video>
                         </div>
@@ -568,9 +517,8 @@
                             @foreach ($rents as $property)
                                 <div class="item swiper-slide">
                                     <div class="image_wrap image_link image-link animate_background">
-                                        <img class=" property-image"
-                                            src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
-                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                        <img class=" property-image" src="{{ asset('storage/' . $property->image_path) }}"
+                                            alt="Property Image" style="width: 100%; height: 100%; object-fit: contain;">
                                     </div>
                                 </div>
                             @endforeach
@@ -582,8 +530,7 @@
                 </div>
                 <div class="design_arrow_button cb_design_arrow_button">
                     <a href="{{ route('landing.rent') }}"><span class="label"
-                            style="font-size: 16px; color:#000000">新着物件一覧</span><i
-                            class="fa-solid fa-arrow-right"></i></a>
+                            style="font-size: 16px; color:#000000">新着物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section>
             {{-- 仲介手数料無料 --}}
@@ -850,19 +797,14 @@
     </div> --}}
 
     @include('landing.components.landing_page_mobile_header')
+@endsection
 
-
+@section('js')
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
         id="swiper-js"></script>
     <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/header-slider.js?ver=1.0"
-        id="header-slider-js"></script>
-    <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0"
         id="jquery.easing.1.4-js"></script>
-    <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">
-    </script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.cookie.min.js?ver=1.0"
         id="jquery.cookie.min-js"></script>
@@ -871,6 +813,14 @@
         id="hcb-prism-js"></script>
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
         id="clipboard-js"></script>
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/header-slider.js?ver=1.0"
+        id="header-slider-js"></script>
+
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">
+    </script>
+
     <script type="text/javascript" id="hcb-script-js-extra"></script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
@@ -1196,6 +1146,4 @@
         //     }
         // });
     </script>
-</body>
-
-</html>
+@endsection

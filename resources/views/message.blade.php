@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-<html class="pc" lang="ja">
+@extends('layout.landing.app')
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-
-    @include('partials.meta')
-
-    <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-    <link rel='stylesheet' id='swiper-css'
-        href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10.2.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='main-style-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/style.css?ver=6.5.4' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='design-plus-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/design-plus.css?ver=1.0'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='sns-botton-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/sns-botton.css?ver=1.0'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='responsive-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/css/responsive.css?ver=1.0'
-        type='text/css' media='screen and (max-width:1391px)' />
-    <link rel='stylesheet' id='wp-block-library-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4'
-        type='text/css' media='all' />
-        
-    <link rel='stylesheet' id='child-style-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/themes/GENESIS-child/style.css?ver=6.5.4' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='hcb-style-css'
-        href='https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1'
-        type='text/css' media='all' />
-
-    <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
-        id="jquery-core-js"></script>
-    <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-        id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="https://demo.tcd-theme.com/tcd103/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://demo.tcd-theme.com/tcd103/wp-json/wp/v2/pages/5942" />
-    <link rel="canonical" href="https://demo.tcd-theme.com/tcd103/company/" />
-    <link rel='shortlink' href='https://demo.tcd-theme.com/tcd103/?p=5942' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://demo.tcd-theme.com/tcd103/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.tcd-theme.com%2Ftcd103%2Fcompany%2F&#038;format=xml" />
-
+@section('styles')
     <style id="current-page-style" type="text/css">
         #page_header .overlay {
             background-color: rgba(0, 0, 0, 0.3);
@@ -201,31 +157,14 @@
             }
         }
     </style>
+@endsection
 
 
-    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
-    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
-    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-0V4CE08KJL');
-    </script>
-    <!-- Google tag (gtag.js) -->
-</head>
-
-<body data-rsssl=1 id="body"
-    class="page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar normal_content_width">
+@section('bodyClass',
+    'page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar
+    normal_content_width')
+@section('content')
     <div id="js-body-start"></div>
 
     @include('landing.components.landing_page_header')
@@ -280,17 +219,10 @@
                         </div>
                         <div class="post_col post_col-2">
                             <div class="shutter_image inview col1">
-                                <div class="item"><img fetchpriority="high" decoding="async" src="koki.jpg"
-                                        alt="" width="580" height="580"
-                                        class="alignnone size-full wp-image-5943" /></div>
+                                <div class="item"><img fetchpriority="high" decoding="async" src="koki.jpg" alt=""
+                                        width="580" height="580" class="alignnone size-full wp-image-5943" /></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="design_header inview" id="profile">
-                    <div class="title_area">
-                        {{-- <h3 class="large_headline title3"><span>PROFILE</span></h3> --}}
-                        {{-- <p class="sub_title colored"><span>会社情報</span></p> --}}
                     </div>
                 </div>
             </div>
@@ -305,16 +237,14 @@
     </div> --}}
 
     @include('landing.components.landing_page_mobile_header')
+@endsection
 
-
+@section('js')
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?ver=10.2.0"
         id="swiper-js"></script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.easing.1.4.js?ver=1.0"
         id="jquery.easing.1.4-js"></script>
-    <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">
-    </script>
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jquery.cookie.min.js?ver=1.0"
         id="jquery.cookie.min-js"></script>
@@ -323,14 +253,10 @@
         id="hcb-prism-js"></script>
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
         id="clipboard-js"></script>
-    <script type="text/javascript" id="hcb-script-js-extra">
-        /* <![CDATA[ */
-        var hcbVars = {
-            "showCopyBtn": "1",
-            "copyBtnLabel": "\u30b3\u30fc\u30c9\u3092\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u306b\u30b3\u30d4\u30fc\u3059\u308b"
-        };
-        /* ]]> */
+    <script type="text/javascript"
+        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">
     </script>
+
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
@@ -407,6 +333,4 @@
 
         })(jQuery);
     </script>
-</body>
-
-</html>
+@endsection

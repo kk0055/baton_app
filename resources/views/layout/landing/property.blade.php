@@ -1,3 +1,4 @@
+{{-- 仕様変更したから使ってない --}}
 <!DOCTYPE html>
 <html class="pc" lang="ja">
 
