@@ -9,19 +9,6 @@
     <meta property="og:url" content="https://xbatonx.com">
     <meta property="og:title" content="株式会社BATON">
     <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-0V4CE08KJL');
-    </script>
-    <!-- Google tag (gtag.js) -->
     <meta name="description"
         content="小田急線、田園都市線の沿線など世田谷で人気のおすすめ物件を探すなら、私たちにお任せください。初期費用に自信があり、Webに掲載されている物件はほぼ紹介可能です。理想の部屋探しをお手伝いします。">
     <meta name="keywords"
@@ -738,6 +725,19 @@
     <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0V4CE08KJL');
+    </script>
+    <!-- Google tag (gtag.js) -->
 </head>
 
 <body data-rsssl=1 id="body"

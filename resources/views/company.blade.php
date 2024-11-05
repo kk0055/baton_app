@@ -6,19 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="株式会社BATON">
     <title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-0V4CE08KJL');
-    </script>
-    <!-- Google tag (gtag.js) -->
     <meta name='robots' content='max-image-preview:large' />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xbatonx.com">
@@ -238,6 +226,19 @@
     <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V4CE08KJL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0V4CE08KJL');
+    </script>
+    <!-- Google tag (gtag.js) -->
 </head>
 
 <body data-rsssl=1 id="body"
