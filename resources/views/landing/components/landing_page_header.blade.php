@@ -12,6 +12,8 @@
 
                     <a href="tel:+81368658533"><i class="fa fa-phone" style="margin-right:4px;"></i>03-6865-8533
                     </a>
+                    <a href="tel:+817053660412"><i class="fa fa-phone" style="margin-right:4px;"></i>070-5366-0412
+                    </a>
                 </div>
                 <div class="insta">
                     <a href="https://www.instagram.com/baton_2024/" target="_blank">
@@ -88,9 +90,9 @@
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
 
-                <a href="tel:+81368658533" style="">
+                <a href="tel:+817053660412" style="">
                     <i class="fa fa-phone catch" style="margin-right:2px;"></i>
-                    03-6865-8533
+                    070-5366-0412
                 </a>
             </div>
             <div class="email">

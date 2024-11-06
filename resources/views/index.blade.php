@@ -12,44 +12,6 @@
             max-width: 100%;
         }
 
-        #header_slider_content .catch {
-            font-size: 76px;
-        }
-
-        #header_slider_content .desc {
-            font-size: 20px;
-        }
-
-        @media screen and (max-width:1100px) {
-            #header_slider_content .catch {
-                font-size: 53px;
-            }
-
-            #header_slider_content .desc {
-                font-size: 18px;
-            }
-        }
-
-        @media screen and (max-width:800px) {
-            #header_slider_content .catch {
-                font-size: 30px;
-            }
-
-            #header_slider_content .desc {
-                font-size: 16px;
-            }
-        }
-
-        .cb_service_list.num2 .item .headline {
-            font-size: 50px;
-        }
-
-        @media (max-width: 1200px) {
-            .cb_service_list.num2 .item .headline {
-                font-size: 30px;
-            }
-        }
-
         #site_loader_overlay {
             position: relative;
             overflow: hidden;
@@ -320,7 +282,7 @@
 
 @section('bodyClass', 'home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color
     header_slider_layout_type1 use_loading_screen loading_animation_type1 hide_sidebar normal_content_width')
-    
+
 @section('content')
     <div id="js-body-start"></div>
 
@@ -905,105 +867,6 @@
                 $('.cb_service_category_list_button_prev, .cb_service_category_list_button_next').css('top',
                     image_height / 2);
             });
-
-            let news_carousel_cat_all;
-
-            function init_news_carousel() {
-
-                if ($('#news_carousel_cat_all').length) {
-                    if (news_carousel_cat_all != undefined) {
-                        news_carousel_cat_all.destroy();
-                    }
-                    news_carousel_cat_all = new Swiper("#news_carousel_cat_all", {
-                        loop: false,
-                        centeredSlides: false,
-                        slidesPerView: "auto",
-                        grabCursor: true,
-                        scrollbar: {
-                            el: "#news_carousel_scrollbar",
-                            hide: false,
-                            draggable: true,
-                            dragSize: 120,
-                        },
-                        freeMode: {
-                            enabled: true,
-                            sticky: false,
-                            momentumBounce: false,
-                        },
-                        observer: true,
-                        observeParents: true,
-                        breakpoints: {
-                            800: {
-                                scrollbar: {
-                                    dragSize: 200,
-                                },
-                            }
-                        }
-                    });
-                };
-
-            }; // END init_news_carousel();
-            init_news_carousel();
-
-            $('.news_category_button a').on('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $(this).parent().siblings().removeClass('current');
-                $(this).parent().addClass('current');
-                var news_category_id = $(this).data('category-id');
-                if (news_category_id) {
-                    $('.index_news_list').removeClass('active');
-                    $('#' + news_category_id).addClass('active');
-                    init_news_carousel();
-                }
-            });
-
-        })(jQuery);
-
-        (function($) {
-
-            if ($('.news_category_button').length) {
-                let news_category_button = new Swiper(".news_category_button", {
-                    loop: false,
-                    centeredSlides: false,
-                    slidesPerView: "auto",
-                    grabCursor: true,
-                    freeMode: {
-                        enabled: true,
-                        sticky: false,
-                        momentumBounce: false,
-                    },
-                });
-            };
-
-        })(jQuery);
-        (function($) {
-
-            if ($('.banner_widget').length) {
-                let banner_inner = new Swiper(".banner_widget", {
-                    loop: true,
-                    effect: "fade",
-                    speed: 1000,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    },
-                });
-            }
-
-        })(jQuery);
-        (function($) {
-
-            if ($('.gallery_content_carousel_wrap').length) {
-                var slider = $('.gallery_content_carousel');
-                var item_num = $('.gallery_content_carousel .item').length;
-                var animation_time = 15 * item_num;
-                slider.clone().insertBefore(slider);
-                slider.clone().insertAfter(slider);
-                $('.gallery_content_carousel').css('animation-duration', animation_time + 's');
-                $('.gallery_content_carousel:nth-child(2)').css('animation-delay', -animation_time / 1.5 + 's');
-                $('.gallery_content_carousel:last-child').css('animation-delay', -animation_time / 3 + 's');
-            };
 
         })(jQuery);
 

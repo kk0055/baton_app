@@ -11,12 +11,8 @@ class LandingPageController extends Controller
     public function index()
     {
         $rents = Property::rentOnly()->take(10)->get();
-        $sales = Property::saleOnly()->take(10)->get();
-        $is_brokerage_free = Property::rentOnly()->where('is_brokerage_free', true)->take(10)->get();
-        $propertyPrices = Property::propertyPrices();
-        // 最新の1件だけを取得
-        $latestPost = Post::latest()->first();
-        return view('index', compact('rents', 'sales','is_brokerage_free', 'latestPost', 'propertyPrices'));
+         
+        return view('index', compact('rents'));
     }
 
     public function sale()
