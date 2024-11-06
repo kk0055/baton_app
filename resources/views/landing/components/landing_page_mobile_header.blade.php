@@ -42,7 +42,7 @@
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
                 
-                <a href="tel:+81368658533" style="color:white;">
+                <a href="tel:03-6865-8533" style="color:white;">
                     <i class="fa fa-phone catch" style="margin-right:2px;"></i>03-6865-8533
                 </a>
             </div>
