@@ -9,10 +9,9 @@
             </h1>
             <div class="contact-info">
                 <div class="phone">
-
-                    <a href="tel:+03-6865-8533"><i class="fa fa-phone" style="margin-right:4px;"></i>03-6865-8533
+                    <a href="tel:03-6865-8533" style="pointer-events: auto;"><i class="fa fa-phone" style="margin-right:4px;"></i>03-6865-8533
                     </a>
-                    <a href="tel:070-5366-0412"><i class="fa fa-phone" style="margin-right:4px;"></i>070-5366-0412
+                    <a href="tel:070-5366-0412" style="pointer-events: auto;"><i class="fa fa-phone" style="margin-right:4px;"></i>070-5366-0412
                     </a>
                 </div>
                 <div class="insta">
@@ -90,7 +89,7 @@
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
 
-                <a href="tel:070-5366-0412" style="">
+                <a href="tel:070-5366-0412" style="pointer-events: auto;">
                     <i class="fa fa-phone catch" style="margin-right:2px;"></i>
                     070-5366-0412
                 </a>
