@@ -1,5 +1,6 @@
 @extends('layout.landing.app')
 @section('title', '会社紹介 | 株式会社BATON 人気物件紹介＆初期費用自信有り')
+@section('description', '株式会社BATONについてのご紹介。世田谷エリアを中心に賃貸仲介のプロフェッショナルとして、理想の住まい探しをサポートします。大手に負けないサービスと、初期費用の安さが強みです。')
 
 @section('styles')
     <style id="current-page-style" type="text/css">
