@@ -19336,6 +19336,45 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/landing/responsive.css":
+/*!**********************************************!*\
+  !*** ./resources/css/landing/responsive.css ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/landing/sns-botton.css":
+/*!**********************************************!*\
+  !*** ./resources/css/landing/sns-botton.css ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/landing/wp-block-library.css":
+/*!****************************************************!*\
+  !*** ./resources/css/landing/wp-block-library.css ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -19366,6 +19405,32 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./resources/css/landing/landing.css ***!
   \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/landing/main-style.css":
+/*!**********************************************!*\
+  !*** ./resources/css/landing/main-style.css ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/landing/design-plus.css":
+/*!***********************************************!*\
+  !*** ./resources/css/landing/design-plus.css ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19693,7 +19758,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 			"/js/app": 0,
 /******/ 			"css/landing/landing": 0,
 /******/ 			"css/admin/admin": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/landing/design-plus": 0,
+/******/ 			"css/landing/main-style": 0,
+/******/ 			"css/app": 0,
+/******/ 			"css/landing/wp-block-library": 0,
+/******/ 			"css/landing/sns-botton": 0,
+/******/ 			"css/landing/responsive": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19743,10 +19813,15 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/admin/admin.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/app"], () => (__webpack_require__("./resources/css/landing/landing.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/admin/admin.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/landing.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/main-style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/design-plus.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/responsive.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/sns-botton.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/landing/landing","css/admin/admin","css/landing/design-plus","css/landing/main-style","css/app","css/landing/wp-block-library","css/landing/sns-botton","css/landing/responsive"], () => (__webpack_require__("./resources/css/landing/wp-block-library.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
