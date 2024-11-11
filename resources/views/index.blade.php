@@ -1,5 +1,7 @@
 @extends('layout.landing.app')
 
+
+
 @section('styles')
     <style id="current-page-style" type="text/css">
         .highlight-box {

@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width">
 <meta name='robots' content='max-image-preview:large' />
 
-<title>株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り</title>
+<title>@yield('title','株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り')</title>
 <meta name="description"
     content="理想の部屋探しをお手伝いします！小田急線や田園都市線沿線など世田谷を中心に人気物件を多数取り揃えております。初期費用の削減に自信あり。 家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。大手不動産会社と同じデータベースを使用しており、他社サイトで見つけた物件もほぼ紹介可能です。あなたの夢の住まいを見つけるなら、私たちにお任せください！">
 <meta name="keywords"

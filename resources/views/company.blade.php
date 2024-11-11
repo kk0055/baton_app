@@ -1,4 +1,5 @@
 @extends('layout.landing.app')
+@section('title', '会社紹介 | 株式会社BATON 人気物件紹介＆初期費用自信有り')
 
 @section('styles')
     <style id="current-page-style" type="text/css">

@@ -1,5 +1,7 @@
 @extends('layout.landing.app')
 
+@section('title', '代表挨拶 | 株式会社BATON 世田谷のおすすめ部屋探し')
+
 @section('styles')
     <style id="current-page-style" type="text/css">
         #page_header .overlay {

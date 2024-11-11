@@ -1,6 +1,6 @@
 @extends('layout.landing.app')
 
-
+@section('title', '新着物件 | 株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り')
 
 @section('bodyClass', 'blog wp-embed-responsive megamenu_dark_color')
 @section('content')
