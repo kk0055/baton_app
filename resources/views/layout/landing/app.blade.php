@@ -37,7 +37,7 @@
         id="jquery-migrate-js"></script>
 
     @yield('styles')
-
+    <link rel="canonical" href="https://xbatonx.com/">
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
     <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
