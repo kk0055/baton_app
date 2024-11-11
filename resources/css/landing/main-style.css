@@ -5537,8 +5537,6 @@ body.active_header #return_top {
 #searchform .submit_button:hover:before {
     color: rgba(0, 0, 0, 0.5) !important;
 }
-#searchform .submit_button:hover {
-}
 
 /* デフォルトのタグ一覧 */
 .widget_tag_cloud .tagcloud {
@@ -5677,8 +5675,7 @@ body.active_header #return_top {
 }
 
 /* デフォルトのアーカイブ */
-.widget_archive {
-}
+
 .widget_archive .widget_headline {
     margin-bottom: -1px;
 }
@@ -5741,8 +5738,7 @@ body.active_header #return_top {
 }
 
 /* デフォルトの固定ページ */
-.widget_pages {
-}
+
 .widget_pages .widget_headline {
     margin-bottom: -1px;
 }
@@ -5793,8 +5789,7 @@ body.active_header #return_top {
 }
 
 /* デフォルトのナビ　*/
-.widget_nav_menu {
-}
+
 .widget_nav_menu .widget_headline {
     margin-bottom: -1px;
 }
@@ -6257,8 +6252,6 @@ body.error404 #container {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-}
-.comment-name-date {
 }
 
 a.admin-url {
@@ -7050,8 +7043,6 @@ a.guest-url {
     line-height: 1.7;
     padding: 20px;
     overflow: auto;
-}
-.post_content .sticky {
 }
 .post_content .mejs-container {
     margin: 12px 0 25px;
