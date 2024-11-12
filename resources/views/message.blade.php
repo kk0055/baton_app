@@ -2,7 +2,7 @@
 
 @section('title', '代表挨拶 | 株式会社BATON 世田谷のおすすめ部屋探し')
 @section('description', '株式会社BATON代表からのご挨拶。世田谷の賃貸仲介を通じて、地域のお客様に寄り添った住まい探しを支援しております。お客様に安心してご利用いただけるよう努めております。')
-
+@section('canonical', 'https://xbatonx.com/message')
 @section('styles')
     <style id="current-page-style" type="text/css">
         #page_header .overlay {

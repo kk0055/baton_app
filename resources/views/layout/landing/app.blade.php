@@ -37,7 +37,8 @@
         id="jquery-migrate-js"></script>
 
     @yield('styles')
-    <link rel="canonical" href="https://xbatonx.com/">
+    <link rel="canonical" href="@yield('canonical', 'https://xbatonx.com/')" />
+    
     <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
     <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
     <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
@@ -49,7 +50,7 @@
     <link href="{{ asset('css/landing/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/sns-botton.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/wp-block-library.css') }}" rel="stylesheet">
-    
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/landing/landing.css') }}" rel="stylesheet">
 
