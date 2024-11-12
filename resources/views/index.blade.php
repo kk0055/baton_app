@@ -1,6 +1,6 @@
 @extends('layout.landing.app')
 
-
+@section('canonical', 'https://xbatonx.com/')
 
 @section('styles')
     <style id="current-page-style" type="text/css">
