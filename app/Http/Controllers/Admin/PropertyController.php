@@ -16,7 +16,7 @@ class PropertyController extends Controller
     
     public function index()
     {
-        $properties = Property::orderByOrder()->get();
+        $properties = Property::RentOnly()->get();
         $propertyPrices = Property::propertyPrices();
         return view('admin.property.index', compact('properties','propertyPrices'));
     }

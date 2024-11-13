@@ -34,7 +34,7 @@ class Property extends Model
     {
         return $query->where('is_display', true)
                      ->where('type', '賃貸')
-                     ->orderBy('order');
+                     ->orderBy('created_at', 'desc');
     }
 
     /**
