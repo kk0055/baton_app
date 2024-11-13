@@ -38,11 +38,11 @@
 
     @yield('styles')
     <link rel="canonical" href="@yield('canonical', 'https://xbatonx.com/')" />
-    
-    <link rel="icon" href="baton_big_logo.jpg" sizes="32x32" />
-    <link rel="icon" href="baton_big_logo.jpg" sizes="192x192" />
-    <link rel="apple-touch-icon" href="baton_big_logo.jpg" />
-    <meta name="msapplication-TileImage" content="baton_big_logo.jpg" />
+
+    <link rel="icon" href="baton_logo2.jpg" sizes="32x32" />
+    <link rel="icon" href="baton_logo2.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="baton_logo2.jpg" />
+    <meta name="msapplication-TileImage" content="baton_logo2.jpg" />
 
     
     <link href="{{ asset('css/landing/main-style.css') }}" rel="stylesheet">
