@@ -66,7 +66,7 @@
                             style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>
-                    <h4 class="mb-2">表示順: {{ $property->order }}</h4>
+                    <h4 class="mb-2">登録日: {{ $property->created_at }}</h4>
                     <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
                     <h4 class="mb-2">タイプ: {{ $property->type }}</h4>
                     <h4 class="mb-2">価格帯: {{ $property->price }}</h4>
