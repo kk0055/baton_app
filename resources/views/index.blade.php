@@ -282,7 +282,8 @@
 
 
 
-@section('bodyClass', 'home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color
+@section('bodyClass',
+    'home page-template-default page page-id-4549 wp-embed-responsive megamenu_dark_color
     header_slider_layout_type1 use_loading_screen loading_animation_type1 hide_sidebar normal_content_width')
 
 @section('content')
@@ -349,7 +350,8 @@
 
 
                                 <strong style="font-size: 22px">2.豊富な取り扱い物件数</strong><br>
-                                &nbsp; 大手不動産会社と同じデータベースを使用しており、全国各地の物件を同規模でご紹介できます。<br>
+                                &nbsp;
+                                大手不動産会社と同じデータベースを使用しており、全国各地の物件を同規模でご紹介できます。世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。豊富な選択肢の中からお客様に最適な物件をご提案します。<br>
 
                                 <strong style="font-size: 22px">3.WEB内覧</strong><br>
                                 &nbsp;お忙しい方や遠方のお客様には、ご希望に応じてWEBでの内覧もご案内しております。<br>
@@ -423,11 +425,17 @@
                             style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
                             今週のオススメ物件
                         </p> --}}
-                        <p class="property-text" style="margin-bottom: 9px;">
+                        <p class="property-text" style="margin-bottom: 5px;">
                             大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
                         </p>
+                        <p class="property-text" style="margin-bottom: 5px;">
+                            世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。
+                        </p>
+                        <p class="property-text" style="margin-bottom: 5px;">
+                            当サイトに掲載している物件は、取り扱い物件のほんの一部です。
+                        </p>
                         <p class="property-text">
-                            お見積りだけでもお気軽にお問合せ下さい！
+                            もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
                         </p>
                         {{-- <div class="sub_title colored property "
                             style="font-size: 95%; color:#000000; padding:10px 0">
