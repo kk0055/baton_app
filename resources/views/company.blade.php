@@ -220,7 +220,7 @@
                                     </tr>
                                     <tr>
                                         <th>Mail</th>
-                                        <td><a href="mailto:company@xbatonx.co.jp">company@xbatonx.co.jp</a></td>
+                                        <td><a href="mailto:company@xbatonx.com">company@xbatonx.com</a></td>
                                     </tr>
                                     <tr>
                                         <th>資本金</th>
