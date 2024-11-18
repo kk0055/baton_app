@@ -425,13 +425,13 @@
                             style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
                             今週のオススメ物件
                         </p> --}}
-                        <p class="property-text" style="margin-bottom: 5px;">
+                        <p class="property-text" style="margin-bottom: 15px;">
                             大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
                         </p>
-                        <p class="property-text" style="margin-bottom: 5px;">
+                        <p class="property-text" style="margin-bottom: 15px;">
                             世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。
                         </p>
-                        <p class="property-text" style="margin-bottom: 5px;">
+                        <p class="property-text" style="margin-bottom: 15px;">
                             当サイトに掲載している物件は、取り扱い物件のほんの一部です。
                         </p>
                         <p class="property-text">
