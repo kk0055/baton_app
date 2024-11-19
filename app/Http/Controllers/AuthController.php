@@ -45,12 +45,12 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
+        $remember = $request->has('remember'); 
         $properties = Property::orderByOrder()->get();
-        
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $remember)) {
             return redirect()->route('admin.property.index')->with('properties', $properties);
         }
-        
+     
         return redirect()->back()->withErrors(['message' => 'メールアドレスかパスワードが違うよ']);
     }
 
