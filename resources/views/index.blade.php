@@ -425,18 +425,20 @@
                             style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
                             今週のオススメ物件
                         </p> --}}
-                        <p class="property-text" style="margin-bottom: 15px;">
+                        <div class=" inview slide_up_animation" style="line-height:2;">
+                        <p class="property-text" style="margin-bottom: 5px;">
                             大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
                         </p>
-                        <p class="property-text" style="margin-bottom: 15px;">
+                        <p class="property-text" style="margin-bottom: 5px;">
                             世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。
                         </p>
-                        <p class="property-text" style="margin-bottom: 15px;">
+                        <p class="property-text" style="margin-bottom: 5px;">
                             当サイトに掲載している物件は、取り扱い物件のほんの一部です。
                         </p>
                         <p class="property-text">
                             もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
                         </p>
+                    </div>
                         {{-- <div class="sub_title colored property "
                             style="font-size: 95%; color:#000000; padding:10px 0">
                             <form action="{{ route('landing.rent') }}" method="GET" style="">

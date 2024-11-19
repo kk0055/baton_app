@@ -10,18 +10,32 @@
     @include('landing.components.landing_page_header')
 
     <div id="archive_header" class="inview" style="margin-top: 50px;">
-        <div class="title_area">
+        <div class="title_area ">
             @if (Route::currentRouteName() == 'landing.isBrokerageFree')
                 <h2 class="catch large_headline"><span>仲介手数料無料</span></h2>
             @else
-                <h2 class="catch large_headline"><span>新着物件</span></h2>
+            <h4 style="font-size: 40px; margin-bottom:20px;" class="colored catch ">新着物件</h4>
             @endif
             {{-- <p class="sub_title colored"><span></span></p> --}}
         </div>
+        <div class=" inview slide_up_animation" style="line-height:2;">
+        <p class="" style="margin-bottom: 5px;">
+            大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
+        </p>
+        <p class="" style="margin-bottom: 5px;">
+            世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。
+        </p>
+        <p class="" style="margin-bottom: 5px;">
+            当サイトに掲載している物件は、取り扱い物件のほんの一部です。
+        </p>
+        <p class="">
+            もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
+        </p>
+    </div>
         {{-- <p class="desc post_content">今週のおススメ物件</p> --}}
     </div>
 
-    <section id="archive_blog" class="inview slide_up_animation">
+    <section id="archive_blog" class="slide_up_animation">
         {{-- 検索 --}}
         {{-- @if (Route::currentRouteName() !== 'landing.isBrokerageFree')
             <div class="sub_title colored property "
