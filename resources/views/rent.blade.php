@@ -1,7 +1,7 @@
 @extends('layout.landing.app')
 
 @section('title', '新着物件 | 株式会社BATON 世田谷のおすすめ部屋探し | 人気物件紹介＆初期費用自信有り')
-@section('description', '世田谷エリアの最新賃貸物件情報をチェック！小田急線や田園都市線沿線の新着物件をご紹介。初期費用を抑えたお得な物件を掲載中。')
+@section('description', '世田谷エリアの最新賃貸物件情報をチェック！小田急線や田園都市線沿線の新着物件をご紹介。初期費用を抑えたお得な物件を掲載中。世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。 もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！')
 @section('canonical', 'https://xbatonx.com/rent')
 @section('bodyClass', 'blog wp-embed-responsive megamenu_dark_color')
 @section('content')
