@@ -33,8 +33,8 @@ class Property extends Model
     public function scopeRentOnly($query)
     {
         return $query->where('is_display', true)
-                     ->where('type', '賃貸')
-                     ->orderBy('created_at', 'desc');
+            ->where('type', '賃貸')
+            ->orderBy('created_at', 'desc');
     }
 
     /**
@@ -46,8 +46,8 @@ class Property extends Model
     public function scopeSaleOnly($query)
     {
         return $query->where('is_display', true)
-                      ->where('type', '売買')
-                      ->orderBy('order', 'desc');
+            ->where('type', '売買')
+            ->orderBy('order', 'desc');
     }
 
     public static function propertyTypes()
@@ -59,7 +59,25 @@ class Property extends Model
 
         return $propertyTypes;
     }
-    
+
+    public function railwayLines()
+    {
+        return $this->belongsToMany(RailwayLine::class, 'property_railway_line');
+    }
+
+    // public static function railwayLines()
+    // {
+    //     return [
+    //         '指定無し',
+    //         '小田急線',
+    //         '田園都市線',
+    //         '世田谷線',
+    //         '東横線',
+    //         '京王線',
+    //     ];
+
+    // }
+
     public static function propertyPrices()
     {
         $propertyPrices = [

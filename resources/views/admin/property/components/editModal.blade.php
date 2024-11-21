@@ -10,10 +10,10 @@
             <div
                 class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <!--header-->
-                <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                    <h3 class="text-3xl">
+                {{-- <div class="flex items-start justify-between p-2 border-b border-solid border-blueGray-200 rounded-t">
+                    <h4 >
                         ID: {{ $property->id }}
-                    </h3>
+                    </h4>
                     <button
                         class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                         onclick="toggleModal({{ $property->id }})">
@@ -22,7 +22,7 @@
                             ×
                         </span>
                     </button>
-                </div>
+                </div> --}}
                 <!--body-->
                 <div class="relative p-6 flex-auto">
                     <div class="mb-4">
@@ -50,13 +50,31 @@
                                 </div>
                             </div>
                         </div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2 mt-4" for="order">
+                        {{-- 路線 --}}
+                        <div>
+                            <label for="railway_line" class="block text-gray-700 text-sm font-bold mb-2 mt-4">路線
+                            </label>
+                            <select name="railway_line"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                @foreach ($railwayLines as $railway_line)
+                                    <option value="{{ $railway_line->id }}"
+                                        {{ $property->railwayLines &&  $property->railwayLines->contains('id', $railway_line->id) ? 'selected' : '' }}>
+                                        {{$railway_line->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        {{--  表示順 --}}
+                        {{-- <label class="block text-gray-700 text-sm font-bold mb-2 mt-4" for="order">
                             表示順
                         </label>
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="order" name="order" type="number" value="{{ $property->order }}">
-                        <label class="block text-gray-700 text-sm font-bold mb-1 mt-4">表示設定</label>
+                            id="order" name="order" type="number" value="{{ $property->order }}"> --}}
+
+                        {{-- 表示設定 --}}
+                        {{-- <label class="block text-gray-700 text-sm font-bold mb-1 mt-4">表示設定</label>
                         <div>
                             <label class="inline-flex items-center">
                                 <input type="radio" class="form-radio" name="is_display" value="1"
@@ -68,8 +86,9 @@
                                     {{ old('is_display', $property->is_display) == '0' ? 'checked' : '' }}>
                                 <span class="ml-2">非表示</span>
                             </label>
-                        </div>
-                        <div>
+                        </div>  --}}
+                        {{-- タイプ --}}
+                        {{-- <div>
                             <label class="block text-gray-700 text-sm font-bold mb-1 mt-4">タイプ</label>
                             <label class="inline-flex items-center">
                                 <input type="radio" class="form-radio" name="type" value="賃貸"
@@ -81,37 +100,44 @@
                                     {{ old('type', $property->type) == '売買' ? 'checked' : '' }}>
                                 <span class="ml-2">売買</span>
                             </label>
-                        </div>
-                        <div>
+                        </div> --}}
+
+                        {{-- 価格帯 --}}
+                        {{-- <div>
                             <label for="type" class="block text-gray-700 text-sm font-bold mb-2 mt-4">価格帯
                             </label>
                             <select name="price" id="type"
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                                 @foreach ($propertyPrices as $price)
-                                    <option value="{{ $price }}"  {{ (isset($property->price) && $property->price == $price) ? 'selected' : '' }}>
-                                        {{ $price}}
+                                    <option value="{{ $price }}"
+                                        {{ isset($property->price) && $property->price == $price ? 'selected' : '' }}>
+                                        {{ $price }}
                                     </option>
                                 @endforeach
                             </select>
-                        </div>
-                        <div style="display:flex;">
+                        </div> --}}
+                        {{-- <div style="display:flex;">
                             <input type="hidden" name="is_new_building" value="0">
-                            <input type="checkbox" name="is_new_building" id="is_new_building-{{ $property->id }}" value="1"
-                            style="margin-right:5px;" {{ old('is_new_building', $property->is_new_building) == '1' ? 'checked' : '' }}>
-                            <label for="is_new_building-{{ $property->id }}" class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築
+                            <input type="checkbox" name="is_new_building" id="is_new_building-{{ $property->id }}"
+                                value="1" style="margin-right:5px;"
+                                {{ old('is_new_building', $property->is_new_building) == '1' ? 'checked' : '' }}>
+                            <label for="is_new_building-{{ $property->id }}"
+                                class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築
                             </label>
-                        </div>
-                        <div style="display:flex;">
+                        </div> --}}
+                        {{-- <div style="display:flex;">
                             <input type="hidden" name="is_brokerage_free" value="0">
-                            <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free-{{ $property->id }}" value="1"
-                            style="margin-right:5px;" {{ old('is_brokerage_free', $property->is_brokerage_free) == '1' ? 'checked' : '' }}>
-                            <label for="is_brokerage_free-{{ $property->id }}" class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料
+                            <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free-{{ $property->id }}"
+                                value="1" style="margin-right:5px;"
+                                {{ old('is_brokerage_free', $property->is_brokerage_free) == '1' ? 'checked' : '' }}>
+                            <label for="is_brokerage_free-{{ $property->id }}"
+                                class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料
                             </label>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <!--footer-->
-                <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <div class="flex items-center justify-end p-2 border-t border-solid border-blueGray-200 rounded-b">
                     <button
                         class="mr-2 px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                         type="submit">

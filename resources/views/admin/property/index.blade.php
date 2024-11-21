@@ -32,20 +32,36 @@
             height: 100%;
             object-fit: cover;
         }
+
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            z-index: 1000;
+        }
     </style>
-    <div class="container mx-auto text-center px-8 py-14">
-        <div class="text-center my-4">
-            <a href="{{ route('admin.post.create') }}">
+    <div id="loader">Loading...</div>
+    <div id="content" style="display: none;">
+        <div class="container mx-auto text-center px-8 py-14">
+            <div class="text-center my-4">
+                {{-- <a href="{{ route('admin.post.create') }}"> --}}
                 <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4" src="/126532.jpg"
-                    alt="">
-            </a>
-        </div>
-        <h2
-            class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-10">
-            こーきの物件管理
-        </h2>
-        {{-- <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">新規追加</p> --}}
-        {{-- <form action="{{ route('admin.property.store') }}" method="POST" enctype="multipart/form-data">
+                    alt="" width="128" height="128">
+                {{-- </a> --}}
+            </div>
+            <h2
+                class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-10">
+                こーきの物件管理
+            </h2>
+            {{-- <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">新規追加</p> --}}
+            {{-- <form action="{{ route('admin.property.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="file" name="image">
             <input type="number" name="type" placeholder="type">
@@ -54,48 +70,64 @@
                 class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                 type="submit">新規追加</button>
         </form> --}}
-    </div>
-    <container>
-        <section>
-            @foreach ($properties as $property)
-                <div class="product">
-                    <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
-                        <div class="image_wrap">
-                            <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}"
-                            alt="Property Image" width="770" height="520"
-                            style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+        <div class="flex justify-center items-center">
+            <x-property-create />
+        </div>
+        <container>
+            <section>
+                @foreach ($properties as $property)
+                    <div class="product">
+                        <div class="mb-2">
+                            <a class="image-link" href="{{ asset('storage/' . $property->image_path) }}">
+                                <div class="image_wrap">
+                                    <img class="property-image" src="{{ asset('storage/' . $property->image_path) }}"
+                                        alt="Property Image" width="770" height="520"
+                                        style="width: 100%; height: 100%; object-fit: contain;" />
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <h4 class="mb-2">登録日: {{ $property->created_at }}</h4>
-                    <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
+                        <h4 class="mb-2">登録日: {{ $property->created_at }}</h4>
+                        <h4 class="mb-2">路線:
+                            @foreach ($property->railwayLines as $railwayLine)
+                                {{ $railwayLine->name }}
+                            @endforeach
+                        </h4>
+                        {{-- <h4 class="mb-2">表示: {{ $property->is_display ? '表示中' : '非表示' }}</h4>
                     <h4 class="mb-2">タイプ: {{ $property->type }}</h4>
                     <h4 class="mb-2">価格帯: {{ $property->price }}</h4>
                     <h4 class="mb-2">新築: {{ $property->is_new_building ? '✅' : '❌' }} </h4>
-                    <h4 class="mb-2">仲介手数料無料:   {{ $property->is_brokerage_free ? '✅' : '❌' }} </h4>
-                    <div class="flex">
-                        <button class="edit-btn" onclick="toggleModal({{ $property->id }})">
-                            <i class="fa fa-pencil mr-2" aria-hidden="true"></i>編集
-                        </button>
-                        <form action="{{ route('admin.property.destroy', ['property' => $property->id]) }}" method="POST"
-                            id="deleteForm-{{ $property->id }}">
-                            @csrf
-                            @method('DELETE')
-                            <button class="delete-btn" type='button' onclick="confirmDelete({{ $property->id }})">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
+                    <h4 class="mb-2">仲介手数料無料:   {{ $property->is_brokerage_free ? '✅' : '❌' }} </h4> --}}
+                        <div class="flex">
+                            <button class="edit-btn" onclick="toggleModal({{ $property->id }})">
+                                <i class="fa fa-pencil mr-2" aria-hidden="true"></i>編集
                             </button>
-                        </form>
+                            <form action="{{ route('admin.property.destroy', ['property' => $property->id]) }}"
+                                method="POST" id="deleteForm-{{ $property->id }}">
+                                @csrf
+                                @method('DELETE')
+                                <button class="delete-btn" type='button' onclick="confirmDelete({{ $property->id }})">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
+                    @include('admin.property.components.editModal', ['property' => $property])
+                @endforeach
+                <!-- 画像をクリックしたときに表示されるモーダル -->
+                <div class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content">
                 </div>
-                @include('admin.property.components.editModal', ['property' => $property])
-            @endforeach
-            <!-- 画像をクリックしたときに表示されるモーダル -->
-            <div class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content">
-            </div>
-        </section>
-    </container>
+            </section>
+        </container>
+    </div>
+
     <script>
+        window.onload = () => {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        };
         // 画像リンクをクリックしたときにモーダルを表示
         const imageLinks = document.querySelectorAll('.image-link');
         const modal = document.querySelector('.modal');
