@@ -34,6 +34,10 @@ class LandingPageController extends Controller
 
         $selectedRailways = $request->input('railways', []);
         $result = [];
+        if(in_array(1, $selectedRailways)) {
+            $result['全路線'] = Property::orderBy('created_at', 'desc')->get();
+            return response()->json($result);
+        }
         if (count($selectedRailways) > 0 ) {
             // 選択された路線ごとにデータを取得
             foreach ($selectedRailways as $railwayId) {
@@ -46,9 +50,9 @@ class LandingPageController extends Controller
                 }
             }
         }
-        if (isset($result['指定無し']) && $result['指定無し']) {
-            $result['指定無し'] = Property::orderBy('created_at', 'desc')->get();
-        }
+        // if (isset($result['指定無し']) && $result['指定無し']) {
+        //     $result['指定無し'] = Property::orderBy('created_at', 'desc')->get();
+        // }
         // JSON形式で結果を返す
         return response()->json($result);
     }
