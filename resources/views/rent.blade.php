@@ -26,8 +26,10 @@
 
         .railway-title {
             margin-top: 40px;
+            margin-bottom: 15px;
             color: #507878;
             font-weight: bold;
+            font-size: 1.5em;
         }
 
         .no-property {
