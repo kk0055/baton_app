@@ -503,8 +503,10 @@
                     </div>
                 </div>
                 <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.rent') }}"><span class="label"
-                            style="font-size: 16px; color:#000000">新着物件一覧</span><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('landing.rent') }}">
+                        <span class="label"
+                            style="font-size: 24px; color: #ffffff; background-color: #507878; padding: 10px 20px; border-radius: 5px;">新着物件一覧<i class="fa-solid fa-arrow-right" style="margin-left:5px;" ></i>
+                        </span></a>
                 </div>
             </section>
             {{-- 仲介手数料無料 --}}
