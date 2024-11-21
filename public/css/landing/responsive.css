@@ -200,7 +200,7 @@ body.admin-bar #drawer_menu {
         justify-content: flex-end;
     }
     .design_arrow_button a .label {
-        margin-right: 20px;
+        margin-right: 5px;
         max-width: calc(100% - 70px);
         line-height: 1.4;
     }
