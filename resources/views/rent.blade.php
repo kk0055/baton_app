@@ -281,6 +281,7 @@
                         const image = document.createElement('img');
                         image.src = `/storage/${property.image_path}`;
                         image.alt = `Property Image`;
+                        imageWrap.classList.add('image')
                         image.style.width = '100%';
                         image.style.height = '100%';
                         image.style.objectFit = 'contain';
@@ -305,6 +306,7 @@
                     // });
                 }
             }
+            initImageModal()
         }
 
         (function($) {
@@ -375,36 +377,40 @@
 
             setTimeout(function() {
                 $('#header').removeClass('first_animate');
+                initImageModal()
             }, 300);
 
         })(jQuery);
-        // 画像リンクをクリックしたときにモーダルを表示
-        const imageLinks = document.querySelectorAll('.image-link');
-        const modal = document.querySelector('.modal');
-        const header = document.querySelector('#header');
-        const modalContent = modal.querySelector('.modal-content');
-        const closeModal = modal.querySelector('.close');
+        // モーダルの表示処理を関数化
+        function initImageModal() {
+            // 画像リンクをクリックしたときにモーダルを表示
+            const imageLinks = document.querySelectorAll('.image-link');
+            const modal = document.querySelector('.modal');
+            const header = document.querySelector('#header');
+            const modalContent = modal.querySelector('.modal-content');
+            const closeModal = modal.querySelector('.close');
 
-        imageLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                modalContent.src = this.href;
-                modal.style.display = 'block';
-                header.style.display = 'none';
+            imageLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    modalContent.src = this.href;
+                    modal.style.display = 'block';
+                    header.style.display = 'none';
+                });
             });
-        });
 
-        // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
-        closeModal.addEventListener('click', function() {
-            modal.style.display = 'none';
-            header.style.display = 'block';
-        });
-        // モーダルの背景がクリックされたとき、モーダルを非表示にする
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
+            // モーダルの閉じるボタンがクリックされたとき、モーダルを非表示にする
+            closeModal.addEventListener('click', function() {
                 modal.style.display = 'none';
                 header.style.display = 'block';
-            }
-        });
+            });
+            // モーダルの背景がクリックされたとき、モーダルを非表示にする
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    header.style.display = 'block';
+                }
+            });
+        }
     </script>
 @endsection
