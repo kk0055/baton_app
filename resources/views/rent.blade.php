@@ -23,17 +23,17 @@
         .search-button {
             margin-left: 4px
         }
+
         .railway-title {
-            margin-top:20px;
-            color:#507878;
+            margin-top: 40px;
+            color: #507878;
             font-weight: bold;
-
-
         }
+
         /* スマホ用のスタイル（横幅 768px 以下の端末に適用） */
         @media screen and (max-width: 768px) {
             .search-button {
-                margin-left: 40px;
+    
             }
         }
     </style>
@@ -90,10 +90,12 @@
                                     style="cursor: pointer; ">{{ $railway->name }}</label>
                             </div>
                         @endforeach
-                        <button type="submit" class="search-button catch property_search" style="padding: 6px;">
-                            <span class="label" style="font-size: 16px;"><i class="fa fa-search" style="margin-right:4px;"
-                                    aria-hidden="true"></i>検索</span>
-                        </button>
+                        <div class="search-button">
+                            <button type="submit" class=" catch property_search" style="padding: 6px;">
+                                <span class="label" style="font-size: 16px;"><i class="fa fa-search"
+                                        style="margin-right:4px;" aria-hidden="true"></i>検索</span>
+                            </button>
+                        </div>
                     </div>
                     {{-- <div style="display:flex; align-items: center; margin-right:4px;">
                         <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
@@ -116,6 +118,7 @@
             </form>
         </div>
         {{-- 検索 --}}
+
         <div class="blog_list">
             @foreach ($rent as $property)
                 <div class="item">
@@ -136,11 +139,12 @@
                 </div>
             @endforeach
         </div>
-        {{-- 田園都市線 --}}
-        @if ($denentoshi)
-            <h1 class="railway-title">田園都市線</h1>
+
+        {{-- 路線ごとの表示 --}}
+        @foreach ($result as $railwayName => $properties)
+            <h1 class="railway-title">{{ $railwayName }}</h1>
             <div class="blog_list">
-                @foreach ($denentoshi as $property)
+                @foreach ($properties as $property)
                     <div class="item">
                         <a class="image_link image-link animate_background"
                             href="{{ asset('storage/' . $property->image_path) }}">
@@ -153,30 +157,7 @@
                     </div>
                 @endforeach
             </div>
-        @endif
-
-
-        {{-- 小田急線 --}}
-        @if ($odakyu)
-            <h1 class="railway-title">小田急線</h1>
-            <div class="blog_list">
-                @foreach ($odakyu as $property)
-                    <div class="item">
-                        <a class="image_link image-link animate_background"
-                            href="{{ asset('storage/' . $property->image_path) }}">
-                            <div class="image_wrap">
-                                <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                    alt="Property Image" width="770" height="520"
-                                    style="width: 100%; height: 100%; object-fit: contain;" />
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-        @endif
-
-
-        {{-- </div> --}}
+        @endforeach
 
     </section>
     <!-- 画像をクリックしたときに表示されるモーダル -->

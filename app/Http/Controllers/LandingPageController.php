@@ -30,7 +30,7 @@ class LandingPageController extends Controller
         // 結果を格納する配列
         $result = [];
         $rent = [];
-        if (!empty($selectedRailways)) {
+        if (!empty($selectedRailways) ) {
             // 選択された路線ごとにデータを取得
             foreach ($selectedRailways as $railwayId) {
                 $railway = RailwayLine::with(['properties' => function ($query) {
@@ -48,23 +48,9 @@ class LandingPageController extends Controller
 
         if (isset($result['指定無し']) && $result['指定無し']) {
             $rent = Property::orderBy('created_at', 'desc')->get();
+            $result = [];
         }
-        $denentoshi = isset($result['田園都市線']) ? $result['田園都市線'] : null;
-        $odakyu = isset($result['小田急線']) ? $result['小田急線'] : null;
-        $setagaya = isset($result['世田谷線']) ? $result['世田谷線'] : null;
-        $toyoko = isset($result['東横線']) ? $result['東横線'] : null;
-        $keio = isset($result['京王線']) ? $result['京王線'] : null;
-
-    //     return view('rent', compact('rent', 'railwayLines', 'denentoshi', 'odakyu', 'setagaya', 'toyoko', 'keio'));
-    // }
-        return view('rent', compact('rent', 'result','railwayLines', 'denentoshi', 'odakyu', 'setagaya', 'toyoko', 'keio'));
-    }
-
-    public function isBrokerageFree()
-    {
-        $rents = Property::rentOnly()->where('is_brokerage_free', true)->get();
-        $propertyPrices = Property::propertyPrices();
-        return view('rent', compact('rents', 'propertyPrices'));
+        return view('rent', compact('rent', 'result','railwayLines'));
     }
 
     public function company()
