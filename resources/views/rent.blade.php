@@ -70,17 +70,9 @@
 
     <section id="archive_blog" class="slide_up_animation">
         {{-- 検索 --}}
-        {{-- <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
-            <form action="{{ route('landing.rent') }}" method="GET" style="">
-                <select name="price" id="price"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
-                    @foreach ($propertyPrices as $price)
-                        <option value="{{ $price }}" style="font-weight: bold;">
-                            {{ $price }}
-                        </option>
-                    @endforeach
-                </select>
+        <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
+            <form id="search-form" method="POST">
+                @csrf
                 <div style="margin-top: 10px; display: flex; align-items: center; margin-right: 8px; font-size: 1.1em;">
                     <div class="railway-options">
                         @foreach ($railwayLines as $railway)
@@ -93,12 +85,21 @@
                             </div>
                         @endforeach
                         <div class="search-button">
-                            <button type="submit" class=" catch property_search" style="padding: 6px;">
+                            <button type="button" class=" catch property_search" style="padding: 6px;" id="search-button">
                                 <span class="label" style="font-size: 16px;"><i class="fa fa-search"
                                         style="margin-right:4px;" aria-hidden="true"></i>検索</span>
                             </button>
                         </div>
                     </div>
+                    {{-- <select name="price" id="price"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
+                        @foreach ($propertyPrices as $price)
+                            <option value="{{ $price }}" style="font-weight: bold;">
+                                {{ $price }}
+                            </option>
+                        @endforeach
+                    </select>
                     <div style="display:flex; align-items: center; margin-right:4px;">
                         <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
                             style="margin-right:5px;" {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
@@ -115,13 +116,12 @@
                     <button type="submit" class="catch property_search" style="padding:3px; margin-left:4px; ">
                         <span class="label" style="font-size: 16px;"><i class="fa fa-search" style="margin-right:4px;"
                                 aria-hidden="true"></i>検索</span>
-                    </button>
+                    </button> --}}
                 </div>
             </form>
-        </div> --}}
+        </div>
         {{-- 検索 --}}
-
-        <div class="blog_list">
+        <div class="blog_list" id="default_rent">
             @foreach ($rent as $property)
                 <div class="item">
                     <a class="image_link image-link animate_background"
@@ -142,8 +142,15 @@
             @endforeach
         </div>
 
+        {{-- <div id="loading" style="display: none;">
+            <img src="/loading.gif" alt="">>
+        </div> --}}
+        <div id="result-container">
+            <!-- 路線ごとの結果がここに表示される -->
+        </div>
+
         {{-- 路線ごとの表示 --}}
-        @foreach ($result as $railwayName => $properties)
+        {{-- @foreach ($result as $railwayName => $properties)
             <h1 class="railway-title">{{ $railwayName }}</h1>
             @if ($properties->isEmpty())
                 <p class="no-property">該当する物件はありません。</p>
@@ -154,8 +161,9 @@
                             <a class="image_link image-link animate_background"
                                 href="{{ asset('storage/' . $property->image_path) }}">
                                 <div class="image_wrap">
-                                    <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                        alt="Property Image" width="770" height="520"
+                                    <img loading="lazy" class="image"
+                                        src="{{ asset('storage/' . $property->image_path) }}" alt="Property Image"
+                                        width="770" height="520"
                                         style="width: 100%; height: 100%; object-fit: contain;" />
                                 </div>
                             </a>
@@ -163,7 +171,7 @@
                     @endforeach
                 </div>
             @endif
-        @endforeach
+        @endforeach --}}
 
     </section>
     <!-- 画像をクリックしたときに表示されるモーダル -->
@@ -204,6 +212,99 @@
         src="https://demo.tcd-theme.com/tcd103/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
         id="hcb-script-js"></script>
     <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            const formData = new FormData(document.getElementById('search-form'));
+            console.log(formData)
+            fetch('{{ route('properties.search') }}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => renderProperties(data))
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('検索中にエラーが発生しました。');
+                });
+        });
+
+        function renderProperties(data) {
+            const resultContainer = document.getElementById('result-container');
+            const defaultRent = document.getElementById('default_rent');
+            // const loadingIndicator = document.querySelector('#loading');
+            // loadingIndicator.style.display = 'block';
+
+            defaultRent.innerHTML = ''; // 既存の内容をクリア
+            resultContainer.innerHTML = ''; // 既存の内容をクリア
+
+            // let allImages = [];
+            if (data.length <= 0) {
+                const noProperty = document.createElement('p');
+                noProperty.classList.add('no-property');
+                noProperty.textContent = '条件を選択してください。';
+                resultContainer.appendChild(noProperty);
+            }
+            for (const [railwayName, properties] of Object.entries(data)) {
+
+                // 路線名のタイトルを追加
+                const railwayTitle = document.createElement('h1');
+                railwayTitle.classList.add('railway-title');
+                railwayTitle.textContent = railwayName;
+                resultContainer.appendChild(railwayTitle);
+
+                if (properties.length === 0) {
+                    // 物件がない場合
+                    const noProperty = document.createElement('p');
+                    noProperty.classList.add('no-property');
+                    noProperty.textContent = '該当する物件はありません。';
+                    resultContainer.appendChild(noProperty);
+                } else {
+                    // 物件リストを生成
+                    const blogList = document.createElement('div');
+                    blogList.classList.add('blog_list');
+
+                    properties.forEach(property => {
+                        const item = document.createElement('div');
+                        item.classList.add('item');
+
+                        const link = document.createElement('a');
+                        link.href = `/storage/${property.image_path}`;
+                        link.classList.add('image_link', 'image-link', 'animate_background');
+
+                        const imageWrap = document.createElement('div');
+                        imageWrap.classList.add('image_wrap');
+
+                        const image = document.createElement('img');
+                        image.src = `/storage/${property.image_path}`;
+                        image.alt = `Property Image`;
+                        image.style.width = '100%';
+                        image.style.height = '100%';
+                        image.style.objectFit = 'contain';
+
+                        // allImages.push(image);
+
+                        imageWrap.appendChild(image);
+                        link.appendChild(imageWrap);
+                        item.appendChild(link);
+                        blogList.appendChild(item);
+                    });
+
+                    resultContainer.appendChild(blogList);
+
+                    // const promises = allImages.map(img => new Promise(resolve => {
+                    //     img.onload = resolve; // 画像の読み込み完了時
+                    //     img.onerror = resolve; // エラーでも続行
+                    // }));
+
+                    // Promise.all(promises).then(() => {
+                    //     loadingIndicator.style.display = 'none';
+                    // });
+                }
+            }
+        }
+
         (function($) {
             if ($('#footer_nav').length) {
                 let footer_nav = new Swiper("#footer_nav", {

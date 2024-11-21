@@ -9,6 +9,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
 Route::get('/rent', [LandingPageController::class, 'rent'])->name('landing.rent');
+Route::post('/properties/search', [LandingPageController::class, 'ajaxSearch'])->name('properties.search');
 Route::get('/company', [LandingPageController::class, 'company'])->name('landing.company');
 Route::get('/message', [LandingPageController::class, 'message'])->name('landing.message');
 

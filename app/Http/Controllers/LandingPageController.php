@@ -24,13 +24,17 @@ class LandingPageController extends Controller
     public function rent(Request $request)
     {
         $railwayLines = RailwayLine::get();
-        // チェックボックスで選択された路線IDを取得
-        $selectedRailways = $request->input('railways', []);
+        $rent = Property::orderBy('created_at', 'desc')->get();
 
-        // 結果を格納する配列
+        return view('rent', compact('rent', 'railwayLines'));
+    }
+
+    public function ajaxSearch(Request $request)
+    {
+
+        $selectedRailways = $request->input('railways', []);
         $result = [];
-        $rent = [];
-        if (!empty($selectedRailways) ) {
+        if (count($selectedRailways) > 0 ) {
             // 選択された路線ごとにデータを取得
             foreach ($selectedRailways as $railwayId) {
                 $railway = RailwayLine::with(['properties' => function ($query) {
@@ -41,16 +45,12 @@ class LandingPageController extends Controller
                     $result[$railway->name] = $railway->properties;
                 }
             }
-        } else {
-            // 選択されていない場合はすべての物件を新しい順に
-            $rent = Property::orderBy('created_at', 'desc')->get();
         }
-
         if (isset($result['指定無し']) && $result['指定無し']) {
-            $rent = Property::orderBy('created_at', 'desc')->get();
-            $result = [];
+            $result['指定無し'] = Property::orderBy('created_at', 'desc')->get();
         }
-        return view('rent', compact('rent', 'result','railwayLines'));
+        // JSON形式で結果を返す
+        return response()->json($result);
     }
 
     public function company()
