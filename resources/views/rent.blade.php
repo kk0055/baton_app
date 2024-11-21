@@ -70,9 +70,9 @@
 
     <section id="archive_blog" class="slide_up_animation">
         {{-- 検索 --}}
-        <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
+        {{-- <div class="sub_title colored property " style="font-size: 95%; color:#000000; padding:10px 0; margin-bottom:30px;">
             <form action="{{ route('landing.rent') }}" method="GET" style="">
-                {{-- <select name="price" id="price"
+                <select name="price" id="price"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
                     @foreach ($propertyPrices as $price)
@@ -80,7 +80,7 @@
                             {{ $price }}
                         </option>
                     @endforeach
-                </select> --}}
+                </select>
                 <div style="margin-top: 10px; display: flex; align-items: center; margin-right: 8px; font-size: 1.1em;">
                     <div class="railway-options">
                         @foreach ($railwayLines as $railway)
@@ -99,26 +99,26 @@
                             </button>
                         </div>
                     </div>
-                    {{-- <div style="display:flex; align-items: center; margin-right:4px;">
+                    <div style="display:flex; align-items: center; margin-right:4px;">
                         <input type="checkbox" name="is_new_building" id="is_new_building" value="1"
                             style="margin-right:5px;" {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
                         <label for="is_new_building" class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築</label>
-                    </div> --}}
+                    </div>
 
-                    {{-- <div style="display:flex; align-items: center; margin-right:4px;">
+                    <div style="display:flex; align-items: center; margin-right:4px;">
                         <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free" value="1"
                             style="margin-right:5px;" {{ request()->get('is_brokerage_free') == '1' ? 'checked' : '' }}>
                         <label for="is_brokerage_free"
                             class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
-                    </div> --}}
+                    </div>
 
-                    {{-- <button type="submit" class="catch property_search" style="padding:3px; margin-left:4px; ">
+                    <button type="submit" class="catch property_search" style="padding:3px; margin-left:4px; ">
                         <span class="label" style="font-size: 16px;"><i class="fa fa-search" style="margin-right:4px;"
                                 aria-hidden="true"></i>検索</span>
-                    </button> --}}
+                    </button>
                 </div>
             </form>
-        </div>
+        </div> --}}
         {{-- 検索 --}}
 
         <div class="blog_list">
