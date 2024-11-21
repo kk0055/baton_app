@@ -30,11 +30,13 @@
             font-weight: bold;
         }
 
+        .no-property {
+            margin-top: 40px;
+        }
+
         /* スマホ用のスタイル（横幅 768px 以下の端末に適用） */
         @media screen and (max-width: 768px) {
-            .search-button {
-    
-            }
+            .search-button {}
         }
     </style>
 @endsection
@@ -143,20 +145,24 @@
         {{-- 路線ごとの表示 --}}
         @foreach ($result as $railwayName => $properties)
             <h1 class="railway-title">{{ $railwayName }}</h1>
-            <div class="blog_list">
-                @foreach ($properties as $property)
-                    <div class="item">
-                        <a class="image_link image-link animate_background"
-                            href="{{ asset('storage/' . $property->image_path) }}">
-                            <div class="image_wrap">
-                                <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                    alt="Property Image" width="770" height="520"
-                                    style="width: 100%; height: 100%; object-fit: contain;" />
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
+            @if ($properties->isEmpty())
+                <p class="no-property">該当する物件はありません。</p>
+            @else
+                <div class="blog_list">
+                    @foreach ($properties as $property)
+                        <div class="item">
+                            <a class="image_link image-link animate_background"
+                                href="{{ asset('storage/' . $property->image_path) }}">
+                                <div class="image_wrap">
+                                    <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
+                                        alt="Property Image" width="770" height="520"
+                                        style="width: 100%; height: 100%; object-fit: contain;" />
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         @endforeach
 
     </section>
