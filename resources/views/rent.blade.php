@@ -1,6 +1,6 @@
 @extends('layout.landing.app')
 
-@section('title', '新着物件 | 株式会社BATON 世田谷区の賃貸(賃貸マンション・アパート)物件情報  | 人気物件紹介＆初期費用自信有り')
+@section('title', '新着物件 | 株式会社BATON 世田谷区の賃貸(賃貸マンション・アパート)物件情報 | 人気物件紹介＆初期費用自信有り')
 @section('description',
     '世田谷エリアの最新賃貸物件情報をチェック！小田急線、田園都市線、世田谷線、東横線、京王線沿線の新着物件をご紹介。初期費用を抑えたお得な物件を掲載中。世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。
     もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！')
@@ -129,8 +129,12 @@
                     <a class="image_link image-link animate_background"
                         href="{{ asset('storage/' . $property->image_path) }}">
                         <div class="image_wrap">
+                            @php
+                                $firstLine = $property->railwayLines->first();
+                                $altText = $firstLine ? $firstLine->name . ' 賃貸物件' : '世田谷の賃貸物件';
+                            @endphp
                             <img loading="lazy" class="image" src="{{ asset('storage/' . $property->image_path) }}"
-                                alt="Property Image" width="770" height="520"
+                                alt="{{ $altText }}" width="770" height="520"
                                 style="width: 100%; height: 100%; object-fit: contain;" />
                         </div>
                     </a>

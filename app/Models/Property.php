@@ -19,10 +19,10 @@ class Property extends Model
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeOrderByOrder($query)
-    {
-        return $query->orderBy('order');
-    }
+    // public function scopeOrderByOrder($query)
+    // {
+    //     return $query->orderBy('order');
+    // }
 
     /**
      * 賃貸
@@ -65,30 +65,17 @@ class Property extends Model
         return $this->belongsToMany(RailwayLine::class, 'property_railway_line');
     }
 
-    // public static function railwayLines()
+    // public static function propertyPrices()
     // {
-    //     return [
+    //     $propertyPrices = [
     //         '指定無し',
-    //         '小田急線',
-    //         '田園都市線',
-    //         '世田谷線',
-    //         '東横線',
-    //         '京王線',
+    //         '7万円以下',
+    //         '8万円台',
+    //         '9万円台',
+    //         '10万円台',
+    //         '11万円以上',
     //     ];
 
+    //     return $propertyPrices;
     // }
-
-    public static function propertyPrices()
-    {
-        $propertyPrices = [
-            '指定無し',
-            '7万円以下',
-            '8万円台',
-            '9万円台',
-            '10万円台',
-            '11万円以上',
-        ];
-
-        return $propertyPrices;
-    }
 }

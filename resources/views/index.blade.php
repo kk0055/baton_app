@@ -493,7 +493,7 @@
                                 <div class="item swiper-slide">
                                     <div class="image_wrap image_link image-link animate_background">
                                         <img class=" property-image" src="{{ asset('storage/' . $property->image_path) }}"
-                                            alt="Property Image" style="width: 100%; height: 100%; object-fit: contain;">
+                                            alt="世田谷の賃貸物件" style="width: 100%; height: 100%; object-fit: contain;">
                                     </div>
                                 </div>
                             @endforeach
