@@ -81,9 +81,16 @@ class PropertyController extends Controller
             }
 
             $image_path = $request->file('image')->store('images', 'public');
-            $property->image_path = $image_path;
+        }else {
+            // 画像がアップロードされていない場合、既存の画像を使用
+            $image_path = $property->image_path;
         }
-        $property->update($request->except('railway_line'));
+        
+
+        $data = $request->except('image','railway_line'); 
+        $data['image_path'] = $image_path;
+  
+        $property->update($data);
         
         $railway_lines = $request->input('railway_line');
 

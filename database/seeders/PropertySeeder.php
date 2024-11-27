@@ -2,35 +2,24 @@
 
 namespace Database\Seeders;
 
+use App\Models\Property;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Property;
-use App\Models\RailwayLine;
 
 class PropertySeeder extends Seeder
 {
     public function run()
     {
 
-        // $properties = [];
-        // for ($i = 1; $i <= 100; $i++) {
-        //     $properties[] = [
-        //         'image_path' => 'images/mZINEGwIz4r0o9RyHjL6iBlCY7LspZ6ezo1pjSR6.png ',
-        //         'created_at' => now(),
-        //         'updated_at' => now(),
-        //     ];
-        // }
-        // DB::table('properties')->insert($properties);
 
-  
+        // $this->createProperties();
+        
         $propertyRailwayLines = [];
         $railwayLineIds = DB::table('railway_lines')->pluck('id')->toArray();
 
-      
-        $propertyIds =  Property::pluck('id');
+        $propertyIds = Property::pluck('id');
         foreach ($propertyIds as $propertyId) {
-            $randomLineCount = rand(1, 3); // 各物件に1〜3路線をランダムで割り当て
-            $randomLines = array_rand($railwayLineIds, $randomLineCount);
+            $randomLines = array_rand($railwayLineIds, 1);
 
             foreach ((array) $randomLines as $lineKey) {
                 $propertyRailwayLines[] = [
@@ -39,7 +28,31 @@ class PropertySeeder extends Seeder
                 ];
             }
         }
+        // DB::table('property_railway_line')->truncate();
+        DB::table('properties')->truncate();
+        
+        // DB::table('property_railway_line')->insert($propertyRailwayLines);
+    }
+    
+   /**
+     * 物件100件追加
+     *
+     * @return void
+     */
+    public function createProperties()
+    {
 
-        DB::table('property_railway_line')->insert($propertyRailwayLines);
+        $image_path_array = [];          
+        
+
+        $properties = [];
+        for ($i = 1; $i <= 100; $i++) {
+            $properties[] = [
+                'image_path' => $image_path_array[array_rand($image_path_array)],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+        DB::table('properties')->insert($properties);
     }
 }
