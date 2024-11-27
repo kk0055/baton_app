@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(RailwayLineSeeder::class);
+        // $this->call(RailwayLineSeeder::class);
+        $this->call(PropertySeeder::class);
     }
 }
