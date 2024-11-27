@@ -19,10 +19,10 @@ class Property extends Model
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    // public function scopeOrderByOrder($query)
-    // {
-    //     return $query->orderBy('order');
-    // }
+    public function scopeOrderByOrder($query)
+    {
+        return $query->orderBy('order');
+    }
 
     /**
      * 賃貸
