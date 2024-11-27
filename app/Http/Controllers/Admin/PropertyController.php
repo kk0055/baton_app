@@ -74,28 +74,30 @@ class PropertyController extends Controller
 
         // 対象のプロパティを検索
         $property = Property::findOrFail($id);
+ 
         // 画像のアップロード
         if ($request->hasFile('image')) {
-            if ($property->image_path) {
-                Storage::disk('public')->delete($property->image_path);
+            if (app()->environment('local') === false) {
+                if ($property->image_path) {
+                    Storage::disk('public')->delete($property->image_path);
+                }
             }
 
             $image_path = $request->file('image')->store('images', 'public');
-        }else {
+        } else {
             // 画像がアップロードされていない場合、既存の画像を使用
             $image_path = $property->image_path;
         }
-        
 
-        $data = $request->except('image','railway_line'); 
+        $data = $request->except('image', 'railway_line');
         $data['image_path'] = $image_path;
-  
+
         $property->update($data);
-        
+
         $railway_lines = $request->input('railway_line');
 
         if ($railway_lines) {
-            $property->railwayLines()->sync($railway_lines); 
+            $property->railwayLines()->sync($railway_lines);
         }
 
         return redirect()->route('admin.property.index')->with('info', '更新が完了しました!');

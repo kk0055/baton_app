@@ -12,7 +12,7 @@ class PropertySeeder extends Seeder
     {
 
 
-        // $this->createProperties();
+        $this->createProperties();
         
         $propertyRailwayLines = [];
         $railwayLineIds = DB::table('railway_lines')->pluck('id')->toArray();
@@ -29,9 +29,9 @@ class PropertySeeder extends Seeder
             }
         }
         // DB::table('property_railway_line')->truncate();
-        DB::table('properties')->truncate();
+        // DB::table('properties')->truncate();
         
-        // DB::table('property_railway_line')->insert($propertyRailwayLines);
+        DB::table('property_railway_line')->insert($propertyRailwayLines);
     }
     
    /**
@@ -42,11 +42,20 @@ class PropertySeeder extends Seeder
     public function createProperties()
     {
 
-        $image_path_array = [];          
+        $image_path_array = [
+            'images/PpN5jVVfTcCCgaTwuue98bKvV3AZ42wrbDiqBCPk.png',
+            'images/Z0PKQeuaD0yaLuOt6ve7nxNHhflaPDGejhW037CE.png',
+            'images/ulnKdtG6Onl5ztp1PnmJUStJx8MzBGaVjXnWRhOZ.png',
+            'images/e4YgneKxjIHVlVn3fW79kpY8zH9py0nRoBRALdHG.png',
+            'images/ncmY2k2IfCtrglMUzyCAgqtrt3PKeisvGsOW3eRV.png',
+            'images/RSvQp016cY1IuejrteSrTfo9Qv867I1mqDzz1NXU.png',
+            'images/KehKI7XSMxGXkDkO9UMlDVWvengQTG7QsiFNr17l.png',
+            'images/ftYNJNrc0v84ErndKo19BJJPcUpi16qcK6e5EcS6.png',
+        ];          
         
 
         $properties = [];
-        for ($i = 1; $i <= 100; $i++) {
+        for ($i = 1; $i <= 150; $i++) {
             $properties[] = [
                 'image_path' => $image_path_array[array_rand($image_path_array)],
                 'created_at' => now(),
