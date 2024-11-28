@@ -46,7 +46,7 @@ class AuthController extends Controller
     {
         $credentials = $request->only('email', 'password');
         $remember = $request->has('remember'); 
-        $properties = Property::orderByOrder()->get();
+        $properties = Property::orderBy('created_at', 'desc')->get();
         if (Auth::attempt($credentials, $remember)) {
             return redirect()->route('admin.property.index')->with('properties', $properties);
         }

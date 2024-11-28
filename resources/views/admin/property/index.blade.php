@@ -127,8 +127,11 @@
         window.onload = () => {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
+            openImageModal() 
         };
-        // 画像リンクをクリックしたときにモーダルを表示
+        
+        function openImageModal() {
+                // 画像リンクをクリックしたときにモーダルを表示
         const imageLinks = document.querySelectorAll('.image-link');
         const modal = document.querySelector('.modal');
         const modalContent = modal.querySelector('.modal-content');
@@ -152,6 +155,7 @@
                 modal.style.display = 'none';
             }
         });
+        }
         //編集用のモーダル
         function toggleModal(modalID) {
             document.getElementById(modalID).classList.toggle("hidden");

@@ -15,10 +15,16 @@ class PropertyController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
+
         $properties = Property::orderBy('created_at', 'desc')->with('railwayLines')->get();
         $railwayLines = RailwayLine::get();
+
+        // if ($request->ajax()) {
+        //     return response()->json($properties);
+        // }
+
         return view('admin.property.index', compact('properties', 'railwayLines'));
     }
 
@@ -107,8 +113,10 @@ class PropertyController extends Controller
     {
         $property = Property::find($id);
         if ($property) {
-            if ($property->image_path) {
-                Storage::disk('public')->delete($property->image_path);
+            if (app()->environment('local') === false) {
+                if ($property->image_path) {
+                    Storage::disk('public')->delete($property->image_path);
+                }
             }
             $property->delete();
             return redirect()->route('admin.property.index')->with('success', '削除');
