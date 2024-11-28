@@ -120,6 +120,7 @@
                     <img class="modal-content">
                 </div>
             </section>
+            {{ $properties->links('pagination::default') }}
         </container>
     </div>
 

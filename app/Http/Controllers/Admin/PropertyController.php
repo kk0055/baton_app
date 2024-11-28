@@ -15,10 +15,10 @@ class PropertyController extends Controller
         $this->middleware('auth');
     }
 
-    public function index(Request $request)
+    public function index()
     {
 
-        $properties = Property::orderBy('created_at', 'desc')->with('railwayLines')->get();
+        $properties = Property::orderBy('created_at', 'desc')->with('railwayLines')->paginate(45);
         $railwayLines = RailwayLine::get();
 
         // if ($request->ajax()) {
