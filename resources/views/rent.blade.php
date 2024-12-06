@@ -178,7 +178,9 @@
                 </div>
             @endif
         @endforeach --}}
-
+        <div id="pagination" >
+            {{ $rent->links('pagination::default') }}
+        </div>
     </section>
     <!-- 画像をクリックしたときに表示されるモーダル -->
     <div class="modal">
@@ -220,7 +222,6 @@
     <script>
         document.getElementById('search-button').addEventListener('click', function() {
             const formData = new FormData(document.getElementById('search-form'));
-            console.log(formData)
             fetch('{{ route('properties.search') }}', {
                     method: 'POST',
                     body: formData,
@@ -239,11 +240,11 @@
         function renderProperties(data) {
             const resultContainer = document.getElementById('result-container');
             const defaultRent = document.getElementById('default_rent');
-            // const loadingIndicator = document.querySelector('#loading');
-            // loadingIndicator.style.display = 'block';
+            const pagination = document.getElementById('pagination');
 
             defaultRent.innerHTML = ''; // 既存の内容をクリア
             resultContainer.innerHTML = ''; // 既存の内容をクリア
+            pagination.innerHTML = ''; 
 
             // let allImages = [];
             if (data.length <= 0) {
@@ -289,8 +290,6 @@
                         image.style.width = '100%';
                         image.style.height = '100%';
                         image.style.objectFit = 'contain';
-
-                        // allImages.push(image);
 
                         imageWrap.appendChild(image);
                         link.appendChild(imageWrap);

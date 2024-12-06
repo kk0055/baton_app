@@ -26,7 +26,7 @@ class LandingPageController extends Controller
         $rent = Property::with(['railwayLines:id,name'])
         ->select('id', 'image_path')
         ->orderBy('created_at', 'desc')
-        ->get();
+        ->paginate(45);
    
         return view('rent', compact('rent', 'railwayLines'));
     }

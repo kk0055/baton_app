@@ -68,10 +68,11 @@
     color: #2f3859;
     padding: 8px 14px;
     text-decoration: none;
+
 }
 
 .paginationWrap ul.pagination li a.active {
-    background-color: #4b90f6;
+    background-color: #507878 ;
     color: white;
     border-radius: 40px;
     width: 38px;
