@@ -66,7 +66,7 @@
 
 .paginationWrap ul.pagination li a {
     color: #2f3859;
-    padding: 8px 14px;
+    padding: 14px 20px;
     text-decoration: none;
 
 }

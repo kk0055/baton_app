@@ -1137,7 +1137,7 @@ body.home.header_slider_layout_type2 #header {
 
 /* デザインコンテンツ */
 .cb_design_content {
-    padding: 150px 0;
+    padding: 50px 0 0 0;
 }
 .cb_design_content:nth-child(even) {
     background: #f6f6f6;
