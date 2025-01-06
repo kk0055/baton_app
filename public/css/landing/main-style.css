@@ -1359,7 +1359,7 @@ body:not(.mobile_device) .cb_service_category_list .item:hover .post_list {
 
 /* ブログ一覧 */
 .cb_blog_list {
-    padding: 150px 0;
+    padding: 100px 0;
 }
 .cb_blog_list:nth-child(even) {
     background: #f6f6f6;
@@ -1644,7 +1644,7 @@ body:not(.mobile_device) .cb_service_category_list .item:hover .post_list {
 
 /* フリースペース */
 .cb_free_space {
-    padding: 150px 0;
+    padding: 20px 0;
 }
 .cb_free_space:nth-child(even) {
     background: #f6f6f6;

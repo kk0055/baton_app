@@ -329,6 +329,101 @@
             </div>
         </div>
         <div id="content_builder">
+            {{-- 新着物件 --}}
+            <section class="cb_blog_list num5" id="cb_content_5">
+                <div class="design_header cb_design_header inview ">
+                    <div class="title_area no_desc">
+                        <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
+                            新着物件</h3>
+                        {{-- <p class="sub_title colored property property_sub_titile"
+                                style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
+                                今週のオススメ物件
+                            </p> --}}
+                        <div class=" inview slide_up_animation" style="line-height:2;">
+                            <p class="property-text" style="margin-bottom: 5px;">
+                                大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
+                            </p>
+                            <p class="property-text" style="margin-bottom: 5px;">
+                                世田谷区を中心としてはおりますが、都内および首都圏の賃貸物件を幅広くご紹介可能です。
+                            </p>
+                            <p class="property-text" style="margin-bottom: 5px;">
+                                当サイトに掲載している物件は、取り扱い物件のほんの一部です。
+                            </p>
+                            <p class="property-text">
+                                もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
+                            </p>
+                        </div>
+                        {{-- <div class="sub_title colored property "
+                                style="font-size: 95%; color:#000000; padding:10px 0">
+                                <form action="{{ route('landing.rent') }}" method="GET" style="">
+                                    <div class="" style="display: flex;">
+                                        <select name="price" id="price"
+                                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
+                                            @foreach ($propertyPrices as $price)
+                                                <option value="{{ $price }}" style="font-weight: bold;">
+                                                    {{ $price }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+    
+                                        <button type="submit" class="property_search"
+                                            style="padding:3px; margin-left:4px; ">
+                                            <span class="label" style="font-size: 16px;"><i class="fa fa-search"
+                                                    style="margin-right:4px;" aria-hidden="true"></i>検索</span>
+                                        </button>
+                                    </div>
+                                    <div style="margin-top: 10px; display: flex; align-items: center;">
+                                        <div style="display:flex; align-items: center; margin-right:4px;">
+                                            <input type="checkbox" name="is_new_building" id="is_new_building"
+                                                value="1" style="margin-right:5px;"
+                                                {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
+                                            <label for="is_new_building"
+                                                class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築</label>
+                                        </div>
+    
+                                        <div style="display:flex; align-items: center; margin-right:4px;">
+                                            <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free"
+                                                value="1" style="margin-right:5px;"
+                                                {{ request()->get('is_brokerage_free') == '1' ? 'checked' : '' }}>
+                                            <label for="is_brokerage_free"
+                                                class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
+                                        </div>
+                                        <button type="submit" class="catch property_search"
+                                            style="padding:3px; margin-left:4px; ">
+                                            <span class="label" style="font-size: 16px;"><i class="fa fa-search"
+                                                    style="margin-right:4px;" aria-hidden="true"></i>検索</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div> --}}
+                    </div>
+                </div>
+                <div class="main_content inview">
+                    <div class="blog_carousel_wrap swiper">
+                        <div class="blog_carousel swiper-wrapper">
+                            @foreach ($rents as $property)
+                                <div class="item swiper-slide">
+                                    <div class="image_wrap image_link image-link animate_background">
+                                        <img class=" property-image" src="{{ asset('storage/' . $property->image_path) }}"
+                                            alt="世田谷の賃貸物件" style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="genesis_carousel_scrollbar">
+                        <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="design_arrow_button cb_design_arrow_button">
+                    <a href="{{ route('landing.rent') }}">
+                        <span class="label"
+                            style="font-size: 24px; color: #ffffff; background-color: #507878; padding: 10px 20px; border-radius: 5px;">新着物件一覧<i
+                                class="fa-solid fa-arrow-right" style="margin-left:5px;"></i>
+                        </span></a>
+                </div>
+            </section>
             {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">
                 <div class="post_content clearfix" id="job_details">
@@ -346,7 +441,8 @@
                             <h3 class="">BATONの強み</h3>
                             <div class="t">
                                 <strong style="font-size: 22px">1.圧倒的な初期費用の安さ</strong> <br>
-                                &nbsp; 家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。多くの不動産会社では、「仲介手数料無料」を謳いながらも、別の名目で費用が上乗せされるケースが見られます。
+                                &nbsp;
+                                家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。多くの不動産会社では、「仲介手数料無料」を謳いながらも、別の名目で費用が上乗せされるケースが見られます。
                                 株式会社BATONでは、初期費用のご負担を可能な限り抑え、透明性の高い取引を心がけています。<br>
 
 
@@ -416,100 +512,7 @@
                 <div class="design_arrow_button cb_design_arrow_button">
                 </div>
             </section>
-            {{-- 新着物件 --}}
-            <section class="cb_blog_list num5" id="cb_content_5">
-                <div class="design_header cb_design_header inview ">
-                    <div class="title_area no_desc">
-                        <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
-                            新着物件</h3>
-                        {{-- <p class="sub_title colored property property_sub_titile"
-                            style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
-                            今週のオススメ物件
-                        </p> --}}
-                        <div class=" inview slide_up_animation" style="line-height:2;">
-                        <p class="property-text" style="margin-bottom: 5px;">
-                            大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
-                        </p>
-                        <p class="property-text" style="margin-bottom: 5px;">
-                            世田谷区を中心としてはおりますが、都内および首都圏の賃貸物件を幅広くご紹介可能です。
-                        </p>
-                        <p class="property-text" style="margin-bottom: 5px;">
-                            当サイトに掲載している物件は、取り扱い物件のほんの一部です。
-                        </p>
-                        <p class="property-text">
-                            もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
-                        </p>
-                    </div>
-                        {{-- <div class="sub_title colored property "
-                            style="font-size: 95%; color:#000000; padding:10px 0">
-                            <form action="{{ route('landing.rent') }}" method="GET" style="">
-                                <div class="" style="display: flex;">
-                                    <select name="price" id="price"
-                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
-                                        @foreach ($propertyPrices as $price)
-                                            <option value="{{ $price }}" style="font-weight: bold;">
-                                                {{ $price }}
-                                            </option>
-                                        @endforeach
-                                    </select>
 
-                                    <button type="submit" class="property_search"
-                                        style="padding:3px; margin-left:4px; ">
-                                        <span class="label" style="font-size: 16px;"><i class="fa fa-search"
-                                                style="margin-right:4px;" aria-hidden="true"></i>検索</span>
-                                    </button>
-                                </div>
-                                <div style="margin-top: 10px; display: flex; align-items: center;">
-                                    <div style="display:flex; align-items: center; margin-right:4px;">
-                                        <input type="checkbox" name="is_new_building" id="is_new_building"
-                                            value="1" style="margin-right:5px;"
-                                            {{ request()->get('is_new_building') == '1' ? 'checked' : '' }}>
-                                        <label for="is_new_building"
-                                            class="block text-gray-700 text-sm font-bold mb-2 mt-4">新築</label>
-                                    </div>
-
-                                    <div style="display:flex; align-items: center; margin-right:4px;">
-                                        <input type="checkbox" name="is_brokerage_free" id="is_brokerage_free"
-                                            value="1" style="margin-right:5px;"
-                                            {{ request()->get('is_brokerage_free') == '1' ? 'checked' : '' }}>
-                                        <label for="is_brokerage_free"
-                                            class="block text-gray-700 text-sm font-bold mb-2 mt-4">仲介手数料無料</label>
-                                    </div>
-                                    <button type="submit" class="catch property_search"
-                                        style="padding:3px; margin-left:4px; ">
-                                        <span class="label" style="font-size: 16px;"><i class="fa fa-search"
-                                                style="margin-right:4px;" aria-hidden="true"></i>検索</span>
-                                    </button>
-                                </div>
-                            </form>
-                        </div> --}}
-                    </div>
-                </div>
-                <div class="main_content inview">
-                    <div class="blog_carousel_wrap swiper">
-                        <div class="blog_carousel swiper-wrapper">
-                            @foreach ($rents as $property)
-                                <div class="item swiper-slide">
-                                    <div class="image_wrap image_link image-link animate_background">
-                                        <img class=" property-image" src="{{ asset('storage/' . $property->image_path) }}"
-                                            alt="世田谷の賃貸物件" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    <div class="genesis_carousel_scrollbar">
-                        <div class="blog_carousel_scrollbar swiper-scrollbar"></div>
-                    </div>
-                </div>
-                <div class="design_arrow_button cb_design_arrow_button">
-                    <a href="{{ route('landing.rent') }}">
-                        <span class="label"
-                            style="font-size: 24px; color: #ffffff; background-color: #507878; padding: 10px 20px; border-radius: 5px;">新着物件一覧<i class="fa-solid fa-arrow-right" style="margin-left:5px;" ></i>
-                        </span></a>
-                </div>
-            </section>
             {{-- 仲介手数料無料 --}}
             {{-- <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
