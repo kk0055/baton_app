@@ -228,6 +228,17 @@
             .top_message {
                 font-size: 22px
             }
+
+            .annex_button_container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .annex_button {
+                font-size: 17px;
+            }
         }
 
         /* Laptop用スタイル */
@@ -261,6 +272,14 @@
 
             .top_message {
                 font-size: 34px
+            }
+
+            .annex_button {
+                font-size: 24px;
+            }
+
+            .annex_button2 {
+                margin-left: 20px;
             }
         }
 
@@ -328,11 +347,13 @@
                 </div>
             </div>
         </div>
+
         <div id="content_builder">
             {{-- 新着物件 --}}
             <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
+
                         <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
                             新着物件</h3>
                         {{-- <p class="sub_title colored property property_sub_titile"
@@ -352,6 +373,27 @@
                             <p class="property-text">
                                 もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
                             </p>
+                            <div class="annex_button_container" style="margin-top:30px;">
+                                <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank">
+                                    <span class="label annex_button"
+                                        style="color: #ffffff; background-color: #63b2b2;  border-radius: 5px;  padding: 10px 20px;"><i
+                                            class="fa-solid fa-search" style="margin-left:5px;"></i>物件検索
+                                    </span>
+                                </a>
+                                <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
+                                    <span class="label annex_button annex_button2"
+                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;">
+                                        おすすめ物件
+                                    </span>
+                                </a>
+                                <a href="https://xbatonx.annex-homes.jp/special_44059.html" target="_blank">
+                                    <span class="label annex_button annex_button2"
+                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;">
+                                        ペット可物件特集
+                                    </span>
+                                </a>
+                            </div>
+
                         </div>
                         {{-- <div class="sub_title colored property "
                                 style="font-size: 95%; color:#000000; padding:10px 0">
