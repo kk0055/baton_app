@@ -377,7 +377,7 @@
                                 <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank">
                                     <span class="label annex_button"
                                         style="color: #ffffff; background-color: #63b2b2;  border-radius: 5px;  padding: 10px 20px;"><i
-                                            class="fa-solid fa-search" style="margin-left:5px;"></i>物件検索
+                                            class="fa-solid fa-search" style="margin-right:5px;"></i>物件検索
                                     </span>
                                 </a>
                                 <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
