@@ -241,6 +241,16 @@
             }
         }
 
+        .annex_button {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
+        }
+
+        .annex_button:hover {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
         /* Laptop用スタイル */
         @media screen and (min-width:770px) {
             .divider {
@@ -374,23 +384,23 @@
                                 もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
                             </p> --}}
                             <div class="annex_button_container" style="margin-top:30px;">
-                                <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank">
-                                    <span class="label annex_button"
-                                        style="color: #ffffff; background-color: #63b2b2;  border-radius: 5px;  padding: 10px 20px;"><i
-                                            class="fa-solid fa-search" style="margin-right:5px;"></i>首都圏物件
+                                <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
+                                    <span class="label annex_button "
+                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
+                                            class="fa-solid fa-search" style="margin-right:5px;"></i>
+                                        世田谷区おすすめ物件
                                     </span>
                                 </a>
-                                <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
+                                <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank">
                                     <span class="label annex_button annex_button2"
-                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
-                                        class="fa-solid fa-search" style="margin-right:5px;"></i>
-                                        世田谷区おすすめ物件
+                                        style="color: #ffffff; background-color: #63b2b2;  border-radius: 5px;  padding: 10px 20px; "><i
+                                            class="fa-solid fa-search" style="margin-right:5px;"></i>首都圏物件
                                     </span>
                                 </a>
                                 <a href="https://xbatonx.annex-homes.jp/special_44059.html" target="_blank">
                                     <span class="label annex_button annex_button2"
                                         style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
-                                        class="fa-solid fa-search" style="margin-right:5px;"></i>
+                                            class="fa-solid fa-search" style="margin-right:5px;"></i>
                                         ペット可物件
                                     </span>
                                 </a>
