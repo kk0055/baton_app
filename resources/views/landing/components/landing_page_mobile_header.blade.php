@@ -10,10 +10,10 @@
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6425">
                 <a href="{{ route('landing.index') }}" aria-current="page">トップ</a>
             </li>
-            <li id="menu-item-6436"
+            {{-- <li id="menu-item-6436"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
                 <a href="{{ route('landing.rent') }}">新着物件</a>
-                {{-- <ul class="sub-menu">
+                <ul class="sub-menu">
                     <li id="menu-item-6437"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6437"><a
                             href="{{ route('landing.rent') }}">賃貸</a>
@@ -22,8 +22,8 @@
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6438"><a
                             href="{{ route('landing.sale') }}">売買</a>
                     </li>
-                </ul> --}}
-            </li>
+                </ul>
+            </li> --}}
             <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
                     href="{{ route('landing.company') }}">会社紹介</a>
             </li>

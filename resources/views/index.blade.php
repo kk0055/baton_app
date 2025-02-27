@@ -355,13 +355,13 @@
                     <div class="title_area no_desc">
 
                         <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
-                            新着物件</h3>
+                            物件検索</h3>
                         {{-- <p class="sub_title colored property property_sub_titile"
                                 style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
                                 今週のオススメ物件
                             </p> --}}
                         <div class=" inview slide_up_animation" style="line-height:2;">
-                            <p class="property-text" style="margin-bottom: 5px;">
+                            {{-- <p class="property-text" style="margin-bottom: 5px;">
                                 大手不動産会社と同じデータベースを使用しておりますので、他社サイトで見つけた物件もご紹介が可能です。
                             </p>
                             <p class="property-text" style="margin-bottom: 5px;">
@@ -372,24 +372,26 @@
                             </p>
                             <p class="property-text">
                                 もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
-                            </p>
+                            </p> --}}
                             <div class="annex_button_container" style="margin-top:30px;">
                                 <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank">
                                     <span class="label annex_button"
                                         style="color: #ffffff; background-color: #63b2b2;  border-radius: 5px;  padding: 10px 20px;"><i
-                                            class="fa-solid fa-search" style="margin-right:5px;"></i>物件検索
+                                            class="fa-solid fa-search" style="margin-right:5px;"></i>首都圏物件
                                     </span>
                                 </a>
                                 <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
                                     <span class="label annex_button annex_button2"
-                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;">
-                                        おすすめ物件
+                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
+                                        class="fa-solid fa-search" style="margin-right:5px;"></i>
+                                        世田谷区おすすめ物件
                                     </span>
                                 </a>
                                 <a href="https://xbatonx.annex-homes.jp/special_44059.html" target="_blank">
                                     <span class="label annex_button annex_button2"
-                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;">
-                                        ペット可物件特集
+                                        style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
+                                        class="fa-solid fa-search" style="margin-right:5px;"></i>
+                                        ペット可物件
                                     </span>
                                 </a>
                             </div>
@@ -441,7 +443,7 @@
                             </div> --}}
                     </div>
                 </div>
-                <div class="main_content inview">
+                {{-- <div class="main_content inview">
                     <div class="blog_carousel_wrap swiper">
                         <div class="blog_carousel swiper-wrapper">
                             @foreach ($rents as $property)
@@ -464,7 +466,7 @@
                             style="font-size: 24px; color: #ffffff; background-color: #507878; padding: 10px 20px; border-radius: 5px;">新着物件一覧<i
                                 class="fa-solid fa-arrow-right" style="margin-left:5px;"></i>
                         </span></a>
-                </div>
+                </div> --}}
             </section>
             {{-- 業務内容 --}}
             <section class="cb_free_space num1 " id="cb_content_1">

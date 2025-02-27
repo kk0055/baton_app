@@ -51,17 +51,17 @@
                 <a href="{{ route('landing.index') }}" style="line-height:40px;height: 30px;">トップ</a>
 
             </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
+            {{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
                 <a href="{{ route('landing.rent') }}" style="line-height: 40px; height: 30px;">新着物件</a>
-                {{-- <ul class="sub-menu">
+                <ul class="sub-menu">
                     <li id="menu-item-5982"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a
                             href="{{ route('landing.rent') }}">賃貸</a></li>
                     <li id="menu-item-5953"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5953"><a
                             href="{{ route('landing.sale') }}">売買</a></li>
-                </ul> --}}
-            </li>
+                </ul>
+            </li> --}}
             <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
                 <a href="{{ route('landing.company') }}" style="line-height: 40px; height: 30px;">会社紹介</a>
