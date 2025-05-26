@@ -1,23 +1,122 @@
 <style>
+    #footer {
+        background-color: #ffffff;
+        padding: 60px 0 30px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #footer_inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    #footer_address {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #333333;
+    }
+
+    #footer_address p {
+        margin: 0;
+    }
+
+    #footer_address a {
+        color: #026636;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    #footer_address a:hover {
+        color: #039450;
+    }
+
     #kurabeel {
-  background-color: #f9f9f9; /* 背景色 */
-  border: 1px solid #ddd; /* ボーダー */
-  border-radius: 8px; /* 角を丸める */
-  padding: 20px; /* 内側の余白 */
-  margin: 20px 0; /* 外側の余白 */
-  font-size: 16px; /* 文字サイズ */
-  line-height: 1.6; /* 行間 */
-  color: #333; /* 文字色 */
-}
+        background-color: #f8f9fa;
+        border: none;
+        border-radius: 12px;
+        padding: 25px;
+        margin: 30px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-#kurabeel a {
-  color: #026636; /* リンク色 */
-  text-decoration: none; /* 下線を消す */
-}
+    #kurabeel:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
 
-#kurabeel a:hover {
-  text-decoration: underline; /* ホバー時に下線を表示 */
-}
+    #kurabeel p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #333333;
+    }
+
+    #kurabeel a {
+        color: #026636;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    #kurabeel a:hover {
+        color: #039450;
+    }
+
+    #footer_sns {
+        list-style: none;
+        padding: 0;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer_sns a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    #footer_sns a:hover {
+        transform: translateY(-3px);
+    }
+
+    #footer_sns img {
+        border-radius: 8px;
+    }
+
+    #copyright {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        border-top: 1px solid #eeeeee;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+        #footer {
+            padding: 40px 0 20px;
+        }
+
+        #footer_inner {
+            padding: 0 15px;
+        }
+
+        #footer_address {
+            font-size: 14px;
+        }
+
+        #kurabeel {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        #kurabeel p {
+            font-size: 14px;
+        }
+    }
 </style>
 
 <footer id="footer">
@@ -27,33 +126,27 @@
             <img class="logo_image mobile" src="baton_baton_logo240819.png" alt="株式会社BATON" title="株式会社BATON" width="155"
                 height="70" />
         </p> --}}
-        <div id="footer_address" class="post_content clearfix">
-            <p>株式会社BATON<br> <span class="a_break">〒107-0062 東京都港区南青山一丁目1番1号 <span class="a_break">新青山ビル東館
-                        7F</span></p>
+        <div id="footer_address" class="post_content">
+            <p>株式会社BATON<br>
+                <span>〒107-0062 東京都港区南青山一丁目1番1号 新青山ビル東館 7F</span>
+            </p>
         </div>
-        <div id="footer_address" class="post_content clearfix">
-            <p>物件に関するお問い合わせは <span><a href="https://lit.link/en/xbatonx" target="_blank">こちら</a></span> よりお気軽にご連絡ください。</p>
+        <div id="footer_address" class="post_content">
+            <p>物件に関するお問い合わせは <a href="https://lit.link/en/xbatonx" target="_blank">こちら</a> よりお気軽にご連絡ください。</p>
         </div>
-        <div id="kurabeel" class="post_content clearfix">
-            <p>ご自身でお部屋を探していただき、気になる物件のURLをLINEで送るだけで、仲介手数料を大幅にお安くできるサービス、<a href="https://kurabeel.com/" target="_blank">『くらベール』</a>を始めました。詳細が気になる方は、ぜひ<a href="https://kurabeel.com/" target="_blank">こちら</a>からご確認ください。</p>
+        <div id="kurabeel" class="post_content">
+            <p>ご自身でお部屋を探していただき、気になる物件のURLをLINEで送るだけで、仲介手数料を大幅にお安くできるサービス、<a href="https://kurabeel.com/"
+                    target="_blank">『くらベール』</a>を始めました。詳細が気になる方は、ぜひ<a href="https://kurabeel.com/"
+                    target="_blank">こちら</a>からご確認ください。</p>
         </div>
-        <ul id="footer_sns" class="sns_button_list clearfix color_type1">
-            {{-- <li > <a href="https://www.instagram.com/baton_2024/" rel="nofollow noopener" target="_blank" title="Instagram">
-              <img src="Instagram_icon.png" alt="Instagram Icon" style="width: 40px; height: 40px;">
-          </a></li> --}}
-            <a href="https://www.instagram.com/baton_2024/" target="_blank">
-                <img src="Instagram_icon.png" alt="" style="width: 30px; height: 30px; margin-left:10px"></a>
-
-            <a href="https://lin.ee/r7mvGMy" target="_blank">
-                <img src="LINE.png" alt="" style="width: 30px; height: 30px; margin-left:10px; ">
+        <div id="footer_sns">
+            <a href="https://www.instagram.com/baton_2024/" target="_blank" aria-label="Instagram">
+                <img src="Instagram_icon.png" alt="Instagram" style="width: 32px; height: 32px;">
             </a>
-
-            {{-- <li class="twitter"><a href="https://twitter.com/tcd_jp" rel="nofollow noopener" target="_blank"
-                  title="X"><span>X</span></a></li>
-          <li class="youtube"><a href="https://www.youtube.com/channel/UCF2WVjA5eHLue-3cZ5UBUsw/videos"
-                  rel="nofollow noopener" target="_blank" title="Youtube"><span>Youtube</span></a></li> --}}
-        </ul>
-
+            <a href="https://lin.ee/r7mvGMy" target="_blank" aria-label="LINE">
+                <img src="LINE.png" alt="LINE" style="width: 32px; height: 32px; margin-left: 20px;">
+            </a>
+        </div>
     </div>
-    <p id="copyright"><span>© BATON inc.</span></p>
+    <p id="copyright">© BATON inc.</p>
 </footer>

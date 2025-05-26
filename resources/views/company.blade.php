@@ -4,166 +4,140 @@
 @section('canonical', 'https://xbatonx.com/company')
 @section('styles')
     <style id="current-page-style" type="text/css">
-        #page_header .overlay {
-            background-color: rgba(0, 0, 0, 0.3);
+        /* フォントの基本設定 */
+        #page_contents {
+            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333333;
+            line-height: 1.8;
         }
 
+        /* ヘッダー部分のスタイル */
+        #page_header .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+        }
+
+        /* 会社概要のタイトル */
+        #company_data_list h4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+
+        /* サブタイトル */
+        #company_data_list p {
+            font-size: 1.2rem;
+            color: #2d5aa8;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        /* テーブルのスタイル */
+        #company_data_list .s_table table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 2rem;
+        }
+
+        #company_data_list th,
+        #company_data_list td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eaeaea;
+            line-height: 1.6;
+        }
+
+        #company_data_list th {
+            width: 180px;
+            font-weight: 600;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+
+        #company_data_list td {
+            color: #4a4a4a;
+        }
+
+        #company_data_list td a {
+            color: #2d5aa8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #company_data_list td a:hover {
+            color: #1e3c72;
+        }
+
+        /* レスポンシブ対応 */
         @media only screen and (min-width: 801px) {
             .design_header .large_headline {
-                margin-top: -20px;
-            }
-
-            .title {
-                margin-top: -12px !important;
-            }
-
-            .title3 {
-                margin-top: 2px !important;
-            }
-
-            #page_header .desc_area {
-                margin: -97px auto 140px;
-            }
-
-            #page_header .desc {
-                margin-bottom: -3px;
-            }
-
-            .post_content:empty+.gallery_content {
-                margin-top: -161px;
-            }
-
-            .gallery_content_header .desc {
-                margin-bottom: -42px;
-            }
-
-            .design_header {
-                margin-top: 13px !important;
-                margin-bottom: 58px;
-            }
-
-            .post_content p {
-                margin: 0 0 41px 0;
-            }
-
-            #page_header .design_header {
-                margin: -10px auto 147px;
-            }
-
-            #company_message .catch {
-                margin: -15px 0 34px 0;
-            }
-
-            .gray_bg {
-                padding: 134px 0;
-            }
-
-            #company_data_list h4 {
-                margin: 0px 0 37px 0;
+                font-size: 3rem;
+                letter-spacing: 0.1em;
+                margin-bottom: 1rem;
             }
 
             #company_data_list {
-                margin: 55px 0 139px;
-            }
-
-            #page_contents {
-                padding-bottom: 147px;
-            }
-
-            #company_data_list td {
-                padding: 0 0 0px 0;
-                line-height: 45px;
-            }
-
-            .sub_title.colored {
-                margin-bottom: -5px !important;
-            }
-
-            #company_data_list th {
-                width: 150px;
+                max-width: 900px;
+                margin: 4rem auto;
+                padding: 0 2rem;
             }
         }
 
         @media screen and (max-width: 800px) {
-            .design_header .large_headline {
-                margin-top: -3px;
-                !important
+            #company_data_list h4 {
+                font-size: 2rem;
+            }
+         
+            #company_data_list p {
+                font-size: 1rem;
             }
 
-            body:not(.show_sidebar) #page_header.large_height .design_header {
-                margin: -44px 0 10px 0;
+            #company_data_list th,
+            #company_data_list td {
+                display: block;
+                width: 100%;
+                padding: 1rem;
             }
 
-            .sub_title.colored {
-                margin-top: 8px;
-                margin-bottom: 20px;
+            #company_data_list th {
+                background: #f8f9fa;
+                border-bottom: none;
             }
+        }
 
-            .gray_bg {
-                padding: 37px 0;
-            }
+        /* アニメーション効果 */
+        .inview {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
 
-            #company_message .catch {
-                margin: -12px 0 22px 0;
-            }
+        .inview.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-            .design_header {
-                margin-top: 37px;
-                margin-bottom: 38px;
-            }
+        /* ホバーエフェクト */
+        .s_table tr {
+            transition: background-color 0.3s ease;
+        }
 
-            #company_data_list .s_table {
-                margin-top: 27px;
-                font-size: 14px;
-            }
-
-            #company_access .qt_google_map {
-                margin-top: -5px !important;
-                margin-bottom: 32px;
-            }
-
-            #page_contents {
-                padding-bottom: 39px;
-            }
-
-            .title3 {
-                margin-top: -1px !important;
-            }
-
-            .post_content p {
-                margin: 0 0 37px 0;
-            }
-
-            #company_message .post_col img {
-                margin: 32px auto 3px !important;
-            }
-
-            .name {
-                margin-bottom: -2px !important;
-            }
-
-            body:not(.show_sidebar) #page_header.large_height {
-                height: 250px;
-            }
-
-            .design_header .title_area.no_desc {
-                margin-top: 28px;
-            }
-
-            .shutter_image {
-                margin-top: -3px;
-            }
-
-            .post_content .s_table table {
-                margin-bottom: 25px;
-            }
+        .s_table tr:hover {
+            background-color: #f8f9fa;
         }
     </style>
 @endsection
 
 
 
-@section('bodyClass', 'page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar
+@section('bodyClass',
+    'page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar
     normal_content_width')
 
 @section('content')
@@ -210,8 +184,8 @@
                                     </tr>
                                     <tr>
                                         <th>TEL</th>
-                                        <td>03-6865-8533 </br> 
-                                        070-5366-0412
+                                        <td>03-6865-8533 </br>
+                                            070-5366-0412
                                         </td>
                                     </tr>
                                     <tr>

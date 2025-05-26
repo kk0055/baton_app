@@ -9,160 +9,111 @@
             background-color: rgba(0, 0, 0, 0.3);
         }
 
-        @media only screen and (min-width: 801px) {
-            .design_header .large_headline {
-                margin-top: -20px;
-            }
+        .message-section {
+            padding: 120px 0;
+            background-color: #f8f9fa;
+        }
 
-            .title {
-                margin-top: -12px !important;
-            }
+        .message-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-            .title3 {
-                margin-top: 2px !important;
-            }
+        .message-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
 
-            #page_header .desc_area {
-                margin: -97px auto 140px;
-            }
+        .message-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
 
-            #page_header .desc {
-                margin-bottom: -3px;
-            }
+        .message-content {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
 
-            .post_content:empty+.gallery_content {
-                margin-top: -161px;
-            }
+        .message-text {
+            flex: 1;
+            font-size: 16px;
+            line-height: 2;
+            color: #555;
+        }
 
-            .gallery_content_header .desc {
-                margin-bottom: -42px;
-            }
+        .message-text p {
+            margin-bottom: 30px;
+        }
 
-            .design_header {
-                margin-top: 13px !important;
-                margin-bottom: 58px;
-            }
+        .message-image {
+            flex: 1;
+            position: relative;
+        }
 
-            .post_content p {
-                margin: 0 0 41px 0;
-            }
+        .message-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-            #page_header .design_header {
-                margin: -10px auto 147px;
-            }
+        .message-image:hover img {
+            transform: translateY(-10px);
+        }
 
-            #company_message .catch {
-                margin: -15px 0 34px 0;
-            }
+        .highlight-text {
+            background: linear-gradient(transparent 70%, #FFE5E5 70%);
+            font-weight: bold;
+        }
 
-            .gray_bg {
-                padding: 134px 0;
-            }
+        .message-points {
+            margin-top: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
 
-            #company_data_list h4 {
-                margin: 0px 0 37px 0;
-            }
+        .point-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-            #company_data_list {
-                margin: 55px 0 139px;
-            }
-
-            #page_contents {
-                padding-bottom: 147px;
-            }
-
-            #company_data_list td {
-                padding: 0 0 0px 0;
-                line-height: 45px;
-            }
-
-            .sub_title.colored {
-                margin-bottom: -5px !important;
-            }
-
-            #company_data_list th {
-                width: 150px;
-            }
+        .signature {
+            margin-top: 40px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         @media screen and (max-width: 800px) {
-            .design_header .large_headline {
-                margin-top: -3px;
-                !important
+            .message-section {
+                padding: 60px 0;
             }
 
-            body:not(.show_sidebar) #page_header.large_height .design_header {
-                margin: -44px 0 10px 0;
+            .message-content {
+                flex-direction: column;
+                gap: 40px;
             }
 
-            .sub_title.colored {
-                margin-top: 8px;
-                margin-bottom: 20px;
+            .message-title {
+                font-size: 32px;
             }
 
-            .gray_bg {
-                padding: 37px 0;
-            }
-
-            #company_message .catch {
-                margin: -12px 0 22px 0;
-            }
-
-            .design_header {
-                margin-top: 37px;
-                margin-bottom: 38px;
-            }
-
-            #company_data_list .s_table {
-                margin-top: 27px;
-                font-size: 14px;
-            }
-
-            #company_access .qt_google_map {
-                margin-top: -5px !important;
-                margin-bottom: 32px;
-            }
-
-            #page_contents {
-                padding-bottom: 39px;
-            }
-
-            .title3 {
-                margin-top: -1px !important;
-            }
-
-            .post_content p {
-                margin: 0 0 37px 0;
-            }
-
-            #company_message .post_col img {
-                margin: 32px auto 3px !important;
-            }
-
-            .name {
-                margin-bottom: -2px !important;
-            }
-
-            body:not(.show_sidebar) #page_header.large_height {
-                height: 250px;
-            }
-
-            .design_header .title_area.no_desc {
-                margin-top: 28px;
-            }
-
-            .shutter_image {
-                margin-top: -3px;
-            }
-
-            .post_content .s_table table {
-                margin-bottom: 25px;
+            .message-image {
+                order: -1;
             }
         }
     </style>
 @endsection
-
-
 
 @section('bodyClass',
     'page-template-default page page-id-5942 wp-embed-responsive megamenu_dark_color hide_sidebar
@@ -173,71 +124,57 @@
     @include('landing.components.landing_page_header')
 
     <div id="container">
-        {{-- <div id="page_header" class="large_height" style="margin-top: 50px;">
-            <div class="design_header inview">
-                <div class="title_area no_desc">
-                    <h1 class="large_headline"><span>会社紹介</span></h1>
-                </div>
-            </div>
-        </div> --}}
-
         <article id="page_contents">
-            <div class="post_content">
-                <div class="gray_bg" id="company_message">
-                    <div class="design_header inview">
-                        {{-- <div class="title_area">
-                                <h3 class="large_headline title catch"><span>代表挨拶</span></h3>
-                                <p class="sub_title colored"><span>CEOメッセージ</span></p>
-                            </div> --}}
+            <section class="message-section">
+                <div class="message-container">
+                    <div class="message-header">
+                        <h1 class="message-title">代表挨拶</h1>
                     </div>
-                    <h4 style="font-size: 40px;" class="colored catch ">代表挨拶</h4>
-                    <div class="post_row">
-                        <div class="post_col post_col-2 inview slide_up_animation">
-                            <p>皆さま、こんにちは。株式会社BATONのホームページへお越しいただき、誠にありがとうございます。代表の立川です。
+
+                    <div class="message-content">
+                        <div class="message-text">
+                            <p>
+                                皆さま、こんにちは。株式会社BATONのホームページへお越しいただき、誠にありがとうございます。代表の立川です。
+                            </p>
+                            <p>
+                                早速ではございますが、社名となる「BATON」の由来は<span
+                                    class="highlight-text">「つないでいく」</span>との想いを込めております。昨今の社会情勢、気候変動より、今後はより厳しい生活環境が想定されます。今、弊社ができることは限られていると思いますが、できることを一つ一つ実現していくことにより、次世代の方々へ少しでも良いカタチでBATONをつないでいきたいと想っております。
+                            </p>
+                            <p>
+                                先ずは不動産業より価格、サービス両面において、業界のイメージを払拭すべく、透明性が高く、質の高いコミュニケーションを心掛け、お客様に理想の物件をお届けできるよう、誠実にしっかりと努めさせていただきます。
                             </p>
 
-                            {{-- <p> <span style="font-size: 25px; font-weight: bold;">経営の目的</span> </br> --}}
-                            早速ではございますが、社名となる「BATON」の由来は<span style="text-decoration: underline;font-weight: bold;">
-                                「つないでいく」</span>との想いを込めております。昨今の社会情勢、気候変動より、今後はより厳しい生活環境が想定されます。今、弊社ができることは限られていると思いますが、できることを一つ一つ実現していくことにより、次世代の方々へ少しでも良いカタチでBATONをつないでいきたいと想っております。先ずは不動産業より価格、サービス両面において、業界のイメージを払拭すべく、透明性が高く、質の高いコミュニケーションを心掛け、お客様に理想の物件をお届けできるよう、誠実にしっかりと努めさせていただきます。</br>
-                            また、具体的な支援策としては下記２点を掲げさせていただいております。</br></br>
+                            <div class="message-points">
+                                <div class="point-title">1. 上京学生への支援</div>
+                                <p>
+                                    上京してくる学生の皆さんには、特に温かいサービスを提供したいと考えております。初めての都会生活に不安を抱える学生の方々が、安心して新生活を始められるよう、物件の選定から入居後のサポートまで一貫したサービスを心掛けています。学業に専念できる環境作りのお手伝いをすることは、弊社を起業した目的であり、私にとって大切な使命であると認識しております。
+                                </p>
 
-                            1.上京学生への支援</br>
-                            上京してくる学生の皆さんには、特に温かいサービスを提供したいと考えております。初めての都会生活に不安を抱える学生の方々が、安心して新生活を始められるよう、物件の選定から入居後のサポートまで一貫したサービスを心掛けています。学業に専念できる環境作りのお手伝いをすることは、弊社を起業した目的であり、私にとって大切な使命であると認識しております。
-                            </br></br>
+                                <div class="point-title">2. 主婦の方々の雇用環境支援</div>
+                                <p>
+                                    私自身PTA活動を通じて、主婦の方々と多くの時間を共有していく中で、ビジネス能力の高さを感じることができました。一方で主婦の方々が活躍するための雇用環境に対しては、未だ多くの課題が混在しているものと認識しております。例えば育児や家事に要する時間への配慮です。このような課題に対してビジネスと両立しやすい柔軟な働き方を提供させていただき、きめ細やかな対応ができる地元に根差した主婦の方々と、お客様に寄り添い心温まるサービスを強みにしていくことが直近の目標です。
+                                </p>
+                            </div>
 
-                            2.主婦の方々の雇用環境支援</br>
-                            私自身PTA活動を通じて、主婦の方々と多くの時間を共有していく中で、ビジネス能力の高さを感じることができました。一方で主婦の方々が活躍するための雇用環境に対しては、未だ多くの課題が混在しているものと認識しております。例えば育児や家事に要する時間への配慮です。このような課題に対してビジネスと両立しやすい柔軟な働き方を提供させていただき、きめ細やかな対応ができる地元に根差した主婦の方々と、お客様に寄り添い心温まるサービスを強みにしていくことが直近の目標です。
-                            </br></br>
-                            引き続きより多くの方々に喜ばれるサービスを提供してまいります。今後ともよろしくお願い申し上げます。</br></br>
-                            代表取締役 立川宰輝
+                            <p>
+                                引き続きより多くの方々に喜ばれるサービスを提供してまいります。今後ともよろしくお願い申し上げます。
                             </p>
 
-                            {{-- <p> <span style="font-size: 25px;  font-weight: bold;">不動産業を選んだ理由</span> </br>
-                                なぜ不動産業だったかというと、先ずは今後を担う若手に対して、最大の生活基盤となる住居より支援したかったからです。特に地方から10代のお子様を一人で上京させる親御さんの心中は多くの不安に駆られることと思います。そんな中、住居を探すにも業者側も繁忙期であること、時間や金銭的な負担が大きいことから限られた時間の中、結果として少ない選択肢しか残されておりません。</br>
-                                私の出身は新潟となるのですが、25年前の上京の際には希望とは異なる物件で決めてしまいました。寧ろ限られた時間の中では選択することはできなかったです。もっと親身に説明してもらえていたら・・・少し違った選択をしていたと思いますが、その時の私は「自分が無知だったのだから仕方ない」と諦めました。</br>
-                                事前に準備を進めることで、上記のような不安の多くは払拭することができます。あとは業者に受け入れの気持ちがあるかどうかだと思っております。私は過去の境遇と子どもに対しての想い、そして会社設立の目的より若手への支援に対しては、より深く注力して取り組んで参りたいと考えております。
-                            </p> --}}
-
-
-                        </div>
-                        <div class="post_col post_col-2">
-                            <div class="shutter_image inview col1">
-                                <div class="item"><img fetchpriority="high" decoding="async" src="koki.jpg" alt=""
-                                        width="580" height="580" class="alignnone size-full wp-image-5943" /></div>
+                            <div class="signature">
+                                代表取締役 立川宰輝
                             </div>
                         </div>
+
+                        <div class="message-image">
+                            <img src="koki.jpg" alt="代表取締役 立川宰輝" width="580" height="580" />
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
         </article>
+
         @include('landing.components.footer')
-
     </div>
-
-    {{-- <div id="return_top">
-        <a class="no_auto_scroll" href="#body"><span class="arrow"><span></span></span></a>
-    </div> --}}
 
     @include('landing.components.landing_page_mobile_header')
 @endsection

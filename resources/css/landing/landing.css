@@ -665,9 +665,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
     }
     .header_for_pc {
         background-color: #ffffff;
-        border-bottom: 2px solid #eaeaea;
-        padding: 10px 20px;
-        margin: 10px;
+       
     }
 
     .header-container {
@@ -710,7 +708,7 @@ body.megamenu_dark_color .megamenu_b a:hover {
     }
 
     .email a {
-        background-color: #ff6600;
+        background-color: #385e94;
         color: white;
         padding: 8px 12px;
         text-decoration: none;
