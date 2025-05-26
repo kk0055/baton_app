@@ -306,6 +306,166 @@
             justify-content: flex-start;
             align-items: flex-start;
         }
+
+/* note表示 */
+  .note-feed-wrapper {
+    font-family: var(--note-feed-font-family);
+    background-color: var(--note-feed-bg-color);
+    padding: 3rem 1rem;
+    color: var(--note-text-color-primary);
+  }
+
+  .note-feed-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .note-feed-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--note-text-color-primary);
+    margin-bottom: 3rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  .note-feed-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--note-accent-color);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+  }
+  
+  .note-feed-message {
+    text-align: center;
+    color: var(--note-text-color-secondary);
+    font-size: 1.125rem;
+    padding: 2.5rem 1.5rem;
+    background-color: var(--note-card-bg-color);
+    border-radius: var(--note-card-border-radius);
+    box-shadow: var(--note-card-shadow);
+    margin-top: 2rem;
+  }
+
+  .note-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .note-article-card {
+    background-color: var(--note-card-bg-color);
+    border: 1px solid var(--note-card-border-color);
+    border-radius: var(--note-card-border-radius);
+    box-shadow: var(--note-card-shadow);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .note-article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--note-card-hover-shadow);
+  }
+
+  .note-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+  }
+
+  .note-card-image-container {
+    width: 100%;
+    aspect-ratio: var(--note-image-aspect-ratio);
+    overflow: hidden;
+    background-color: var(--note-image-placeholder-bg); /* 画像がない場合や読み込み中の背景 */
+    display: flex; /* 画像がない場合に備えてflexも使える */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .note-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .note-article-card:hover .note-card-image {
+    transform: scale(1.05); 
+  }
+  /* 画像がない場合の代替テキストスタイル（オプション）*/
+  .note-card-image-placeholder-text {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+  }
+
+
+  .note-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .note-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--note-text-color-primary);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: calc(1.3rem * 1.45 * 2); 
+  }
+  .note-card-link:hover .note-card-title {
+    color: var(--note-link-color);
+  }
+
+  .note-card-date {
+    font-size: 0.875rem; 
+    color: var(--note-text-color-secondary);
+    margin-bottom: 1rem; 
+    display: block;
+    font-weight: 500;
+  }
+
+  .note-card-excerpt {
+    font-size: 0.95rem;
+    color: var(--note-text-color-secondary);
+    line-height: 1.65;
+    margin: 0 0 auto;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: calc(0.95rem * 1.65 * 3);
+  }
+
+  @media (max-width: 768px) {
+    .note-feed-title { font-size: 2rem; }
+    .note-card-title { font-size: 1.15rem; min-height: calc(1.15rem * 1.45 * 2); }
+    .note-card-excerpt { font-size: 0.9rem; min-height: calc(0.9rem * 1.65 * 3); }
+    .note-articles-grid { gap: 1.5rem; }
+    .note-card-content { padding: 1.25rem; }
+  }
+
+</style>
     </style>
 @endsection
 
@@ -555,9 +715,6 @@
                         <img loading="lazy" class="image" src="kyodo1.jpg" width="750" height="540" />
                     </div>
                     <div class="item">
-                        {{-- <div class="overlay"
-                      style="background: linear-gradient(to bottom, rgba(0,59,112,1) 0%,rgba(0,59,112,0) 100%);">
-                  </div> --}}
                         <div class="post_list">
                         </div>
                         <img loading="lazy" class="image" src="kyodo2.jpg" width="750" height="540" />
@@ -566,7 +723,49 @@
                 <div class="design_arrow_button cb_design_arrow_button">
                 </div>
             </section>
+<div class="note-feed-wrapper">
+    <div class="note-feed-container">
+        <h2 class="note-feed-title">☆コラム☆</h2>
 
+        @if(isset($error))
+            <div class="note-feed-message">
+                <p>エラーが発生しました: {{ $error }}</p>
+                <p>時間をおいて再度お試しください。</p>
+            </div>
+        @elseif(empty($feedItems))
+            <div class="note-feed-message">
+                <p>現在表示できる記事がありません。</p>
+            </div>
+        @else
+            <ul class="note-articles-grid">
+                @foreach($feedItems as $item)
+                    <li class="note-article-card">
+                        <a href="{{ $item['link'] }}" target="_blank" rel="noopener noreferrer" class="note-card-link">
+                            <div class="note-card-image-container">
+                              @if($item['image'])
+                                    <img src="{{ $item['image'] }}" alt="{{ Str::limit($item['title'], 50) }} のアイキャッチ画像" class="note-card-image">
+                                @else
+                                    {{-- 画像がない場合は note-card-image-container の背景色 (var(--note-image-placeholder-bg)) が表示される --}}
+                                    {{-- もし「画像なし」のようなテキストを表示したい場合は以下のようにする (CSSで .note-card-image-placeholder-text を定義) --}}
+                                    {{-- <span class="note-card-image-placeholder-text">画像がありません</span> --}}
+                                @endif
+                            </div>
+                            <div class="note-card-content">
+                                <h3 class="note-card-title">{{ $item['title'] }}</h3>
+                                <time datetime="{{ $item['pubDate']->toIso8601String() }}" class="note-card-date">
+                                    {{ $item['pubDate']->isoFormat('YYYY年MM月DD日(ddd)') }}
+                                </time>
+                                <p class="note-card-excerpt">{{ Str::limit($item['description'], 120) }}</p>
+                                {{-- カード全体がリンクなので、個別の「続きを読む」は必須ではない --}}
+                                {{-- <span class="note-card-readmore">続きを読む &rarr;</span> --}}
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+            </ul>
+        @endif
+    </div>
+</div>
             {{-- 仲介手数料無料 --}}
             {{-- <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
