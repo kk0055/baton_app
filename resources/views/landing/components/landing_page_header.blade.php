@@ -1,6 +1,6 @@
 <header id="header" class="first_animate"
     style="position: fixed; top: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
-    <div class="header_for_pc" >
+    <div class="header_for_pc">
         <div class="header-container"
             style="padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
             <h1 class="header_logo" style="margin: 0;">
@@ -12,9 +12,11 @@
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    <a href="tel:03-6865-8533" style="pointer-events: auto;"><i class="fa fa-phone" style="margin-right:4px; color: #1a365d;"></i>03-6865-8533
+                    <a href="tel:03-6865-8533" style="pointer-events: auto;"><i class="fa fa-phone"
+                            style="margin-right:4px; color: #1a365d;"></i>03-6865-8533
                     </a>
-                    <a href="tel:070-5366-0412" style="pointer-events: auto;"><i class="fa fa-phone" style="margin-right:4px; color: #1a365d;"></i>070-5366-0412
+                    <a href="tel:070-5366-0412" style="pointer-events: auto;"><i class="fa fa-phone"
+                            style="margin-right:4px; color: #1a365d;"></i>070-5366-0412
                     </a>
                 </div>
                 <div class="insta">
@@ -102,7 +104,8 @@
                 </a>
             </div>
             <div class="email">
-                <a href="https://bit.ly/4er2ktS" class="email-button" style="font-size: 1.25rem;font-weight: 600;color:#2C3E50;" target="_blank">
+                <a href="https://bit.ly/4er2ktS" class="email-button"
+                    style="font-size: 1.25rem;font-weight: 600;color:#2C3E50;" target="_blank">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ
                 </a>
@@ -141,9 +144,11 @@
     .phone a:hover {
         color: #4299e1 !important;
     }
+
     .header-container {
-            padding: 5px 5px !important;
-        }
+        padding: 5px 5px !important;
+    }
+
     @media (max-width: 1024px) {
         .header-container {
             padding: 10px 3% !important;
