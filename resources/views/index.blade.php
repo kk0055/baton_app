@@ -111,10 +111,33 @@
             padding: calc(var(--spacing-unit) * 3);
         }
 
+        /* 物件検索リンクのスタイル追加 */
+        a.feature-item {
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        a.feature-item:hover {
+            background-color: var(--accent-color);
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        a.feature-item:hover .feature-icon {
+            transform: scale(1.1);
+        }
+
+        a.feature-item:hover .feature-title {
+            color: var(--primary-color);
+        }
+
         .feature-icon {
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: calc(var(--spacing-unit) * 2);
+            transition: transform 0.3s ease;
         }
 
         .feature-title {
@@ -206,16 +229,16 @@
         }
 
         /* .hero-title::after {
-                        content: '';
-                        position: absolute;
-                        bottom: -10px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 100px;
-                        height: 3px;
-                        background: var(--primary-color);
-                        border-radius: 2px;
-                    } */
+                            content: '';
+                            position: absolute;
+                            bottom: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 100px;
+                            height: 3px;
+                            background: var(--primary-color);
+                            border-radius: 2px;
+                        } */
 
         .hero-subtitle {
             font-size: 1.3rem;
@@ -969,8 +992,9 @@
         <section id="property-search" class="card">
             <div class="card-content">
                 <h2 class="section-title">
-                       <i class="fas fa-search"></i>
-                    物件検索</h2>
+                    <i class="fas fa-search"></i>
+                    物件検索
+                </h2>
                 <div class="feature-grid">
                     <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank" class="feature-item">
                         <div class="feature-icon">
