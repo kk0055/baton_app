@@ -206,16 +206,16 @@
         }
 
         /* .hero-title::after {
-                    content: '';
-                    position: absolute;
-                    bottom: -10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100px;
-                    height: 3px;
-                    background: var(--primary-color);
-                    border-radius: 2px;
-                } */
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100px;
+                        height: 3px;
+                        background: var(--primary-color);
+                        border-radius: 2px;
+                    } */
 
         .hero-subtitle {
             font-size: 1.3rem;
@@ -876,7 +876,7 @@
         /* Column styles */
         .column-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
             gap: calc(var(--spacing-unit) * 3);
             margin-top: calc(var(--spacing-unit) * 4);
         }
@@ -961,14 +961,16 @@
             <p class="hero-subtitle" style="margin-bottom: calc(var(--spacing-unit) * 2);">
                 株式会社BATONは世田谷区を中心として、お部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。
             </p>
-           
+
         </div>
     </div>
 
     <div id="container">
         <section id="property-search" class="card">
             <div class="card-content">
-                <h2 class="section-title">物件検索</h2>
+                <h2 class="section-title">
+                       <i class="fas fa-search"></i>
+                    物件検索</h2>
                 <div class="feature-grid">
                     <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank" class="feature-item">
                         <div class="feature-icon">
