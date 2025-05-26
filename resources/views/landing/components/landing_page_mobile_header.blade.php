@@ -8,7 +8,9 @@
         <ul id="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
             <li id="menu-item-6425"
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6425">
-                <a href="{{ route('landing.index') }}" aria-current="page">トップ</a>
+                <a href="{{ route('landing.index') }}" aria-current="page"
+                style="font-size: 1.25rem;font-weight: 600;"
+                >トップ</a>
             </li>
             {{-- <li id="menu-item-6436"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
@@ -25,16 +27,16 @@
                 </ul>
             </li> --}}
             <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a
-                    href="{{ route('landing.company') }}">会社紹介</a>
+                    href="{{ route('landing.company') }}" style="font-size: 1.25rem;font-weight: 600;">会社紹介</a>
             </li>
             <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433">
-                <a href="{{ route('landing.message') }}">代表挨拶</a>
+                <a href="{{ route('landing.message') }}" style="font-size: 1.25rem;font-weight: 600;">代表挨拶</a>
             </li>
 
 
             @auth
                 <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                        href="{{ route('admin.property.index') }}">管理画面</a></li>
+                        href="{{ route('admin.property.index') }}" style="font-size: 1.25rem;font-weight: 600;">管理画面</a></li>
             @endauth
         </ul>
     </div>
@@ -48,7 +50,8 @@
             </div>
             <div class="email">
                 <a href="https://bit.ly/4er2ktS"
-                    class="email-button" style="color:white;" target="_blank">
+                    class="email-button" style="color:white; font-size: 1.25rem;font-weight: 600;" target="_blank"
+                    >
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true" ></i>
                     お問合わせ
                 </a>

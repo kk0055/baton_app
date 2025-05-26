@@ -102,7 +102,7 @@
                 </a>
             </div>
             <div class="email">
-                <a href="https://bit.ly/4er2ktS" class="email-button" style="" target="_blank">
+                <a href="https://bit.ly/4er2ktS" class="email-button" style="font-size: 1.25rem;font-weight: 600;color:#2C3E50;" target="_blank">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ
                 </a>
@@ -114,7 +114,7 @@
             </div>
             <div class="line">
                 <a href="https://lin.ee/r7mvGMy" target="_blank">
-                    <img src="LINE.png" alt="" style="width: 20px; height: 20px; margin-right:8px;">
+                    <img src="LINE.png" alt="" style="width: 20px; height: 20px; ">
                 </a>
             </div>
         </div>
@@ -149,9 +149,9 @@
             padding: 10px 3% !important;
         }
 
-        .contact-info {
+        /* .contact-info {
             gap: 15px !important;
-        }
+        } */
 
         .phone {
             display: none !important;
