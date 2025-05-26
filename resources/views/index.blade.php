@@ -4,6 +4,328 @@
 
 @section('styles')
     <style id="current-page-style" type="text/css">
+        :root {
+            --primary-color: #507878;
+            --primary-light: #628e8e;
+            --primary-dark: #3e5c5c;
+            --secondary-color: #507878;
+            --accent-color: #E8F3F3;
+            --text-primary: #2C3E50;
+            --text-secondary: #7F8C8D;
+            --background-light: #F7F9FC;
+            --background-white: #FFFFFF;
+            --shadow-soft: 0 4px 6px rgba(80, 120, 120, 0.1);
+            --shadow-medium: 0 6px 12px rgba(80, 120, 120, 0.15);
+            --radius-small: 8px;
+            --radius-medium: 12px;
+            --radius-large: 20px;
+            --spacing-unit: 8px;
+        }
+
+        body {
+            color: var(--text-primary);
+            background-color: var(--background-light);
+            line-height: 1.6;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 4);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 6);
+            color: var(--text-primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: calc(var(--spacing-unit) * 2) auto;
+            border-radius: 2px;
+        }
+
+        .card {
+            background: var(--background-white);
+            border-radius: var(--radius-medium);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            margin-bottom: calc(var(--spacing-unit) * 3);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .card-content {
+            padding: calc(var(--spacing-unit) * 3);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            color: var(--text-primary);
+        }
+
+        .card-text {
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+            background: var(--primary-color);
+            color: white;
+            border-radius: var(--radius-small);
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-weight: 500;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 4);
+            margin-top: calc(var(--spacing-unit) * 6);
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            color: var(--text-primary);
+        }
+
+        .wave-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg,
+                    rgba(80, 120, 120, 0.85),
+                    rgba(98, 142, 142, 0.85));
+            z-index: 1;
+        }
+
+        .wave {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 45%;
+            animation: wave 20s infinite linear;
+            opacity: 0.7;
+        }
+
+        .wave:nth-child(2) {
+            animation-duration: 17s;
+            opacity: 0.5;
+            background: rgba(255, 220, 200, 0.1);
+        }
+
+        .wave:nth-child(3) {
+            animation-duration: 25s;
+            opacity: 0.3;
+            background: rgba(255, 240, 220, 0.1);
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .hero-section {
+            position: relative;
+            padding: calc(var(--spacing-unit) * 15) 0;
+            color: var(--text-primary);
+            text-align: center;
+            border-radius: 0 0 var(--radius-large) var(--radius-large);
+            /* margin-top: 80px; */
+            overflow: hidden;
+            background: linear-gradient(rgba(80, 120, 120, 0.3), rgba(80, 120, 120, 0.5)),
+                linear-gradient(rgba(255, 200, 150, 0.2), rgba(255, 200, 150, 0.3)),
+                url('kyodo2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 4);
+            border-radius: var(--radius-medium);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            line-height: 1.3;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        /* .hero-title::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100px;
+                    height: 3px;
+                    background: var(--primary-color);
+                    border-radius: 2px;
+                } */
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 4);
+        }
+
+        .hero-buttons {
+            margin-top: calc(var(--spacing-unit) * 4);
+            display: flex;
+            gap: calc(var(--spacing-unit) * 3);
+            justify-content: center;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+            border-radius: var(--radius-small);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .hero-button-primary {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .hero-button-secondary {
+            background: var(--background-white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .hero-button-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .hero-button-secondary:hover {
+            background: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                margin: 0 var(--spacing-unit);
+                padding: calc(var(--spacing-unit) * 3);
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                padding: 0;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-button {
+                text-align: center;
+            }
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--spacing-unit) * 3);
+            margin-top: calc(var(--spacing-unit) * 4);
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-medium);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .highlight-box {
             background-color: #507878;
             color: white;
@@ -261,6 +583,10 @@
                 display: none;
             }
 
+            #header {
+                height: 100px !important;
+            }
+
             .philosophy_container {
                 display: flex;
                 justify-content: center;
@@ -307,165 +633,304 @@
             align-items: flex-start;
         }
 
-/* note表示 */
-  .note-feed-wrapper {
-    font-family: var(--note-feed-font-family);
-    background-color: var(--note-feed-bg-color);
-    padding: 3rem 1rem;
-    color: var(--note-text-color-primary);
-  }
+        /* note表示 */
+        .note-feed-wrapper {
+            font-family: var(--note-feed-font-family);
+            background-color: var(--note-feed-bg-color);
+            padding: 3rem 1rem;
+            color: var(--note-text-color-primary);
+        }
 
-  .note-feed-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+        .note-feed-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-  .note-feed-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--note-text-color-primary);
-    margin-bottom: 3rem;
-    text-align: center;
-    letter-spacing: -0.5px;
-    position: relative;
-    padding-bottom: 1rem;
-  }
-  .note-feed-title::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background-color: var(--note-accent-color);
-    margin: 0.75rem auto 0;
-    border-radius: 2px;
-  }
-  
-  .note-feed-message {
-    text-align: center;
-    color: var(--note-text-color-secondary);
-    font-size: 1.125rem;
-    padding: 2.5rem 1.5rem;
-    background-color: var(--note-card-bg-color);
-    border-radius: var(--note-card-border-radius);
-    box-shadow: var(--note-card-shadow);
-    margin-top: 2rem;
-  }
+        .note-feed-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--note-text-color-primary);
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: -0.5px;
+            position: relative;
+            padding-bottom: 1rem;
+        }
 
-  .note-articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
-    gap: 2.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+        .note-feed-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--note-accent-color);
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
 
-  .note-article-card {
-    background-color: var(--note-card-bg-color);
-    border: 1px solid var(--note-card-border-color);
-    border-radius: var(--note-card-border-radius);
-    box-shadow: var(--note-card-shadow);
-    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+        .note-feed-message {
+            text-align: center;
+            color: var(--note-text-color-secondary);
+            font-size: 1.125rem;
+            padding: 2.5rem 1.5rem;
+            background-color: var(--note-card-bg-color);
+            border-radius: var(--note-card-border-radius);
+            box-shadow: var(--note-card-shadow);
+            margin-top: 2rem;
+        }
 
-  .note-article-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--note-card-hover-shadow);
-  }
+        .note-articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+            gap: 2.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-  .note-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
-  }
+        .note-article-card {
+            background-color: var(--note-card-bg-color);
+            border: 1px solid var(--note-card-border-color);
+            border-radius: var(--note-card-border-radius);
+            box-shadow: var(--note-card-shadow);
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
 
-  .note-card-image-container {
-    width: 100%;
-    aspect-ratio: var(--note-image-aspect-ratio);
-    overflow: hidden;
-    background-color: var(--note-image-placeholder-bg); /* 画像がない場合や読み込み中の背景 */
-    display: flex; /* 画像がない場合に備えてflexも使える */
-    align-items: center;
-    justify-content: center;
-  }
+        .note-article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--note-card-hover-shadow);
+        }
 
-  .note-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  .note-article-card:hover .note-card-image {
-    transform: scale(1.05); 
-  }
-  /* 画像がない場合の代替テキストスタイル（オプション）*/
-  .note-card-image-placeholder-text {
-    color: #a0a0a0;
-    font-size: 0.9rem;
-  }
+        .note-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .note-card-image-container {
+            width: 100%;
+            aspect-ratio: var(--note-image-aspect-ratio);
+            overflow: hidden;
+            background-color: var(--note-image-placeholder-bg);
+            /* 画像がない場合や読み込み中の背景 */
+            display: flex;
+            /* 画像がない場合に備えてflexも使える */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .note-card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .note-article-card:hover .note-card-image {
+            transform: scale(1.05);
+        }
+
+        /* 画像がない場合の代替テキストスタイル（オプション）*/
+        .note-card-image-placeholder-text {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
 
 
-  .note-card-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
+        .note-card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
 
-  .note-card-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--note-text-color-primary);
-    margin: 0 0 0.75rem 0;
-    line-height: 1.45;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-height: calc(1.3rem * 1.45 * 2); 
-  }
-  .note-card-link:hover .note-card-title {
-    color: var(--note-link-color);
-  }
+        .note-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--note-text-color-primary);
+            margin: 0 0 0.75rem 0;
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: calc(1.3rem * 1.45 * 2);
+        }
 
-  .note-card-date {
-    font-size: 0.875rem; 
-    color: var(--note-text-color-secondary);
-    margin-bottom: 1rem; 
-    display: block;
-    font-weight: 500;
-  }
+        .note-card-link:hover .note-card-title {
+            color: var(--note-link-color);
+        }
 
-  .note-card-excerpt {
-    font-size: 0.95rem;
-    color: var(--note-text-color-secondary);
-    line-height: 1.65;
-    margin: 0 0 auto;
-    flex-grow: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-height: calc(0.95rem * 1.65 * 3);
-  }
+        .note-card-date {
+            font-size: 0.875rem;
+            color: var(--note-text-color-secondary);
+            margin-bottom: 1rem;
+            display: block;
+            font-weight: 500;
+        }
 
-  @media (max-width: 768px) {
-    .note-feed-title { font-size: 2rem; }
-    .note-card-title { font-size: 1.15rem; min-height: calc(1.15rem * 1.45 * 2); }
-    .note-card-excerpt { font-size: 0.9rem; min-height: calc(0.9rem * 1.65 * 3); }
-    .note-articles-grid { gap: 1.5rem; }
-    .note-card-content { padding: 1.25rem; }
-  }
+        .note-card-excerpt {
+            font-size: 0.95rem;
+            color: var(--note-text-color-secondary);
+            line-height: 1.65;
+            margin: 0 0 auto;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: calc(0.95rem * 1.65 * 3);
+        }
 
-</style>
+        @media (max-width: 768px) {
+            .note-feed-title {
+                font-size: 2rem;
+            }
+
+            .note-card-title {
+                font-size: 1.15rem;
+                min-height: calc(1.15rem * 1.45 * 2);
+            }
+
+            .note-card-excerpt {
+                font-size: 0.9rem;
+                min-height: calc(0.9rem * 1.65 * 3);
+            }
+
+            .note-articles-grid {
+                gap: 1.5rem;
+            }
+
+            .note-card-content {
+                padding: 1.25rem;
+            }
+        }
+
+        /* Header styles */
+        #header {
+            background: var(--background-white);
+            box-shadow: var(--shadow-soft);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        #global_menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        #global_menu>ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #global_menu>ul>li {
+            position: relative;
+        }
+
+        #global_menu>ul>li>a {
+            display: block;
+            padding: 20px 15px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        #global_menu>ul>li>a:hover {
+            color: var(--primary-color);
+        }
+
+        #header.transparent {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        #header.transparent #global_menu>ul>li>a {
+            color: white;
+        }
+
+        #header.transparent #global_menu>ul>li>a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            #global_menu {
+                display: none;
+            }
+        }
+
+        /* Column styles */
+        .column-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 3);
+            margin-top: calc(var(--spacing-unit) * 4);
+        }
+
+        .column-item {
+            background: var(--background-white);
+            border-radius: var(--radius-medium);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .column-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .column-content {
+            padding: calc(var(--spacing-unit) * 3);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .column-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .column-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
     </style>
 @endsection
 
@@ -480,43 +945,57 @@
 
     <div id="site_loader_overlay">
         <div id="loader_logo_image">
-            {{-- <h1 class="pc" width="196" height="26" >株式会社BATON</h1> --}}
-            {{-- <img class="pc" src="baton_big_logo.jpg" alt="" title="" width="196" />
-            <img class="mobile" src="baton_big_logo.jpg" alt="" title="" width="155"
-                height="120" /> --}}
         </div>
     </div>
 
     @include('landing.components.landing_page_header')
 
-    <div id="container">
-        <div id="header_slider_wrap" class="layout_type1">
-            <div id="header_slider_content">
-                <div class="content main_logo_image_content">
-                    {{-- <img class="image" src="baton_logo240819.svg" width="80%" height="80%"
-                        style="display:none;" /> --}}
-                    <div class="top_message" style="">
-                        <h1>誠実であり続けることへ努力する</h1><br>
-                        <h1>常に最善を考え、そして実行する</h1><br>
-                        <h1>100年後の笑顔を創る</h1>
-                    </div>
-                </div>
-            </div>
-            <div id="header_slider" class="swiper slide_type_slide_up  effect_type_zoom_out" data-fade_speed="1000"
-                height="600">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide item item first_item " data-item-type="type2">
-                        <div class="item-inner video_container">
-                            {{-- <div class="overlay" style="background:rgba(0,60,130,0.2);"></div> --}}
-                            <video class="bg_video" playsinline muted>
-                                <source media="(max-width: 991px)" src="large_video5.mp4" alt="video" type="video/mp4">
-                                <source src="NoSky3.mp4" alt="video" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="hero-section">
+        <div class="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
         </div>
+        <div class="section-container hero-content">
+            <h1 class="hero-title">あなたの理想の住まい探しを、親身にサポートします</h1>
+            <p class="hero-subtitle" style="margin-bottom: calc(var(--spacing-unit) * 2);">
+                株式会社BATONは世田谷区を中心として、お部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。
+            </p>
+           
+        </div>
+    </div>
+
+    <div id="container">
+        <section id="property-search" class="card">
+            <div class="card-content">
+                <h2 class="section-title">物件検索</h2>
+                <div class="feature-grid">
+                    <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank" class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="feature-title">世田谷区おすすめ物件</h3>
+                        <p class="card-text">世田谷区の厳選された物件をお探しいただけます</p>
+                    </a>
+                    <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank"
+                        class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="feature-title">首都圏物件</h3>
+                        <p class="card-text">首都圏全域の物件をお探しいただけます</p>
+                    </a>
+                    <a href="https://xbatonx.annex-homes.jp/special_44059.html" target="_blank" class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <h3 class="feature-title">ペット可物件</h3>
+                        <p class="card-text">大切な家族と一緒に暮らせる物件をご紹介</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
         <div id="content_builder">
             {{-- 新着物件 --}}
@@ -524,8 +1003,8 @@
                 <div class="design_header cb_design_header inview ">
                     <div class="title_area no_desc">
 
-                        <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
-                            物件検索</h3>
+                        {{-- <h3 class="catch rich_font inview slide_up_animation property" style="margin-bottom: 20px;">|
+                            物件検索</h3> --}}
                         {{-- <p class="sub_title colored property property_sub_titile"
                                 style="font-size: 22px; color:#000000 ; margin-top:15px; margin-bottom: 20px;">
                                 今週のオススメ物件
@@ -543,7 +1022,7 @@
                             <p class="property-text">
                                 もっと多くの選択肢から物件をご紹介できますので、気になる条件があればお気軽にお問い合わせください！
                             </p> --}}
-                            <div class="annex_button_container" style="margin-top:30px;">
+                            {{-- <div class="annex_button_container" style="margin-top:30px;">
                                 <a href="https://xbatonx.annex-homes.jp/bukken_display_30708.html" target="_blank">
                                     <span class="label annex_button "
                                         style="color: #ffffff; background-color: #63b2b2; padding: 10px 20px; border-radius: 5px;"><i
@@ -564,13 +1043,13 @@
                                         ペット可物件
                                     </span>
                                 </a>
-                            </div>
+                            </div> --}}
 
                         </div>
                         {{-- <div class="sub_title colored property "
                                 style="font-size: 95%; color:#000000; padding:10px 0">
                                 <form action="{{ route('landing.rent') }}" method="GET" style="">
-                                    <div class="" style="display: flex;">
+                                    <div class=" " style="display: flex;">
                                         <select name="price" id="price"
                                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             style="font-weight: bold; background-color:#699999; color: white; padding:10px;margin-right:7px;">
@@ -639,133 +1118,116 @@
                 </div> --}}
             </section>
             {{-- 業務内容 --}}
-            <section class="cb_free_space num1 " id="cb_content_1">
-                <div class="post_content clearfix" id="job_details">
-                    <div class="design_header inview">
-                        <div class="title_area">
-                        </div>
-                    </div>
-                    <div class="post_row inview slide_up_animation">
-                        <div class="post_col post_col-2 rich_font">
-                            <h3 class="catch rich_font">| 業務内容</h3>
-                        </div>
-                        <div class="post_col post_col-2">
-                            <p>株式会社BATONは世田谷区を中心として、お部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。<br>
-                            </p>
-                            <h3 class="">BATONの強み</h3>
-                            <div class="t">
-                                <strong style="font-size: 22px">1.圧倒的な初期費用の安さ</strong> <br>
-                                &nbsp;
-                                家賃、広告などの高額なコストを徹底的に抑えることで、圧倒的な初期費用の安さでのご提案を実現しております。多くの不動産会社では、「仲介手数料無料」を謳いながらも、別の名目で費用が上乗せされるケースが見られます。
-                                株式会社BATONでは、初期費用のご負担を可能な限り抑え、透明性の高い取引を心がけています。<br>
-
-
-                                <strong style="font-size: 22px">2.豊富な取り扱い物件数</strong><br>
-                                &nbsp;
-                                大手不動産会社と同じデータベースを使用しており、全国各地の物件を同規模でご紹介できます。世田谷区を中心としてはおりますが、都内を中心に首都圏どこでもご紹介可能です。豊富な選択肢の中からお客様に最適な物件をご提案します。<br>
-
-                                <strong style="font-size: 22px">3.WEB内覧</strong><br>
-                                &nbsp;お忙しい方や遠方のお客様には、ご希望に応じてWEBでの内覧もご案内しております。<br>
-
-                                <strong style="font-size: 22px">4.ライフライン一括申請</strong><br>
-                                &nbsp;電気・ガス・水道などの窓口を一本化し、ライフラインの手続きを効率的にサポートいたします。面倒な手続きをまとめて対応いたしますので、安心してお任せください。<br>
-
-                                <strong style="font-size: 22px">5.24時間サポート</strong><br>
-                                &nbsp;お客様のご要望に応じて、鍵の紛失やライフラインのトラブルにも対応する24時間サポートをご提供しております。※24時間サポートは有料となります。<br><br>
-
+            <section class="card">
+                <div class="card-content">
+                    <h2 class="section-title">BATONの強み</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-coins"></i>
                             </div>
+                            <h3 class="feature-title">圧倒的な初期費用の安さ</h3>
+                            <p class="card-text">高額なコストを徹底的に抑え、透明性の高い取引を実現しています</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3 class="feature-title">豊富な取り扱い物件数</h3>
+                            <p class="card-text">大手不動産会社と同じデータベースを使用し、幅広い選択肢をご提供</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <h3 class="feature-title">WEB内覧</h3>
+                            <p class="card-text">お忙しい方や遠方の方にもオンラインで内覧いただけます</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h3 class="feature-title">ライフライン一括申請</h3>
+                            <p class="card-text">面倒な手続きをまとめて効率的にサポート</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h3 class="feature-title">24時間サポート</h3>
+                            <p class="card-text">急なトラブルにも24時間体制で対応いたします</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="cb_design_content num4" id="cb_content_4">
-                <div class="design_header cb_design_header inview">
-                    <div class="title_area">
-                        <h3 class="catch rich_font good_point">| 世田谷の魅力</h3>
-                    </div>
-                    <div class="desc post_content">
-                        <strong style="font-size: 22px">1.交通アクセス</strong> <br>
-                        &nbsp; 小田急線、京王線、田園都市線など都心へのアクセスが非常に便利です。<br>
-
-
-                        <strong style="font-size: 22px">2.生活環境が充実</strong><br>
-                        &nbsp; 私は世田谷の経堂（キョウドウ）に在住しておりますが、経堂駅の周辺で3つの商店街があります。そしてどの商店街も活動が活発で非常に魅力的です。<br>
-
-                        <strong style="font-size: 22px">3.小中高、大学など教育環境が整っている</strong><br>
-                        &nbsp;世田谷区にキャンパスを設置している大学は下記の通りです。<br>
-                        東京農業大学、成城大学、日本大学、国士舘大学、駒沢大学、産業能率大学、昭和女子大学、多摩美術大学、東京医療保健大学、東京都市大学、日本体育大学、日本女子体育大学<br>
-
-                        <strong style="font-size: 22px">4.自然が豊か</strong><br>
-                        &nbsp;等々力渓谷公園、砧公園、駒沢オリンピック公園、世田谷公園など都心とは思えない自然環境が整っております。<br><br>
-
-                        {{-- <div class="highlight-box" style="">
-                            他にも食事の美味しいお店、閑静な住宅街、人が温かくとても親身であるなど、他にも経堂地区の良さは沢山あります。経堂地区の良さを共有させていただき、楽しむ物件探しをサポートさせて頂ければ幸いでございます。<br>
-                        </div> --}}
-                    </div>
-
-                </div>
-
-                <div class="item_list shutter_image inview col2 link_ver vertical">
-                    <div class="item">
-                        {{-- <div class="overlay"
-                      style="background: linear-gradient(to bottom, rgba(14,86,0,1) 0%,rgba(14,86,0,0) 100%);">
-                  </div> --}}
-                        <div class="post_list">
+            <section class="card">
+                <div class="card-content">
+                    <h2 class="section-title">世田谷の魅力</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-train"></i>
+                            </div>
+                            <h3 class="feature-title">充実した交通アクセス</h3>
+                            <p class="card-text">小田急線、京王線、田園都市線など都心へのアクセスが便利</p>
                         </div>
-                        <img loading="lazy" class="image" src="kyodo1.jpg" width="750" height="540" />
-                    </div>
-                    <div class="item">
-                        <div class="post_list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <h3 class="feature-title">豊かな生活環境</h3>
+                            <p class="card-text">活気のある商店街や便利な施設が充実</p>
                         </div>
-                        <img loading="lazy" class="image" src="kyodo2.jpg" width="750" height="540" />
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="feature-title">充実した教育環境</h3>
+                            <p class="card-text">多数の有名大学や教育機関が集まる文教地区</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-tree"></i>
+                            </div>
+                            <h3 class="feature-title">豊かな自然</h3>
+                            <p class="card-text">等々力渓谷や砧公園など、都心とは思えない緑地が点在</p>
+                        </div>
                     </div>
-                </div>
-                <div class="design_arrow_button cb_design_arrow_button">
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <img loading="lazy" src="kyodo1.jpg" alt="経堂の街並み1" />
+                        </div>
+                        <div class="gallery-item">
+                            <img loading="lazy" src="kyodo2.jpg" alt="経堂の街並み2" />
+                        </div>
+                    </div>
                 </div>
             </section>
-<div class="note-feed-wrapper">
-    <div class="note-feed-container">
-        <h2 class="note-feed-title">☆コラム☆</h2>
-
-        @if(isset($error))
-            <div class="note-feed-message">
-                <p>エラーが発生しました: {{ $error }}</p>
-                <p>時間をおいて再度お試しください。</p>
-            </div>
-        @elseif(empty($feedItems))
-            <div class="note-feed-message">
-                <p>現在表示できる記事がありません。</p>
-            </div>
-        @else
-            <ul class="note-articles-grid">
-                @foreach($feedItems as $item)
-                    <li class="note-article-card">
-                        <a href="{{ $item['link'] }}" target="_blank" rel="noopener noreferrer" class="note-card-link">
-                            <div class="note-card-image-container">
-                              @if($item['image'])
-                                    <img src="{{ $item['image'] }}" alt="{{ Str::limit($item['title'], 50) }} のアイキャッチ画像" class="note-card-image">
-                                @else
-                                    {{-- 画像がない場合は note-card-image-container の背景色 (var(--note-image-placeholder-bg)) が表示される --}}
-                                    {{-- もし「画像なし」のようなテキストを表示したい場合は以下のようにする (CSSで .note-card-image-placeholder-text を定義) --}}
-                                    {{-- <span class="note-card-image-placeholder-text">画像がありません</span> --}}
-                                @endif
-                            </div>
-                            <div class="note-card-content">
-                                <h3 class="note-card-title">{{ $item['title'] }}</h3>
-                                <time datetime="{{ $item['pubDate']->toIso8601String() }}" class="note-card-date">
-                                    {{ $item['pubDate']->isoFormat('YYYY年MM月DD日(ddd)') }}
-                                </time>
-                                <p class="note-card-excerpt">{{ Str::limit($item['description'], 120) }}</p>
-                                {{-- カード全体がリンクなので、個別の「続きを読む」は必須ではない --}}
-                                {{-- <span class="note-card-readmore">続きを読む &rarr;</span> --}}
-                            </div>
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-        @endif
-    </div>
-</div>
+            @if (isset($feedItems) && !empty($feedItems))
+                <section class="card">
+                    <div class="card-content">
+                        <h2 class="section-title">コラム</h2>
+                        <div class="column-grid">
+                            @foreach ($feedItems as $item)
+                                <a href="{{ $item['link'] }}" target="_blank" rel="noopener noreferrer"
+                                    class="column-item">
+                                    @if ($item['image'])
+                                        <img src="{{ $item['image'] }}" alt="{{ Str::limit($item['title'], 50) }}"
+                                            class="column-image">
+                                    @endif
+                                    <div class="column-content">
+                                        <h3 class="column-title">{{ Str::limit($item['title'], 50) }}</h3>
+                                        <p class="column-excerpt">{{ Str::limit($item['description'], 120) }}</p>
+                                        <time datetime="{{ $item['pubDate']->toIso8601String() }}" class="column-date">
+                                            {{ $item['pubDate']->isoFormat('YYYY年MM月DD日(ddd)') }}
+                                        </time>
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+            @endif
             {{-- 仲介手数料無料 --}}
             {{-- <section class="cb_blog_list num5" id="cb_content_5">
                 <div class="design_header cb_design_header inview ">
@@ -1046,9 +1508,7 @@
         id="hcb-prism-js"></script>
     <script type="text/javascript" src="https://demo.tcd-theme.com/tcd103/wp-includes/js/clipboard.min.js?ver=2.0.11"
         id="clipboard-js"></script>
-    <script type="text/javascript"
-        src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/header-slider.js?ver=1.0"
-        id="header-slider-js"></script>
+
 
     <script type="text/javascript"
         src="https://demo.tcd-theme.com/tcd103/wp-content/themes/genesis_tcd103/js/jscript.js?ver=1.0" id="jscript-js">

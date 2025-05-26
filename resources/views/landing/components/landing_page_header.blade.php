@@ -48,7 +48,7 @@
         <ul id="menu-%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu">
             <li id="menu-item-6202"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-6202">
-                <a href="{{ route('landing.index') }}" style="line-height:40px;height: 30px;">トップ</a>
+                <a href="{{ route('landing.index') }}" style="line-height:40px;height: 30px;font-size: 1.25rem;font-weight: 600;color:#2C3E50;">トップ</a>
 
             </li>
             {{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5934">
@@ -64,11 +64,11 @@
             </li> --}}
             <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
-                <a href="{{ route('landing.company') }}" style="line-height: 40px; height: 30px;">会社紹介</a>
+                <a href="{{ route('landing.company') }}" style="line-height: 40px; height: 30px; font-size: 1.25rem;font-weight: 600;color:#2C3E50;">会社紹介</a>
             </li>
             <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
-                <a href="{{ route('landing.message') }}" style="line-height: 40px; height: 30px;">代表挨拶</a>
+                <a href="{{ route('landing.message') }}" style="line-height: 40px; height: 30px; font-size: 1.25rem;font-weight: 600;color:#2C3E50;">代表挨拶</a>
             </li>
             {{-- <li id="menu-item-5948"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5948">
@@ -77,7 +77,7 @@
 
             @auth
                 <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item">
-                    <a href="{{ route('admin.property.index') }}" style="line-height: 40px; height: 30px;">管理画面</a>
+                    <a href="{{ route('admin.property.index') }}" style="line-height: 40px; height: 30px; font-size: 1.25rem;font-weight: 600;color:#2C3E50;">管理画面</a>
                 </li>    
             @endauth
         </ul>
