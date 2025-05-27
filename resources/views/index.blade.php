@@ -229,16 +229,16 @@
         }
 
         /* .hero-title::after {
-                            content: '';
-                            position: absolute;
-                            bottom: -10px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            width: 100px;
-                            height: 3px;
-                            background: var(--primary-color);
-                            border-radius: 2px;
-                        } */
+                                                    content: '';
+                                                    position: absolute;
+                                                    bottom: -10px;
+                                                    left: 50%;
+                                                    transform: translateX(-50%);
+                                                    width: 100px;
+                                                    height: 3px;
+                                                    background: var(--primary-color);
+                                                    border-radius: 2px;
+                                                } */
 
         .hero-subtitle {
             font-size: 1.3rem;
@@ -953,6 +953,33 @@
             font-size: 0.9rem;
             margin-top: auto;
         }
+
+        .link-icon {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 0.2em 0.4em;
+            color: #e27c39;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            font-size: 0.9em;
+            margin-left: 0.3em;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            animation: pulseArrow 1.4s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .link-icon {
+                display: inline-block;
+            }
+        }
+
+        /* タップ時に少し動く（スマホ用フィードバック） */
+        .feature-item:active .link-icon {
+            transform: scale(1.2);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
     </style>
     </style>
 @endsection
@@ -966,10 +993,10 @@
 @section('content')
     <div id="js-body-start"></div>
 
-    <div id="site_loader_overlay">
+    {{-- <div id="site_loader_overlay">
         <div id="loader_logo_image">
         </div>
-    </div>
+    </div> --}}
 
     @include('landing.components.landing_page_header')
 
@@ -982,7 +1009,7 @@
         <div class="section-container hero-content">
             <h1 class="hero-title">あなたの理想の住まい探しを、親身にサポートします</h1>
             <p class="hero-subtitle" style="margin-bottom: calc(var(--spacing-unit) * 2);">
-                株式会社BATONは世田谷区を中心として、お部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。
+                株式会社BATONは世田谷区を中心としてお部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。
             </p>
 
         </div>
@@ -1000,7 +1027,9 @@
                         <div class="feature-icon">
                             <i class="fa-solid fa-building"></i>
                         </div>
-                        <h3 class="feature-title">世田谷区おすすめ物件</h3>
+                        <h3 class="feature-title">世田谷区おすすめ物件
+                            <span class="link-icon">▶</span>
+                        </h3>
                         <p class="card-text">世田谷区の厳選された物件をお探しいただけます</p>
                     </a>
                     <a href="https://xbatonx.annex-homes.jp/bukken_search_20088.html#1" target="_blank"
@@ -1008,14 +1037,18 @@
                         <div class="feature-icon">
                             <i class="fa-solid fa-city"></i>
                         </div>
-                        <h3 class="feature-title">首都圏物件</h3>
+                        <h3 class="feature-title">首都圏物件
+                            <span class="link-icon">▶</span>
+                        </h3>
                         <p class="card-text">首都圏全域の物件をお探しいただけます</p>
                     </a>
                     <a href="https://xbatonx.annex-homes.jp/special_44059.html" target="_blank" class="feature-item">
                         <div class="feature-icon">
                             <i class="fa-solid fa-paw"></i>
                         </div>
-                        <h3 class="feature-title">ペット可物件</h3>
+                        <h3 class="feature-title">ペット可物件
+                            <span class="link-icon">▶</span>
+                        </h3>
                         <p class="card-text">大切な家族と一緒に暮らせる物件をご紹介</p>
                     </a>
                 </div>
@@ -1150,6 +1183,13 @@
                     <div class="feature-grid">
                         <div class="feature-item">
                             <div class="feature-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="feature-title">きめ細やかな個別対応</h3>
+                            <p class="card-text">小規模だからこそ実現できる、お客様のニーズに寄り添った手厚いサポート体制</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
                                 <i class="fa-solid fa-coins"></i>
                             </div>
                             <h3 class="feature-title">圧倒的な初期費用の安さ</h3>
@@ -1197,6 +1237,14 @@
                             <h3 class="feature-title">充実した交通アクセス</h3>
                             <p class="card-text">小田急線、京王線、田園都市線など都心へのアクセスが便利</p>
                         </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-shopping-bag"></i>
+                            </div>
+                            <h3 class="feature-title">洗練されたショッピング</h3>
+                            <p class="card-text">二子玉川ライズや三軒茶屋など、おしゃれな商業施設が充実</p>
+                        </div>
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fa-solid fa-store"></i>
@@ -1210,6 +1258,13 @@
                             </div>
                             <h3 class="feature-title">充実した教育環境</h3>
                             <p class="card-text">多数の有名大学や教育機関が集まる文教地区</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3 class="feature-title">文化・芸術の街</h3>
+                            <p class="card-text">世田谷美術館や音楽大学が点在する文化的な街並み</p>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">
@@ -1708,7 +1763,7 @@
                     setTimeout(function() {
                         $('#header').removeClass('first_animate');
                     }, 300);
-                }, 1200);
+                }, 10);
 
                 setTimeout(function() {
                     $('#header_slider_wrap').addClass('start_slide');
@@ -1730,7 +1785,7 @@
             }, 500);
             setTimeout(function() {
                 after_load();
-            }, 2500);
+            }, 10);
         })(jQuery);
 
         // 画像リンクをクリックしたときにモーダルを表示
