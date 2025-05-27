@@ -229,16 +229,16 @@
         }
 
         /* .hero-title::after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    bottom: -10px;
-                                                    left: 50%;
-                                                    transform: translateX(-50%);
-                                                    width: 100px;
-                                                    height: 3px;
-                                                    background: var(--primary-color);
-                                                    border-radius: 2px;
-                                                } */
+                                                        content: '';
+                                                        position: absolute;
+                                                        bottom: -10px;
+                                                        left: 50%;
+                                                        transform: translateX(-50%);
+                                                        width: 100px;
+                                                        height: 3px;
+                                                        background: var(--primary-color);
+                                                        border-radius: 2px;
+                                                    } */
 
         .hero-subtitle {
             font-size: 1.3rem;
@@ -959,14 +959,18 @@
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 50%;
-            padding: 0.2em 0.4em;
+            width: 1.6em;
+            height: 1.6em;
+            padding: 0.3em 0.3em;
             color: #e27c39;
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
             font-size: 0.9em;
-            margin-left: 0.3em;
+            /* margin-left: 0.3em; */
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
             animation: pulseArrow 1.4s infinite;
+            align-items: center;
+            justify-content: center;
         }
 
         @media (max-width: 768px) {
