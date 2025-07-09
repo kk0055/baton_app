@@ -12,8 +12,8 @@
             </h1>
             <div class="contact-info">
                 <div class="phone">
-                    <a href="tel:03-6865-8533" style="pointer-events: auto;"><i class="fa fa-phone"
-                            style="margin-right:4px; color: #1a365d;"></i>03-6865-8533
+                    <a href="tel:03-6314-1254" style="pointer-events: auto;"><i class="fa fa-phone"
+                            style="margin-right:4px; color: #1a365d;"></i>03-6314-1254
                     </a>
                     <a href="tel:070-5366-0412" style="pointer-events: auto;"><i class="fa fa-phone"
                             style="margin-right:4px; color: #1a365d;"></i>070-5366-0412

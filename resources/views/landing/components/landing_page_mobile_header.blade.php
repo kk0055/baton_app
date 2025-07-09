@@ -9,8 +9,7 @@
             <li id="menu-item-6425"
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-6425">
                 <a href="{{ route('landing.index') }}" aria-current="page"
-                style="font-size: 1.25rem;font-weight: 600;"
-                >トップ</a>
+                    style="font-size: 1.25rem;font-weight: 600;">トップ</a>
             </li>
             {{-- <li id="menu-item-6436"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6436">
@@ -36,23 +35,23 @@
 
             @auth
                 <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                        href="{{ route('admin.property.index') }}" style="font-size: 1.25rem;font-weight: 600;">管理画面</a></li>
+                        href="{{ route('admin.property.index') }}" style="font-size: 1.25rem;font-weight: 600;">管理画面</a>
+                </li>
             @endauth
         </ul>
     </div>
     <div class="contact-sns-container">
         <div class="contact-info">
             <div class="phone" style="margin-left:5px;">
-                
-                <a href="tel:03-6865-8533" style="color:white; pointer-events: auto;">
-                    <i class="fa fa-phone catch" style="margin-right:2px;"></i>03-6865-8533
+
+                <a href="tel:03-6314-1254" style="color:white; pointer-events: auto;">
+                    <i class="fa fa-phone catch" style="margin-right:2px;"></i>03-6314-1254
                 </a>
             </div>
             <div class="email">
-                <a href="https://bit.ly/4er2ktS"
-                    class="email-button" style="color:white; font-size: 1.25rem;font-weight: 600;" target="_blank"
-                    >
-                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true" ></i>
+                <a href="https://bit.ly/4er2ktS" class="email-button"
+                    style="color:white; font-size: 1.25rem;font-weight: 600;" target="_blank">
+                    <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ
                 </a>
             </div>
