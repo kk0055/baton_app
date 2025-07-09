@@ -93,7 +93,7 @@
             #company_data_list h4 {
                 font-size: 2rem;
             }
-         
+
             #company_data_list p {
                 font-size: 1rem;
             }
@@ -180,11 +180,12 @@
                                     </tr>
                                     <tr style="word-wrap: break-word;white-space: normal;">
                                         <th>所在地</th>
-                                        <td>〒107-0062 <br /> 東京都港区南青山一丁目1番1号 新青山ビル東館7F</td>
+                                        <td>〒156-0051<br />
+                                            東京都世田谷区宮坂1-10-11</td>
                                     </tr>
                                     <tr>
                                         <th>TEL</th>
-                                        <td>03-6865-8533 </br>
+                                        <td>03-6314-1254 </br>
                                             070-5366-0412
                                         </td>
                                     </tr>
