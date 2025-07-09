@@ -128,7 +128,8 @@
         </p> --}}
         <div id="footer_address" class="post_content">
             <p>株式会社BATON<br>
-                <span>〒107-0062 東京都港区南青山一丁目1番1号 新青山ビル東館 7F</span>
+                <span>〒156-0051
+                    東京都世田谷区宮坂1-10-11</span>
             </p>
         </div>
         <div id="footer_address" class="post_content">
