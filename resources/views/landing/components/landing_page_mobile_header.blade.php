@@ -49,7 +49,7 @@
                 </a>
             </div>
             <div class="email">
-                <a href="https://bit.ly/4er2ktS" class="email-button"
+                <a href="mailto:company@xbatonx.com" class="email-button"
                     style="color:white; font-size: 1.25rem;font-weight: 600;" target="_blank">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ

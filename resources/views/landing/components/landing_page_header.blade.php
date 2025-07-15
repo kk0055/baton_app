@@ -31,7 +31,7 @@
                     </a>
                 </div>
                 <div class="email" style="background: #3182ce;">
-                    <a href="https://bit.ly/4er2ktS" class="email-button" target="_blank">
+                    <a href="mailto:company@xbatonx.com" class="email-button" target="_blank">
                         <i class="fa fa-envelope"style="margin-right:4px;" aria-hidden="true"></i>
                         お問合わせ
                     </a>
@@ -104,7 +104,7 @@
                 </a>
             </div>
             <div class="email">
-                <a href="https://bit.ly/4er2ktS" class="email-button"
+                <a href="mailto:company@xbatonx.com" class="email-button"
                     style="font-size: 1.25rem;font-weight: 600;color:#2C3E50;" target="_blank">
                     <i class="fa fa-envelope"style="margin-right:2px;" aria-hidden="true"></i>
                     お問合わせ
