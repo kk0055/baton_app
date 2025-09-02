@@ -137,7 +137,7 @@
         </div>
         <div id="kurabeel" class="post_content">
             <p>ご自身でお部屋を探していただき、気になる物件のURLをLINEで送るだけで、仲介手数料を大幅にお安くできるサービス、<a href="https://kurabeel.com/"
-                    target="_blank">『くらベール』</a>を始めました。詳細が気になる方は、ぜひ<a href="https://kurabeel.com/"
+                    target="_blank">『ゼロレント』</a>を始めました。詳細が気になる方は、ぜひ<a href="https://kurabeel.com/"
                     target="_blank">こちら</a>からご確認ください。</p>
         </div>
         <div id="footer_sns">

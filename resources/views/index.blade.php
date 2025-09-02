@@ -1020,7 +1020,7 @@
     </div>
 
     <div id="container">
-        <section id="property-search" class="card">
+        {{-- <section id="property-search" class="card">
             <div class="card-content">
                 <h2 class="section-title">
                     <i class="fas fa-search"></i>
@@ -1057,7 +1057,7 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
         <div id="content_builder">
