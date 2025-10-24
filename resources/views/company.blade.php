@@ -184,6 +184,11 @@
                                             東京都世田谷区宮坂1-10-11</td>
                                     </tr>
                                     <tr>
+                                        <th>事業内容</th>
+                                        <td>不動産の売買、賃貸仲介、管理
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <th>TEL</th>
                                         <td>03-6314-1254 </br>
                                             070-5366-0412
@@ -216,6 +221,12 @@
                                     <tr>
                                         <th>顧問税理士</th>
                                         <td>鈴木会計事務所</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td><a href="{{ asset('customer-harassment-policy.pdf') }}" target="_blank">
+                                                カスタマーハラスメントにおける基本方針
+                                            </a></td>
                                     </tr>
                                     {{-- <tr>
                                         <th>事業内容</th>
