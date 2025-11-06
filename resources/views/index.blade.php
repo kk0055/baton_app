@@ -1011,7 +1011,8 @@
             <div class="wave"></div>
         </div>
         <div class="section-container hero-content">
-            <h1 class="hero-title">あなたの理想の住まい探しを親身にサポートします</h1>
+            <h1 class="hero-title">あなたの理想の住まい探し<br>
+                親身にサポートします</h1>
             <p class="hero-subtitle" style="margin-bottom: calc(var(--spacing-unit) * 2);">
                 株式会社BATONは世田谷区を中心としてお部屋のご紹介をメインとして活動させていただいております。地域密着型でありながら、上京される方々にとっても安心して任せていただけるような、アットホームで温かみのあるサービスを心掛けております。
             </p>
