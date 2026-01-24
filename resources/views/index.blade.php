@@ -152,11 +152,11 @@
             position: relative;
             max-width: 560px;
             margin: 0 auto 2rem;
-            padding-top: 56.25%;
+            aspect-ratio: 16 / 9;
             overflow: hidden;
             border-radius: 8px;
+            height: auto !important;
         }
-
         .video-wrapper iframe {
             position: absolute;
             top: 0;
@@ -164,6 +164,11 @@
             width: 100%;
             height: 100%;
             border: 0;
+        }
+        @media (min-width: 768px) {
+            .video-wrapper {
+                max-width: 480px;
+            }
         }
 
         .wave-container {
@@ -248,16 +253,16 @@
         }
 
         /* .hero-title::after {
-                                                                    content: '';
-                                                                    position: absolute;
-                                                                    bottom: -10px;
-                                                                    left: 50%;
-                                                                    transform: translateX(-50%);
-                                                                    width: 100px;
-                                                                    height: 3px;
-                                                                    background: var(--primary-color);
-                                                                    border-radius: 2px;
-                                                                } */
+                                                                        content: '';
+                                                                        position: absolute;
+                                                                        bottom: -10px;
+                                                                        left: 50%;
+                                                                        transform: translateX(-50%);
+                                                                        width: 100px;
+                                                                        height: 3px;
+                                                                        background: var(--primary-color);
+                                                                        border-radius: 2px;
+                                                                    } */
 
         .hero-subtitle {
             font-size: 1.3rem;
