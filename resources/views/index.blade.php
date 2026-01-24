@@ -150,13 +150,9 @@
         /* --- レスポンシブ動画用のCSS --- */
         .video-wrapper {
             position: relative;
-            /* ↓ この値を変更して、お好みのサイズに調整してください ↓ */
             max-width: 560px;
-            /* 例: YouTubeの標準的な埋め込みサイズ */
             margin: 0 auto 2rem;
-            /* 中央寄せ */
             padding-top: 56.25%;
-            /* 16:9のアスペクト比を維持 */
             overflow: hidden;
             border-radius: 8px;
         }
