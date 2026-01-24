@@ -147,6 +147,29 @@
             color: var(--text-primary);
         }
 
+        /* --- レスポンシブ動画用のCSS --- */
+        .video-wrapper {
+            position: relative;
+            /* ↓ この値を変更して、お好みのサイズに調整してください ↓ */
+            max-width: 560px;
+            /* 例: YouTubeの標準的な埋め込みサイズ */
+            margin: 0 auto 2rem;
+            /* 中央寄せ */
+            padding-top: 56.25%;
+            /* 16:9のアスペクト比を維持 */
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .wave-container {
             position: relative;
             width: 100%;
@@ -229,16 +252,16 @@
         }
 
         /* .hero-title::after {
-                                                        content: '';
-                                                        position: absolute;
-                                                        bottom: -10px;
-                                                        left: 50%;
-                                                        transform: translateX(-50%);
-                                                        width: 100px;
-                                                        height: 3px;
-                                                        background: var(--primary-color);
-                                                        border-radius: 2px;
-                                                    } */
+                                                                    content: '';
+                                                                    position: absolute;
+                                                                    bottom: -10px;
+                                                                    left: 50%;
+                                                                    transform: translateX(-50%);
+                                                                    width: 100px;
+                                                                    height: 3px;
+                                                                    background: var(--primary-color);
+                                                                    border-radius: 2px;
+                                                                } */
 
         .hero-subtitle {
             font-size: 1.3rem;
@@ -1181,10 +1204,16 @@
                         </span></a>
                 </div> --}}
             </section>
-            {{-- 業務内容 --}}
+            {{-- BATONの強み --}}
             <section class="card">
                 <div class="card-content">
                     <h2 class="section-title">BATONの強み</h2>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/PcnWhExDazk?si=XOc0ovT5YszZnZc-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                     <div class="feature-grid">
                         <div class="feature-item">
                             <div class="feature-icon">
