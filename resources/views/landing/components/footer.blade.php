@@ -126,7 +126,9 @@
             <img class="logo_image mobile" src="baton_baton_logo240819.png" alt="株式会社BATON" title="株式会社BATON" width="155"
                 height="70" />
         </p> --}}
-        <div id="footer_address" class="post_content">
+        <div id="footer_address" class="post_content">                                         
+            {{-- <a href="https://www.homes.co.jp/realtor/mid-154282hzYksZrzm5UU/certification/" target="_blank"><img src="https://banner.homes.co.jp/realtor/homes_certification_980x126.png" alt="LIFULL HOME'S(ライフルホームズ)優良店認定" width="980" height="126" border="0"></a> --}}
+            <a href="https://www.homes.co.jp/realtor/mid-154282hzYksZrzm5UU/certification/" target="_blank"><img src="https://banner.homes.co.jp/realtor/homes_certification_400x160.png" alt="LIFULL HOME'S(ライフルホームズ)優良店認定" width="400" height="160" border="0"></a>
             <p>株式会社BATON<br>
                 <span>〒156-0051
                     東京都世田谷区宮坂1-10-11</span>
